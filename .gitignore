@@ -63,3 +63,7 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+/outputs
+
+/unsloth_compiled_cache
