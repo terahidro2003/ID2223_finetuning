@@ -13,5 +13,6 @@ A Gradio application that interfaces with a finetuned LLM and can search the int
 
 ## Setup
 ```bash
+uv sync
 uv run gradio main.py
 ```
