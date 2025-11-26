@@ -1,0 +1,16 @@
+[project]
+name = "finetuned-finetome"
+version = "0.1.0"
+description = "Gradio app with finetuned LLM and internet search capabilities"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "openai>=1.54.0",
+    "python-dotenv>=1.0.0",
+    "duckduckgo-search>=8.1.1",
+    "anthropic>=0.74.1",
+    "gradio>=6.0.1",
+]
+
+[tool.uv]
+dev-dependencies = []
