@@ -62,6 +62,7 @@ class LLMFactory:
         cls,
         provider_name: str,
         api_key: Optional[str] = None,
+        api_url: Optional[str] = None,
         **kwargs
     ) -> BaseLLMProvider:
         """
@@ -87,7 +88,7 @@ class LLMFactory:
                 f"Available: {list(cls._providers.keys())}"
             )
         
-        return provider_class(api_key=api_key, **kwargs)
+        return provider_class(api_key=api_key, api_url=api_url, **kwargs)
     
     @classmethod
     def get_available_providers(cls) -> list[str]:
