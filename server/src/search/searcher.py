@@ -1,10 +1,15 @@
 """DuckDuckGo search implementation"""
 from typing import List, Dict
-from duckduckgo_search import DDGS
+import requests, os
+from ddgs import DDGS
 
 
 class DuckDuckGoSearcher:
     """DuckDuckGo web search"""
+
+    SITE_EXCLUSIONS =  ' '.join([f'-site:{site}' for site in
+        ['reddit.com', 'twitter.com', 'facebook.com', 'instagram.com']
+    ])
     
     def __init__(self, timeout: int = 10):
         self.timeout = timeout
@@ -13,7 +18,6 @@ class DuckDuckGoSearcher:
         self,
         query: str,
         max_results: int = 5,
-        region: str = "wt-wt",
         safesearch: str = "moderate"
     ) -> Dict:
         """
@@ -28,10 +32,10 @@ class DuckDuckGoSearcher:
         """
         try:
             results = DDGS().text(
-                query,
-                region=region,
+                query + " " + self.SITE_EXCLUSIONS,
                 safesearch=safesearch,
-                max_results=max_results
+                max_results=max_results,
+                backend='wikipedia,google,duckduckgo',
             )
             
             formatted_results = []
@@ -39,9 +43,19 @@ class DuckDuckGoSearcher:
                 formatted_results.append({
                     "title": r.get("title", ""),
                     "url": r.get("href", ""),
-                    "content": r.get("body", "")
                 })
+
+            print('results before content fetch:', formatted_results)
+            for idx, result in enumerate(formatted_results):
+                formatted_results[idx]['content'] = requests.get("https://r.jina.ai/" + result['url'], headers={
+                    "Content-Type": "application/json",
+                    "Accept": "application/json",
+                    "Authorization": f"Bearer {os.getenv('JINA_API_KEY')}",
+                    "X-Retain-Images": "none",
+                    "X-Return-Format": "text",
+                }).text
             
+            print("SEARCH RESULTS:", formatted_results)
             return {"results": formatted_results}
             
         except Exception as e:
@@ -62,6 +76,9 @@ class DuckDuckGoSearcher:
         for query in queries:
             search_result = self.search(query, max_results_per_query)
             
+            if "error" in search_result:
+                print("Some error happened:", search_result["error"])
+
             for result in search_result.get("results", []):
                 url = result.get("url", "")
                 if url and url not in seen_urls:
