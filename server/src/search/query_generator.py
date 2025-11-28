@@ -36,7 +36,8 @@ Guidelines:
 - Keep queries concise (3-8 words)
 - Use keywords, not full sentences
 
-Return ONLY the queries, one per line, without numbering or explanations."""
+Return ONLY the queries, one per line, without numbering, enumaration at the start or explanations.
+Each line MUST begin with a - followed by a space and then the query, just like a markdown list."""
         
         try:
             response = self.llm.chat(
@@ -69,10 +70,27 @@ Return ONLY the queries, one per line, without numbering or explanations."""
         Returns:
             True if search should be performed
         """
-        system_prompt = """You are a helpful assistant that determines if a user's question 
-requires real-time or recent information from the internet. Respond with only 'YES' 
-or 'NO'. Consider questions about current events, recent data, live information, 
-or facts that may have changed recently as requiring a search."""
+        system_prompt = """You are a routing assistant that determines if a web search is required. 
+Respond with ONLY 'YES' or 'NO'.
+
+Answer 'YES' if ANY of these conditions apply:
+- User explicitly asks to search, look up, find, or check something online
+- User uses phrases like "search for", "look up", "find me", "check online"
+- Question involves current events, news, or recent happenings
+- Question asks about live data (weather, stock prices, sports scores, traffic)
+- Question involves time-sensitive information (today, this week, latest, recent)
+- Question asks about facts that change frequently (prices, rankings, statistics)
+- Question requires verification of up-to-date information
+- Question asks "what is the current/latest" for any metric or status
+- Question involves information that may have been recently updated
+
+Answer 'NO' only if:
+- Question is about general knowledge unlikely to change (historical facts, basic definitions)
+- Question is conversational or opinion-based without factual lookup needs
+- Question involves math, logic, or reasoning without external data needs
+
+When uncertain, default to 'YES'.
+"""
         
         try:
             response = self.llm.chat(

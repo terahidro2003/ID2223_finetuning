@@ -14,8 +14,9 @@ providers = initialize_providers()
 if not providers:
     raise RuntimeError(
         "No LLM providers configured!\n"
-        "Add API keys to .env:\n"
+        "Add API keys or API url to .env:\n"
         "- <PROVIDER>_API_KEY\n"
+        "- <PROVIDER>_API_URL\n"
         "- run llm locally & configure url"
     )
 searcher = DuckDuckGoSearcher()
@@ -105,6 +106,7 @@ def respond(
             if auto_search and query_gen.should_search(user_text):
                 queries = query_gen.generate_queries(user_text, num_queries)
                 search_results = searcher.multi_query_search(queries, max_results_per_query=3)
+                print(search_results)
                 search_display = format_search_results(search_results)
         except Exception as e:
             print(f"Search error: {e}")
