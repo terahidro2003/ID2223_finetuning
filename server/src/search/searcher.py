@@ -10,9 +10,12 @@ class DuckDuckGoSearcher:
     SITE_EXCLUSIONS =  ' '.join([f'-site:{site}' for site in
         ['reddit.com', 'twitter.com', 'facebook.com', 'instagram.com']
     ])
+    jina_api_key = None
     
     def __init__(self, timeout: int = 10):
         self.timeout = timeout
+        if os.getenv('JINA_API_KEY'):
+            self.jina_api_key = f"Bearer {os.getenv('JINA_API_KEY')}"
     
     def search(
         self,
@@ -45,17 +48,18 @@ class DuckDuckGoSearcher:
                     "url": r.get("href", ""),
                 })
 
-            print('results before content fetch:', formatted_results)
             for idx, result in enumerate(formatted_results):
-                formatted_results[idx]['content'] = requests.get("https://r.jina.ai/" + result['url'], headers={
+
+                headers = {
                     "Content-Type": "application/json",
                     "Accept": "application/json",
-                    "Authorization": f"Bearer {os.getenv('JINA_API_KEY')}",
                     "X-Retain-Images": "none",
-                    "X-Return-Format": "text",
-                }).text
+                    "X-Return-Format": "markdown",
+                }
+                if self.jina_api_key: headers["Authorization"] = self.jina_api_key
             
-            print("SEARCH RESULTS:", formatted_results)
+                formatted_results[idx]['content'] = requests.get("https://r.jina.ai/" + result['url'], headers=headers).json()['data']
+            
             return {"results": formatted_results}
             
         except Exception as e:
