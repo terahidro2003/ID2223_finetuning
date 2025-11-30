@@ -1,0 +1,17 @@
+To determine which of the given options is NOT a primary color, let's first identify the primary colors. Primary colors are the basic colors that cannot be created by mixing other colors together. They are:
+
+- Red
+- Yellow
+- Blue
+
+Now, let's analyze the given options:
+
+A) Red - This is a primary color.
+B) Yellow - This is a primary color.
+D) Blue - This is a primary color.
+
+Since Red, Yellow, and Blue are all primary colors, the option that is NOT a primary color is:
+
+C) Green
+
+Green is a secondary color, which means it can be created by mixing two primary colors together.

@@ -1,0 +1,41 @@
+Here's an example of how you can trigger a build for your frontend app on the main branch with debug parameters:
+
+```json
+{
+  "function": "trigger_build",
+  "project": "frontend-app",
+  "branch": "main",
+  "parameters": {
+    "debug": "true"
+  }
+}
+```
+
+In this example:
+
+- `trigger_build` is the function that triggers the build.
+- `project` is the name of your frontend app.
+- `branch` is the branch where you want to trigger the build. In this case, it's the main branch.
+- `parameters` is an object that contains the debug parameters. In this case, we're setting `debug` to `true`.
+
+You can also use the `CI/CD pipeline manager` API to trigger a build. Here's an example of how you can do that:
+
+```json
+{
+  "method": "POST",
+  "url": "https://your-cicd-pipeline-manager.com/api",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": "{\"function\": \"trigger_build\", \"project\": \"frontend-app\", \"branch\": \"main\", \"parameters\": {\"debug\": \"true\"}}"
+}
+```
+
+In this example:
+
+- `method` is the HTTP method to use (in this case, `POST`).
+- `url` is the URL of the API endpoint.
+- `headers` is an object that contains the headers for the request.
+- `body` is the JSON body of the request.
+
+Make sure to replace `https://your-cicd-pipeline-manager.com` with the actual URL of your CI/CD pipeline manager.

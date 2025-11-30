@@ -1,0 +1,32 @@
+Here is the code to set the threshold for the `cpu_usage` metric to greater than 80:
+
+```json
+{
+  "function": "set_metric_threshold",
+  "metric": "cpu_usage",
+  "operator": "gt",
+  "value": 80
+}
+```
+
+This will set the threshold for the `cpu_usage` metric to greater than 80. If the `cpu_usage` metric is less than or equal to 80, the threshold will be set to 80. 
+
+Please note that this is a simple threshold setting. If you want to set a more complex threshold, you can use the following code:
+
+```json
+{
+  "function": "set_metric_threshold",
+  "metric": "cpu_usage",
+  "operator": "gt",
+  "value": 80,
+  "config": {
+    "period": "1m",  // 1 minute
+    "start_time": "1d",  // 1 day
+    "end_time": "1d",  // 1 day
+    "start_time_unit": "h",  // start time in hours
+    "end_time_unit": "h"  // end time in hours
+  }
+}
+```
+
+This will set the threshold to greater than 80 for the `cpu_usage` metric, and will also set the period to 1 minute, start time to 1 day, end time to 1 day, start time unit to hours, and end time unit to hours.

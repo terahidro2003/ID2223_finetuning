@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "You're in a room with two doors. One leads to freedom, one to death. Two guards: one always lies, one always tells truth. You can ask one guard one question. What do you ask?"
+  }
+]

@@ -1,0 +1,31 @@
+I will use the following function to track the shipment:
+
+```json
+{
+  "function": "track_shipment",
+  "tracking_number": "1Z999AA10123456784",
+  "carrier": "UPS"
+}
+```
+
+Please note that I'm assuming you are using a JSON format for the request. If you are using a different format, please adjust accordingly.
+
+If you want to send this request via a specific API or endpoint, here is an example of how you can do it:
+
+```json
+{
+  "method": "POST",
+  "url": "https://api.example.com/track_shipment",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "data": {
+    "tracking_number": "1Z999AA10123456784",
+    "carrier": "UPS"
+  }
+}
+```
+
+Replace the `https://api.example.com/track_shipment` URL with the actual URL of the API endpoint that you are using.
+
+Please make sure to replace the placeholders with the actual values.

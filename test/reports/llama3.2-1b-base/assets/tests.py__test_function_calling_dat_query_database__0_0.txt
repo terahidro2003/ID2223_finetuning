@@ -1,0 +1,9 @@
+```json
+{
+  "function": "query_database",
+  "query": "SELECT * FROM customers",
+  "database": "customers"
+}
+```
+
+This query will return all the users from the customers database.

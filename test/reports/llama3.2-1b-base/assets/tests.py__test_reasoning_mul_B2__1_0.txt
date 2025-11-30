@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "How many sides does a hexagon have? A) 5 B) 6 C) 7 D) 8"
+  }
+]

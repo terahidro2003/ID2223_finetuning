@@ -1,0 +1,15 @@
+You can use the `sample_data` function from the ML data toolkit to sample 1000 rows from the transactions dataset. Here's an example:
+
+```python
+from ml_data_toolkit import sample_data
+
+# Load the transactions dataset
+transactions = sample_data(dataset='transactions', method='load', size=10000)
+
+# Print the first few rows of the sampled dataset
+print(transactions.head())
+```
+
+This will load the transactions dataset, sample 10000 rows, and print the first few rows of the sampled dataset. The `sample_data` function returns a pandas DataFrame, so we use `head()` to print the first few rows.
+
+Note: The `sample_data` function may not work with all datasets. It's recommended to check the documentation of the ML data toolkit for more information on how to use it.

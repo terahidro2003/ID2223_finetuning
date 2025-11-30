@@ -1,0 +1,40 @@
+Here's an example of how to aggregate sales by region using the `aggregate_data` function in the analytics platform:
+
+```json
+{
+  "function": "aggregate_data",
+  "table": "sales_data",
+  "group_by": "region",
+  "operation": "sum"
+}
+```
+
+In this example, we're aggregating sales by region. The `region` field is the one we want to group by. The `sum` operation will calculate the total sales for each region.
+
+If you want to see the aggregated sales for each region, you can use the following output:
+
+```json
+{
+  "region": "North",
+  "sales": 1000
+}
+{
+  "region": "South",
+  "sales": 1200
+}
+```
+
+This means that the North region has a total sales of 1000, and the South region has a total sales of 1200.
+
+If you want to see the aggregated sales for each region in a more readable format, you can use the following output:
+
+```json
+{
+  "North": 1000,
+  "South": 1200,
+  "East": 800,
+  "West": 1000
+}
+```
+
+This means that the North region has 1000 sales, the South region has 1200 sales, the East region has 800 sales, and the West region has 1000 sales.

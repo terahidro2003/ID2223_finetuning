@@ -1,0 +1,5 @@
+To find the square root of 144, we need to find a number that, when multiplied by itself, gives 144.
+
+The square root of 144 is 12.
+
+The correct answer is C) 12.

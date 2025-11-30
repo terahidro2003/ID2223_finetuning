@@ -1,0 +1,25 @@
+Here's how you can configure logging for the payment-service at INFO level with 90 day retention using the provided tools:
+
+```bash
+# Create a healthcheck
+create_healthcheck:
+  endpoint: /healthcheck
+  interval_seconds: 30
+  timeout: 60
+
+# Configure logging
+configure_logging:
+  service: payment-service
+  level: INFO
+  retention_days: 90
+```
+
+In the above command, we are creating a healthcheck with the following settings:
+
+- `endpoint`: The healthcheck endpoint is `/healthcheck`.
+- `interval_seconds`: The interval between healthchecks is 30 seconds.
+- `timeout`: The timeout for the healthcheck is 60 seconds.
+
+We are then configuring logging for the payment-service at the INFO level with a retention period of 90 days. The `level` parameter is set to `INFO`, which corresponds to the INFO level in the logging hierarchy. The `retention_days` parameter is set to 90, which means that logs will be retained for 90 days before they are automatically deleted.
+
+To use this command, you would need to have the `create_healthcheck` and `configure_logging` tools installed and configured on your system. The exact commands and parameters may vary depending on the specific tools and environments you are using.

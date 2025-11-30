@@ -1,0 +1,10 @@
+```json
+{
+    "function": "search_tweets",
+    "keyword": "AI revolution",
+    "count": 50,
+    "language": "English"
+}
+```
+
+This will return the top 50 tweets that contain the keyword 'AI revolution' in the English language.

@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "System administrator. Available functions:\n- create_user: Creates user account. Format: {\"function\": \"create_user\", \"username\": string, \"role\": string, \"department\": string}\n- reset_password: Resets password. Format: {\"function\": \"reset_password\", \"user_id\": string, \"temporary\": boolean}\n- assign_permissions: Assigns permissions. Format: {\"function\": \"assign_permissions\", \"user\": string, \"permissions\": list}\n- deactivate_account: Deactivates account. Format: {\"function\": \"deactivate_account\", \"user_id\": string, \"reason\": string}\nJSON only."
+  },
+  {
+    "role": "user",
+    "content": "Deactivate account user_99999 because employee left company"
+  }
+]

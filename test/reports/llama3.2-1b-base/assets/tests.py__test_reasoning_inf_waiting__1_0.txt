@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "Someone checks their watch repeatedly while sitting in a cafe. What are they likely doing?"
+  }
+]

@@ -1,0 +1,56 @@
+To send a critical notification to a Slack channel, you can use the following code:
+
+```javascript
+const { createHealthcheck, setMetricThreshold, configureLogging, sendNotification } = require('create_healthcheck');
+
+// Set up logging
+configureLogging({
+  service: 'database',
+  level: 'CRITICAL',
+  retention_days: 30
+});
+
+// Set up health check
+const healthCheck = createHealthcheck({
+  function: 'send_critical_notification',
+  endpoint: 'https://your-slack-channel.com/api/v1',
+  interval_seconds: 1,
+  timeout: 5
+});
+
+// Set up metric threshold
+setMetricThreshold({
+  function: 'send_critical_notification',
+  metric: 'database.connection',
+  operator: 'EQ',
+  value: 1
+});
+
+// Send notification
+sendNotification({
+  channel: 'your-slack-channel',
+  message: 'Database connection failed',
+  severity: 'CRITICAL'
+});
+```
+
+This code sets up a health check that checks the database connection every second. If the connection fails, it sends a critical notification to the specified Slack channel.
+
+Make sure to replace the placeholders with your actual values:
+
+- `your-slack-channel` is the name of your Slack channel.
+- `https://your-slack-channel.com/api/v1` is the URL of your API endpoint.
+- `your-slack-channel` is the name of your Slack channel.
+- `your-slack-channel` is the name of your Slack channel.
+
+Also, make sure to install the `create-healthcheck` package if it's not already installed. You can install it using npm or yarn:
+
+```bash
+npm install create-healthcheck
+```
+
+Or:
+
+```bash
+yarn add create-healthcheck
+```

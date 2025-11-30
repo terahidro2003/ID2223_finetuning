@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "A rope ladder hangs over the side of a ship. The rungs are 1 foot apart. At low tide, 10 rungs are above water. The tide rises 5 feet. How many rungs are above water?"
+  }
+]

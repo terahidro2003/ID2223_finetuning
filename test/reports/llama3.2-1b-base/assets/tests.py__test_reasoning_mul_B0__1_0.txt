@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "Which planet is known as the Red Planet? A) Venus B) Mars C) Jupiter D) Saturn"
+  }
+]

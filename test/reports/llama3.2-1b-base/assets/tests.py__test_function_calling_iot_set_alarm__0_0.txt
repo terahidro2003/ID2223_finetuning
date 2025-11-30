@@ -1,0 +1,7 @@
+```json
+{
+  "function": "set_alarm",
+  "time": "07:00",
+  "label": "work"
+}
+```

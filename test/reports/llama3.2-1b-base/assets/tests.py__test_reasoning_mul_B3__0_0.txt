@@ -1,0 +1,5 @@
+The correct answer is Python.
+
+Python is a popular programming language known for its use in web development, particularly with frameworks like Django and Flask. It's also used for web scraping, data analysis, and machine learning.
+
+The Python logo features a snake, which is a nod to the language's name and its ability to "slink" through code.

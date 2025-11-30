@@ -1,0 +1,10 @@
+```json
+{
+    "function": "restore_backup",
+    "backup_id": "backup_20241130",
+    "target": "test-db",
+    "verify": true
+}
+```
+
+This command will restore the backup `backup_20241130` from the specified `test-db` database to the target database. The `verify` parameter is set to `true` to verify the integrity of the backup.

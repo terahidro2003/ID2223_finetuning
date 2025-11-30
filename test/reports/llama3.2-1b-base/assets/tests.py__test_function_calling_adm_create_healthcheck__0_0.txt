@@ -1,0 +1,32 @@
+Here's a sample JSON request to create a health check for the specified endpoint:
+
+```json
+{
+  "function": "create_healthcheck",
+  "endpoint": "https://api.example.com/health",
+  "interval_seconds": 60,
+  "timeout": 5
+}
+```
+
+This will create a health check that:
+
+- Checks the specified endpoint every 60 seconds.
+- Has a 5-second timeout.
+
+Please note that this is a basic example and might not work in all environments. For example, it might not work in a production environment where the health check endpoint might be blocked by a firewall or load balancer. 
+
+Also, ensure that the `create_healthcheck` function is properly configured and that the endpoint is accessible and not blocked by any security measures. 
+
+If you want to use the `set_metric_threshold` function to set a threshold for the health check, you can do so like this:
+
+```json
+{
+  "function": "set_metric_threshold",
+  "metric": "https://api.example.com/health",
+  "operator": "Threshold",
+  "value": 1
+}
+```
+
+This will set a threshold of 1 for the specified endpoint. You can adjust the threshold value as needed.

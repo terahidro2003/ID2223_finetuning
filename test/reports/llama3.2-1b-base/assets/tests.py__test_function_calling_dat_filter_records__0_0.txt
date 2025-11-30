@@ -1,0 +1,40 @@
+To filter the orders table where the status equals "completed", you can use the following command:
+
+```sql
+filter_records orders table where status = "completed"
+```
+
+This will return all orders where the status is "completed". 
+
+If you are using a different database system, the command may vary. Here's an example in MySQL:
+
+```sql
+SELECT * 
+FROM orders 
+WHERE status = "completed";
+```
+
+This will return all orders where the status is "completed".
+
+If you are using a different analytics platform, the command may vary. Here's an example in Power BI:
+
+```dax
+SELECT *
+FROM orders
+WHERE status = "completed";
+```
+
+This will return all orders where the status is "completed".
+
+If you are using a different tool, the command may vary. Here's an example in Tableau:
+
+```python
+from tableau import Tableau
+t = Tableau()
+t.connect()
+t.select("orders")
+t.filter(t.select("orders") == "completed")
+t.show()
+```
+
+This will return all orders where the status is "completed".

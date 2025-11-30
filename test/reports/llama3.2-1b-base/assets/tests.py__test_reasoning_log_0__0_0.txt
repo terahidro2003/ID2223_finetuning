@@ -1,0 +1,13 @@
+To find the result, let's multiply all the numbers on a telephone dial pad (1-9 and 0):
+
+1 * 2 * 3 * 4 * 5 * 6 * 7 * 8 * 9 * 0 = ?
+
+This is a classic example of a factorial calculation. The result is:
+
+1 * 2 * 3 * 4 * 5 * 6 * 7 * 8 * 9 = 362880
+
+Then, multiply by 0:
+
+362880 * 0 = 0
+
+So, the result of multiplying all the numbers on a telephone dial pad (1-9 and 0) is 0.

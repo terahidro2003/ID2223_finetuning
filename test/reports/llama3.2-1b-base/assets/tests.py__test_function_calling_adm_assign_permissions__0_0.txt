@@ -1,0 +1,9 @@
+```json
+{
+  "function": "assign_permissions",
+  "user": "alice",
+  "permissions": ["read", "write"]
+}
+```
+
+This will assign the "read" and "write" permissions to the specified user "alice".

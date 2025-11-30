@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "Which of these is NOT a primary color? A) Red B) Yellow C) Green D) Blue"
+  }
+]

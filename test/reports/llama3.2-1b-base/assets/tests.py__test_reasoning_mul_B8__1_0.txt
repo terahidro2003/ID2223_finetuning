@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "Which sort algorithm has average time complexity of O(n log n) and is often used in practice? A) Bubble Sort B) Merge Sort C) Selection Sort D) Insertion Sort"
+  }
+]

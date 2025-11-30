@@ -1,0 +1,25 @@
+Here's a sample JSON response that deploys the API Gateway version 2.1.0 to the production environment:
+
+```json
+{
+  "function": "deploy_service",
+  "name": "api-gateway-2.1.0",
+  "version": "2.1.0",
+  "environment": "prod"
+}
+```
+
+This response includes the following details:
+
+- `function`: The name of the deployment function.
+- `name`: The name of the deployment.
+- `version`: The version of the API Gateway.
+- `environment`: The environment in which the API Gateway will be deployed. In this case, it's set to `prod`, which means the API Gateway will be deployed in the production environment.
+
+To deploy the API Gateway to production, you would use the following command:
+
+```bash
+deploy_service --function api-gateway-2.1.0 --name api-gateway-2.1.0 --version 2.1.0 --environment prod
+```
+
+This command deploys the API Gateway version 2.1.0 to the production environment.

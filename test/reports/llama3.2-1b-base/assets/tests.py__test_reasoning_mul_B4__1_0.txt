@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "What is the freezing point of water in Celsius? A) -10 B) 0 C) 10 D) 32"
+  }
+]

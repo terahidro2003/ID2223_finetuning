@@ -1,0 +1,61 @@
+I'm assuming you want to unlock the back door temporarily. Based on the available functions, I will assume you want to use the "unlock_door" function with a temporary flag.
+
+Here's an example of how you can use the "unlock_door" function with a temporary flag:
+
+```json
+{
+  "function": "unlock_door",
+  "door_id": "back_door_id",
+  "temporary": true
+}
+```
+
+If you want to unlock the door for a specific amount of time (e.g., 30 minutes), you can use the following function:
+
+```json
+{
+  "function": "set_notification",
+  "type": "door_unlocked",
+  "message": "Door unlocked for 30 minutes"
+}
+```
+
+You can then use the following function to check if the door is unlocked:
+
+```json
+{
+  "function": "check_door_status",
+  "door_id": "back_door_id"
+}
+```
+
+This function will return a JSON object with the current status of the door. If the door is unlocked, it will return a JSON object with a "status" key set to "true". If the door is locked, it will return a JSON object with a "status" key set to "false".
+
+Here's an example of how you can use the "check_door_status" function:
+
+```json
+{
+  "function": "check_door_status",
+  "door_id": "back_door_id"
+}
+```
+
+This function will return:
+
+```json
+{
+  "status": "true"
+}
+```
+
+If you want to unlock the door for a specific amount of time, you can use the following function:
+
+```json
+{
+  "function": "set_notification",
+  "type": "door_unlocked",
+  "message": "Door unlocked for 30 minutes"
+}
+```
+
+This function will set a notification with the message "Door unlocked for 30 minutes".

@@ -1,0 +1,47 @@
+I'm happy to help, but I need to clarify that I can provide you with information and guidance, but I can't directly access or upload images. However, I can guide you on how to find and use the "search_images" tool.
+
+Here's a step-by-step guide to find large images of mountains with a count of 20:
+
+**Step 1: Find a mountain image**
+
+You can use the "search_images" tool to search for images of mountains. You can provide a query like "mountain" or "mountain range" and specify the size of the image you want to find. For example:
+
+* "search_images query=mountain size=large count=20"
+* "search_images query=mountain range size=large count=20"
+
+**Step 2: Use the "search_images" tool**
+
+Once you've entered your query, the "search_images" tool will return a list of images that match your query. You can then select the image you want to download or use.
+
+**Step 3: Download the image**
+
+To download the image, you'll need to provide the URL of the image. You can find the URL by copying and pasting the image URL from the search results. Alternatively, you can use the "lookup_company" tool to find the URL of the image.
+
+**Step 4: Use the "lookup_company" tool**
+
+To find the URL of the image, you can use the "lookup_company" tool. Here's an example:
+
+* "lookup_company query=mountain range fields=location, elevation, terrain"
+* "lookup_company query=mountain range fields=location, elevation, terrain"
+
+**Example Output**
+
+Here's an example output from the "lookup_company" tool:
+
+```json
+{
+    "function": "lookup_company",
+    "company_name": "National Geographic",
+    "fields": [
+        "location",
+        "elevation",
+        "terrain"
+    ]
+}
+```
+
+**Image URL**
+
+Once you've found the URL of the image, you can copy and paste it into your web browser to download the image.
+
+Please note that the availability and accessibility of images may vary depending on the source and licensing terms.

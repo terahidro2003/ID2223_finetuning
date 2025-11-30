@@ -1,0 +1,12 @@
+Here's a sample JSON request to track the conversion rate metric:
+
+```json
+{
+  "function": "track_metric",
+  "metric_name": "conversion_rate",
+  "value": 3.5,
+  "timestamp": "2024-11-30T10:00:00"
+}
+```
+
+This JSON request tracks the conversion rate metric with a value of 3.5, and sets the timestamp to 2024-11-30T10:00:00.

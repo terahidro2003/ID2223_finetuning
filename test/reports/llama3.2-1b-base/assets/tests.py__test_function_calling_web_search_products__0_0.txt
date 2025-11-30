@@ -1,0 +1,9 @@
+```json
+{
+  "function": "search_products",
+  "query": "laptops in electronics category with max price 1500",
+  "category": "electronics"
+}
+```
+
+This will return a list of laptops that match the specified criteria.

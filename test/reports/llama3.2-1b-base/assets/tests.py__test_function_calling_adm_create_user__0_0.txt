@@ -1,0 +1,10 @@
+```json
+{
+  "function": "create_user",
+  "username": "jdoe",
+  "role": "admin",
+  "department": "IT"
+}
+```
+
+This JSON object creates a new user account named "jdoe" with the specified role and department, and is assigned to the IT department.

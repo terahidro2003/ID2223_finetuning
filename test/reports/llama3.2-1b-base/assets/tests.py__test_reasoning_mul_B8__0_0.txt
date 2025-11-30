@@ -1,0 +1,21 @@
+The correct answer is B) Merge Sort.
+
+Merge Sort is a popular, stable, and efficient sorting algorithm with an average time complexity of O(n log n). It is often used in practice due to its high performance, scalability, and reliability.
+
+Here's why Merge Sort has an average time complexity of O(n log n):
+
+1.  **Divide and Conquer**: Merge Sort uses a divide-and-conquer approach, where it splits the input array into smaller subarrays and recursively sorts them.
+2.  **Merge**: The algorithm merges the sorted subarrays into a single, sorted array. This process is repeated until the entire array is sorted.
+3.  **Logarithmic Time Complexity**: The number of recursive calls is proportional to the logarithm of the input size (n). This leads to a time complexity of O(n log n).
+
+While other sorting algorithms, like Bubble Sort and Insertion Sort, have lower time complexities, they are not suitable for large datasets due to their inefficiencies. Selection Sort has a time complexity of O(n^2), which is not practical for large datasets.
+
+Here's a simple example of Merge Sort in action:
+
+Suppose we have the following array: `[5, 2, 8, 1, 9]`
+
+1.  **Divide**: Split the array into two halves: `[5, 2]` and `[8, 1, 9]`.
+2.  **Merge**: Merge the sorted halves: `[1, 2, 5, 8]` and `[1, 2, 8, 9]`.
+3.  **Repeat**: Repeat the merge process until the entire array is sorted: `[1, 2, 5, 8, 9]`.
+
+This process continues until the entire array is sorted, resulting in a time complexity of O(n log n).

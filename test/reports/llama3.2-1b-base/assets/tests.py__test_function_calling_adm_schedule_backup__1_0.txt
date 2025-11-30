@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "Backup manager. Tools:\n- create_backup: Creates backup. Format: {\"function\": \"create_backup\", \"source\": string, \"destination\": string, \"type\": string}\n- restore_backup: Restores from backup. Format: {\"function\": \"restore_backup\", \"backup_id\": string, \"target\": string, \"verify\": boolean}\n- schedule_backup: Schedules backups. Format: {\"function\": \"schedule_backup\", \"resource\": string, \"frequency\": string, \"retention\": number}\n- verify_integrity: Verifies backup. Format: {\"function\": \"verify_integrity\", \"backup_id\": string, \"checksum_type\": string}\nJSON."
+  },
+  {
+    "role": "user",
+    "content": "Schedule daily backups for customer-data with 30 day retention"
+  }
+]

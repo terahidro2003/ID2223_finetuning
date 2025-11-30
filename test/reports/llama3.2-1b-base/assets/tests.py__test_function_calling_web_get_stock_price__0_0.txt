@@ -1,0 +1,9 @@
+```json
+{
+  "function": "get_stock_price",
+  "symbol": "AAPL",
+  "exchange": "NASDAQ"
+}
+```
+
+This will return the current stock price for AAPL on the NASDAQ exchange.

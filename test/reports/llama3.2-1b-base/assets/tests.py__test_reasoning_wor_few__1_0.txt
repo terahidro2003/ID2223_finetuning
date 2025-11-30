@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "I'm a word of letters three. Add two and fewer there will be. What word am I?"
+  }
+]

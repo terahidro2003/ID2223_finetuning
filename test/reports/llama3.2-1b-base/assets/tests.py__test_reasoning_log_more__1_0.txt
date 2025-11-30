@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "In a group of 23 people, what is the probability that at least two share a birthday? Is it more or less than 50%?"
+  }
+]

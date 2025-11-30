@@ -1,0 +1,56 @@
+Here's an example of how to decompose the `monthly_sales` series using an additive model in Python:
+
+```python
+import pandas as pd
+import numpy as np
+from statsmodels.tsa.stattools import adfuller
+from statsmodels.tsa.stattools import plot_acf
+from statsmodels.tsa.stattools import plot_pacf
+
+# Load the data
+data = pd.read_csv('monthly_sales.csv', index_col='date', parse_dates=['date'])
+
+# Plot the original series
+fig, ax = plot_acf(data['monthly_sales'], lags=20, conf.level=0.95)
+ax.set_title('Original Series')
+ax.set_xlabel('Date')
+ax.set_ylabel('Value')
+fig.show()
+
+# Perform the Augmented Dickey-Fuller (ADF) test
+result = adfuller(data['monthly_sales'], method='adf')
+print('ADF Statistic:', result[0])
+print('ADF P-Value:', result[1])
+print('ADF Conclusion:')
+if result[1] < 0.05:
+    print('Reject the null hypothesis. The series is stationary.')
+else:
+    print('Fail to reject the null hypothesis. The series is non-stationary.')
+
+# Decompose the series using the additive model
+decomposition = adfuller(data['monthly_sales'], method='additive')
+print('Additive Decomposition:')
+print('Function:', decomposition[0])
+print('Series:', decomposition[1])
+print('Model:', decomposition[2])
+print('Coefficients:')
+for i, coeff in enumerate(decomposition[2].items()):
+    print(f'Coefficient {i+1}: {coeff}')
+
+# Plot the decomposed series
+fig, ax = plot_acf(decomposition[1], lags=20, conf.level=0.95)
+ax.set_title('Decomposed Series')
+ax.set_xlabel('Date')
+ax.set_ylabel('Value')
+fig.show()
+```
+
+This code performs the following steps:
+
+1. Loads the `monthly_sales` series from a CSV file.
+2. Plots the original series using the Augmented Dickey-Fuller (ADF) test to check for stationarity.
+3. Decomposes the series using the additive model.
+4. Prints the function, series, and model used for decomposition.
+5. Plots the decomposed series using the ACF and PACF plots to visualize the decomposition.
+
+Note: This code assumes that the `monthly_sales` series is a time series with a stationary pattern. If the pattern is non-stationary, you may need to use a different decomposition method, such as the Exponential Smoothing (ES) method.

@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "What is the result of 2^10? A) 512 B) 1024 C) 2048 D) 4096"
+  }
+]

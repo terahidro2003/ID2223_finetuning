@@ -1,0 +1,9 @@
+```json
+{
+    "function": "find_deals",
+    "category": "home_appliances",
+    "min_discount": 30
+}
+```
+
+This will return a list of deals in the "home_appliances" category with a minimum discount of 30%.

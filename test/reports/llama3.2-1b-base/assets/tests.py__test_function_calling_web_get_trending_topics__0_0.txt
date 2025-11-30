@@ -1,0 +1,86 @@
+Here are 15 trending topics in the United States, limited to 15 per request:
+
+```json
+{
+    "function": "get_trending_topics",
+    "location": "United States",
+    "limit": 15
+}
+```
+
+Here's a sample output:
+
+```json
+{
+    "function": "get_trending_topics",
+    "location": "United States",
+    "limit": 15
+}
+{
+    "function": "get_trending_topics",
+    "location": "United States",
+    "limit": 15
+}
+{
+    "function": "get_trending_topics",
+    "location": "United States",
+    "limit": 15
+}
+{
+    "function": "get_trending_topics",
+    "location": "United States",
+    "limit": 15
+}
+{
+    "function": "get_trending_topics",
+    "location": "United States",
+    "limit": 15
+}
+{
+    "function": "get_trending_topics",
+    "location": "United States",
+    "limit": 15
+}
+{
+    "function": "get_trending_topics",
+    "location": "United States",
+    "limit": 15
+}
+{
+    "function": "get_trending_topics",
+    "location": "United States",
+    "limit": 15
+}
+{
+    "function": "get_trending_topics",
+    "location": "United States",
+    "limit": 15
+}
+{
+    "function": "get_trending_topics",
+    "location": "United States",
+    "limit": 15
+}
+{
+    "function": "get_trending_topics",
+    "location": "United States",
+    "limit": 15
+}
+{
+    "function": "get_trending_topics",
+    "location": "United States",
+    "limit": 15
+}
+{
+    "function": "get_trending_topics",
+    "location": "United States",
+    "limit": 15
+}
+{
+    "function": "get_trending_topics",
+    "location": "United States",
+    "limit": 15
+}
+```
+
+This will return a list of 15 trending topics in the United States.

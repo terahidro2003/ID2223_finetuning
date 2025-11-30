@@ -1,0 +1,17 @@
+Here is the JSON response for updating the config for the database service setting `max_connections` to 100:
+
+```json
+{
+  "function": "update_config",
+  "service": "database",
+  "key": "max_connections",
+  "value": "100"
+}
+```
+
+This response includes the following fields:
+
+- `function`: The function being updated, which is `update_config`.
+- `service`: The service being updated, which is `database`.
+- `key`: The key being updated, which is `max_connections`.
+- `value`: The new value being set, which is `100`.

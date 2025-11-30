@@ -1,0 +1,43 @@
+Here's a sample JSON request to provision a t3.large VM in US West (2) with Ubuntu:
+
+```json
+{
+  "function": "provision_vm",
+  "instance_type": "t3.large",
+  "region": "us-west-2",
+  "os": "Ubuntu"
+}
+```
+
+This JSON request specifies the following:
+
+- `function`: The function to use for provisioning the VM. In this case, we're using the `provision_vm` function.
+- `instance_type`: The type of instance to provision. In this case, we're using the `t3.large` instance type.
+- `region`: The region in which to provision the VM. In this case, we're using the `us-west-2` region.
+- `os`: The operating system to install on the VM. In this case, we're using the `Ubuntu` operating system.
+
+You can also specify additional parameters such as the VPC ID, subnet, internet gateway, etc. Here's an example with some additional parameters:
+
+```json
+{
+  "function": "provision_vm",
+  "instance_type": "t3.large",
+  "region": "us-west-2",
+  "os": "Ubuntu",
+  "vpc_id": "vpc-12345678",
+  "subnet": "subnet-12345678",
+  "internet_gateway": true,
+  "security_group_ids": ["sg-12345678"]
+}
+```
+
+This JSON request specifies the following:
+
+- `function`: The function to use for provisioning the VM. In this case, we're using the `provision_vm` function.
+- `instance_type`: The type of instance to provision. In this case, we're using the `t3.large` instance type.
+- `region`: The region in which to provision the VM. In this case, we're using the `us-west-2` region.
+- `os`: The operating system to install on the VM. In this case, we're using the `Ubuntu` operating system.
+- `vpc_id`: The ID of the VPC to use for the VM. In this case, we're using the `vpc-12345678` VPC ID.
+- `subnet`: The ID of the subnet to use for the VM. In this case, we're using the `subnet-12345678` subnet.
+- `internet_gateway`: Whether to enable the internet gateway for the VM. In this case, we're enabling the internet gateway.
+- `security_group_ids`: The IDs of the security groups to use for the VM. In this case, we're using the `sg-12345678` security group IDs.

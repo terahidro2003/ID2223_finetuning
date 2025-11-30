@@ -1,0 +1,9 @@
+The correct answer is B) Network.
+
+In the OSI model, the Network layer (Layer 3) is responsible for routing. It is responsible for forwarding packets of data between different networks. The Network layer uses various protocols, such as IP (Internet Protocol), to determine the best route for a packet of data to travel.
+
+The other options are incorrect because:
+
+* A) Transport layer is responsible for ensuring the integrity and security of data during transmission.
+* C) Data Link layer is responsible for framing and error-checking data at the data link layer.
+* D) Application layer is responsible for providing services to end-user applications, such as email and web browsing.

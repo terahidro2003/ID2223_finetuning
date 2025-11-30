@@ -1,0 +1,13 @@
+```json
+{
+  "function": "generate_plot",
+  "data_source": "monthly_revenue",
+  "plot_type": "bar_chart",
+  "data": {
+    "dataset": "monthly_revenue",
+    "metrics": ["revenue", "growth"]
+  }
+}
+```
+
+This will generate a bar chart showing the monthly revenue and growth.

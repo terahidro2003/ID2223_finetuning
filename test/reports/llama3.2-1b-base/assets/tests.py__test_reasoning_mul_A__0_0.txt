@@ -1,0 +1,11 @@
+The correct answer is A) Central Processing Unit (CPU).
+
+The Central Processing Unit (CPU) is the brain of a computer, responsible for executing instructions and performing calculations. It's the primary component of a computer that handles all the tasks, including processing data, managing memory, and controlling the flow of information.
+
+The other options are not correct:
+
+* B) Computer Personal Unit is not a valid term.
+* C) Central Program Utility is not a standard term used in computer science.
+* D) Core Processing Utility is not a standard term used in computer science.
+
+So, the correct answer is A) Central Processing Unit (CPU).

@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "What word starts with 'e', ends with 'e', and contains one letter?"
+  }
+]

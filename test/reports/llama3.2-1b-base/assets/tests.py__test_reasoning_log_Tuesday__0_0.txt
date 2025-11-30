@@ -1,0 +1,6 @@
+To find the day between Monday and Wednesday, we need to count the days from Monday to Wednesday.
+
+Monday to Tuesday: 1 day
+Tuesday to Wednesday: 2 days
+
+So, the day between Monday and Wednesday is Wednesday.

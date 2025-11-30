@@ -1,0 +1,19 @@
+The correct answer is A) Russia.
+
+Russia has 11 time zones, ranging from UTC+2 (Arctic Time) to UTC+12 (Arctic Time + 12 hours). This is due to the country's vast geographical range, from the Arctic Circle to the southernmost parts of the country.
+
+Here's a breakdown of the time zones in Russia:
+
+* UTC+2 (Arctic Time): Murmansk Oblast
+* UTC+3 (Arctic Time): Murmansk Oblast
+* UTC+4 (Arctic Time): Murmansk Oblast
+* UTC+5 (Arctic Time): Murmansk Oblast
+* UTC+6 (Arctic Time): Murmansk Oblast
+* UTC+7 (Arctic Time): Murmansk Oblast
+* UTC+8 (Arctic Time): Murmansk Oblast
+* UTC+9 (Arctic Time): Murmansk Oblast
+* UTC+10 (Arctic Time): Murmansk Oblast
+* UTC+11 (Arctic Time): Murmansk Oblast
+* UTC+12 (Arctic Time): Murmansk Oblast
+
+This is the highest number of time zones among any country.

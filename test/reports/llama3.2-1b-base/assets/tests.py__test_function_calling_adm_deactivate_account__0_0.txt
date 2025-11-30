@@ -1,0 +1,9 @@
+```json
+{
+  "function": "deactivate_account",
+  "user_id": "user_99999",
+  "reason": "Employee left company"
+}
+```
+
+This JSON object represents the request to deactivate the account of the specified user. The "function" field specifies the action to be performed, which is "deactivate_account". The "user_id" field specifies the user to be deactivated, and the "reason" field provides the reason for deactivating the account.

@@ -1,0 +1,30 @@
+One-hot encoded category and region columns:
+
+```python
+import json
+
+# Load the data
+data = json.loads('{"function": "split_dataset", "dataset": "your_dataset", "train_ratio": 0.8, "test_ratio": 0.2}')
+
+# One-hot encode the category and region columns
+encoded_data = json.loads('{"function": "encode_categorical", "columns": ["category", "region"], "encoding_type": "one-hot"}')
+encoded_data = json.loads('{"function": "encode_categorical", "columns": ["category", "region"], "encoding_type": "one-hot"}')
+encoded_data = json.loads('{"function": "encode_categorical", "columns": ["category", "region"], "encoding_type": "one-hot"}')
+
+# Print the encoded data
+print(json.dumps(encoded_data, indent=4))
+```
+
+This will output the one-hot encoded category and region columns. The `encoding_type` parameter is set to `"one-hot"` to indicate that the columns should be one-hot encoded.
+
+Here's a sample output:
+
+```json
+{
+    "function": "encode_categorical",
+    "columns": ["category", "region"],
+    "encoding_type": "one-hot"
+}
+```
+
+This indicates that the `category` and `region` columns should be one-hot encoded.

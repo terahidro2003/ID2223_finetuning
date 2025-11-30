@@ -1,0 +1,205 @@
+"""
+LLM Testing Suite for vLLM (Streaming & OpenAI Client Version)
+Tests reasoning and function calling capabilities deterministically.
+"""
+
+import json
+import re
+import pytest
+from pytest_html import extras as extras_html
+from typing import Dict, Any, List
+from openai import OpenAI
+
+# ===========================
+# CONFIGURATION
+# ===========================
+# Point to your vLLM instance
+
+MODELS = {
+    "Llama 3.2 1B base": {
+        "url": "https://akeelaf-2022--llama-3-2-1b-base-serve.modal.run/v1/",
+        "name": "unsloth/Llama-3.2-1B-Instruct-bnb-4bit",
+    },
+    # "Llama 3.2 3B base": "",
+    "Llama 3.2 3B lora": {
+        "url": "https://akeelaf-2022--llama-3-2-3b-lora-serve.modal.run/v1/",
+        "name": "hellstone1918/Llama-3.2-3B-basic-lora-model",
+    },
+}
+
+
+CLIENT = OpenAI(
+    base_url=MODELS['Llama 3.2 1B base']['url'],
+    api_key="token-not-needed-for-local-vllm" 
+)
+MODEL_NAME = MODELS['Llama 3.2 1B base']['name'] # The client often auto-detects, but good to specify
+IS_STREAMING = False
+
+class TestDataLoader:
+    """Loads and manages test data"""
+    
+    def __init__(self, dataset_path: str = "test_dataset.json"):
+        with open(dataset_path, 'r') as f:
+            self.data = json.load(f)
+    
+    def get_reasoning_tests(self) -> List[Dict]:
+        return self.data.get("reasoning", [])
+    
+    def get_function_calling_tests(self) -> List[Dict]:
+        return self.data.get("function_calling", [])
+
+class ModelInterface:
+    """Handles communication with the LLM via OpenAI Client"""
+    
+    @staticmethod
+    def query(messages: List[Dict[str, str]], temperature: float = 0.0) -> str:
+        """
+        Query the model and handle both streaming and non-streaming responses.
+        Returns the fully accumulated string content.
+        """
+        try:
+            response = CLIENT.chat.completions.create(
+                model=MODEL_NAME,
+                messages=messages,
+                temperature=temperature,
+                stream=IS_STREAMING
+            )
+            
+            if IS_STREAMING:
+                # Accumulate the stream chunks
+                full_content = ""
+                for chunk in response:
+                    if chunk.choices[0].delta.content:
+                        full_content += chunk.choices[0].delta.content
+                return full_content
+            else:
+                # Handle standard response
+                return response.choices[0].message.content
+
+        except Exception as e:
+            pytest.fail(f"API Request Error: {str(e)}")
+
+class TextMatcher:
+    """Utility for matching text deterministically"""
+    
+    @staticmethod
+    def normalize(text: str) -> str:
+        """Normalize text for comparison (lower, strip punctuation/whitespace)"""
+        if not text: return ""
+        text = text.lower()
+        text = re.sub(r'\s+', ' ', text)
+        text = re.sub(r'[.,!?;:\"\'\`]', '', text)
+        return text.strip()
+    
+    @staticmethod
+    def contains(haystack: str, needle: str) -> bool:
+        return TextMatcher.normalize(needle) in TextMatcher.normalize(haystack)
+    
+    @staticmethod
+    def extract_json(text: str) -> Dict[str, Any]:
+        """Extract JSON from text, handling markdown blocks"""
+        # 1. Try finding markdown JSON block
+        match = re.search(r'``````', text, re.DOTALL)
+        json_str = match.group(1) if match else None
+        
+        # 2. If no block, try finding the first outer bracket pair
+        if not json_str:
+            match = re.search(r'\{.*\}', text, re.DOTALL)
+            json_str = match.group(0) if match else None
+            
+        if not json_str:
+            raise ValueError("No JSON structure found in response")
+            
+        try:
+            return json.loads(json_str)
+        except json.JSONDecodeError as e:
+            raise ValueError(f"Invalid JSON syntax: {e}")
+
+# Initialize Loader
+loader = TestDataLoader()
+
+# ===========================
+# TEST FIXTURES
+# ===========================
+
+@pytest.fixture(scope="session", autouse=True)
+def verify_connection():
+    """Check API connection before starting tests"""
+    try:
+        CLIENT.models.list()
+    except Exception as e:
+        pytest.exit(f"CRITICAL: Cannot connect to vLLM at {CLIENT.base_url}. Error: {e}")
+
+# ===========================
+# REASONING TESTS
+# ===========================
+
+@pytest.mark.reasoning
+@pytest.mark.parametrize("test_case", loader.get_reasoning_tests(), 
+                         ids=lambda x: f"{x['category'][:3]}_{x['expected_answer']}")
+def test_reasoning(test_case: Dict[str, Any], extras):
+    prompt = test_case["prompt"]
+    expected = test_case["expected_answer"]
+    
+    messages = [{"role": "user", "content": prompt}]
+    
+    # Get full response (accumulated from stream)
+    response = ModelInterface.query(messages)
+
+    # --- SAVE FULL RESPONSE FOR REVIEW ---
+    # This adds a 'Raw Response' block to the HTML report for this test case
+    extras.append(extras_html.text(response, name="Raw LLM Response"))
+    extras.append(extras_html.text(json.dumps(messages, indent=2), name="Input Messages"))
+    # -------------------------------------
+    
+    assert TextMatcher.contains(response, expected), \
+        f"\nExpected: '{expected}'\nGot: '{response}'\nPrompt: {prompt}"
+
+# ===========================
+# FUNCTION CALLING TESTS
+# ===========================
+
+@pytest.mark.function_calling
+@pytest.mark.parametrize("test_case", loader.get_function_calling_tests(),
+                         ids=lambda x: f"{x['category'][:3]}_{x['expected_function']}")
+def test_function_calling(test_case: Dict[str, Any], extras):
+    system_prompt = test_case["system_prompt"]
+    user_prompt = test_case["prompt"]
+    expected_func = test_case["expected_function"]
+    required_keys = test_case["required_keys"]
+    
+    messages = [
+        {"role": "system", "content": system_prompt},
+        {"role": "user", "content": user_prompt}
+    ]
+    
+    # Get full response
+    response = ModelInterface.query(messages)
+
+    # --- SAVE FULL RESPONSE FOR REVIEW ---
+    extras.append(extras_html.text(response, name="Raw LLM Response"))
+    extras.append(extras_html.text(json.dumps(messages, indent=2), name="Input Messages"))
+    # -------------------------------------
+    
+    # Parse JSON
+    try:
+        result = TextMatcher.extract_json(response)
+    except ValueError as e:
+        pytest.fail(f"JSON Parsing Failed: {e}\nResponse Content: {response}")
+    
+    # Validate Function Name
+    actual_func = result.get("function")
+    assert actual_func == expected_func, \
+        f"\nWrong Function Called.\nExpected: {expected_func}\nGot: {actual_func}\nFull Response: {response}"
+    
+    # Validate Keys
+    missing_keys = [k for k in required_keys if k not in result]
+    assert not missing_keys, \
+        f"\nMissing JSON Keys: {missing_keys}\nExpected: {required_keys}\nGot Keys: {list(result.keys())}"
+
+if __name__ == "__main__":
+    pytest.main([__file__, "-v", "--html=report.html", "--self-contained-html"])
+
+# Run 
+# uv run pytest tests.py -v --html=<report path>.html
+# add -n <number of parallel processes> if you'd like

@@ -1,0 +1,14 @@
+{"function": "search_web", "query": "machine learning tutorials", "max_results": "10"}
+
+Here are 10 machine learning tutorials:
+
+1. **Machine Learning Tutorial by Google Cloud**: A comprehensive tutorial on machine learning with Python, covering topics like supervised and unsupervised learning, neural networks, and deep learning.
+2. **Python Machine Learning Tutorial by DataCamp**: A interactive tutorial that covers the basics of machine learning with Python, including supervised and unsupervised learning, clustering, and dimensionality reduction.
+3. **Machine Learning with Scikit-Learn Tutorial by Kaggle**: A tutorial that covers the basics of scikit-learn, a popular machine learning library in Python, including supervised and unsupervised learning, classification, and regression.
+4. **Deep Learning Tutorial by Towards Data Science**: A tutorial that covers the basics of deep learning with Python, including convolutional neural networks (CNNs), recurrent neural networks (RNNs), and long short-term memory (LSTM) networks.
+5. **Machine Learning with TensorFlow Tutorial by TensorFlow**: A tutorial that covers the basics of TensorFlow, a popular open-source machine learning library in Python, including supervised and unsupervised learning, neural networks, and deep learning.
+6. **Machine Learning for Beginners Tutorial by edX**: A tutorial that covers the basics of machine learning with Python, including supervised and unsupervised learning, classification, and regression, using a simple example.
+7. **Python Machine Learning Tutorial by Data Science Handbook**: A tutorial that covers the basics of machine learning with Python, including supervised and unsupervised learning, classification, and regression, using a simple example.
+8. **Machine Learning with PyTorch Tutorial by PyTorch**: A tutorial that covers the basics of PyTorch, a popular open-source machine learning library in Python, including supervised and unsupervised learning, neural networks, and deep learning.
+9. **Machine Learning Tutorial by MIT OpenCourseWare**: A tutorial that covers the basics of machine learning with Python, including supervised and unsupervised learning, classification, and regression, using a simple example.
+10. **Machine Learning with Keras Tutorial by Keras**: A tutorial that covers the basics of Keras, a popular open-source machine learning library in Python, including supervised and unsupervised learning, neural networks, and deep learning.

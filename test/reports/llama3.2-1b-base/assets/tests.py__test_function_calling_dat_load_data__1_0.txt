@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "Data warehouse manager. Functions:\n- create_table: Creates table. Format: {\"function\": \"create_table\", \"name\": string, \"schema\": dict, \"partition_key\": string}\n- load_data: Loads data. Format: {\"function\": \"load_data\", \"source\": string, \"destination\": string, \"format\": string}\n- optimize_table: Optimizes storage. Format: {\"function\": \"optimize_table\", \"table\": string, \"operation\": string}\n- create_index: Creates index. Format: {\"function\": \"create_index\", \"table\": string, \"columns\": list, \"index_type\": string}\nJSON."
+  },
+  {
+    "role": "user",
+    "content": "Load data from s3://bucket/data.csv to analytics_db.sales in parquet format"
+  }
+]

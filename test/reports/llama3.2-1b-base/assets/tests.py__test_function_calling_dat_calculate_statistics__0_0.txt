@@ -1,0 +1,9 @@
+```json
+{
+    "function": "calculate_statistics",
+    "dataset": "sales_data",
+    "metrics": ["mean", "median"]
+}
+```
+
+This will calculate the mean and median of the sales data in the `sales_data` dataset.

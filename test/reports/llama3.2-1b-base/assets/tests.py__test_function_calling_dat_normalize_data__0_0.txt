@@ -1,0 +1,78 @@
+Here's an example of how you can use the `normalize_data` function to normalize the 'salary' and 'experience' columns in a dataset.
+
+```json
+"function": "normalize_data",
+"columns": ["salary", "experience"],
+"method": "min-max"
+```
+
+This will normalize the 'salary' and 'experience' columns to a range between 0 and 1, which is a common range for these types of data.
+
+Here's an example of how you can use this function in Python:
+
+```python
+import pandas as pd
+import numpy as np
+
+# Load the dataset
+df = pd.read_csv("your_data.csv")
+
+# Define the columns to be normalized
+columns_to_normalize = ["salary", "experience"]
+
+# Normalize the columns
+df[columns_to_normalize] = df[columns_to_normalize].apply(lambda x: (x - x.min()) / (x.max() - x.min()))
+
+# Print the normalized dataset
+print(df)
+```
+
+This code will load a dataset from a CSV file, define the columns to be normalized, and then normalize the columns using the min-max method. The normalized dataset will be printed to the console.
+
+Here's an example of how you can use this function in a function to detect outliers:
+
+```python
+import pandas as pd
+import numpy as np
+
+def detect_outliers(df, column, method="z-score"):
+    """
+    Detect outliers in a column of a dataset.
+
+    Parameters:
+    df (DataFrame): The dataset to be analyzed.
+    column (str): The column to be analyzed.
+    method (str, optional): The method to be used for outlier detection. Defaults to "z-score".
+
+    Returns:
+    DataFrame: The dataset with outliers detected.
+    """
+    # Normalize the column
+    df[column] = df[column].apply(lambda x: (x - x.min()) / (x.max() - x.min()))
+
+    # Detect outliers
+    if method == "z-score":
+        df[column] = np.abs(df[column] - df[column].mean())
+    elif method == "m5":
+        df[column] = np.abs(df[column] - df[column].mean())
+    elif method == "iqr":
+        df[column] = np.abs(df[column] - df[column].mean())
+    else:
+        raise ValueError("Invalid method. Please use 'z-score', 'm5', or 'iqr'.")
+
+    # Detect outliers
+    df[column] = df[column].apply(lambda x: x[x > 3]))
+
+    return df
+
+# Load the dataset
+df = pd.read_csv("your_data.csv")
+
+# Detect outliers
+df = detect_outliers(df, "salary", method="iqr")
+
+# Print the dataset with outliers
+print(df)
+```
+
+This code will load a dataset from a CSV file, detect outliers in the 'salary' column using the iqr method, and then print the dataset with outliers.

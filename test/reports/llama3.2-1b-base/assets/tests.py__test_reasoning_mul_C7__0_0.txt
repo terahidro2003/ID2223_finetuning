@@ -1,0 +1,11 @@
+The correct answer is C) Mitochondria.
+
+The mitochondria is often referred to as the "powerhouse" of the cell because it generates most of the cell's supply of adenosine triphosphate (ATP), which is used as a source of chemical energy. The mitochondria is responsible for producing energy for the cell through a process called cellular respiration.
+
+The other options are not correct because:
+
+* The nucleus (A) is the control center of the cell where DNA is stored and where the cell's genetic information is managed.
+* Ribosomes (B) are small organelles found throughout the cell where protein synthesis occurs.
+* Chloroplasts (D) are organelles found in plant cells where photosynthesis occurs, converting light energy into chemical energy.
+
+It's worth noting that the mitochondria is not just a single organelle, but rather a complex structure made up of many mitochondria that work together to generate energy for the cell.
