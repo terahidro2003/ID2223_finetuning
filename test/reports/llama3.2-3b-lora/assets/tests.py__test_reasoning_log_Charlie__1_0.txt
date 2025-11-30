@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "If Alice is taller than Bob, and Bob is taller than Charlie, who is the shortest?"
+  }
+]

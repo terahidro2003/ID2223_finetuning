@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "Security admin. Functions:\n- scan_vulnerabilities: Scans for vulnerabilities. Format: {\"function\": \"scan_vulnerabilities\", \"target\": string, \"scan_type\": string}\n- apply_patch: Applies security patch. Format: {\"function\": \"apply_patch\", \"system\": string, \"patch_id\": string, \"schedule\": string}\n- configure_firewall: Configures firewall. Format: {\"function\": \"configure_firewall\", \"rule\": string, \"action\": string, \"priority\": number}\n- audit_logs: Reviews logs. Format: {\"function\": \"audit_logs\", \"service\": string, \"time_range\": string, \"filter\": string}\nJSON."
+  },
+  {
+    "role": "user",
+    "content": "Configure firewall to block traffic from 192.168.1.0/24 with priority 10"
+  }
+]

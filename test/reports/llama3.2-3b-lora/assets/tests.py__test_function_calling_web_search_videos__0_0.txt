@@ -1,0 +1,40 @@
+Here's an example of how you can use the `search_videos` function to search for Python programming videos with long duration and HD quality:
+
+```json
+{
+  "function": "search_videos",
+  "query": "Python programming",
+  "duration": "long",
+  "quality": "HD"
+}
+```
+
+This will return a list of videos that match the specified criteria. You can then use the `find_podcasts` function to filter the results based on other criteria, such as topic, language, or limit.
+
+If you want to search for videos with specific keywords, you can modify the `query` parameter to include those keywords. For example:
+
+```json
+{
+  "function": "search_videos",
+  "query": "Python programming, Python 3, Python tutorials",
+  "duration": "long",
+  "quality": "HD"
+}
+```
+
+This will return a list of videos that contain the specified keywords.
+
+You can also use the `search_videos` function to search for videos with specific features, such as 3D graphics or live coding. For example:
+
+```json
+{
+  "function": "search_videos",
+  "query": "Python programming, 3D graphics, live coding",
+  "duration": "long",
+  "quality": "HD"
+}
+```
+
+This will return a list of videos that contain the specified features.
+
+Note that the `duration` and `quality` parameters are case-sensitive, so make sure to use the correct case when specifying these parameters.

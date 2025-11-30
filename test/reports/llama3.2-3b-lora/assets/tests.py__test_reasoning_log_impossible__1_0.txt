@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "In a race, you passed the person in last place. What position are you in now? Is this possible or impossible?"
+  }
+]

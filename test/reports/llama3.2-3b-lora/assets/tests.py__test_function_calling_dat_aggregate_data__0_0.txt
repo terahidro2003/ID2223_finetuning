@@ -1,0 +1,40 @@
+Here's an example of how you can use the `aggregate_data` function to aggregate sales by region using the sum operation:
+
+```json
+{
+  "function": "aggregate_data",
+  "table": "sales",
+  "group_by": "region",
+  "operation": "sum"
+}
+```
+
+In this example, the `aggregate_data` function is used to aggregate the data in the `sales` table by the `region` column, and the `sum` operation is used to calculate the total sales for each region.
+
+Here's a brief explanation of the parameters:
+
+* `table`: The name of the table to aggregate.
+* `group_by`: The column to group the data by.
+* `operation`: The operation to perform on the grouped data. In this case, it's `sum`, which means the total sales for each region will be calculated.
+
+Note that the `aggregate_data` function will return a JSON object with the aggregated data, where each key is a unique value in the `region` column, and the value is the total sales for that region.
+
+For example, if the `sales` table contains the following data:
+
+| region | sales |
+| --- | --- |
+| North | 100 |
+| South | 200 |
+| East | 300 |
+| West | 400 |
+
+The `aggregate_data` function will return the following JSON object:
+
+```json
+{
+  "North": 100,
+  "South": 200,
+  "East": 300,
+  "West": 400
+}
+```

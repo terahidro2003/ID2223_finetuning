@@ -1,0 +1,5 @@
+In a race, if you passed the person in last place, that means you are now ahead of them.
+
+Since there are only two people in this scenario, you are now in the last place position, and the person you passed is in the second-to-last place position.
+
+So, the answer is: you are now in the last place position.

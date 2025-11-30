@@ -1,0 +1,85 @@
+Here's an example of how you can implement the `search_tweets` function in JavaScript:
+
+```javascript
+const Twitter = require('twitter');
+
+function search_tweets(keyword, count, language) {
+  const client = new Twitter({
+    consumer_key: 'your_consumer_key',
+    consumer_secret: 'your_consumer_secret',
+    access_token: 'your_access_token',
+    access_token_secret: 'your_access_token_secret',
+  });
+
+  const params = {
+    q: keyword,
+    count: count,
+    lang: language,
+  };
+
+  client.get('search/tweets', params, (error, tweets, response) => {
+    if (error) {
+      console.error(error);
+    } else {
+      console.log(tweets);
+    }
+  });
+}
+
+// Example usage:
+search_tweets('AI revolution', 50, 'en');
+```
+
+This function uses the Twitter API to search for tweets with the specified keyword, count, and language. The `q` parameter is used to specify the search query, `count` is used to limit the number of tweets returned, and `lang` is used to specify the language of the tweets.
+
+Please note that you need to replace `'your_consumer_key'`, `'your_consumer_secret'`, `'your_access_token'`, and `'your_access_token_secret'` with your actual Twitter API credentials.
+
+Also, this is a basic example. You may want to add error handling and other features depending on your specific use case.
+
+Here's a more advanced version of the function that returns the tweets in JSON format:
+
+```javascript
+function search_tweets(keyword, count, language) {
+  const client = new Twitter({
+    consumer_key: 'your_consumer_key',
+    consumer_secret: 'your_consumer_secret',
+    access_token: 'your_access_token',
+    access_token_secret: 'your_access_token_secret',
+  });
+
+  const params = {
+    q: keyword,
+    count: count,
+    lang: language,
+  };
+
+  client.get('search/tweets', params, (error, tweets, response) => {
+    if (error) {
+      console.error(error);
+    } else {
+      const tweetData = tweets.statuses.map((tweet) => {
+        return {
+          id: tweet.id_str,
+          text: tweet.text,
+          user: {
+            id: tweet.user.id_str,
+            name: tweet.user.name,
+            screen_name: tweet.user.screen_name,
+          },
+        };
+      });
+
+      const jsonData = {
+        tweets: tweetData,
+      };
+
+      console.log(JSON.stringify(jsonData, null, 2));
+    }
+  });
+}
+
+// Example usage:
+search_tweets('AI revolution', 50, 'en');
+```
+
+This version of the function maps the tweets to a JSON object with the required properties, and then logs the JSON data to the console.

@@ -1,0 +1,53 @@
+Here's an example of how you can analyze the sentiment of the text 'This product is amazing!' using the VaderSentiment model in Python:
+
+```python
+import json
+from nltk.sentiment.vader import SentimentIntensityAnalyzer
+
+def analyze_sentiment(text, model):
+    """
+    Analyzes the sentiment of a given text using the specified model.
+
+    Args:
+        text (str): The text to analyze.
+        model (str): The sentiment model to use.
+
+    Returns:
+        dict: A dictionary containing the sentiment scores.
+    """
+    if model == "vader":
+        # Initialize the SentimentIntensityAnalyzer
+        sia = SentimentIntensityAnalyzer()
+        
+        # Analyze the sentiment of the text
+        sentiment_scores = sia.polarity_scores(text)
+        
+        # Return the sentiment scores
+        return sentiment_scores
+    else:
+        # If the model is not recognized, return an error message
+        return {"error": "Model not recognized"}
+
+# Example usage
+text = "This product is amazing!"
+model = "vader"
+
+sentiment_scores = analyze_sentiment(text, model)
+print(sentiment_scores)
+```
+
+This code defines a function `analyze_sentiment` that takes in a text and a model as input, and returns a dictionary containing the sentiment scores. The function uses the `SentimentIntensityAnalyzer` from the `nltk.sentiment.vader` module to analyze the sentiment of the text.
+
+When you run this code, it will print out the sentiment scores for the text 'This product is amazing!'. The sentiment scores are:
+
+*   `pos`: The proportion of text that falls in the positive sentiment category.
+*   `neg`: The proportion of text that falls in the negative sentiment category.
+*   `neu`: The proportion of text that falls in the neutral sentiment category.
+*   `compound`: A sum of all the lexicon ratings which have been normalized between -1(most extreme negative) and +1 (most extreme positive).
+
+In this case, the sentiment scores for the text 'This product is amazing!' are:
+
+*   `pos`: 0.75
+*   `neg`: 0.0
+*   `neu`: 0.25
+*   `compound`: 0.75

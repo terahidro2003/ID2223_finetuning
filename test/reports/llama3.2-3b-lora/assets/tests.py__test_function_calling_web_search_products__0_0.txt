@@ -1,0 +1,12 @@
+Here's an example of how you can use the `search_products` function to search for laptops in the electronics category with a maximum price of 1500:
+
+```json
+{
+  "function": "search_products",
+  "query": "laptop",
+  "category": "electronics",
+  "max_price": 1500
+}
+```
+
+This JSON object specifies the function to call, the query to search for ("laptop"), the category to search in ("electronics"), and the maximum price to filter the results by (1500).

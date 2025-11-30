@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "Smart home assistant with these tools:\n- water_plants: Irrigates plants. Format: {\"function\": \"water_plants\", \"zone\": string, \"duration\": number}\n- adjust_ac: Controls AC. Format: {\"function\": \"adjust_ac\", \"mode\": string, \"temperature\": number}\n- open_garage: Opens garage door. Format: {\"function\": \"open_garage\", \"door_number\": number}\n- set_scene: Activates scene. Format: {\"function\": \"set_scene\", \"scene_name\": string, \"rooms\": list}\nJSON output only."
+  },
+  {
+    "role": "user",
+    "content": "Activate movie scene in living room and bedroom"
+  }
+]

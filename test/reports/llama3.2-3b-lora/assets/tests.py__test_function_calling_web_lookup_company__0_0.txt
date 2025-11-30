@@ -1,0 +1,9 @@
+```json
+{
+  "function": "lookup_company",
+  "company_name": "Tesla, Inc.",
+  "fields": ["revenue", "employees"]
+}
+```
+
+This JSON object is formatted according to the provided specification. It includes the function to be executed, the company name, and the specific fields to be retrieved.

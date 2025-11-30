@@ -1,0 +1,12 @@
+Here's an example of how you can configure the network using the provided function:
+
+```json
+{
+  "function": "configure_network",
+  "vpc_id": "vpc-12345",
+  "subnet": "10.0.1.0/24",
+  "internet_gateway": true
+}
+```
+
+This JSON object specifies the function to use (`configure_network`), the VPC ID (`vpc-12345`), the subnet (`10.0.1.0/24`), and whether to enable the internet gateway (`true`).

@@ -1,0 +1,108 @@
+Here's an example of how you can clean the `user_data` dataset using Python and the pandas library:
+
+```python
+import pandas as pd
+
+def clean_dataset(dataset, operations):
+    # Remove duplicates
+    dataset = dataset.drop_duplicates()
+    
+    # Handle nulls
+    dataset = dataset.fillna(dataset.mean())
+    
+    # Return the cleaned dataset
+    return dataset
+
+# Load the user_data dataset
+user_data = pd.read_csv('user_data.csv')
+
+# Clean the dataset
+cleaned_data = clean_dataset(user_data, [])
+
+# Print the cleaned dataset
+print(cleaned_data)
+```
+
+However, if you want to implement the cleaning operations in a more modular way, you can use the following code:
+
+```python
+import pandas as pd
+
+def remove_duplicates(dataset):
+    """Remove duplicates from the dataset."""
+    return dataset.drop_duplicates()
+
+def handle_nulls(dataset):
+    """Handle nulls in the dataset by filling them with the mean of the column."""
+    return dataset.fillna(dataset.mean())
+
+def clean_dataset(dataset):
+    """Clean the dataset by removing duplicates and handling nulls."""
+    cleaned_data = remove_duplicates(dataset)
+    cleaned_data = handle_nulls(cleaned_data)
+    return cleaned_data
+
+# Load the user_data dataset
+user_data = pd.read_csv('user_data.csv')
+
+# Clean the dataset
+cleaned_data = clean_dataset(user_data)
+
+# Print the cleaned dataset
+print(cleaned_data)
+```
+
+You can also use the following code to clean the dataset in a more functional programming style:
+
+```python
+import pandas as pd
+
+def clean_dataset(dataset):
+    """Clean the dataset by removing duplicates and handling nulls."""
+    return dataset.drop_duplicates().fillna(dataset.mean())
+
+# Load the user_data dataset
+user_data = pd.read_csv('user_data.csv')
+
+# Clean the dataset
+cleaned_data = clean_dataset(user_data)
+
+# Print the cleaned dataset
+print(cleaned_data)
+```
+
+You can also use the following code to clean the dataset in a more object-oriented style:
+
+```python
+import pandas as pd
+
+class DataCleaner:
+    def __init__(self, dataset):
+        self.dataset = dataset
+
+    def remove_duplicates(self):
+        """Remove duplicates from the dataset."""
+        return self.dataset.drop_duplicates()
+
+    def handle_nulls(self):
+        """Handle nulls in the dataset by filling them with the mean of the column."""
+        return self.dataset.fillna(self.dataset.mean())
+
+    def clean_dataset(self):
+        """Clean the dataset by removing duplicates and handling nulls."""
+        cleaned_data = self.remove_duplicates()
+        cleaned_data = self.handle_nulls()
+        return cleaned_data
+
+# Load the user_data dataset
+user_data = pd.read_csv('user_data.csv')
+
+# Create a DataCleaner object
+cleaner = DataCleaner(user_data)
+
+# Clean the dataset
+cleaned_data = cleaner.clean_dataset()
+
+# Print the cleaned dataset
+print(cleaned_data)
+```

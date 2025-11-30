@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "Birds are flying south in October in the Northern Hemisphere. What are they doing?"
+  }
+]

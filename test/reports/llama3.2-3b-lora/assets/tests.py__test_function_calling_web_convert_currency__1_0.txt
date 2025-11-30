@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "Knowledge base assistant. Functions:\n- query_wikipedia: Queries Wikipedia. Format: {\"function\": \"query_wikipedia\", \"topic\": string, \"language\": string}\n- get_stock_price: Gets stock price. Format: {\"function\": \"get_stock_price\", \"symbol\": string, \"exchange\": string}\n- calculate_distance: Calculates distance. Format: {\"function\": \"calculate_distance\", \"origin\": string, \"destination\": string, \"unit\": string}\n- convert_currency: Converts currency. Format: {\"function\": \"convert_currency\", \"amount\": number, \"from_currency\": string, \"to_currency\": string}\nJSON."
+  },
+  {
+    "role": "user",
+    "content": "Convert 100 USD to EUR"
+  }
+]

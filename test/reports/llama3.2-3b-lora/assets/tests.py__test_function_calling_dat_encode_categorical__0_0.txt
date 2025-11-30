@@ -1,0 +1,14 @@
+Here's an example of how you can one-hot encode the category and region columns using the ML data toolkit:
+
+```json
+{
+  "function": "encode_categorical",
+  "columns": [
+    "category",
+    "region"
+  ],
+  "encoding_type": "one-hot"
+}
+```
+
+This will create new columns for each category and region, with a binary value (1 or 0) indicating whether the data point belongs to that category or region.

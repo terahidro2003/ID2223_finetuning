@@ -1,0 +1,26 @@
+Here's an example of how you can configure the firewall to block traffic from 192.168.1.0/24 with a priority of 10:
+
+```json
+{
+  "function": "configure_firewall",
+  "rule": "block_traffic_from_1921681",
+  "action": "deny",
+  "priority": 10
+}
+```
+
+In this example, the `rule` is set to `block_traffic_from_1921681`, which can be used to identify the specific traffic rule. The `action` is set to `deny`, which means that traffic from the specified IP range will be blocked. The `priority` is set to 10, which means that this rule will be evaluated before other rules with lower priorities.
+
+You can also include additional information in the rule, such as the IP range to block, like this:
+
+```json
+{
+  "function": "configure_firewall",
+  "rule": "block_traffic_from_1921681",
+  "action": "deny",
+  "priority": 10,
+  "source_ip_range": "192.168.1.0/24"
+}
+```
+
+This way, you can specify the exact IP range to block, making the rule more specific and effective.

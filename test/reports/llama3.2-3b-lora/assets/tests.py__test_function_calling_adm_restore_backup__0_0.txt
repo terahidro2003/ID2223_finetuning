@@ -1,0 +1,12 @@
+Here's an example of how you can use the `restore_backup` function to restore the backup `backup_20241130` to the `test-db` database with verification:
+
+```json
+{
+  "function": "restore_backup",
+  "backup_id": "backup_20241130",
+  "target": "test-db",
+  "verify": true
+}
+```
+
+This JSON object specifies the function to call, the backup ID to restore, the target database to restore to, and whether to verify the integrity of the backup after restoration.

@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "Two trains are 100 miles apart, heading toward each other at 50 mph each. A bird flies at 75 mph between them until they meet. How far does the bird fly?"
+  }
+]

@@ -1,0 +1,11 @@
+Here's an example of how you can set a budget alert using the provided functions:
+
+```json
+{
+  "function": "set_budget_alert",
+  "threshold": 1000,
+  "notification_email": "admin@company.com"
+}
+```
+
+This JSON object represents the data needed to set a budget alert with a threshold of $1000 and notification to `admin@company.com`.

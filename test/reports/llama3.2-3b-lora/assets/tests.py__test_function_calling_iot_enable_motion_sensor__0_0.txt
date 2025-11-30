@@ -1,0 +1,9 @@
+Here's the JSON output:
+
+```
+{
+  "function": "enable_motion_sensor",
+  "sensor_id": "hallway",
+  "sensitivity": 8
+}
+```

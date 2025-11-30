@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "Remove one letter from 'STARTLED' to make a word meaning 'tasted'. What letter?"
+  }
+]

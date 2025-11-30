@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "A farmer wants to cross a river with a fox, chicken, and bag of grain. The boat holds only him and one item. Fox eats chicken, chicken eats grain if left alone. Can he get all across? Answer Yes or No."
+  }
+]

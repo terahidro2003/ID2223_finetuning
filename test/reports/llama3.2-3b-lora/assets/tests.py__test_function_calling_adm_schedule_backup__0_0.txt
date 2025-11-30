@@ -1,0 +1,19 @@
+Here's an example of how you can schedule daily backups for customer-data with 30 day retention using the provided tools:
+
+```json
+{
+  "function": "schedule_backup",
+  "resource": "customer-data",
+  "frequency": "daily",
+  "retention": 30
+}
+```
+
+This JSON object specifies the following:
+
+- `function`: The function to use for scheduling the backup, which is `schedule_backup`.
+- `resource`: The resource to be backed up, which is `customer-data`.
+- `frequency`: The frequency at which the backup should be performed, which is `daily`.
+- `retention`: The number of days to retain the backup, which is 30.
+
+This will schedule daily backups for the customer-data with a 30 day retention period.

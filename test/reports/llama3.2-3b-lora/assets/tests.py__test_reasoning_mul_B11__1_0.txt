@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "Which design pattern ensures a class has only one instance? A) Factory B) Singleton C) Observer D) Strategy"
+  }
+]

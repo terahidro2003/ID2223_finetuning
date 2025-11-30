@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "What does CPU stand for? A) Central Processing Unit B) Computer Personal Unit C) Central Program Utility D) Core Processing Utility"
+  }
+]

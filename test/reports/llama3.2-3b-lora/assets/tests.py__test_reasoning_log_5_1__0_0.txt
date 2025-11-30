@@ -1,0 +1,5 @@
+If 5 machines can make 5 widgets in 5 minutes, it means that each machine can make 1 widget in 5 minutes.
+
+If we have 100 machines, it would take each machine 5 minutes to make 1 widget. Since there are 100 machines, it would still take 5 minutes for each machine to make its widget.
+
+So, the answer is 5 minutes.

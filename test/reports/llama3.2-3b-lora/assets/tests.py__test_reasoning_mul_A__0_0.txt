@@ -1,0 +1,3 @@
+The correct answer is A) Central Processing Unit.
+
+The Central Processing Unit (CPU) is the primary component of a computer that performs calculations and executes instructions. It is the brain of the computer, responsible for executing most instructions that a computer receives.

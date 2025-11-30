@@ -1,0 +1,12 @@
+Here's a JSON request to search for books titled 'Sapiens' by Yuval Noah Harari in the non-fiction genre:
+
+```json
+{
+  "function": "search_books",
+  "title": "Sapiens",
+  "author": "Yuval Noah Harari",
+  "genre": "non-fiction"
+}
+```
+
+This request uses the `search_books` function to search for books with the title 'Sapiens', written by Yuval Noah Harari, and in the non-fiction genre.

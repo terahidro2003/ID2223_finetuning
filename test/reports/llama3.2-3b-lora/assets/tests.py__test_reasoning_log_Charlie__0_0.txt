@@ -1,0 +1,10 @@
+Based on the information provided, we can conclude that:
+
+1. Alice is taller than Bob.
+2. Bob is taller than Charlie.
+
+From these statements, we can infer that:
+
+- Alice is taller than Charlie (since Alice is taller than Bob, and Bob is taller than Charlie).
+
+Therefore, Charlie is the shortest.

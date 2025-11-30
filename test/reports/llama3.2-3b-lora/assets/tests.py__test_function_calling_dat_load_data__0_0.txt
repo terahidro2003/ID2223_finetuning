@@ -1,0 +1,12 @@
+Here's an example of how you can load data from S3 into a parquet format using the `load_data` function:
+
+```json
+{
+  "function": "load_data",
+  "source": "s3://bucket/data.csv",
+  "destination": "analytics_db.sales",
+  "format": "parquet"
+}
+```
+
+This JSON object specifies the `load_data` function, the source data in S3, the destination table in the database, and the parquet format.

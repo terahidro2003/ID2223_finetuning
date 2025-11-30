@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "CI/CD pipeline manager. Functions:\n- trigger_build: Triggers build. Format: {\"function\": \"trigger_build\", \"project\": string, \"branch\": string, \"parameters\": dict}\n- run_tests: Runs tests. Format: {\"function\": \"run_tests\", \"suite\": string, \"parallel\": boolean}\n- deploy_artifact: Deploys artifact. Format: {\"function\": \"deploy_artifact\", \"artifact_id\": string, \"environment\": string, \"rollback_enabled\": boolean}\n- rollback_deployment: Rolls back. Format: {\"function\": \"rollback_deployment\", \"deployment_id\": string, \"target_version\": string}\nJSON."
+  },
+  {
+    "role": "user",
+    "content": "Trigger build for frontend-app on main branch with debug parameters"
+  }
+]

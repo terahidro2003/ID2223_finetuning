@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "Data processing engine. Functions:\n- clean_dataset: Cleans data. Format: {\"function\": \"clean_dataset\", \"dataset\": string, \"operations\": list}\n- detect_outliers: Finds outliers. Format: {\"function\": \"detect_outliers\", \"column\": string, \"method\": string}\n- impute_missing: Fills missing values. Format: {\"function\": \"impute_missing\", \"column\": string, \"strategy\": string}\n- normalize_data: Normalizes data. Format: {\"function\": \"normalize_data\", \"columns\": list, \"method\": string}\nJSON response."
+  },
+  {
+    "role": "user",
+    "content": "Clean the user_data dataset by removing duplicates and handling nulls"
+  }
+]

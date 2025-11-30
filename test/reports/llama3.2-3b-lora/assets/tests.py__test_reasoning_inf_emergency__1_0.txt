@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "A car has its hazard lights blinking on the side of the highway. What can you infer about the situation?"
+  }
+]

@@ -1,0 +1,11 @@
+The correct answer is B) Merge Sort.
+
+Merge Sort is a divide-and-conquer algorithm that splits the input array into two halves, recursively sorts each half, and then merges the two sorted halves. Its average time complexity is O(n log n), making it one of the most efficient sorting algorithms.
+
+Merge Sort is often used in practice because it has a number of desirable properties:
+
+* It is relatively simple to implement.
+* It has a good balance between time and space complexity.
+* It is stable, meaning that it preserves the order of equal elements.
+
+While other algorithms like Quick Sort and Heap Sort also have an average time complexity of O(n log n), Merge Sort is often preferred in practice due to its stability and simplicity.

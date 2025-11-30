@@ -1,0 +1,11 @@
+Here's the JSON output for the `unlock_door` function:
+
+```json
+{
+  "function": "unlock_door",
+  "door_id": "back_door",
+  "temporary": true
+}
+```
+
+This will temporarily unlock the back door.

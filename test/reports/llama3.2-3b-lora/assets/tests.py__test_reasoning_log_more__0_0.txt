@@ -1,0 +1,31 @@
+To calculate the probability that at least two people share a birthday in a group of 23 people, we can use the complementary probability, i.e., the probability that no two people share a birthday.
+
+Assuming birthdays are evenly distributed throughout the year, there are 365 possible birthdays (ignoring February 29th for simplicity). The probability that the first person has a unique birthday is 365/365 = 1.
+
+The probability that the second person has a unique birthday (different from the first person's birthday) is 364/365.
+
+The probability that the third person has a unique birthday (different from the first two people's birthdays) is 363/365.
+
+We can continue this process until the 23rd person. The probability that all 23 people have unique birthdays is:
+
+(365/365) × (364/365) × (363/365) × ... × ((365-22)/365)
+
+This is a product of 23 fractions, and we can simplify it as:
+
+(365/365) × (364/365) × (363/365) × ... × (43/365)
+
+= (365 × 364 × 363 × ... × 43) / (365^23)
+
+Using a calculator or software, we can compute this value:
+
+≈ 0.5074
+
+This means that the probability that no two people share a birthday is approximately 50.74%.
+
+Since the probability of at least two people sharing a birthday is the complement of this value, we can subtract it from 1:
+
+1 - 0.5074 ≈ 0.4926
+
+So, the probability that at least two people share a birthday in a group of 23 people is approximately 49.26%.
+
+This is less than 50%.

@@ -1,0 +1,12 @@
+Here's an example of how you can calculate the Pearson correlation between temperature and sales using the provided tools:
+
+```json
+{
+  "function": "calculate_correlation",
+  "x": "temperature",
+  "y": "sales",
+  "method": "pearson"
+}
+```
+
+This will return the Pearson correlation coefficient between the temperature and sales series.
