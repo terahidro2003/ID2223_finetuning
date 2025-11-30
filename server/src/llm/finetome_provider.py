@@ -2,21 +2,36 @@
 from typing import List, Dict, Iterator, Optional
 from .base import BaseLLMProvider
 from openai import OpenAI
-
-
+import httpx, json
 
 class FineTomeProvider(BaseLLMProvider):
     """Finetuned on FineTome LLM provider"""
     
     MODELS = {
-        "mini": "unsloth/Llama-3.2-1B-Instruct-bnb-4bit",
-        "standard": "some other model name to another deployment",
+        "Llama 3.2 1B base": {
+            "path": "unsloth/Llama-3.2-1B-Instruct-bnb-4bit",
+            "client": None
+        },
+        "Llama 3.2 3B base": {
+            "path": "unsloth/Llama-3.2-3B-Instruct-bnb-4bit",
+            "client": None
+        },
+        "Llama 3.2 3B lora": {
+            "path": "hellstone1918/Llama-3.2-3B-basic-lora-model",
+            "client": None
+        },
     }
     
     def __init__(self, api_url: Optional[str] = None, **kwargs):
         super().__init__(api_url=api_url, **kwargs)
         if api_url:
-            self.client = OpenAI(base_url=api_url, api_key="EMPTY TO INITIALIZE WITHOUT FAILURE")
+
+            for url in api_url.split(','):
+                for model in self.MODELS:
+                    if model.replace(' ', '-').replace('.', '-').lower() in url:
+                        base_url=url.strip('/ ') + '/v1/'
+                        self.MODELS[model]["client"] = OpenAI(base_url=base_url, api_key="EMPTY TO INITIALIZE WITHOUT FAILURE")
+                    
         else:
             self.client = None
     
@@ -28,7 +43,7 @@ class FineTomeProvider(BaseLLMProvider):
         return False
     
     def get_available_models(self) -> List[str]:
-        return list(self.MODELS.keys())
+        return [model for model in self.MODELS if self.MODELS[model]["client"]]
     
     def chat(
         self,
@@ -40,8 +55,8 @@ class FineTomeProvider(BaseLLMProvider):
         **kwargs
     ) -> str | Iterator[str]:
         try:
-            response = self.client.chat.completions.create(
-                model=self.MODELS[model],
+            response = self.MODELS[model]["client"].chat.completions.create(
+                model=self.MODELS[model]["path"],
                 messages=messages,
                 temperature=temperature,
                 max_tokens=max_tokens,

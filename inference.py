@@ -44,7 +44,10 @@ vllm_image = (
 # ## Download the model weights
 # A single H100 GPU has enough VRAM to store an 8,000,000,000 parameter model,
 
-MODEL_NAME = "unsloth/Llama-3.2-1B-Instruct-bnb-4bit"
+DEPLOYMENT_NAME = "Llama-3.2-3B-lora"
+MODEL_NAME = "unsloth/Llama-3.2-3B-Instruct-bnb-4bit"
+LORA_NAME = "hellstone1918/Llama-3.2-3B-basic-lora-model"
+
 # MODEL_REVISION = "220b46e3b2180893580a4454f21f22d3ebb187d3"  # avoid nasty surprises when repos update!
 
 # Although vLLM will download weights from Hugging Face on-demand,
@@ -89,18 +92,20 @@ FAST_BOOT = True
 # once the model is spun up and the `serve` function returns.
 
 
-app = modal.App("inference")
+app = modal.App(DEPLOYMENT_NAME)
 
 N_GPU = 1
-MINUTES = 60  # seconds
+MINUTES = 5
 VLLM_PORT = 8000
 
 
 @app.function(
     image=vllm_image,
     gpu=f"T4:{N_GPU}",
-    scaledown_window=15 * MINUTES,  # how long should we stay up with no requests?
-    timeout=10 * MINUTES,  # how long should we wait for container start?
+    enable_memory_snapshot=True,
+    experimental_options={"enable_gpu_snapshot": True},
+    scaledown_window=60 * MINUTES,  # how long should we stay up with no requests?
+    timeout=120 * MINUTES,  # how long should we wait for container start?
     volumes={
         "/root/.cache/model": model_cache_vol,
         "/root/.cache/vllm": vllm_cache_vol,
@@ -109,7 +114,7 @@ VLLM_PORT = 8000
 @modal.concurrent(  # how many requests can one replica handle? tune carefully!
     max_inputs=8
 )
-@modal.web_server(port=VLLM_PORT, startup_timeout=10 * MINUTES)
+@modal.web_server(port=VLLM_PORT, startup_timeout=120 * MINUTES)
 def serve():
     import subprocess
 
@@ -118,16 +123,20 @@ def serve():
         "serve",
         "--uvicorn-log-level=info",
         MODEL_NAME,
-        # "--revision",
-        # MODEL_REVISION,
         "--served-model-name",
-        MODEL_NAME,
+        LORA_NAME if LORA_NAME else MODEL_NAME,
         "llm",
-        "--host",
-        "0.0.0.0",
-        "--port",
-        str(VLLM_PORT),
+        "--host", "0.0.0.0",
+        "--port", str(VLLM_PORT),
+        "--max-model-len", "32768"
     ]
+
+    if LORA_NAME:
+        cmd.extend([
+            "--enable-lora",
+            f"""--lora-modules '{{"name": "finetome100k", "path": "{LORA_NAME}", "base_model_name": "{MODEL_NAME}"}}'""",
+            "--max-lora-rank", "32"
+        ])
 
     # enforce-eager disables both Torch compilation and CUDA graph capture
     # default is no-enforce-eager. see the --compilation-config flag for tighter control
