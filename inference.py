@@ -105,14 +105,14 @@ VLLM_PORT = 8000
     enable_memory_snapshot=True,
     experimental_options={"enable_gpu_snapshot": True},
     scaledown_window=60 * MINUTES,  # how long should we stay up with no requests?
-    timeout=120 * MINUTES,  # how long should we wait for container start?
+    timeout=60 * MINUTES,  # how long should we wait for container start?
     volumes={
         "/root/.cache/model": model_cache_vol,
         "/root/.cache/vllm": vllm_cache_vol,
     },
 )
 @modal.concurrent(  # how many requests can one replica handle? tune carefully!
-    max_inputs=8
+    max_inputs=16
 )
 @modal.web_server(port=VLLM_PORT, startup_timeout=120 * MINUTES)
 def serve():
@@ -128,7 +128,8 @@ def serve():
         "llm",
         "--host", "0.0.0.0",
         "--port", str(VLLM_PORT),
-        "--max-model-len", "32768"
+        "--max-model-len", "16384",
+        "--gpu-memory-utilization", "0.92",
     ]
 
     if LORA_NAME:
