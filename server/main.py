@@ -36,7 +36,7 @@ def format_search_results(results: Dict) -> str:
         md += f"**{idx}. [{result['title']}]({result['url']})**\n\n"
         if result.get("query_used"):
             md += f"*Via: {result['query_used']}*\n\n"
-        md += f"{result['content'][:250]}...\n\n"
+        md += f"{result['content']}\n\n"
         if idx < len(results["results"]):
             md += "---\n\n"
     
@@ -116,12 +116,22 @@ def respond(
     
     # Add search context
     if search_results and search_results.get("results"):
-        context = "Web search results:\n\n"
-        for idx, result in enumerate(search_results["results"][:5], 1):
-            context += f"{idx}. {result['title']}\n"
+        context = "A web search was conducted with the following results:\n\n"
+
+        total_context_results = 0
+        idx = 0
+        while total_context_results <= 5 and idx < len(search_results["results"]):
+            result = search_results["results"][idx]
+            if not result['content']:
+                idx += 1
+                continue
+
+            context += f"{total_context_results + 1}. {result['title']}\n"
             context += f"   {result['url']}\n"
-            context += f"   {result['content'][:300]}...\n\n"
-        context += "\nUse this information to answer. Cite sources when appropriate."
+            context += f"   {result['content']}...\n\n"
+            total_context_results += 1
+        
+        context += "\nYou MUST use the above information to answer as they are GUARANTEED to be more correct with latest information. Cite sources when appropriate."
         
         messages.append({"role": "system", "content": context})
     

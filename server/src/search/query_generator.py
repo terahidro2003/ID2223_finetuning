@@ -102,8 +102,9 @@ When uncertain, default to 'YES'.
                 temperature=0,
                 max_tokens=10
             )
-            
-            return response.strip().upper() == "YES"
+
+            print(f"Should query? [{response.strip().upper()}]")
+            return "YES" in response.strip().upper() 
             
         except:
             return False

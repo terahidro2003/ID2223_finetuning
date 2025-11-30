@@ -2,6 +2,7 @@
 from typing import List, Dict
 import requests, os
 from ddgs import DDGS
+from trafilatura import fetch_url, extract
 
 
 class DuckDuckGoSearcher:
@@ -48,18 +49,17 @@ class DuckDuckGoSearcher:
                     "url": r.get("href", ""),
                 })
 
+            total_errors = 0
             for idx, result in enumerate(formatted_results):
+                try:
+                    print(f"Attempting to check[{result['url']}]")
+                    formatted_results[idx]['content'] = extract(fetch_url(result['url']), output_format="markdown")
+                except Exception as e:
+                    formatted_results[idx]['error'] = str(e)
+                    total_errors += 1
+            
+            if total_errors == len(formatted_results): raise ValueError("No valid results returned.")
 
-                headers = {
-                    "Content-Type": "application/json",
-                    "Accept": "application/json",
-                    "X-Retain-Images": "none",
-                    "X-Return-Format": "markdown",
-                }
-                if self.jina_api_key: headers["Authorization"] = self.jina_api_key
-            
-                formatted_results[idx]['content'] = requests.get("https://r.jina.ai/" + result['url'], headers=headers).json()['data']
-            
             return {"results": formatted_results}
             
         except Exception as e:
