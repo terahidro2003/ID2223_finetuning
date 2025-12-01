@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "Two fathers and two sons go fishing. They each catch one fish. Only 3 fish are caught total. How is this possible? The answer involves a generational relationship."
+  }
+]

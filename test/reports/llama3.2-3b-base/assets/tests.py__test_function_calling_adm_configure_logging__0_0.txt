@@ -1,0 +1,18 @@
+Here's an example of how you can configure logging for the payment-service at the INFO level with 90-day retention using the provided tools:
+
+```json
+{
+  "function": "configure_logging",
+  "service": "payment-service",
+  "level": "INFO",
+  "retention_days": 90
+}
+```
+
+This JSON object calls the `configure_logging` function with the following parameters:
+
+- `service`: The name of the service, which is `payment-service`.
+- `level`: The logging level, which is `INFO`.
+- `retention_days`: The number of days to retain log files, which is 90.
+
+This configuration will enable logging at the INFO level for the payment-service and retain log files for 90 days.

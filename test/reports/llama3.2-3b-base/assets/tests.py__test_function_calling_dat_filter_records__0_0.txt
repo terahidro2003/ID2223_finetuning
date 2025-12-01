@@ -1,0 +1,11 @@
+Here's how you can filter the orders table where the status equals 'completed' using the `filter_records` function:
+
+```json
+{
+  "function": "filter_records",
+  "table": "orders",
+  "condition": "status = 'completed'"
+}
+```
+
+This JSON object specifies the `filter_records` function to be applied to the `orders` table, with the condition that the `status` column should be equal to 'completed'.

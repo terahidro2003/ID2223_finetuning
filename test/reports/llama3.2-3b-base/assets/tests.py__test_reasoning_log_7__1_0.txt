@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "A bookshelf has 5 shelves. Each shelf can hold 7 books. If 28 books are already on the shelves, how many more books can fit?"
+  }
+]

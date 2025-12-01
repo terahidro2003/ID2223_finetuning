@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "The ground is wet but it didn't rain last night and no sprinklers were on. What is the most likely explanation?"
+  }
+]

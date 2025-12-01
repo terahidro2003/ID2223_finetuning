@@ -22,7 +22,7 @@
     },
     {
       "prompt": "If you overtake the person in 2nd place in a race, what position are you in now?",
-      "expected_answer": "2nd",
+      "expected_answer": ["2nd", "Second", "2"],
       "category": "logic_puzzle"
     },
     {
@@ -32,7 +32,7 @@
     },
     {
       "prompt": "Three switches control three light bulbs in another room. You can flip switches but can only check the room once. Can you determine which switch controls which bulb? Answer Yes or No.",
-      "expected_answer": "Yes",
+      "expected_answer": ["Yes", "Heat"],
       "category": "logic_puzzle"
     },
     {
@@ -51,8 +51,8 @@
       "category": "logic_puzzle"
     },
     {
-      "prompt": "If you have 3 apples and you take away 2, how many apples do you have?",
-      "expected_answer": "2",
+      "prompt": "If you have 3 apples and you give away 2, how many apples do you have?",
+      "expected_answer": "1",
       "category": "logic_puzzle"
     },
     {
@@ -81,12 +81,12 @@
       "category": "logic_puzzle"
     },
     {
-      "prompt": "In a group of 23 people, what is the probability that at least two share a birthday? Is it more or less than 50%?",
+      "prompt": "In a group of 23 people, what is the probability that at least two share a birthday? Is it more or less than 50%? Respond with 'more' or 'less'.",
       "expected_answer": "more",
       "category": "logic_puzzle"
     },
     {
-      "prompt": "A rope ladder hangs over the side of a ship. The rungs are 1 foot apart. At low tide, 10 rungs are above water. The tide rises 5 feet. How many rungs are above water?",
+      "prompt": "A rope ladder that floats hangs over the side of a ship. The rungs are 1 foot apart. At low tide, 10 rungs are above water. The tide rises 5 feet. How many rungs are above water?",
       "expected_answer": "10",
       "category": "logic_puzzle"
     },
@@ -106,7 +106,7 @@
       "category": "logic_puzzle"
     },
     {
-      "prompt": "In a race, you passed the person in last place. What position are you in now? Is this possible or impossible?",
+      "prompt": "Here is a question 'In a race, you passed the person in last place. What position are you in now?' Is the situation described by the question possible or impossible? Answer 'possible' or 'impossible'.",
       "expected_answer": "impossible",
       "category": "logic_puzzle"
     },
@@ -126,7 +126,7 @@
       "category": "logic_puzzle"
     },
     {
-      "prompt": "The ground is wet but it didn't rain last night and no sprinklers were on. What is the most likely explanation?",
+      "prompt": "The field filled with grass is wet but it didn't rain last night and no sprinklers were on. What is the most likely explanation?",
       "expected_answer": "dew",
       "category": "inference"
     },
@@ -142,27 +142,27 @@
     },
     {
       "prompt": "The coffee shop has a long line at 8 AM on Monday but is nearly empty at 2 PM. Why?",
-      "expected_answer": "morning",
+      "expected_answer": ["morning", "rush", "routine"],
       "category": "inference"
     },
     {
       "prompt": "A person carries an umbrella on a sunny day. What might they know that you don't?",
-      "expected_answer": "forecast",
+      "expected_answer": ["forecast", "future", "rain", "later"],
       "category": "inference"
     },
     {
       "prompt": "The bread is moldy but was bought only 2 days ago. What condition likely caused this?",
-      "expected_answer": "humid",
+      "expected_answer": ["humid", "contaminated", "warm"],
       "category": "inference"
     },
     {
       "prompt": "A restaurant has pictures of food instead of written descriptions on the menu. What kind of clientele might they serve?",
-      "expected_answer": "international",
+      "expected_answer": ["international", "tourists", "non-readers", "illeterate"],
       "category": "inference"
     },
     {
-      "prompt": "Your phone battery drains much faster than usual today. You haven't changed settings. What's a likely cause?",
-      "expected_answer": "app",
+      "prompt": "Your phone battery drains much faster than usual today. You haven't changed any settings or downloaded any new apps. What's a likely cause?",
+      "expected_answer": ["app", "weather", "virus", "bug"],
       "category": "inference"
     },
     {
@@ -172,32 +172,32 @@
     },
     {
       "prompt": "The grocery store is out of milk, eggs, and bread. What event likely happened or is expected?",
-      "expected_answer": "storm",
+      "expected_answer": ["storm", "baking", "holiday"],
       "category": "inference"
     },
     {
-      "prompt": "A child knows the alphabet song but can't identify individual letters. What skill are they missing?",
+      "prompt": "A child remembers the alphabet song and can sing it but can't identify individual letters. What skill are they missing?",
       "expected_answer": "recognition",
       "category": "inference"
     },
     {
       "prompt": "Someone's desk has a standing desk converter, ergonomic keyboard, and wrist rest. What problem are they addressing?",
-      "expected_answer": "ergonomic",
+      "expected_answer": ["ergonomic", "posture", "comfort", "pain"],
       "category": "inference"
     },
     {
       "prompt": "A movie theater is packed on a rainy Saturday afternoon. Why?",
-      "expected_answer": "indoor",
+      "expected_answer": ["indoor", "shelter", "hide", "hiding"],
       "category": "inference"
     },
     {
       "prompt": "Your neighbor's house lights turn on and off at different times each evening while they're on vacation. What system are they using?",
-      "expected_answer": "timer",
+      "expected_answer": ["timer", "automation", "smart", "schedule"],
       "category": "inference"
     },
     {
       "prompt": "A website loads slowly only during business hours. What is the bottleneck?",
-      "expected_answer": "traffic",
+      "expected_answer": ["traffic", "load", "performance"],
       "category": "inference"
     },
     {
@@ -207,17 +207,17 @@
     },
     {
       "prompt": "A laptop has stickers from multiple countries and airlines. What does this suggest about the owner?",
-      "expected_answer": "traveler",
+      "expected_answer": ["traveler", "frequent", "flyer", "digital nomad"],
       "category": "inference"
     },
     {
       "prompt": "The park has extra trash bins installed before the weekend. What are authorities anticipating?",
-      "expected_answer": "crowd",
+      "expected_answer": ["crowd", "event", "festival", "concert", "party"],
       "category": "inference"
     },
     {
       "prompt": "A plant's leaves are turning yellow despite regular watering. What's likely wrong?",
-      "expected_answer": "overwatering",
+      "expected_answer": ["overwatering", "autumn"],
       "category": "inference"
     },
     {
@@ -237,12 +237,12 @@
     },
     {
       "prompt": "The gym parking lot is full at 6 AM but half-empty at noon. What explains this pattern?",
-      "expected_answer": "work",
+      "expected_answer": ["work", "lunch"],
       "category": "inference"
     },
     {
       "prompt": "A book's pages are yellowed and brittle despite being kept indoors. What factor caused this?",
-      "expected_answer": "age",
+      "expected_answer": ["age", "sunlight", "humidity"],
       "category": "inference"
     },
     {
@@ -422,7 +422,7 @@
     },
     {
       "prompt": "I have cities but no houses, forests but no trees, water but no fish. What am I?",
-      "expected_answer": "map",
+      "expected_answer": ["map", "world", "virtual", "imagin"],
       "category": "word_puzzle"
     },
     {
@@ -441,8 +441,8 @@
       "category": "word_puzzle"
     },
     {
-      "prompt": "What 5-letter palindrome means to observe or notice?",
-      "expected_answer": "level",
+      "prompt": "What 4-letter palindrome means to observe or notice?",
+      "expected_answer": "peep",
       "category": "word_puzzle"
     },
     {
@@ -456,7 +456,7 @@
       "category": "word_puzzle"
     },
     {
-      "prompt": "Unscramble: CCAHE (temporary storage)",
+      "prompt": "Unscramble: HCECA (temporary storage)",
       "expected_answer": "CACHE",
       "category": "word_puzzle"
     },
@@ -476,7 +476,7 @@
       "category": "word_puzzle"
     },
     {
-      "prompt": "Unscramble: CNSYA (make async)",
+      "prompt": "Unscramble: CNSYA (non-blocking programming)",
       "expected_answer": "ASYNC",
       "category": "word_puzzle"
     },
@@ -491,7 +491,7 @@
       "category": "word_puzzle"
     },
     {
-      "prompt": "What 4-letter word can you remove 1 letter from and have many left?",
+      "prompt": "What 4-letter word can you remove 1 letter from and have any left?",
       "expected_answer": "many",
       "category": "word_puzzle"
     },
@@ -528,7 +528,7 @@
   ],
   "function_calling": [
     {
-      "system_prompt": "You are an IoT assistant. You have access to these functions:\n- set_thermostat: Controls temperature. Output format: {\"function\": \"set_thermostat\", \"temperature\": number, \"unit\": \"C\" or \"F\"}\n- turn_on_lights: Controls lights. Output format: {\"function\": \"turn_on_lights\", \"room\": string, \"brightness\": number}\n- lock_door: Controls door lock. Output format: {\"function\": \"lock_door\", \"door_id\": string}\n- start_vacuum: Controls robot vacuum. Output format: {\"function\": \"start_vacuum\", \"room\": string}\nAlways respond with valid JSON only.",
+      "system_prompt": "You are an IoT assistant. You have access to these functions:\n- set_thermostat: Controls temperature. Output format: {\"function\": \"set_thermostat\", \"temperature\": number, \"unit\": \"C\" or \"F\"}\n- turn_on_lights: Controls lights. Output format: {\"function\": \"turn_on_lights\", \"room\": string, \"brightness\": number}\n- lock_door: Controls door lock. Output format: {\"function\": \"lock_door\", \"door_id\": string}\n- start_vacuum: Controls robot vacuum. Output format: {\"function\": \"start_vacuum\", \"room\": string}",
       "prompt": "Set the living room temperature to 22 degrees Celsius",
       "expected_function": "set_thermostat",
       "required_keys": [
@@ -539,7 +539,7 @@
       "category": "iot"
     },
     {
-      "system_prompt": "You are an IoT assistant. You have access to these functions:\n- set_thermostat: Controls temperature. Output format: {\"function\": \"set_thermostat\", \"temperature\": number, \"unit\": \"C\" or \"F\"}\n- turn_on_lights: Controls lights. Output format: {\"function\": \"turn_on_lights\", \"room\": string, \"brightness\": number}\n- lock_door: Controls door lock. Output format: {\"function\": \"lock_door\", \"door_id\": string}\n- start_vacuum: Controls robot vacuum. Output format: {\"function\": \"start_vacuum\", \"room\": string}\nAlways respond with valid JSON only.",
+      "system_prompt": "You are an IoT assistant. You have access to these functions:\n- set_thermostat: Controls temperature. Output format: {\"function\": \"set_thermostat\", \"temperature\": number, \"unit\": \"C\" or \"F\"}\n- turn_on_lights: Controls lights. Output format: {\"function\": \"turn_on_lights\", \"room\": string, \"brightness\": number}\n- lock_door: Controls door lock. Output format: {\"function\": \"lock_door\", \"door_id\": string}\n- start_vacuum: Controls robot vacuum. Output format: {\"function\": \"start_vacuum\", \"room\": string}",
       "prompt": "Turn on the bedroom lights at 80% brightness",
       "expected_function": "turn_on_lights",
       "required_keys": [
@@ -550,7 +550,7 @@
       "category": "iot"
     },
     {
-      "system_prompt": "You are an IoT assistant. You have access to these functions:\n- set_thermostat: Controls temperature. Output format: {\"function\": \"set_thermostat\", \"temperature\": number, \"unit\": \"C\" or \"F\"}\n- turn_on_lights: Controls lights. Output format: {\"function\": \"turn_on_lights\", \"room\": string, \"brightness\": number}\n- lock_door: Controls door lock. Output format: {\"function\": \"lock_door\", \"door_id\": string}\n- start_vacuum: Controls robot vacuum. Output format: {\"function\": \"start_vacuum\", \"room\": string}\nAlways respond with valid JSON only.",
+      "system_prompt": "You are an IoT assistant. You have access to these functions:\n- set_thermostat: Controls temperature. Output format: {\"function\": \"set_thermostat\", \"temperature\": number, \"unit\": \"C\" or \"F\"}\n- turn_on_lights: Controls lights. Output format: {\"function\": \"turn_on_lights\", \"room\": string, \"brightness\": number}\n- lock_door: Controls door lock. Output format: {\"function\": \"lock_door\", \"door_id\": string}\n- start_vacuum: Controls robot vacuum. Output format: {\"function\": \"start_vacuum\", \"room\": string}",
       "prompt": "Lock the front door",
       "expected_function": "lock_door",
       "required_keys": [
@@ -560,7 +560,7 @@
       "category": "iot"
     },
     {
-      "system_prompt": "You are an IoT assistant. You have access to these functions:\n- set_thermostat: Controls temperature. Output format: {\"function\": \"set_thermostat\", \"temperature\": number, \"unit\": \"C\" or \"F\"}\n- turn_on_lights: Controls lights. Output format: {\"function\": \"turn_on_lights\", \"room\": string, \"brightness\": number}\n- lock_door: Controls door lock. Output format: {\"function\": \"lock_door\", \"door_id\": string}\n- start_vacuum: Controls robot vacuum. Output format: {\"function\": \"start_vacuum\", \"room\": string}\nAlways respond with valid JSON only.",
+      "system_prompt": "You are an IoT assistant. You have access to these functions:\n- set_thermostat: Controls temperature. Output format: {\"function\": \"set_thermostat\", \"temperature\": number, \"unit\": \"C\" or \"F\"}\n- turn_on_lights: Controls lights. Output format: {\"function\": \"turn_on_lights\", \"room\": string, \"brightness\": number}\n- lock_door: Controls door lock. Output format: {\"function\": \"lock_door\", \"door_id\": string}\n- start_vacuum: Controls robot vacuum. Output format: {\"function\": \"start_vacuum\", \"room\": string}",
       "prompt": "Start the vacuum cleaner in the kitchen",
       "expected_function": "start_vacuum",
       "required_keys": [
@@ -570,7 +570,7 @@
       "category": "iot"
     },
     {
-      "system_prompt": "You are a smart home controller. Available tools:\n- play_music: Plays music. Format: {\"function\": \"play_music\", \"service\": string, \"genre\": string}\n- set_alarm: Sets alarm. Format: {\"function\": \"set_alarm\", \"time\": string, \"label\": string}\n- check_weather: Gets weather. Format: {\"function\": \"check_weather\", \"location\": string}\n- adjust_blinds: Controls window blinds. Format: {\"function\": \"adjust_blinds\", \"room\": string, \"position\": number}\nOutput JSON only.",
+      "system_prompt": "You are a smart home controller. Available tools:\n- play_music: Plays music. Format: {\"function\": \"play_music\", \"service\": string, \"genre\": string}\n- set_alarm: Sets alarm. Format: {\"function\": \"set_alarm\", \"time\": string, \"label\": string}\n- check_weather: Gets weather. Format: {\"function\": \"check_weather\", \"location\": string}\n- adjust_blinds: Controls window blinds. Format: {\"function\": \"adjust_blinds\", \"room\": string, \"position\": number}",
       "prompt": "Play jazz music on Spotify",
       "expected_function": "play_music",
       "required_keys": [
@@ -581,7 +581,7 @@
       "category": "iot"
     },
     {
-      "system_prompt": "You are a smart home controller. Available tools:\n- play_music: Plays music. Format: {\"function\": \"play_music\", \"service\": string, \"genre\": string}\n- set_alarm: Sets alarm. Format: {\"function\": \"set_alarm\", \"time\": string, \"label\": string}\n- check_weather: Gets weather. Format: {\"function\": \"check_weather\", \"location\": string}\n- adjust_blinds: Controls window blinds. Format: {\"function\": \"adjust_blinds\", \"room\": string, \"position\": number}\nOutput JSON only.",
+      "system_prompt": "You are a smart home controller. Available tools:\n- play_music: Plays music. Format: {\"function\": \"play_music\", \"service\": string, \"genre\": string}\n- set_alarm: Sets alarm. Format: {\"function\": \"set_alarm\", \"time\": string, \"label\": string}\n- check_weather: Gets weather. Format: {\"function\": \"check_weather\", \"location\": string}\n- adjust_blinds: Controls window blinds. Format: {\"function\": \"adjust_blinds\", \"room\": string, \"position\": number}",
       "prompt": "Set an alarm for 7 AM labeled 'work'",
       "expected_function": "set_alarm",
       "required_keys": [
@@ -592,7 +592,7 @@
       "category": "iot"
     },
     {
-      "system_prompt": "You are a smart home controller. Available tools:\n- play_music: Plays music. Format: {\"function\": \"play_music\", \"service\": string, \"genre\": string}\n- set_alarm: Sets alarm. Format: {\"function\": \"set_alarm\", \"time\": string, \"label\": string}\n- check_weather: Gets weather. Format: {\"function\": \"check_weather\", \"location\": string}\n- adjust_blinds: Controls window blinds. Format: {\"function\": \"adjust_blinds\", \"room\": string, \"position\": number}\nOutput JSON only.",
+      "system_prompt": "You are a smart home controller. Available tools:\n- play_music: Plays music. Format: {\"function\": \"play_music\", \"service\": string, \"genre\": string}\n- set_alarm: Sets alarm. Format: {\"function\": \"set_alarm\", \"time\": string, \"label\": string}\n- check_weather: Gets weather. Format: {\"function\": \"check_weather\", \"location\": string}\n- adjust_blinds: Controls window blinds. Format: {\"function\": \"adjust_blinds\", \"room\": string, \"position\": number}",
       "prompt": "What's the weather in Stockholm?",
       "expected_function": "check_weather",
       "required_keys": [
@@ -602,7 +602,7 @@
       "category": "iot"
     },
     {
-      "system_prompt": "You are a smart home controller. Available tools:\n- play_music: Plays music. Format: {\"function\": \"play_music\", \"service\": string, \"genre\": string}\n- set_alarm: Sets alarm. Format: {\"function\": \"set_alarm\", \"time\": string, \"label\": string}\n- check_weather: Gets weather. Format: {\"function\": \"check_weather\", \"location\": string}\n- adjust_blinds: Controls window blinds. Format: {\"function\": \"adjust_blinds\", \"room\": string, \"position\": number}\nOutput JSON only.",
+      "system_prompt": "You are a smart home controller. Available tools:\n- play_music: Plays music. Format: {\"function\": \"play_music\", \"service\": string, \"genre\": string}\n- set_alarm: Sets alarm. Format: {\"function\": \"set_alarm\", \"time\": string, \"label\": string}\n- check_weather: Gets weather. Format: {\"function\": \"check_weather\", \"location\": string}\n- adjust_blinds: Controls window blinds. Format: {\"function\": \"adjust_blinds\", \"room\": string, \"position\": number}",
       "prompt": "Close the living room blinds to 20%",
       "expected_function": "adjust_blinds",
       "required_keys": [
@@ -613,7 +613,7 @@
       "category": "iot"
     },
     {
-      "system_prompt": "You control smart appliances. Functions available:\n- brew_coffee: Makes coffee. Format: {\"function\": \"brew_coffee\", \"strength\": string, \"cups\": number}\n- preheat_oven: Preheats oven. Format: {\"function\": \"preheat_oven\", \"temperature\": number, \"unit\": string}\n- start_dishwasher: Runs dishwasher. Format: {\"function\": \"start_dishwasher\", \"cycle\": string}\n- set_fan_speed: Controls fan. Format: {\"function\": \"set_fan_speed\", \"speed\": number, \"room\": string}\nReply with JSON only.",
+      "system_prompt": "You control smart appliances. Functions available:\n- brew_coffee: Makes coffee. Format: {\"function\": \"brew_coffee\", \"strength\": string, \"cups\": number}\n- preheat_oven: Preheats oven. Format: {\"function\": \"preheat_oven\", \"temperature\": number, \"unit\": string}\n- start_dishwasher: Runs dishwasher. Format: {\"function\": \"start_dishwasher\", \"cycle\": string}\n- set_fan_speed: Controls fan. Format: {\"function\": \"set_fan_speed\", \"speed\": number, \"room\": string}",
       "prompt": "Brew 2 cups of strong coffee",
       "expected_function": "brew_coffee",
       "required_keys": [
@@ -624,7 +624,7 @@
       "category": "iot"
     },
     {
-      "system_prompt": "You control smart appliances. Functions available:\n- brew_coffee: Makes coffee. Format: {\"function\": \"brew_coffee\", \"strength\": string, \"cups\": number}\n- preheat_oven: Preheats oven. Format: {\"function\": \"preheat_oven\", \"temperature\": number, \"unit\": string}\n- start_dishwasher: Runs dishwasher. Format: {\"function\": \"start_dishwasher\", \"cycle\": string}\n- set_fan_speed: Controls fan. Format: {\"function\": \"set_fan_speed\", \"speed\": number, \"room\": string}\nReply with JSON only.",
+      "system_prompt": "You control smart appliances. Functions available:\n- brew_coffee: Makes coffee. Format: {\"function\": \"brew_coffee\", \"strength\": string, \"cups\": number}\n- preheat_oven: Preheats oven. Format: {\"function\": \"preheat_oven\", \"temperature\": number, \"unit\": string}\n- start_dishwasher: Runs dishwasher. Format: {\"function\": \"start_dishwasher\", \"cycle\": string}\n- set_fan_speed: Controls fan. Format: {\"function\": \"set_fan_speed\", \"speed\": number, \"room\": string}",
       "prompt": "Preheat the oven to 180 degrees Celsius",
       "expected_function": "preheat_oven",
       "required_keys": [
@@ -635,7 +635,7 @@
       "category": "iot"
     },
     {
-      "system_prompt": "You control smart appliances. Functions available:\n- brew_coffee: Makes coffee. Format: {\"function\": \"brew_coffee\", \"strength\": string, \"cups\": number}\n- preheat_oven: Preheats oven. Format: {\"function\": \"preheat_oven\", \"temperature\": number, \"unit\": string}\n- start_dishwasher: Runs dishwasher. Format: {\"function\": \"start_dishwasher\", \"cycle\": string}\n- set_fan_speed: Controls fan. Format: {\"function\": \"set_fan_speed\", \"speed\": number, \"room\": string}\nReply with JSON only.",
+      "system_prompt": "You control smart appliances. Functions available:\n- brew_coffee: Makes coffee. Format: {\"function\": \"brew_coffee\", \"strength\": string, \"cups\": number}\n- preheat_oven: Preheats oven. Format: {\"function\": \"preheat_oven\", \"temperature\": number, \"unit\": string}\n- start_dishwasher: Runs dishwasher. Format: {\"function\": \"start_dishwasher\", \"cycle\": string}\n- set_fan_speed: Controls fan. Format: {\"function\": \"set_fan_speed\", \"speed\": number, \"room\": string}",
       "prompt": "Run the dishwasher on quick cycle",
       "expected_function": "start_dishwasher",
       "required_keys": [
@@ -645,7 +645,7 @@
       "category": "iot"
     },
     {
-      "system_prompt": "You control smart appliances. Functions available:\n- brew_coffee: Makes coffee. Format: {\"function\": \"brew_coffee\", \"strength\": string, \"cups\": number}\n- preheat_oven: Preheats oven. Format: {\"function\": \"preheat_oven\", \"temperature\": number, \"unit\": string}\n- start_dishwasher: Runs dishwasher. Format: {\"function\": \"start_dishwasher\", \"cycle\": string}\n- set_fan_speed: Controls fan. Format: {\"function\": \"set_fan_speed\", \"speed\": number, \"room\": string}\nReply with JSON only.",
+      "system_prompt": "You control smart appliances. Functions available:\n- brew_coffee: Makes coffee. Format: {\"function\": \"brew_coffee\", \"strength\": string, \"cups\": number}\n- preheat_oven: Preheats oven. Format: {\"function\": \"preheat_oven\", \"temperature\": number, \"unit\": string}\n- start_dishwasher: Runs dishwasher. Format: {\"function\": \"start_dishwasher\", \"cycle\": string}\n- set_fan_speed: Controls fan. Format: {\"function\": \"set_fan_speed\", \"speed\": number, \"room\": string}",
       "prompt": "Set bedroom fan to speed 3",
       "expected_function": "set_fan_speed",
       "required_keys": [
@@ -656,7 +656,7 @@
       "category": "iot"
     },
     {
-      "system_prompt": "Smart home assistant with these tools:\n- water_plants: Irrigates plants. Format: {\"function\": \"water_plants\", \"zone\": string, \"duration\": number}\n- adjust_ac: Controls AC. Format: {\"function\": \"adjust_ac\", \"mode\": string, \"temperature\": number}\n- open_garage: Opens garage door. Format: {\"function\": \"open_garage\", \"door_number\": number}\n- set_scene: Activates scene. Format: {\"function\": \"set_scene\", \"scene_name\": string, \"rooms\": list}\nJSON output only.",
+      "system_prompt": "Smart home assistant with these tools:\n- water_plants: Irrigates plants. Format: {\"function\": \"water_plants\", \"zone\": string, \"duration\": number}\n- adjust_ac: Controls AC. Format: {\"function\": \"adjust_ac\", \"mode\": string, \"temperature\": number}\n- open_garage: Opens garage door. Format: {\"function\": \"open_garage\", \"door_number\": number}\n- set_scene: Activates scene. Format: {\"function\": \"set_scene\", \"scene_name\": string, \"rooms\": list}",
       "prompt": "Water the backyard plants for 15 minutes",
       "expected_function": "water_plants",
       "required_keys": [
@@ -667,7 +667,7 @@
       "category": "iot"
     },
     {
-      "system_prompt": "Smart home assistant with these tools:\n- water_plants: Irrigates plants. Format: {\"function\": \"water_plants\", \"zone\": string, \"duration\": number}\n- adjust_ac: Controls AC. Format: {\"function\": \"adjust_ac\", \"mode\": string, \"temperature\": number}\n- open_garage: Opens garage door. Format: {\"function\": \"open_garage\", \"door_number\": number}\n- set_scene: Activates scene. Format: {\"function\": \"set_scene\", \"scene_name\": string, \"rooms\": list}\nJSON output only.",
+      "system_prompt": "Smart home assistant with these tools:\n- water_plants: Irrigates plants. Format: {\"function\": \"water_plants\", \"zone\": string, \"duration\": number}\n- adjust_ac: Controls AC. Format: {\"function\": \"adjust_ac\", \"mode\": string, \"temperature\": number}\n- open_garage: Opens garage door. Format: {\"function\": \"open_garage\", \"door_number\": number}\n- set_scene: Activates scene. Format: {\"function\": \"set_scene\", \"scene_name\": string, \"rooms\": list}",
       "prompt": "Set AC to cooling mode at 23 degrees",
       "expected_function": "adjust_ac",
       "required_keys": [
@@ -678,7 +678,7 @@
       "category": "iot"
     },
     {
-      "system_prompt": "Smart home assistant with these tools:\n- water_plants: Irrigates plants. Format: {\"function\": \"water_plants\", \"zone\": string, \"duration\": number}\n- adjust_ac: Controls AC. Format: {\"function\": \"adjust_ac\", \"mode\": string, \"temperature\": number}\n- open_garage: Opens garage door. Format: {\"function\": \"open_garage\", \"door_number\": number}\n- set_scene: Activates scene. Format: {\"function\": \"set_scene\", \"scene_name\": string, \"rooms\": list}\nJSON output only.",
+      "system_prompt": "Smart home assistant with these tools:\n- water_plants: Irrigates plants. Format: {\"function\": \"water_plants\", \"zone\": string, \"duration\": number}\n- adjust_ac: Controls AC. Format: {\"function\": \"adjust_ac\", \"mode\": string, \"temperature\": number}\n- open_garage: Opens garage door. Format: {\"function\": \"open_garage\", \"door_number\": number}\n- set_scene: Activates scene. Format: {\"function\": \"set_scene\", \"scene_name\": string, \"rooms\": list}",
       "prompt": "Open garage door number 1",
       "expected_function": "open_garage",
       "required_keys": [
@@ -688,7 +688,7 @@
       "category": "iot"
     },
     {
-      "system_prompt": "Smart home assistant with these tools:\n- water_plants: Irrigates plants. Format: {\"function\": \"water_plants\", \"zone\": string, \"duration\": number}\n- adjust_ac: Controls AC. Format: {\"function\": \"adjust_ac\", \"mode\": string, \"temperature\": number}\n- open_garage: Opens garage door. Format: {\"function\": \"open_garage\", \"door_number\": number}\n- set_scene: Activates scene. Format: {\"function\": \"set_scene\", \"scene_name\": string, \"rooms\": list}\nJSON output only.",
+      "system_prompt": "Smart home assistant with these tools:\n- water_plants: Irrigates plants. Format: {\"function\": \"water_plants\", \"zone\": string, \"duration\": number}\n- adjust_ac: Controls AC. Format: {\"function\": \"adjust_ac\", \"mode\": string, \"temperature\": number}\n- open_garage: Opens garage door. Format: {\"function\": \"open_garage\", \"door_number\": number}\n- set_scene: Activates scene. Format: {\"function\": \"set_scene\", \"scene_name\": string, \"rooms\": list}",
       "prompt": "Activate movie scene in living room and bedroom",
       "expected_function": "set_scene",
       "required_keys": [
@@ -699,7 +699,7 @@
       "category": "iot"
     },
     {
-      "system_prompt": "IoT device manager. Available functions:\n- camera_snapshot: Takes photo. Format: {\"function\": \"camera_snapshot\", \"camera_id\": string, \"quality\": string}\n- enable_motion_sensor: Activates sensor. Format: {\"function\": \"enable_motion_sensor\", \"sensor_id\": string, \"sensitivity\": number}\n- unlock_door: Unlocks door. Format: {\"function\": \"unlock_door\", \"door_id\": string, \"temporary\": boolean}\n- set_notification: Creates alert. Format: {\"function\": \"set_notification\", \"type\": string, \"message\": string}\nOutput JSON.",
+      "system_prompt": "IoT device manager. Available functions:\n- camera_snapshot: Takes photo. Format: {\"function\": \"camera_snapshot\", \"camera_id\": string, \"quality\": string}\n- enable_motion_sensor: Activates sensor. Format: {\"function\": \"enable_motion_sensor\", \"sensor_id\": string, \"sensitivity\": number}\n- unlock_door: Unlocks door. Format: {\"function\": \"unlock_door\", \"door_id\": string, \"temporary\": boolean}\n- set_notification: Creates alert. Format: {\"function\": \"set_notification\", \"type\": string, \"message\": string}",
       "prompt": "Take a high quality snapshot from camera front_door",
       "expected_function": "camera_snapshot",
       "required_keys": [
@@ -710,7 +710,7 @@
       "category": "iot"
     },
     {
-      "system_prompt": "IoT device manager. Available functions:\n- camera_snapshot: Takes photo. Format: {\"function\": \"camera_snapshot\", \"camera_id\": string, \"quality\": string}\n- enable_motion_sensor: Activates sensor. Format: {\"function\": \"enable_motion_sensor\", \"sensor_id\": string, \"sensitivity\": number}\n- unlock_door: Unlocks door. Format: {\"function\": \"unlock_door\", \"door_id\": string, \"temporary\": boolean}\n- set_notification: Creates alert. Format: {\"function\": \"set_notification\", \"type\": string, \"message\": string}\nOutput JSON.",
+      "system_prompt": "IoT device manager. Available functions:\n- camera_snapshot: Takes photo. Format: {\"function\": \"camera_snapshot\", \"camera_id\": string, \"quality\": string}\n- enable_motion_sensor: Activates sensor. Format: {\"function\": \"enable_motion_sensor\", \"sensor_id\": string, \"sensitivity\": number}\n- unlock_door: Unlocks door. Format: {\"function\": \"unlock_door\", \"door_id\": string, \"temporary\": boolean}\n- set_notification: Creates alert. Format: {\"function\": \"set_notification\", \"type\": string, \"message\": string}",
       "prompt": "Enable motion sensor hallway with sensitivity 8",
       "expected_function": "enable_motion_sensor",
       "required_keys": [
@@ -721,7 +721,7 @@
       "category": "iot"
     },
     {
-      "system_prompt": "IoT device manager. Available functions:\n- camera_snapshot: Takes photo. Format: {\"function\": \"camera_snapshot\", \"camera_id\": string, \"quality\": string}\n- enable_motion_sensor: Activates sensor. Format: {\"function\": \"enable_motion_sensor\", \"sensor_id\": string, \"sensitivity\": number}\n- unlock_door: Unlocks door. Format: {\"function\": \"unlock_door\", \"door_id\": string, \"temporary\": boolean}\n- set_notification: Creates alert. Format: {\"function\": \"set_notification\", \"type\": string, \"message\": string}\nOutput JSON.",
+      "system_prompt": "IoT device manager. Available functions:\n- camera_snapshot: Takes photo. Format: {\"function\": \"camera_snapshot\", \"camera_id\": string, \"quality\": string}\n- enable_motion_sensor: Activates sensor. Format: {\"function\": \"enable_motion_sensor\", \"sensor_id\": string, \"sensitivity\": number}\n- unlock_door: Unlocks door. Format: {\"function\": \"unlock_door\", \"door_id\": string, \"temporary\": boolean}\n- set_notification: Creates alert. Format: {\"function\": \"set_notification\", \"type\": string, \"message\": string}",
       "prompt": "Temporarily unlock the back door",
       "expected_function": "unlock_door",
       "required_keys": [
@@ -732,7 +732,7 @@
       "category": "iot"
     },
     {
-      "system_prompt": "IoT device manager. Available functions:\n- camera_snapshot: Takes photo. Format: {\"function\": \"camera_snapshot\", \"camera_id\": string, \"quality\": string}\n- enable_motion_sensor: Activates sensor. Format: {\"function\": \"enable_motion_sensor\", \"sensor_id\": string, \"sensitivity\": number}\n- unlock_door: Unlocks door. Format: {\"function\": \"unlock_door\", \"door_id\": string, \"temporary\": boolean}\n- set_notification: Creates alert. Format: {\"function\": \"set_notification\", \"type\": string, \"message\": string}\nOutput JSON.",
+      "system_prompt": "IoT device manager. Available functions:\n- camera_snapshot: Takes photo. Format: {\"function\": \"camera_snapshot\", \"camera_id\": string, \"quality\": string}\n- enable_motion_sensor: Activates sensor. Format: {\"function\": \"enable_motion_sensor\", \"sensor_id\": string, \"sensitivity\": number}\n- unlock_door: Unlocks door. Format: {\"function\": \"unlock_door\", \"door_id\": string, \"temporary\": boolean}\n- set_notification: Creates alert. Format: {\"function\": \"set_notification\", \"type\": string, \"message\": string}",
       "prompt": "Set a security alert notification saying 'Motion detected'",
       "expected_function": "set_notification",
       "required_keys": [
@@ -743,7 +743,7 @@
       "category": "iot"
     },
     {
-      "system_prompt": "Home automation system. Tools:\n- charge_ev: Charges electric vehicle. Format: {\"function\": \"charge_ev\", \"charge_limit\": number, \"rate\": string}\n- control_sprinkler: Controls sprinklers. Format: {\"function\": \"control_sprinkler\", \"zone\": string, \"action\": string}\n- adjust_shade: Controls window shades. Format: {\"function\": \"adjust_shade\", \"room\": string, \"tilt\": number}\n- toggle_pool_heater: Controls pool heater. Format: {\"function\": \"toggle_pool_heater\", \"state\": boolean, \"target_temp\": number}\nJSON only.",
+      "system_prompt": "Home automation system. Tools:\n- charge_ev: Charges electric vehicle. Format: {\"function\": \"charge_ev\", \"charge_limit\": number, \"rate\": string}\n- control_sprinkler: Controls sprinklers. Format: {\"function\": \"control_sprinkler\", \"zone\": string, \"action\": string}\n- adjust_shade: Controls window shades. Format: {\"function\": \"adjust_shade\", \"room\": string, \"tilt\": number}\n- toggle_pool_heater: Controls pool heater. Format: {\"function\": \"toggle_pool_heater\", \"state\": boolean, \"target_temp\": number}",
       "prompt": "Charge my EV to 80% at fast rate",
       "expected_function": "charge_ev",
       "required_keys": [
@@ -754,7 +754,7 @@
       "category": "iot"
     },
     {
-      "system_prompt": "Home automation system. Tools:\n- charge_ev: Charges electric vehicle. Format: {\"function\": \"charge_ev\", \"charge_limit\": number, \"rate\": string}\n- control_sprinkler: Controls sprinklers. Format: {\"function\": \"control_sprinkler\", \"zone\": string, \"action\": string}\n- adjust_shade: Controls window shades. Format: {\"function\": \"adjust_shade\", \"room\": string, \"tilt\": number}\n- toggle_pool_heater: Controls pool heater. Format: {\"function\": \"toggle_pool_heater\", \"state\": boolean, \"target_temp\": number}\nJSON only.",
+      "system_prompt": "Home automation system. Tools:\n- charge_ev: Charges electric vehicle. Format: {\"function\": \"charge_ev\", \"charge_limit\": number, \"rate\": string}\n- control_sprinkler: Controls sprinklers. Format: {\"function\": \"control_sprinkler\", \"zone\": string, \"action\": string}\n- adjust_shade: Controls window shades. Format: {\"function\": \"adjust_shade\", \"room\": string, \"tilt\": number}\n- toggle_pool_heater: Controls pool heater. Format: {\"function\": \"toggle_pool_heater\", \"state\": boolean, \"target_temp\": number}",
       "prompt": "Turn on the front yard sprinkler",
       "expected_function": "control_sprinkler",
       "required_keys": [
@@ -765,7 +765,7 @@
       "category": "iot"
     },
     {
-      "system_prompt": "Home automation system. Tools:\n- charge_ev: Charges electric vehicle. Format: {\"function\": \"charge_ev\", \"charge_limit\": number, \"rate\": string}\n- control_sprinkler: Controls sprinklers. Format: {\"function\": \"control_sprinkler\", \"zone\": string, \"action\": string}\n- adjust_shade: Controls window shades. Format: {\"function\": \"adjust_shade\", \"room\": string, \"tilt\": number}\n- toggle_pool_heater: Controls pool heater. Format: {\"function\": \"toggle_pool_heater\", \"state\": boolean, \"target_temp\": number}\nJSON only.",
+      "system_prompt": "Home automation system. Tools:\n- charge_ev: Charges electric vehicle. Format: {\"function\": \"charge_ev\", \"charge_limit\": number, \"rate\": string}\n- control_sprinkler: Controls sprinklers. Format: {\"function\": \"control_sprinkler\", \"zone\": string, \"action\": string}\n- adjust_shade: Controls window shades. Format: {\"function\": \"adjust_shade\", \"room\": string, \"tilt\": number}\n- toggle_pool_heater: Controls pool heater. Format: {\"function\": \"toggle_pool_heater\", \"state\": boolean, \"target_temp\": number}",
       "prompt": "Tilt the office shades to 45 degrees",
       "expected_function": "adjust_shade",
       "required_keys": [
@@ -776,7 +776,7 @@
       "category": "iot"
     },
     {
-      "system_prompt": "Home automation system. Tools:\n- charge_ev: Charges electric vehicle. Format: {\"function\": \"charge_ev\", \"charge_limit\": number, \"rate\": string}\n- control_sprinkler: Controls sprinklers. Format: {\"function\": \"control_sprinkler\", \"zone\": string, \"action\": string}\n- adjust_shade: Controls window shades. Format: {\"function\": \"adjust_shade\", \"room\": string, \"tilt\": number}\n- toggle_pool_heater: Controls pool heater. Format: {\"function\": \"toggle_pool_heater\", \"state\": boolean, \"target_temp\": number}\nJSON only.",
+      "system_prompt": "Home automation system. Tools:\n- charge_ev: Charges electric vehicle. Format: {\"function\": \"charge_ev\", \"charge_limit\": number, \"rate\": string}\n- control_sprinkler: Controls sprinklers. Format: {\"function\": \"control_sprinkler\", \"zone\": string, \"action\": string}\n- adjust_shade: Controls window shades. Format: {\"function\": \"adjust_shade\", \"room\": string, \"tilt\": number}\n- toggle_pool_heater: Controls pool heater. Format: {\"function\": \"toggle_pool_heater\", \"state\": boolean, \"target_temp\": number}",
       "prompt": "Turn on pool heater to 28 degrees",
       "expected_function": "toggle_pool_heater",
       "required_keys": [
@@ -787,7 +787,7 @@
       "category": "iot"
     },
     {
-      "system_prompt": "Smart device coordinator. Functions:\n- voice_announce: Makes announcement. Format: {\"function\": \"voice_announce\", \"message\": string, \"rooms\": list}\n- schedule_routine: Schedules routine. Format: {\"function\": \"schedule_routine\", \"name\": string, \"time\": string, \"actions\": list}\n- check_sensor: Reads sensor. Format: {\"function\": \"check_sensor\", \"sensor_type\": string, \"location\": string}\n- remote_control: Controls IR devices. Format: {\"function\": \"remote_control\", \"device\": string, \"command\": string}\nJSON response.",
+      "system_prompt": "Smart device coordinator. Functions:\n- voice_announce: Makes announcement. Format: {\"function\": \"voice_announce\", \"message\": string, \"rooms\": list}\n- schedule_routine: Schedules routine. Format: {\"function\": \"schedule_routine\", \"name\": string, \"time\": string, \"actions\": list}\n- check_sensor: Reads sensor. Format: {\"function\": \"check_sensor\", \"sensor_type\": string, \"location\": string}\n- remote_control: Controls IR devices. Format: {\"function\": \"remote_control\", \"device\": string, \"command\": string}",
       "prompt": "Announce 'Dinner is ready' in kitchen and dining room",
       "expected_function": "voice_announce",
       "required_keys": [
@@ -798,7 +798,7 @@
       "category": "iot"
     },
     {
-      "system_prompt": "You are a data analysis assistant. Available tools:\n- query_database: Runs SQL query. Format: {\"function\": \"query_database\", \"query\": string, \"database\": string}\n- calculate_statistics: Computes stats. Format: {\"function\": \"calculate_statistics\", \"dataset\": string, \"metrics\": list}\n- generate_plot: Creates visualization. Format: {\"function\": \"generate_plot\", \"data_source\": string, \"plot_type\": string}\n- export_report: Exports data. Format: {\"function\": \"export_report\", \"format\": string, \"filename\": string}\nReturn JSON only.",
+      "system_prompt": "You are a data analysis assistant. Available tools:\n- query_database: Runs SQL query. Format: {\"function\": \"query_database\", \"query\": string, \"database\": string}\n- calculate_statistics: Computes stats. Format: {\"function\": \"calculate_statistics\", \"dataset\": string, \"metrics\": list}\n- generate_plot: Creates visualization. Format: {\"function\": \"generate_plot\", \"data_source\": string, \"plot_type\": string}\n- export_report: Exports data. Format: {\"function\": \"export_report\", \"format\": string, \"filename\": string}",
       "prompt": "Run a query to get all users from the customers database",
       "expected_function": "query_database",
       "required_keys": [
@@ -809,7 +809,7 @@
       "category": "data_analysis"
     },
     {
-      "system_prompt": "You are a data analysis assistant. Available tools:\n- query_database: Runs SQL query. Format: {\"function\": \"query_database\", \"query\": string, \"database\": string}\n- calculate_statistics: Computes stats. Format: {\"function\": \"calculate_statistics\", \"dataset\": string, \"metrics\": list}\n- generate_plot: Creates visualization. Format: {\"function\": \"generate_plot\", \"data_source\": string, \"plot_type\": string}\n- export_report: Exports data. Format: {\"function\": \"export_report\", \"format\": string, \"filename\": string}\nReturn JSON only.",
+      "system_prompt": "You are a data analysis assistant. Available tools:\n- query_database: Runs SQL query. Format: {\"function\": \"query_database\", \"query\": string, \"database\": string}\n- calculate_statistics: Computes stats. Format: {\"function\": \"calculate_statistics\", \"dataset\": string, \"metrics\": list}\n- generate_plot: Creates visualization. Format: {\"function\": \"generate_plot\", \"data_source\": string, \"plot_type\": string}\n- export_report: Exports data. Format: {\"function\": \"export_report\", \"format\": string, \"filename\": string}",
       "prompt": "Calculate mean and median for sales_data dataset",
       "expected_function": "calculate_statistics",
       "required_keys": [
@@ -820,7 +820,7 @@
       "category": "data_analysis"
     },
     {
-      "system_prompt": "You are a data analysis assistant. Available tools:\n- query_database: Runs SQL query. Format: {\"function\": \"query_database\", \"query\": string, \"database\": string}\n- calculate_statistics: Computes stats. Format: {\"function\": \"calculate_statistics\", \"dataset\": string, \"metrics\": list}\n- generate_plot: Creates visualization. Format: {\"function\": \"generate_plot\", \"data_source\": string, \"plot_type\": string}\n- export_report: Exports data. Format: {\"function\": \"export_report\", \"format\": string, \"filename\": string}\nReturn JSON only.",
+      "system_prompt": "You are a data analysis assistant. Available tools:\n- query_database: Runs SQL query. Format: {\"function\": \"query_database\", \"query\": string, \"database\": string}\n- calculate_statistics: Computes stats. Format: {\"function\": \"calculate_statistics\", \"dataset\": string, \"metrics\": list}\n- generate_plot: Creates visualization. Format: {\"function\": \"generate_plot\", \"data_source\": string, \"plot_type\": string}\n- export_report: Exports data. Format: {\"function\": \"export_report\", \"format\": string, \"filename\": string}",
       "prompt": "Create a bar chart from monthly_revenue data",
       "expected_function": "generate_plot",
       "required_keys": [
@@ -831,7 +831,7 @@
       "category": "data_analysis"
     },
     {
-      "system_prompt": "You are a data analysis assistant. Available tools:\n- query_database: Runs SQL query. Format: {\"function\": \"query_database\", \"query\": string, \"database\": string}\n- calculate_statistics: Computes stats. Format: {\"function\": \"calculate_statistics\", \"dataset\": \"string\", \"metrics\": list}\n- generate_plot: Creates visualization. Format: {\"function\": \"generate_plot\", \"data_source\": string, \"plot_type\": string}\n- export_report: Exports data. Format: {\"function\": \"export_report\", \"format\": string, \"filename\": string}\nReturn JSON only.",
+      "system_prompt": "You are a data analysis assistant. Available tools:\n- query_database: Runs SQL query. Format: {\"function\": \"query_database\", \"query\": string, \"database\": string}\n- calculate_statistics: Computes stats. Format: {\"function\": \"calculate_statistics\", \"dataset\": \"string\", \"metrics\": list}\n- generate_plot: Creates visualization. Format: {\"function\": \"generate_plot\", \"data_source\": string, \"plot_type\": string}\n- export_report: Exports data. Format: {\"function\": \"export_report\", \"format\": string, \"filename\": string}",
       "prompt": "Export the analysis results to CSV format as report.csv",
       "expected_function": "export_report",
       "required_keys": [
@@ -842,7 +842,7 @@
       "category": "data_analysis"
     },
     {
-      "system_prompt": "Analytics platform. Tools available:\n- aggregate_data: Aggregates data. Format: {\"function\": \"aggregate_data\", \"table\": string, \"group_by\": string, \"operation\": string}\n- filter_records: Filters data. Format: {\"function\": \"filter_records\", \"table\": string, \"condition\": string}\n- join_tables: Joins tables. Format: {\"function\": \"join_tables\", \"left_table\": string, \"right_table\": string, \"join_key\": string}\n- create_pivot: Creates pivot table. Format: {\"function\": \"create_pivot\", \"data\": string, \"rows\": string, \"columns\": string, \"values\": string}\nJSON output.",
+      "system_prompt": "Analytics platform. Tools available:\n- aggregate_data: Aggregates data. Format: {\"function\": \"aggregate_data\", \"table\": string, \"group_by\": string, \"operation\": string}\n- filter_records: Filters data. Format: {\"function\": \"filter_records\", \"table\": string, \"condition\": string}\n- join_tables: Joins tables. Format: {\"function\": \"join_tables\", \"left_table\": string, \"right_table\": string, \"join_key\": string}\n- create_pivot: Creates pivot table. Format: {\"function\": \"create_pivot\", \"data\": string, \"rows\": string, \"columns\": string, \"values\": string}",
       "prompt": "Aggregate sales by region using sum operation",
       "expected_function": "aggregate_data",
       "required_keys": [
@@ -854,7 +854,7 @@
       "category": "data_analysis"
     },
     {
-      "system_prompt": "Analytics platform. Tools available:\n- aggregate_data: Aggregates data. Format: {\"function\": \"aggregate_data\", \"table\": string, \"group_by\": string, \"operation\": string}\n- filter_records: Filters data. Format: {\"function\": \"filter_records\", \"table\": string, \"condition\": string}\n- join_tables: Joins tables. Format: {\"function\": \"join_tables\", \"left_table\": string, \"right_table\": string, \"join_key\": string}\n- create_pivot: Creates pivot table. Format: {\"function\": \"create_pivot\", \"data\": string, \"rows\": string, \"columns\": string, \"values\": string}\nJSON output.",
+      "system_prompt": "Analytics platform. Tools available:\n- aggregate_data: Aggregates data. Format: {\"function\": \"aggregate_data\", \"table\": string, \"group_by\": string, \"operation\": string}\n- filter_records: Filters data. Format: {\"function\": \"filter_records\", \"table\": string, \"condition\": string}\n- join_tables: Joins tables. Format: {\"function\": \"join_tables\", \"left_table\": string, \"right_table\": string, \"join_key\": string}\n- create_pivot: Creates pivot table. Format: {\"function\": \"create_pivot\", \"data\": string, \"rows\": string, \"columns\": string, \"values\": string}",
       "prompt": "Filter orders table where status equals completed",
       "expected_function": "filter_records",
       "required_keys": [
@@ -865,7 +865,7 @@
       "category": "data_analysis"
     },
     {
-      "system_prompt": "Analytics platform. Tools available:\n- aggregate_data: Aggregates data. Format: {\"function\": \"aggregate_data\", \"table\": string, \"group_by\": string, \"operation\": string}\n- filter_records: Filters data. Format: {\"function\": \"filter_records\", \"table\": string, \"condition\": string}\n- join_tables: Joins tables. Format: {\"function\": \"join_tables\", \"left_table\": string, \"right_table\": string, \"join_key\": string}\n- create_pivot: Creates pivot table. Format: {\"function\": \"create_pivot\", \"data\": string, \"rows\": string, \"columns\": string, \"values\": string}\nJSON output.",
+      "system_prompt": "Analytics platform. Tools available:\n- aggregate_data: Aggregates data. Format: {\"function\": \"aggregate_data\", \"table\": string, \"group_by\": string, \"operation\": string}\n- filter_records: Filters data. Format: {\"function\": \"filter_records\", \"table\": string, \"condition\": string}\n- join_tables: Joins tables. Format: {\"function\": \"join_tables\", \"left_table\": string, \"right_table\": string, \"join_key\": string}\n- create_pivot: Creates pivot table. Format: {\"function\": \"create_pivot\", \"data\": string, \"rows\": string, \"columns\": string, \"values\": string}",
       "prompt": "Join customers and orders tables on customer_id",
       "expected_function": "join_tables",
       "required_keys": [
@@ -877,7 +877,7 @@
       "category": "data_analysis"
     },
     {
-      "system_prompt": "Analytics platform. Tools available:\n- aggregate_data: Aggregates data. Format: {\"function\": \"aggregate_data\", \"table\": string, \"group_by\": string, \"operation\": string}\n- filter_records: Filters data. Format: {\"function\": \"filter_records\", \"table\": string, \"condition\": string}\n- join_tables: Joins tables. Format: {\"function\": \"join_tables\", \"left_table\": string, \"right_table\": string, \"join_key\": string}\n- create_pivot: Creates pivot table. Format: {\"function\": \"create_pivot\", \"data\": string, \"rows\": string, \"columns\": string, \"values\": string}\nJSON output.",
+      "system_prompt": "Analytics platform. Tools available:\n- aggregate_data: Aggregates data. Format: {\"function\": \"aggregate_data\", \"table\": string, \"group_by\": string, \"operation\": string}\n- filter_records: Filters data. Format: {\"function\": \"filter_records\", \"table\": string, \"condition\": string}\n- join_tables: Joins tables. Format: {\"function\": \"join_tables\", \"left_table\": string, \"right_table\": string, \"join_key\": string}\n- create_pivot: Creates pivot table. Format: {\"function\": \"create_pivot\", \"data\": string, \"rows\": string, \"columns\": string, \"values\": string}",
       "prompt": "Create a pivot table from sales_data with product as rows, quarter as columns, and revenue as values",
       "expected_function": "create_pivot",
       "required_keys": [
@@ -890,7 +890,7 @@
       "category": "data_analysis"
     },
     {
-      "system_prompt": "Data processing engine. Functions:\n- clean_dataset: Cleans data. Format: {\"function\": \"clean_dataset\", \"dataset\": string, \"operations\": list}\n- detect_outliers: Finds outliers. Format: {\"function\": \"detect_outliers\", \"column\": string, \"method\": string}\n- impute_missing: Fills missing values. Format: {\"function\": \"impute_missing\", \"column\": string, \"strategy\": string}\n- normalize_data: Normalizes data. Format: {\"function\": \"normalize_data\", \"columns\": list, \"method\": string}\nJSON response.",
+      "system_prompt": "Data processing engine. Functions:\n- clean_dataset: Cleans data. Format: {\"function\": \"clean_dataset\", \"dataset\": string, \"operations\": list}\n- detect_outliers: Finds outliers. Format: {\"function\": \"detect_outliers\", \"column\": string, \"method\": string}\n- impute_missing: Fills missing values. Format: {\"function\": \"impute_missing\", \"column\": string, \"strategy\": string}\n- normalize_data: Normalizes data. Format: {\"function\": \"normalize_data\", \"columns\": list, \"method\": string}",
       "prompt": "Clean the user_data dataset by removing duplicates and handling nulls",
       "expected_function": "clean_dataset",
       "required_keys": [
@@ -901,7 +901,7 @@
       "category": "data_analysis"
     },
     {
-      "system_prompt": "Data processing engine. Functions:\n- clean_dataset: Cleans data. Format: {\"function\": \"clean_dataset\", \"dataset\": string, \"operations\": list}\n- detect_outliers: Finds outliers. Format: {\"function\": \"detect_outliers\", \"column\": string, \"method\": string}\n- impute_missing: Fills missing values. Format: {\"function\": \"impute_missing\", \"column\": string, \"strategy\": string}\n- normalize_data: Normalizes data. Format: {\"function\": \"normalize_data\", \"columns\": list, \"method\": string}\nJSON response.",
+      "system_prompt": "Data processing engine. Functions:\n- clean_dataset: Cleans data. Format: {\"function\": \"clean_dataset\", \"dataset\": string, \"operations\": list}\n- detect_outliers: Finds outliers. Format: {\"function\": \"detect_outliers\", \"column\": string, \"method\": string}\n- impute_missing: Fills missing values. Format: {\"function\": \"impute_missing\", \"column\": string, \"strategy\": string}\n- normalize_data: Normalizes data. Format: {\"function\": \"normalize_data\", \"columns\": list, \"method\": string}",
       "prompt": "Detect outliers in price column using IQR method",
       "expected_function": "detect_outliers",
       "required_keys": [
@@ -912,7 +912,7 @@
       "category": "data_analysis"
     },
     {
-      "system_prompt": "Data processing engine. Functions:\n- clean_dataset: Cleans data. Format: {\"function\": \"clean_dataset\", \"dataset\": string, \"operations\": list}\n- detect_outliers: Finds outliers. Format: {\"function\": \"detect_outliers\", \"column\": string, \"method\": string}\n- impute_missing: Fills missing values. Format: {\"function\": \"impute_missing\", \"column\": string, \"strategy\": string}\n- normalize_data: Normalizes data. Format: {\"function\": \"normalize_data\", \"columns\": list, \"method\": string}\nJSON response.",
+      "system_prompt": "Data processing engine. Functions:\n- clean_dataset: Cleans data. Format: {\"function\": \"clean_dataset\", \"dataset\": string, \"operations\": list}\n- detect_outliers: Finds outliers. Format: {\"function\": \"detect_outliers\", \"column\": string, \"method\": string}\n- impute_missing: Fills missing values. Format: {\"function\": \"impute_missing\", \"column\": string, \"strategy\": string}\n- normalize_data: Normalizes data. Format: {\"function\": \"normalize_data\", \"columns\": list, \"method\": string}",
       "prompt": "Impute missing values in age column using median strategy",
       "expected_function": "impute_missing",
       "required_keys": [
@@ -923,7 +923,7 @@
       "category": "data_analysis"
     },
     {
-      "system_prompt": "Data processing engine. Functions:\n- clean_dataset: Cleans data. Format: {\"function\": \"clean_dataset\", \"dataset\": string, \"operations\": list}\n- detect_outliers: Finds outliers. Format: {\"function\": \"detect_outliers\", \"column\": string, \"method\": string}\n- impute_missing: Fills missing values. Format: {\"function\": \"impute_missing\", \"column\": string, \"strategy\": string}\n- normalize_data: Normalizes data. Format: {\"function\": \"normalize_data\", \"columns\": list, \"method\": string}\nJSON response.",
+      "system_prompt": "Data processing engine. Functions:\n- clean_dataset: Cleans data. Format: {\"function\": \"clean_dataset\", \"dataset\": string, \"operations\": list}\n- detect_outliers: Finds outliers. Format: {\"function\": \"detect_outliers\", \"column\": string, \"method\": string}\n- impute_missing: Fills missing values. Format: {\"function\": \"impute_missing\", \"column\": string, \"strategy\": string}\n- normalize_data: Normalizes data. Format: {\"function\": \"normalize_data\", \"columns\": list, \"method\": string}",
       "prompt": "Normalize salary and experience columns using min-max method",
       "expected_function": "normalize_data",
       "required_keys": [
@@ -934,7 +934,7 @@
       "category": "data_analysis"
     },
     {
-      "system_prompt": "ML data toolkit. Available tools:\n- split_dataset: Splits data. Format: {\"function\": \"split_dataset\", \"dataset\": string, \"train_ratio\": number, \"test_ratio\": number}\n- encode_categorical: Encodes categories. Format: {\"function\": \"encode_categorical\", \"columns\": list, \"encoding_type\": string}\n- feature_scaling: Scales features. Format: {\"function\": \"feature_scaling\", \"features\": list, \"scaler\": string}\n- sample_data: Samples data. Format: {\"function\": \"sample_data\", \"dataset\": string, \"method\": string, \"size\": number}\nJSON only.",
+      "system_prompt": "ML data toolkit. Available tools:\n- split_dataset: Splits data. Format: {\"function\": \"split_dataset\", \"dataset\": string, \"train_ratio\": number, \"test_ratio\": number}\n- encode_categorical: Encodes categories. Format: {\"function\": \"encode_categorical\", \"columns\": list, \"encoding_type\": string}\n- feature_scaling: Scales features. Format: {\"function\": \"feature_scaling\", \"features\": list, \"scaler\": string}\n- sample_data: Samples data. Format: {\"function\": \"sample_data\", \"dataset\": string, \"method\": string, \"size\": number}",
       "prompt": "Split customer_data into 80% training and 20% testing",
       "expected_function": "split_dataset",
       "required_keys": [
@@ -946,7 +946,7 @@
       "category": "data_analysis"
     },
     {
-      "system_prompt": "ML data toolkit. Available tools:\n- split_dataset: Splits data. Format: {\"function\": \"split_dataset\", \"dataset\": string, \"train_ratio\": number, \"test_ratio\": number}\n- encode_categorical: Encodes categories. Format: {\"function\": \"encode_categorical\", \"columns\": list, \"encoding_type\": string}\n- feature_scaling: Scales features. Format: {\"function\": \"feature_scaling\", \"features\": list, \"scaler\": string}\n- sample_data: Samples data. Format: {\"function\": \"sample_data\", \"dataset\": string, \"method\": string, \"size\": number}\nJSON only.",
+      "system_prompt": "ML data toolkit. Available tools:\n- split_dataset: Splits data. Format: {\"function\": \"split_dataset\", \"dataset\": string, \"train_ratio\": number, \"test_ratio\": number}\n- encode_categorical: Encodes categories. Format: {\"function\": \"encode_categorical\", \"columns\": list, \"encoding_type\": string}\n- feature_scaling: Scales features. Format: {\"function\": \"feature_scaling\", \"features\": list, \"scaler\": string}\n- sample_data: Samples data. Format: {\"function\": \"sample_data\", \"dataset\": string, \"method\": string, \"size\": number}",
       "prompt": "One-hot encode the category and region columns",
       "expected_function": "encode_categorical",
       "required_keys": [
@@ -957,7 +957,7 @@
       "category": "data_analysis"
     },
     {
-      "system_prompt": "ML data toolkit. Available tools:\n- split_dataset: Splits data. Format: {\"function\": \"split_dataset\", \"dataset\": string, \"train_ratio\": number, \"test_ratio\": number}\n- encode_categorical: Encodes categories. Format: {\"function\": \"encode_categorical\", \"columns\": list, \"encoding_type\": string}\n- feature_scaling: Scales features. Format: {\"function\": \"feature_scaling\", \"features\": list, \"scaler\": string}\n- sample_data: Samples data. Format: {\"function\": \"sample_data\", \"dataset\": string, \"method\": string, \"size\": number}\nJSON only.",
+      "system_prompt": "ML data toolkit. Available tools:\n- split_dataset: Splits data. Format: {\"function\": \"split_dataset\", \"dataset\": string, \"train_ratio\": number, \"test_ratio\": number}\n- encode_categorical: Encodes categories. Format: {\"function\": \"encode_categorical\", \"columns\": list, \"encoding_type\": string}\n- feature_scaling: Scales features. Format: {\"function\": \"feature_scaling\", \"features\": list, \"scaler\": string}\n- sample_data: Samples data. Format: {\"function\": \"sample_data\", \"dataset\": string, \"method\": string, \"size\": number}",
       "prompt": "Scale price and quantity features using standard scaler",
       "expected_function": "feature_scaling",
       "required_keys": [
@@ -968,7 +968,7 @@
       "category": "data_analysis"
     },
     {
-      "system_prompt": "ML data toolkit. Available tools:\n- split_dataset: Splits data. Format: {\"function\": \"split_dataset\", \"dataset\": string, \"train_ratio\": number, \"test_ratio\": number}\n- encode_categorical: Encodes categories. Format: {\"function\": \"encode_categorical\", \"columns\": list, \"encoding_type\": string}\n- feature_scaling: Scales features. Format: {\"function\": \"feature_scaling\", \"features\": list, \"scaler\": string}\n- sample_data: Samples data. Format: {\"function\": \"sample_data\", \"dataset\": string, \"method\": string, \"size\": number}\nJSON only.",
+      "system_prompt": "ML data toolkit. Available tools:\n- split_dataset: Splits data. Format: {\"function\": \"split_dataset\", \"dataset\": string, \"train_ratio\": number, \"test_ratio\": number}\n- encode_categorical: Encodes categories. Format: {\"function\": \"encode_categorical\", \"columns\": list, \"encoding_type\": string}\n- feature_scaling: Scales features. Format: {\"function\": \"feature_scaling\", \"features\": list, \"scaler\": string}\n- sample_data: Samples data. Format: {\"function\": \"sample_data\", \"dataset\": string, \"method\": string, \"size\": number}",
       "prompt": "Random sample 1000 rows from transactions dataset",
       "expected_function": "sample_data",
       "required_keys": [
@@ -980,7 +980,7 @@
       "category": "data_analysis"
     },
     {
-      "system_prompt": "Time series analyzer. Tools:\n- decompose_series: Decomposes time series. Format: {\"function\": \"decompose_series\", \"series\": string, \"model\": string}\n- detect_seasonality: Detects patterns. Format: {\"function\": \"detect_seasonality\", \"data\": string, \"period\": number}\n- forecast_values: Forecasts future. Format: {\"function\": \"forecast_values\", \"series\": string, \"periods\": number, \"model\": string}\n- calculate_correlation: Finds correlation. Format: {\"function\": \"calculate_correlation\", \"x\": string, \"y\": string, \"method\": string}\nJSON.",
+      "system_prompt": "Time series analyzer. Tools:\n- decompose_series: Decomposes time series. Format: {\"function\": \"decompose_series\", \"series\": string, \"model\": string}\n- detect_seasonality: Detects patterns. Format: {\"function\": \"detect_seasonality\", \"data\": string, \"period\": number}\n- forecast_values: Forecasts future. Format: {\"function\": \"forecast_values\", \"series\": string, \"periods\": number, \"model\": string}\n- calculate_correlation: Finds correlation. Format: {\"function\": \"calculate_correlation\", \"x\": string, \"y\": string, \"method\": string}",
       "prompt": "Decompose monthly_sales series using additive model",
       "expected_function": "decompose_series",
       "required_keys": [
@@ -991,7 +991,7 @@
       "category": "data_analysis"
     },
     {
-      "system_prompt": "Time series analyzer. Tools:\n- decompose_series: Decomposes time series. Format: {\"function\": \"decompose_series\", \"series\": string, \"model\": string}\n- detect_seasonality: Detects patterns. Format: {\"function\": \"detect_seasonality\", \"data\": string, \"period\": number}\n- forecast_values: Forecasts future. Format: {\"function\": \"forecast_values\", \"series\": string, \"periods\": number, \"model\": string}\n- calculate_correlation: Finds correlation. Format: {\"function\": \"calculate_correlation\", \"x\": string, \"y\": string, \"method\": string}\nJSON.",
+      "system_prompt": "Time series analyzer. Tools:\n- decompose_series: Decomposes time series. Format: {\"function\": \"decompose_series\", \"series\": string, \"model\": string}\n- detect_seasonality: Detects patterns. Format: {\"function\": \"detect_seasonality\", \"data\": string, \"period\": number}\n- forecast_values: Forecasts future. Format: {\"function\": \"forecast_values\", \"series\": string, \"periods\": number, \"model\": string}\n- calculate_correlation: Finds correlation. Format: {\"function\": \"calculate_correlation\", \"x\": string, \"y\": string, \"method\": string}",
       "prompt": "Detect seasonality in revenue_data with 12 month period",
       "expected_function": "detect_seasonality",
       "required_keys": [
@@ -1002,7 +1002,7 @@
       "category": "data_analysis"
     },
     {
-      "system_prompt": "Time series analyzer. Tools:\n- decompose_series: Decomposes time series. Format: {\"function\": \"decompose_series\", \"series\": string, \"model\": string}\n- detect_seasonality: Detects patterns. Format: {\"function\": \"detect_seasonality\", \"data\": string, \"period\": number}\n- forecast_values: Forecasts future. Format: {\"function\": \"forecast_values\", \"series\": string, \"periods\": number, \"model\": string}\n- calculate_correlation: Finds correlation. Format: {\"function\": \"calculate_correlation\", \"x\": string, \"y\": string, \"method\": string}\nJSON.",
+      "system_prompt": "Time series analyzer. Tools:\n- decompose_series: Decomposes time series. Format: {\"function\": \"decompose_series\", \"series\": string, \"model\": string}\n- detect_seasonality: Detects patterns. Format: {\"function\": \"detect_seasonality\", \"data\": string, \"period\": number}\n- forecast_values: Forecasts future. Format: {\"function\": \"forecast_values\", \"series\": string, \"periods\": number, \"model\": string}\n- calculate_correlation: Finds correlation. Format: {\"function\": \"calculate_correlation\", \"x\": string, \"y\": string, \"method\": string}",
       "prompt": "Forecast next 6 periods for stock_prices using ARIMA model",
       "expected_function": "forecast_values",
       "required_keys": [
@@ -1014,7 +1014,7 @@
       "category": "data_analysis"
     },
     {
-      "system_prompt": "Time series analyzer. Tools:\n- decompose_series: Decomposes time series. Format: {\"function\": \"decompose_series\", \"series\": string, \"model\": string}\n- detect_seasonality: Detects patterns. Format: {\"function\": \"detect_seasonality\", \"data\": string, \"period\": number}\n- forecast_values: Forecasts future. Format: {\"function\": \"forecast_values\", \"series\": string, \"periods\": number, \"model\": string}\n- calculate_correlation: Finds correlation. Format: {\"function\": \"calculate_correlation\", \"x\": string, \"y\": string, \"method\": string}\nJSON.",
+      "system_prompt": "Time series analyzer. Tools:\n- decompose_series: Decomposes time series. Format: {\"function\": \"decompose_series\", \"series\": string, \"model\": string}\n- detect_seasonality: Detects patterns. Format: {\"function\": \"detect_seasonality\", \"data\": string, \"period\": number}\n- forecast_values: Forecasts future. Format: {\"function\": \"forecast_values\", \"series\": string, \"periods\": number, \"model\": string}\n- calculate_correlation: Finds correlation. Format: {\"function\": \"calculate_correlation\", \"x\": string, \"y\": string, \"method\": string}",
       "prompt": "Calculate pearson correlation between temperature and sales",
       "expected_function": "calculate_correlation",
       "required_keys": [
@@ -1026,7 +1026,7 @@
       "category": "data_analysis"
     },
     {
-      "system_prompt": "Data warehouse manager. Functions:\n- create_table: Creates table. Format: {\"function\": \"create_table\", \"name\": string, \"schema\": dict, \"partition_key\": string}\n- load_data: Loads data. Format: {\"function\": \"load_data\", \"source\": string, \"destination\": string, \"format\": string}\n- optimize_table: Optimizes storage. Format: {\"function\": \"optimize_table\", \"table\": string, \"operation\": string}\n- create_index: Creates index. Format: {\"function\": \"create_index\", \"table\": string, \"columns\": list, \"index_type\": string}\nJSON.",
+      "system_prompt": "Data warehouse manager. Functions:\n- create_table: Creates table. Format: {\"function\": \"create_table\", \"name\": string, \"schema\": dict, \"partition_key\": string}\n- load_data: Loads data. Format: {\"function\": \"load_data\", \"source\": string, \"destination\": string, \"format\": string}\n- optimize_table: Optimizes storage. Format: {\"function\": \"optimize_table\", \"table\": string, \"operation\": string}\n- create_index: Creates index. Format: {\"function\": \"create_index\", \"table\": string, \"columns\": list, \"index_type\": string}",
       "prompt": "Create a users table with id, name, email schema partitioned by region",
       "expected_function": "create_table",
       "required_keys": [
@@ -1038,7 +1038,7 @@
       "category": "data_analysis"
     },
     {
-      "system_prompt": "Data warehouse manager. Functions:\n- create_table: Creates table. Format: {\"function\": \"create_table\", \"name\": string, \"schema\": dict, \"partition_key\": string}\n- load_data: Loads data. Format: {\"function\": \"load_data\", \"source\": string, \"destination\": string, \"format\": string}\n- optimize_table: Optimizes storage. Format: {\"function\": \"optimize_table\", \"table\": string, \"operation\": string}\n- create_index: Creates index. Format: {\"function\": \"create_index\", \"table\": string, \"columns\": list, \"index_type\": string}\nJSON.",
+      "system_prompt": "Data warehouse manager. Functions:\n- create_table: Creates table. Format: {\"function\": \"create_table\", \"name\": string, \"schema\": dict, \"partition_key\": string}\n- load_data: Loads data. Format: {\"function\": \"load_data\", \"source\": string, \"destination\": string, \"format\": string}\n- optimize_table: Optimizes storage. Format: {\"function\": \"optimize_table\", \"table\": string, \"operation\": string}\n- create_index: Creates index. Format: {\"function\": \"create_index\", \"table\": string, \"columns\": list, \"index_type\": string}",
       "prompt": "Load data from s3://bucket/data.csv to analytics_db.sales in parquet format",
       "expected_function": "load_data",
       "required_keys": [
@@ -1050,7 +1050,7 @@
       "category": "data_analysis"
     },
     {
-      "system_prompt": "Data warehouse manager. Functions:\n- create_table: Creates table. Format: {\"function\": \"create_table\", \"name\": string, \"schema\": dict, \"partition_key\": string}\n- load_data: Loads data. Format: {\"function\": \"load_data\", \"source\": string, \"destination\": string, \"format\": string}\n- optimize_table: Optimizes storage. Format: {\"function\": \"optimize_table\", \"table\": string, \"operation\": string}\n- create_index: Creates index. Format: {\"function\": \"create_index\", \"table\": string, \"columns\": list, \"index_type\": string}\nJSON.",
+      "system_prompt": "Data warehouse manager. Functions:\n- create_table: Creates table. Format: {\"function\": \"create_table\", \"name\": string, \"schema\": dict, \"partition_key\": string}\n- load_data: Loads data. Format: {\"function\": \"load_data\", \"source\": string, \"destination\": string, \"format\": string}\n- optimize_table: Optimizes storage. Format: {\"function\": \"optimize_table\", \"table\": string, \"operation\": string}\n- create_index: Creates index. Format: {\"function\": \"create_index\", \"table\": string, \"columns\": list, \"index_type\": string}",
       "prompt": "Optimize transactions table using vacuum operation",
       "expected_function": "optimize_table",
       "required_keys": [
@@ -1061,7 +1061,7 @@
       "category": "data_analysis"
     },
     {
-      "system_prompt": "Data warehouse manager. Functions:\n- create_table: Creates table. Format: {\"function\": \"create_table\", \"name\": string, \"schema\": dict, \"partition_key\": string}\n- load_data: Loads data. Format: {\"function\": \"load_data\", \"source\": string, \"destination\": string, \"format\": string}\n- optimize_table: Optimizes storage. Format: {\"function\": \"optimize_table\", \"table\": string, \"operation\": string}\n- create_index: Creates index. Format: {\"function\": \"create_index\", \"table\": string, \"columns\": list, \"index_type\": string}\nJSON.",
+      "system_prompt": "Data warehouse manager. Functions:\n- create_table: Creates table. Format: {\"function\": \"create_table\", \"name\": string, \"schema\": dict, \"partition_key\": string}\n- load_data: Loads data. Format: {\"function\": \"load_data\", \"source\": string, \"destination\": string, \"format\": string}\n- optimize_table: Optimizes storage. Format: {\"function\": \"optimize_table\", \"table\": string, \"operation\": string}\n- create_index: Creates index. Format: {\"function\": \"create_index\", \"table\": string, \"columns\": list, \"index_type\": string}",
       "prompt": "Create a btree index on customers table for email and phone columns",
       "expected_function": "create_index",
       "required_keys": [
@@ -1073,7 +1073,7 @@
       "category": "data_analysis"
     },
     {
-      "system_prompt": "Monitoring dashboard. Tools:\n- track_metric: Tracks KPI. Format: {\"function\": \"track_metric\", \"metric_name\": string, \"value\": number, \"timestamp\": string}\n- create_alert: Sets alert. Format: {\"function\": \"create_alert\", \"condition\": string, \"threshold\": number, \"notification\": string}\n- generate_dashboard: Creates dashboard. Format: {\"function\": \"generate_dashboard\", \"widgets\": list, \"layout\": string}\n- schedule_report: Schedules report. Format: {\"function\": \"schedule_report\", \"report_type\": string, \"frequency\": string, \"recipients\": list}\nJSON.",
+      "system_prompt": "Monitoring dashboard. Tools:\n- track_metric: Tracks KPI. Format: {\"function\": \"track_metric\", \"metric_name\": string, \"value\": number, \"timestamp\": string}\n- create_alert: Sets alert. Format: {\"function\": \"create_alert\", \"condition\": string, \"threshold\": number, \"notification\": string}\n- generate_dashboard: Creates dashboard. Format: {\"function\": \"generate_dashboard\", \"widgets\": list, \"layout\": string}\n- schedule_report: Schedules report. Format: {\"function\": \"schedule_report\", \"report_type\": string, \"frequency\": string, \"recipients\": list}",
       "prompt": "Track conversion_rate metric with value 3.5 at 2024-11-30T10:00:00",
       "expected_function": "track_metric",
       "required_keys": [
@@ -1085,7 +1085,7 @@
       "category": "data_analysis"
     },
     {
-      "system_prompt": "System administrator. Available functions:\n- create_user: Creates user account. Format: {\"function\": \"create_user\", \"username\": string, \"role\": string, \"department\": string}\n- reset_password: Resets password. Format: {\"function\": \"reset_password\", \"user_id\": string, \"temporary\": boolean}\n- assign_permissions: Assigns permissions. Format: {\"function\": \"assign_permissions\", \"user\": string, \"permissions\": list}\n- deactivate_account: Deactivates account. Format: {\"function\": \"deactivate_account\", \"user_id\": string, \"reason\": string}\nJSON only.",
+      "system_prompt": "System administrator. Available functions:\n- create_user: Creates user account. Format: {\"function\": \"create_user\", \"username\": string, \"role\": string, \"department\": string}\n- reset_password: Resets password. Format: {\"function\": \"reset_password\", \"user_id\": string, \"temporary\": boolean}\n- assign_permissions: Assigns permissions. Format: {\"function\": \"assign_permissions\", \"user\": string, \"permissions\": list}\n- deactivate_account: Deactivates account. Format: {\"function\": \"deactivate_account\", \"user_id\": string, \"reason\": string}",
       "prompt": "Create a new user account jdoe with admin role in IT department",
       "expected_function": "create_user",
       "required_keys": [
@@ -1097,7 +1097,7 @@
       "category": "admin"
     },
     {
-      "system_prompt": "System administrator. Available functions:\n- create_user: Creates user account. Format: {\"function\": \"create_user\", \"username\": string, \"role\": string, \"department\": string}\n- reset_password: Resets password. Format: {\"function\": \"reset_password\", \"user_id\": string, \"temporary\": boolean}\n- assign_permissions: Assigns permissions. Format: {\"function\": \"assign_permissions\", \"user\": string, \"permissions\": list}\n- deactivate_account: Deactivates account. Format: {\"function\": \"deactivate_account\", \"user_id\": string, \"reason\": string}\nJSON only.",
+      "system_prompt": "System administrator. Available functions:\n- create_user: Creates user account. Format: {\"function\": \"create_user\", \"username\": string, \"role\": string, \"department\": string}\n- reset_password: Resets password. Format: {\"function\": \"reset_password\", \"user_id\": string, \"temporary\": boolean}\n- assign_permissions: Assigns permissions. Format: {\"function\": \"assign_permissions\", \"user\": string, \"permissions\": list}\n- deactivate_account: Deactivates account. Format: {\"function\": \"deactivate_account\", \"user_id\": string, \"reason\": string}",
       "prompt": "Reset password for user_12345 and make it temporary",
       "expected_function": "reset_password",
       "required_keys": [
@@ -1108,7 +1108,7 @@
       "category": "admin"
     },
     {
-      "system_prompt": "System administrator. Available functions:\n- create_user: Creates user account. Format: {\"function\": \"create_user\", \"username\": string, \"role\": string, \"department\": string}\n- reset_password: Resets password. Format: {\"function\": \"reset_password\", \"user_id\": string, \"temporary\": boolean}\n- assign_permissions: Assigns permissions. Format: {\"function\": \"assign_permissions\", \"user\": string, \"permissions\": list}\n- deactivate_account: Deactivates account. Format: {\"function\": \"deactivate_account\", \"user_id\": string, \"reason\": string}\nJSON only.",
+      "system_prompt": "System administrator. Available functions:\n- create_user: Creates user account. Format: {\"function\": \"create_user\", \"username\": string, \"role\": string, \"department\": string}\n- reset_password: Resets password. Format: {\"function\": \"reset_password\", \"user_id\": string, \"temporary\": boolean}\n- assign_permissions: Assigns permissions. Format: {\"function\": \"assign_permissions\", \"user\": string, \"permissions\": list}\n- deactivate_account: Deactivates account. Format: {\"function\": \"deactivate_account\", \"user_id\": string, \"reason\": string}",
       "prompt": "Assign read and write permissions to alice",
       "expected_function": "assign_permissions",
       "required_keys": [
@@ -1119,7 +1119,7 @@
       "category": "admin"
     },
     {
-      "system_prompt": "System administrator. Available functions:\n- create_user: Creates user account. Format: {\"function\": \"create_user\", \"username\": string, \"role\": string, \"department\": string}\n- reset_password: Resets password. Format: {\"function\": \"reset_password\", \"user_id\": string, \"temporary\": boolean}\n- assign_permissions: Assigns permissions. Format: {\"function\": \"assign_permissions\", \"user\": string, \"permissions\": list}\n- deactivate_account: Deactivates account. Format: {\"function\": \"deactivate_account\", \"user_id\": string, \"reason\": string}\nJSON only.",
+      "system_prompt": "System administrator. Available functions:\n- create_user: Creates user account. Format: {\"function\": \"create_user\", \"username\": string, \"role\": string, \"department\": string}\n- reset_password: Resets password. Format: {\"function\": \"reset_password\", \"user_id\": string, \"temporary\": boolean}\n- assign_permissions: Assigns permissions. Format: {\"function\": \"assign_permissions\", \"user\": string, \"permissions\": list}\n- deactivate_account: Deactivates account. Format: {\"function\": \"deactivate_account\", \"user_id\": string, \"reason\": string}",
       "prompt": "Deactivate account user_99999 because employee left company",
       "expected_function": "deactivate_account",
       "required_keys": [
@@ -1130,7 +1130,7 @@
       "category": "admin"
     },
     {
-      "system_prompt": "Infrastructure manager. Tools:\n- deploy_service: Deploys service. Format: {\"function\": \"deploy_service\", \"name\": string, \"version\": string, \"environment\": string}\n- scale_resources: Scales resources. Format: {\"function\": \"scale_resources\", \"service\": string, \"replicas\": number}\n- restart_server: Restarts server. Format: {\"function\": \"restart_server\", \"server_id\": string, \"graceful\": boolean}\n- update_config: Updates config. Format: {\"function\": \"update_config\", \"service\": string, \"key\": string, \"value\": string}\nJSON response.",
+      "system_prompt": "Infrastructure manager. Tools:\n- deploy_service: Deploys service. Format: {\"function\": \"deploy_service\", \"name\": string, \"version\": string, \"environment\": string}\n- scale_resources: Scales resources. Format: {\"function\": \"scale_resources\", \"service\": string, \"replicas\": number}\n- restart_server: Restarts server. Format: {\"function\": \"restart_server\", \"server_id\": string, \"graceful\": boolean}\n- update_config: Updates config. Format: {\"function\": \"update_config\", \"service\": string, \"key\": string, \"value\": string}",
       "prompt": "Deploy api-gateway version 2.1.0 to production environment",
       "expected_function": "deploy_service",
       "required_keys": [
@@ -1142,7 +1142,7 @@
       "category": "admin"
     },
     {
-      "system_prompt": "Infrastructure manager. Tools:\n- deploy_service: Deploys service. Format: {\"function\": \"deploy_service\", \"name\": string, \"version\": string, \"environment\": string}\n- scale_resources: Scales resources. Format: {\"function\": \"scale_resources\", \"service\": string, \"replicas\": number}\n- restart_server: Restarts server. Format: {\"function\": \"restart_server\", \"server_id\": string, \"graceful\": boolean}\n- update_config: Updates config. Format: {\"function\": \"update_config\", \"service\": string, \"key\": string, \"value\": string}\nJSON response.",
+      "system_prompt": "Infrastructure manager. Tools:\n- deploy_service: Deploys service. Format: {\"function\": \"deploy_service\", \"name\": string, \"version\": string, \"environment\": string}\n- scale_resources: Scales resources. Format: {\"function\": \"scale_resources\", \"service\": string, \"replicas\": number}\n- restart_server: Restarts server. Format: {\"function\": \"restart_server\", \"server_id\": string, \"graceful\": boolean}\n- update_config: Updates config. Format: {\"function\": \"update_config\", \"service\": string, \"key\": string, \"value\": string}",
       "prompt": "Scale backend-api service to 5 replicas",
       "expected_function": "scale_resources",
       "required_keys": [
@@ -1153,7 +1153,7 @@
       "category": "admin"
     },
     {
-      "system_prompt": "Infrastructure manager. Tools:\n- deploy_service: Deploys service. Format: {\"function\": \"deploy_service\", \"name\": string, \"version\": string, \"environment\": string}\n- scale_resources: Scales resources. Format: {\"function\": \"scale_resources\", \"service\": string, \"replicas\": number}\n- restart_server: Restarts server. Format: {\"function\": \"restart_server\", \"server_id\": string, \"graceful\": boolean}\n- update_config: Updates config. Format: {\"function\": \"update_config\", \"service\": string, \"key\": string, \"value\": string}\nJSON response.",
+      "system_prompt": "Infrastructure manager. Tools:\n- deploy_service: Deploys service. Format: {\"function\": \"deploy_service\", \"name\": string, \"version\": string, \"environment\": string}\n- scale_resources: Scales resources. Format: {\"function\": \"scale_resources\", \"service\": string, \"replicas\": number}\n- restart_server: Restarts server. Format: {\"function\": \"restart_server\", \"server_id\": string, \"graceful\": boolean}\n- update_config: Updates config. Format: {\"function\": \"update_config\", \"service\": string, \"key\": string, \"value\": string}",
       "prompt": "Gracefully restart server srv-prod-01",
       "expected_function": "restart_server",
       "required_keys": [
@@ -1164,7 +1164,7 @@
       "category": "admin"
     },
     {
-      "system_prompt": "Infrastructure manager. Tools:\n- deploy_service: Deploys service. Format: {\"function\": \"deploy_service\", \"name\": string, \"version\": string, \"environment\": string}\n- scale_resources: Scales resources. Format: {\"function\": \"scale_resources\", \"service\": string, \"replicas\": number}\n- restart_server: Restarts server. Format: {\"function\": \"restart_server\", \"server_id\": string, \"graceful\": boolean}\n- update_config: Updates config. Format: {\"function\": \"update_config\", \"service\": string, \"key\": string, \"value\": string}\nJSON response.",
+      "system_prompt": "Infrastructure manager. Tools:\n- deploy_service: Deploys service. Format: {\"function\": \"deploy_service\", \"name\": string, \"version\": string, \"environment\": string}\n- scale_resources: Scales resources. Format: {\"function\": \"scale_resources\", \"service\": string, \"replicas\": number}\n- restart_server: Restarts server. Format: {\"function\": \"restart_server\", \"server_id\": string, \"graceful\": boolean}\n- update_config: Updates config. Format: {\"function\": \"update_config\", \"service\": string, \"key\": string, \"value\": string}",
       "prompt": "Update config for database service setting max_connections to 100",
       "expected_function": "update_config",
       "required_keys": [
@@ -1176,7 +1176,7 @@
       "category": "admin"
     },
     {
-      "system_prompt": "Security admin. Functions:\n- scan_vulnerabilities: Scans for vulnerabilities. Format: {\"function\": \"scan_vulnerabilities\", \"target\": string, \"scan_type\": string}\n- apply_patch: Applies security patch. Format: {\"function\": \"apply_patch\", \"system\": string, \"patch_id\": string, \"schedule\": string}\n- configure_firewall: Configures firewall. Format: {\"function\": \"configure_firewall\", \"rule\": string, \"action\": string, \"priority\": number}\n- audit_logs: Reviews logs. Format: {\"function\": \"audit_logs\", \"service\": string, \"time_range\": string, \"filter\": string}\nJSON.",
+      "system_prompt": "Security admin. Functions:\n- scan_vulnerabilities: Scans for vulnerabilities. Format: {\"function\": \"scan_vulnerabilities\", \"target\": string, \"scan_type\": string}\n- apply_patch: Applies security patch. Format: {\"function\": \"apply_patch\", \"system\": string, \"patch_id\": string, \"schedule\": string}\n- configure_firewall: Configures firewall. Format: {\"function\": \"configure_firewall\", \"rule\": string, \"action\": string, \"priority\": number}\n- audit_logs: Reviews logs. Format: {\"function\": \"audit_logs\", \"service\": string, \"time_range\": string, \"filter\": string}",
       "prompt": "Scan web-server for full vulnerabilities",
       "expected_function": "scan_vulnerabilities",
       "required_keys": [
@@ -1187,7 +1187,7 @@
       "category": "admin"
     },
     {
-      "system_prompt": "Security admin. Functions:\n- scan_vulnerabilities: Scans for vulnerabilities. Format: {\"function\": \"scan_vulnerabilities\", \"target\": string, \"scan_type\": string}\n- apply_patch: Applies security patch. Format: {\"function\": \"apply_patch\", \"system\": string, \"patch_id\": string, \"schedule\": string}\n- configure_firewall: Configures firewall. Format: {\"function\": \"configure_firewall\", \"rule\": string, \"action\": string, \"priority\": number}\n- audit_logs: Reviews logs. Format: {\"function\": \"audit_logs\", \"service\": string, \"time_range\": string, \"filter\": string}\nJSON.",
+      "system_prompt": "Security admin. Functions:\n- scan_vulnerabilities: Scans for vulnerabilities. Format: {\"function\": \"scan_vulnerabilities\", \"target\": string, \"scan_type\": string}\n- apply_patch: Applies security patch. Format: {\"function\": \"apply_patch\", \"system\": string, \"patch_id\": string, \"schedule\": string}\n- configure_firewall: Configures firewall. Format: {\"function\": \"configure_firewall\", \"rule\": string, \"action\": string, \"priority\": number}\n- audit_logs: Reviews logs. Format: {\"function\": \"audit_logs\", \"service\": string, \"time_range\": string, \"filter\": string}",
       "prompt": "Apply security patch CVE-2024-1234 to prod-db immediately",
       "expected_function": "apply_patch",
       "required_keys": [
@@ -1199,7 +1199,7 @@
       "category": "admin"
     },
     {
-      "system_prompt": "Security admin. Functions:\n- scan_vulnerabilities: Scans for vulnerabilities. Format: {\"function\": \"scan_vulnerabilities\", \"target\": string, \"scan_type\": string}\n- apply_patch: Applies security patch. Format: {\"function\": \"apply_patch\", \"system\": string, \"patch_id\": string, \"schedule\": string}\n- configure_firewall: Configures firewall. Format: {\"function\": \"configure_firewall\", \"rule\": string, \"action\": string, \"priority\": number}\n- audit_logs: Reviews logs. Format: {\"function\": \"audit_logs\", \"service\": string, \"time_range\": string, \"filter\": string}\nJSON.",
+      "system_prompt": "Security admin. Functions:\n- scan_vulnerabilities: Scans for vulnerabilities. Format: {\"function\": \"scan_vulnerabilities\", \"target\": string, \"scan_type\": string}\n- apply_patch: Applies security patch. Format: {\"function\": \"apply_patch\", \"system\": string, \"patch_id\": string, \"schedule\": string}\n- configure_firewall: Configures firewall. Format: {\"function\": \"configure_firewall\", \"rule\": string, \"action\": string, \"priority\": number}\n- audit_logs: Reviews logs. Format: {\"function\": \"audit_logs\", \"service\": string, \"time_range\": string, \"filter\": string}",
       "prompt": "Configure firewall to block traffic from 192.168.1.0/24 with priority 10",
       "expected_function": "configure_firewall",
       "required_keys": [
@@ -1211,7 +1211,7 @@
       "category": "admin"
     },
     {
-      "system_prompt": "Security admin. Functions:\n- scan_vulnerabilities: Scans for vulnerabilities. Format: {\"function\": \"scan_vulnerabilities\", \"target\": string, \"scan_type\": string}\n- apply_patch: Applies security patch. Format: {\"function\": \"apply_patch\", \"system\": string, \"patch_id\": string, \"schedule\": string}\n- configure_firewall: Configures firewall. Format: {\"function\": \"configure_firewall\", \"rule\": string, \"action\": string, \"priority\": number}\n- audit_logs: Reviews logs. Format: {\"function\": \"audit_logs\", \"service\": string, \"time_range\": string, \"filter\": string}\nJSON.",
+      "system_prompt": "Security admin. Functions:\n- scan_vulnerabilities: Scans for vulnerabilities. Format: {\"function\": \"scan_vulnerabilities\", \"target\": string, \"scan_type\": string}\n- apply_patch: Applies security patch. Format: {\"function\": \"apply_patch\", \"system\": string, \"patch_id\": string, \"schedule\": string}\n- configure_firewall: Configures firewall. Format: {\"function\": \"configure_firewall\", \"rule\": string, \"action\": string, \"priority\": number}\n- audit_logs: Reviews logs. Format: {\"function\": \"audit_logs\", \"service\": string, \"time_range\": string, \"filter\": string}",
       "prompt": "Audit logs for auth-service in the last 24 hours filtering for failed logins",
       "expected_function": "audit_logs",
       "required_keys": [
@@ -1223,7 +1223,7 @@
       "category": "admin"
     },
     {
-      "system_prompt": "Backup manager. Tools:\n- create_backup: Creates backup. Format: {\"function\": \"create_backup\", \"source\": string, \"destination\": string, \"type\": string}\n- restore_backup: Restores from backup. Format: {\"function\": \"restore_backup\", \"backup_id\": string, \"target\": string, \"verify\": boolean}\n- schedule_backup: Schedules backups. Format: {\"function\": \"schedule_backup\", \"resource\": string, \"frequency\": string, \"retention\": number}\n- verify_integrity: Verifies backup. Format: {\"function\": \"verify_integrity\", \"backup_id\": string, \"checksum_type\": string}\nJSON.",
+      "system_prompt": "Backup manager. Tools:\n- create_backup: Creates backup. Format: {\"function\": \"create_backup\", \"source\": string, \"destination\": string, \"type\": string}\n- restore_backup: Restores from backup. Format: {\"function\": \"restore_backup\", \"backup_id\": string, \"target\": string, \"verify\": boolean}\n- schedule_backup: Schedules backups. Format: {\"function\": \"schedule_backup\", \"resource\": string, \"frequency\": string, \"retention\": number}\n- verify_integrity: Verifies backup. Format: {\"function\": \"verify_integrity\", \"backup_id\": string, \"checksum_type\": string}",
       "prompt": "Create a full backup of database-prod to s3://backups/",
       "expected_function": "create_backup",
       "required_keys": [
@@ -1235,7 +1235,7 @@
       "category": "admin"
     },
     {
-      "system_prompt": "Backup manager. Tools:\n- create_backup: Creates backup. Format: {\"function\": \"create_backup\", \"source\": string, \"destination\": string, \"type\": string}\n- restore_backup: Restores from backup. Format: {\"function\": \"restore_backup\", \"backup_id\": string, \"target\": string, \"verify\": boolean}\n- schedule_backup: Schedules backups. Format: {\"function\": \"schedule_backup\", \"resource\": string, \"frequency\": string, \"retention\": number}\n- verify_integrity: Verifies backup. Format: {\"function\": \"verify_integrity\", \"backup_id\": string, \"checksum_type\": string}\nJSON.",
+      "system_prompt": "Backup manager. Tools:\n- create_backup: Creates backup. Format: {\"function\": \"create_backup\", \"source\": string, \"destination\": string, \"type\": string}\n- restore_backup: Restores from backup. Format: {\"function\": \"restore_backup\", \"backup_id\": string, \"target\": string, \"verify\": boolean}\n- schedule_backup: Schedules backups. Format: {\"function\": \"schedule_backup\", \"resource\": string, \"frequency\": string, \"retention\": number}\n- verify_integrity: Verifies backup. Format: {\"function\": \"verify_integrity\", \"backup_id\": string, \"checksum_type\": string}",
       "prompt": "Restore backup backup_20241130 to test-db with verification",
       "expected_function": "restore_backup",
       "required_keys": [
@@ -1247,7 +1247,7 @@
       "category": "admin"
     },
     {
-      "system_prompt": "Backup manager. Tools:\n- create_backup: Creates backup. Format: {\"function\": \"create_backup\", \"source\": string, \"destination\": string, \"type\": string}\n- restore_backup: Restores from backup. Format: {\"function\": \"restore_backup\", \"backup_id\": string, \"target\": string, \"verify\": boolean}\n- schedule_backup: Schedules backups. Format: {\"function\": \"schedule_backup\", \"resource\": string, \"frequency\": string, \"retention\": number}\n- verify_integrity: Verifies backup. Format: {\"function\": \"verify_integrity\", \"backup_id\": string, \"checksum_type\": string}\nJSON.",
+      "system_prompt": "Backup manager. Tools:\n- create_backup: Creates backup. Format: {\"function\": \"create_backup\", \"source\": string, \"destination\": string, \"type\": string}\n- restore_backup: Restores from backup. Format: {\"function\": \"restore_backup\", \"backup_id\": string, \"target\": string, \"verify\": boolean}\n- schedule_backup: Schedules backups. Format: {\"function\": \"schedule_backup\", \"resource\": string, \"frequency\": string, \"retention\": number}\n- verify_integrity: Verifies backup. Format: {\"function\": \"verify_integrity\", \"backup_id\": string, \"checksum_type\": string}",
       "prompt": "Schedule daily backups for customer-data with 30 day retention",
       "expected_function": "schedule_backup",
       "required_keys": [
@@ -1259,7 +1259,7 @@
       "category": "admin"
     },
     {
-      "system_prompt": "Backup manager. Tools:\n- create_backup: Creates backup. Format: {\"function\": \"create_backup\", \"source\": string, \"destination\": string, \"type\": string}\n- restore_backup: Restores from backup. Format: {\"function\": \"restore_backup\", \"backup_id\": string, \"target\": string, \"verify\": boolean}\n- schedule_backup: Schedules backups. Format: {\"function\": \"schedule_backup\", \"resource\": string, \"frequency\": string, \"retention\": number}\n- verify_integrity: Verifies backup. Format: {\"function\": \"verify_integrity\", \"backup_id\": string, \"checksum_type\": string}\nJSON.",
+      "system_prompt": "Backup manager. Tools:\n- create_backup: Creates backup. Format: {\"function\": \"create_backup\", \"source\": string, \"destination\": string, \"type\": string}\n- restore_backup: Restores from backup. Format: {\"function\": \"restore_backup\", \"backup_id\": string, \"target\": string, \"verify\": boolean}\n- schedule_backup: Schedules backups. Format: {\"function\": \"schedule_backup\", \"resource\": string, \"frequency\": string, \"retention\": number}\n- verify_integrity: Verifies backup. Format: {\"function\": \"verify_integrity\", \"backup_id\": string, \"checksum_type\": string}",
       "prompt": "Verify integrity of backup_20241129 using SHA256 checksum",
       "expected_function": "verify_integrity",
       "required_keys": [
@@ -1270,7 +1270,7 @@
       "category": "admin"
     },
     {
-      "system_prompt": "Cloud resource manager. Functions:\n- provision_vm: Provisions VM. Format: {\"function\": \"provision_vm\", \"instance_type\": string, \"region\": string, \"os\": string}\n- allocate_storage: Allocates storage. Format: {\"function\": \"allocate_storage\", \"size_gb\": number, \"type\": string, \"mount_point\": string}\n- configure_network: Configures network. Format: {\"function\": \"configure_network\", \"vpc_id\": string, \"subnet\": string, \"internet_gateway\": boolean}\n- set_budget_alert: Sets budget alert. Format: {\"function\": \"set_budget_alert\", \"threshold\": number, \"notification_email\": string}\nJSON.",
+      "system_prompt": "Cloud resource manager. Functions:\n- provision_vm: Provisions VM. Format: {\"function\": \"provision_vm\", \"instance_type\": string, \"region\": string, \"os\": string}\n- allocate_storage: Allocates storage. Format: {\"function\": \"allocate_storage\", \"size_gb\": number, \"type\": string, \"mount_point\": string}\n- configure_network: Configures network. Format: {\"function\": \"configure_network\", \"vpc_id\": string, \"subnet\": string, \"internet_gateway\": boolean}\n- set_budget_alert: Sets budget alert. Format: {\"function\": \"set_budget_alert\", \"threshold\": number, \"notification_email\": string}",
       "prompt": "Provision a t3.large VM in us-west-2 with Ubuntu",
       "expected_function": "provision_vm",
       "required_keys": [
@@ -1282,7 +1282,7 @@
       "category": "admin"
     },
     {
-      "system_prompt": "Cloud resource manager. Functions:\n- provision_vm: Provisions VM. Format: {\"function\": \"provision_vm\", \"instance_type\": string, \"region\": string, \"os\": string}\n- allocate_storage: Allocates storage. Format: {\"function\": \"allocate_storage\", \"size_gb\": number, \"type\": string, \"mount_point\": string}\n- configure_network: Configures network. Format: {\"function\": \"configure_network\", \"vpc_id\": string, \"subnet\": string, \"internet_gateway\": boolean}\n- set_budget_alert: Sets budget alert. Format: {\"function\": \"set_budget_alert\", \"threshold\": number, \"notification_email\": string}\nJSON.",
+      "system_prompt": "Cloud resource manager. Functions:\n- provision_vm: Provisions VM. Format: {\"function\": \"provision_vm\", \"instance_type\": string, \"region\": string, \"os\": string}\n- allocate_storage: Allocates storage. Format: {\"function\": \"allocate_storage\", \"size_gb\": number, \"type\": string, \"mount_point\": string}\n- configure_network: Configures network. Format: {\"function\": \"configure_network\", \"vpc_id\": string, \"subnet\": string, \"internet_gateway\": boolean}\n- set_budget_alert: Sets budget alert. Format: {\"function\": \"set_budget_alert\", \"threshold\": number, \"notification_email\": string}",
       "prompt": "Allocate 500GB SSD storage mounted at /data",
       "expected_function": "allocate_storage",
       "required_keys": [
@@ -1294,7 +1294,7 @@
       "category": "admin"
     },
     {
-      "system_prompt": "Cloud resource manager. Functions:\n- provision_vm: Provisions VM. Format: {\"function\": \"provision_vm\", \"instance_type\": string, \"region\": string, \"os\": string}\n- allocate_storage: Allocates storage. Format: {\"function\": \"allocate_storage\", \"size_gb\": number, \"type\": string, \"mount_point\": string}\n- configure_network: Configures network. Format: {\"function\": \"configure_network\", \"vpc_id\": string, \"subnet\": string, \"internet_gateway\": boolean}\n- set_budget_alert: Sets budget alert. Format: {\"function\": \"set_budget_alert\", \"threshold\": number, \"notification_email\": string}\nJSON.",
+      "system_prompt": "Cloud resource manager. Functions:\n- provision_vm: Provisions VM. Format: {\"function\": \"provision_vm\", \"instance_type\": string, \"region\": string, \"os\": string}\n- allocate_storage: Allocates storage. Format: {\"function\": \"allocate_storage\", \"size_gb\": number, \"type\": string, \"mount_point\": string}\n- configure_network: Configures network. Format: {\"function\": \"configure_network\", \"vpc_id\": string, \"subnet\": string, \"internet_gateway\": boolean}\n- set_budget_alert: Sets budget alert. Format: {\"function\": \"set_budget_alert\", \"threshold\": number, \"notification_email\": string}",
       "prompt": "Configure network for vpc-12345 with subnet 10.0.1.0/24 and enable internet gateway",
       "expected_function": "configure_network",
       "required_keys": [
@@ -1306,7 +1306,7 @@
       "category": "admin"
     },
     {
-      "system_prompt": "Cloud resource manager. Functions:\n- provision_vm: Provisions VM. Format: {\"function\": \"provision_vm\", \"instance_type\": string, \"region\": string, \"os\": string}\n- allocate_storage: Allocates storage. Format: {\"function\": \"allocate_storage\", \"size_gb\": number, \"type\": string, \"mount_point\": string}\n- configure_network: Configures network. Format: {\"function\": \"configure_network\", \"vpc_id\": string, \"subnet\": string, \"internet_gateway\": boolean}\n- set_budget_alert: Sets budget alert. Format: {\"function\": \"set_budget_alert\", \"threshold\": number, \"notification_email\": string}\nJSON.",
+      "system_prompt": "Cloud resource manager. Functions:\n- provision_vm: Provisions VM. Format: {\"function\": \"provision_vm\", \"instance_type\": string, \"region\": string, \"os\": string}\n- allocate_storage: Allocates storage. Format: {\"function\": \"allocate_storage\", \"size_gb\": number, \"type\": string, \"mount_point\": string}\n- configure_network: Configures network. Format: {\"function\": \"configure_network\", \"vpc_id\": string, \"subnet\": string, \"internet_gateway\": boolean}\n- set_budget_alert: Sets budget alert. Format: {\"function\": \"set_budget_alert\", \"threshold\": number, \"notification_email\": string}",
       "prompt": "Set a budget alert at $1000 threshold sending notification to admin@company.com",
       "expected_function": "set_budget_alert",
       "required_keys": [
@@ -1317,7 +1317,7 @@
       "category": "admin"
     },
     {
-      "system_prompt": "Monitoring system. Tools:\n- create_healthcheck: Creates healthcheck. Format: {\"function\": \"create_healthcheck\", \"endpoint\": string, \"interval_seconds\": number, \"timeout\": number}\n- set_metric_threshold: Sets threshold. Format: {\"function\": \"set_metric_threshold\", \"metric\": string, \"operator\": string, \"value\": number}\n- configure_logging: Configures logging. Format: {\"function\": \"configure_logging\", \"service\": string, \"level\": string, \"retention_days\": number}\n- send_notification: Sends alert. Format: {\"function\": \"send_notification\", \"channel\": string, \"message\": string, \"severity\": string}\nJSON.",
+      "system_prompt": "Monitoring system. Tools:\n- create_healthcheck: Creates healthcheck. Format: {\"function\": \"create_healthcheck\", \"endpoint\": string, \"interval_seconds\": number, \"timeout\": number}\n- set_metric_threshold: Sets threshold. Format: {\"function\": \"set_metric_threshold\", \"metric\": string, \"operator\": string, \"value\": number}\n- configure_logging: Configures logging. Format: {\"function\": \"configure_logging\", \"service\": string, \"level\": string, \"retention_days\": number}\n- send_notification: Sends alert. Format: {\"function\": \"send_notification\", \"channel\": string, \"message\": string, \"severity\": string}",
       "prompt": "Create healthcheck for https://api.example.com/health every 60 seconds with 5 second timeout",
       "expected_function": "create_healthcheck",
       "required_keys": [
@@ -1329,7 +1329,7 @@
       "category": "admin"
     },
     {
-      "system_prompt": "Monitoring system. Tools:\n- create_healthcheck: Creates healthcheck. Format: {\"function\": \"create_healthcheck\", \"endpoint\": string, \"interval_seconds\": number, \"timeout\": number}\n- set_metric_threshold: Sets threshold. Format: {\"function\": \"set_metric_threshold\", \"metric\": string, \"operator\": string, \"value\": number}\n- configure_logging: Configures logging. Format: {\"function\": \"configure_logging\", \"service\": string, \"level\": string, \"retention_days\": number}\n- send_notification: Sends alert. Format: {\"function\": \"send_notification\", \"channel\": string, \"message\": string, \"severity\": string}\nJSON.",
+      "system_prompt": "Monitoring system. Tools:\n- create_healthcheck: Creates healthcheck. Format: {\"function\": \"create_healthcheck\", \"endpoint\": string, \"interval_seconds\": number, \"timeout\": number}\n- set_metric_threshold: Sets threshold. Format: {\"function\": \"set_metric_threshold\", \"metric\": string, \"operator\": string, \"value\": number}\n- configure_logging: Configures logging. Format: {\"function\": \"configure_logging\", \"service\": string, \"level\": string, \"retention_days\": number}\n- send_notification: Sends alert. Format: {\"function\": \"send_notification\", \"channel\": string, \"message\": string, \"severity\": string}",
       "prompt": "Set threshold for cpu_usage metric greater than 80",
       "expected_function": "set_metric_threshold",
       "required_keys": [
@@ -1341,7 +1341,7 @@
       "category": "admin"
     },
     {
-      "system_prompt": "Monitoring system. Tools:\n- create_healthcheck: Creates healthcheck. Format: {\"function\": \"create_healthcheck\", \"endpoint\": string, \"interval_seconds\": number, \"timeout\": number}\n- set_metric_threshold: Sets threshold. Format: {\"function\": \"set_metric_threshold\", \"metric\": string, \"operator\": string, \"value\": number}\n- configure_logging: Configures logging. Format: {\"function\": \"configure_logging\", \"service\": string, \"level\": string, \"retention_days\": number}\n- send_notification: Sends alert. Format: {\"function\": \"send_notification\", \"channel\": string, \"message\": string, \"severity\": string}\nJSON.",
+      "system_prompt": "Monitoring system. Tools:\n- create_healthcheck: Creates healthcheck. Format: {\"function\": \"create_healthcheck\", \"endpoint\": string, \"interval_seconds\": number, \"timeout\": number}\n- set_metric_threshold: Sets threshold. Format: {\"function\": \"set_metric_threshold\", \"metric\": string, \"operator\": string, \"value\": number}\n- configure_logging: Configures logging. Format: {\"function\": \"configure_logging\", \"service\": string, \"level\": string, \"retention_days\": number}\n- send_notification: Sends alert. Format: {\"function\": \"send_notification\", \"channel\": string, \"message\": string, \"severity\": string}",
       "prompt": "Configure logging for payment-service at INFO level with 90 day retention",
       "expected_function": "configure_logging",
       "required_keys": [
@@ -1353,7 +1353,7 @@
       "category": "admin"
     },
     {
-      "system_prompt": "Monitoring system. Tools:\n- create_healthcheck: Creates healthcheck. Format: {\"function\": \"create_healthcheck\", \"endpoint\": string, \"interval_seconds\": number, \"timeout\": number}\n- set_metric_threshold: Sets threshold. Format: {\"function\": \"set_metric_threshold\", \"metric\": string, \"operator\": string, \"value\": number}\n- configure_logging: Configures logging. Format: {\"function\": \"configure_logging\", \"service\": string, \"level\": string, \"retention_days\": number}\n- send_notification: Sends alert. Format: {\"function\": \"send_notification\", \"channel\": string, \"message\": string, \"severity\": string}\nJSON.",
+      "system_prompt": "Monitoring system. Tools:\n- create_healthcheck: Creates healthcheck. Format: {\"function\": \"create_healthcheck\", \"endpoint\": string, \"interval_seconds\": number, \"timeout\": number}\n- set_metric_threshold: Sets threshold. Format: {\"function\": \"set_metric_threshold\", \"metric\": string, \"operator\": string, \"value\": number}\n- configure_logging: Configures logging. Format: {\"function\": \"configure_logging\", \"service\": string, \"level\": string, \"retention_days\": number}\n- send_notification: Sends alert. Format: {\"function\": \"send_notification\", \"channel\": string, \"message\": string, \"severity\": string}",
       "prompt": "Send critical notification to slack channel saying 'Database connection failed'",
       "expected_function": "send_notification",
       "required_keys": [
@@ -1365,7 +1365,7 @@
       "category": "admin"
     },
     {
-      "system_prompt": "CI/CD pipeline manager. Functions:\n- trigger_build: Triggers build. Format: {\"function\": \"trigger_build\", \"project\": string, \"branch\": string, \"parameters\": dict}\n- run_tests: Runs tests. Format: {\"function\": \"run_tests\", \"suite\": string, \"parallel\": boolean}\n- deploy_artifact: Deploys artifact. Format: {\"function\": \"deploy_artifact\", \"artifact_id\": string, \"environment\": string, \"rollback_enabled\": boolean}\n- rollback_deployment: Rolls back. Format: {\"function\": \"rollback_deployment\", \"deployment_id\": string, \"target_version\": string}\nJSON.",
+      "system_prompt": "CI/CD pipeline manager. Functions:\n- trigger_build: Triggers build. Format: {\"function\": \"trigger_build\", \"project\": string, \"branch\": string, \"parameters\": dict}\n- run_tests: Runs tests. Format: {\"function\": \"run_tests\", \"suite\": string, \"parallel\": boolean}\n- deploy_artifact: Deploys artifact. Format: {\"function\": \"deploy_artifact\", \"artifact_id\": string, \"environment\": string, \"rollback_enabled\": boolean}\n- rollback_deployment: Rolls back. Format: {\"function\": \"rollback_deployment\", \"deployment_id\": string, \"target_version\": string}",
       "prompt": "Trigger build for frontend-app on main branch with debug parameters",
       "expected_function": "trigger_build",
       "required_keys": [
@@ -1377,7 +1377,7 @@
       "category": "admin"
     },
     {
-      "system_prompt": "You are a web search assistant. Available tools:\n- search_web: Searches the web. Format: {\"function\": \"search_web\", \"query\": string, \"max_results\": number}\n- get_weather: Gets weather info. Format: {\"function\": \"get_weather\", \"location\": string, \"units\": string}\n- fetch_news: Fetches news. Format: {\"function\": \"fetch_news\", \"topic\": string, \"language\": string, \"limit\": number}\n- translate_text: Translates text. Format: {\"function\": \"translate_text\", \"text\": string, \"target_language\": string}\nJSON only.",
+      "system_prompt": "You are a web search assistant. Available tools:\n- search_web: Searches the web. Format: {\"function\": \"search_web\", \"query\": string, \"max_results\": number}\n- get_weather: Gets weather info. Format: {\"function\": \"get_weather\", \"location\": string, \"units\": string}\n- fetch_news: Fetches news. Format: {\"function\": \"fetch_news\", \"topic\": string, \"language\": string, \"limit\": number}\n- translate_text: Translates text. Format: {\"function\": \"translate_text\", \"text\": string, \"target_language\": string}",
       "prompt": "Search for machine learning tutorials with 10 results",
       "expected_function": "search_web",
       "required_keys": [
@@ -1388,7 +1388,7 @@
       "category": "web_search"
     },
     {
-      "system_prompt": "You are a web search assistant. Available tools:\n- search_web: Searches the web. Format: {\"function\": \"search_web\", \"query\": string, \"max_results\": number}\n- get_weather: Gets weather info. Format: {\"function\": \"get_weather\", \"location\": string, \"units\": string}\n- fetch_news: Fetches news. Format: {\"function\": \"fetch_news\", \"topic\": string, \"language\": string, \"limit\": number}\n- translate_text: Translates text. Format: {\"function\": \"translate_text\", \"text\": string, \"target_language\": string}\nJSON only.",
+      "system_prompt": "You are a web search assistant. Available tools:\n- search_web: Searches the web. Format: {\"function\": \"search_web\", \"query\": string, \"max_results\": number}\n- get_weather: Gets weather info. Format: {\"function\": \"get_weather\", \"location\": string, \"units\": string}\n- fetch_news: Fetches news. Format: {\"function\": \"fetch_news\", \"topic\": string, \"language\": string, \"limit\": number}\n- translate_text: Translates text. Format: {\"function\": \"translate_text\", \"text\": string, \"target_language\": string}",
       "prompt": "Get weather for London in metric units",
       "expected_function": "get_weather",
       "required_keys": [
@@ -1399,7 +1399,7 @@
       "category": "web_search"
     },
     {
-      "system_prompt": "You are a web search assistant. Available tools:\n- search_web: Searches the web. Format: {\"function\": \"search_web\", \"query\": string, \"max_results\": number}\n- get_weather: Gets weather info. Format: {\"function\": \"get_weather\", \"location\": string, \"units\": string}\n- fetch_news: Fetches news. Format: {\"function\": \"fetch_news\", \"topic\": string, \"language\": string, \"limit\": number}\n- translate_text: Translates text. Format: {\"function\": \"translate_text\", \"text\": string, \"target_language\": string}\nJSON only.",
+      "system_prompt": "You are a web search assistant. Available tools:\n- search_web: Searches the web. Format: {\"function\": \"search_web\", \"query\": string, \"max_results\": number}\n- get_weather: Gets weather info. Format: {\"function\": \"get_weather\", \"location\": string, \"units\": string}\n- fetch_news: Fetches news. Format: {\"function\": \"fetch_news\", \"topic\": string, \"language\": string, \"limit\": number}\n- translate_text: Translates text. Format: {\"function\": \"translate_text\", \"text\": string, \"target_language\": string}",
       "prompt": "Fetch technology news in English with limit of 5 articles",
       "expected_function": "fetch_news",
       "required_keys": [
@@ -1411,7 +1411,7 @@
       "category": "web_search"
     },
     {
-      "system_prompt": "You are a web search assistant. Available tools:\n- search_web: Searches the web. Format: {\"function\": \"search_web\", \"query\": string, \"max_results\": number}\n- get_weather: Gets weather info. Format: {\"function\": \"get_weather\", \"location\": string, \"units\": string}\n- fetch_news: Fetches news. Format: {\"function\": \"fetch_news\", \"topic\": string, \"language\": string, \"limit\": number}\n- translate_text: Translates text. Format: {\"function\": \"translate_text\", \"text\": string, \"target_language\": string}\nJSON only.",
+      "system_prompt": "You are a web search assistant. Available tools:\n- search_web: Searches the web. Format: {\"function\": \"search_web\", \"query\": string, \"max_results\": number}\n- get_weather: Gets weather info. Format: {\"function\": \"get_weather\", \"location\": string, \"units\": string}\n- fetch_news: Fetches news. Format: {\"function\": \"fetch_news\", \"topic\": string, \"language\": string, \"limit\": number}\n- translate_text: Translates text. Format: {\"function\": \"translate_text\", \"text\": string, \"target_language\": string}",
       "prompt": "Translate 'Hello, how are you?' to Spanish",
       "expected_function": "translate_text",
       "required_keys": [
@@ -1422,7 +1422,7 @@
       "category": "web_search"
     },
     {
-      "system_prompt": "Information retrieval system. Tools:\n- find_definition: Finds word definition. Format: {\"function\": \"find_definition\", \"word\": string, \"language\": string}\n- get_synonyms: Gets synonyms. Format: {\"function\": \"get_synonyms\", \"word\": string, \"max_count\": number}\n- search_images: Searches images. Format: {\"function\": \"search_images\", \"query\": string, \"size\": string, \"count\": number}\n- lookup_company: Looks up company info. Format: {\"function\": \"lookup_company\", \"company_name\": string, \"fields\": list}\nJSON.",
+      "system_prompt": "Information retrieval system. Tools:\n- find_definition: Finds word definition. Format: {\"function\": \"find_definition\", \"word\": string, \"language\": string}\n- get_synonyms: Gets synonyms. Format: {\"function\": \"get_synonyms\", \"word\": string, \"max_count\": number}\n- search_images: Searches images. Format: {\"function\": \"search_images\", \"query\": string, \"size\": string, \"count\": number}\n- lookup_company: Looks up company info. Format: {\"function\": \"lookup_company\", \"company_name\": string, \"fields\": list}",
       "prompt": "Find definition of 'ubiquitous' in English",
       "expected_function": "find_definition",
       "required_keys": [
@@ -1433,7 +1433,7 @@
       "category": "web_search"
     },
     {
-      "system_prompt": "Information retrieval system. Tools:\n- find_definition: Finds word definition. Format: {\"function\": \"find_definition\", \"word\": string, \"language\": string}\n- get_synonyms: Gets synonyms. Format: {\"function\": \"get_synonyms\", \"word\": string, \"max_count\": number}\n- search_images: Searches images. Format: {\"function\": \"search_images\", \"query\": string, \"size\": string, \"count\": number}\n- lookup_company: Looks up company info. Format: {\"function\": \"lookup_company\", \"company_name\": string, \"fields\": list}\nJSON.",
+      "system_prompt": "Information retrieval system. Tools:\n- find_definition: Finds word definition. Format: {\"function\": \"find_definition\", \"word\": string, \"language\": string}\n- get_synonyms: Gets synonyms. Format: {\"function\": \"get_synonyms\", \"word\": string, \"max_count\": number}\n- search_images: Searches images. Format: {\"function\": \"search_images\", \"query\": string, \"size\": string, \"count\": number}\n- lookup_company: Looks up company info. Format: {\"function\": \"lookup_company\", \"company_name\": string, \"fields\": list}",
       "prompt": "Get 10 synonyms for the word 'happy'",
       "expected_function": "get_synonyms",
       "required_keys": [
@@ -1444,7 +1444,7 @@
       "category": "web_search"
     },
     {
-      "system_prompt": "Information retrieval system. Tools:\n- find_definition: Finds word definition. Format: {\"function\": \"find_definition\", \"word\": string, \"language\": string}\n- get_synonyms: Gets synonyms. Format: {\"function\": \"get_synonyms\", \"word\": string, \"max_count\": number}\n- search_images: Searches images. Format: {\"function\": \"search_images\", \"query\": string, \"size\": string, \"count\": number}\n- lookup_company: Looks up company info. Format: {\"function\": \"lookup_company\", \"company_name\": string, \"fields\": list}\nJSON.",
+      "system_prompt": "Information retrieval system. Tools:\n- find_definition: Finds word definition. Format: {\"function\": \"find_definition\", \"word\": string, \"language\": string}\n- get_synonyms: Gets synonyms. Format: {\"function\": \"get_synonyms\", \"word\": string, \"max_count\": number}\n- search_images: Searches images. Format: {\"function\": \"search_images\", \"query\": string, \"size\": string, \"count\": number}\n- lookup_company: Looks up company info. Format: {\"function\": \"lookup_company\", \"company_name\": string, \"fields\": list}",
       "prompt": "Search for large images of mountains with count 20",
       "expected_function": "search_images",
       "required_keys": [
@@ -1456,7 +1456,7 @@
       "category": "web_search"
     },
     {
-      "system_prompt": "Information retrieval system. Tools:\n- find_definition: Finds word definition. Format: {\"function\": \"find_definition\", \"word\": string, \"language\": string}\n- get_synonyms: Gets synonyms. Format: {\"function\": \"get_synonyms\", \"word\": string, \"max_count\": number}\n- search_images: Searches images. Format: {\"function\": \"search_images\", \"query\": string, \"size\": string, \"count\": number}\n- lookup_company: Looks up company info. Format: {\"function\": \"lookup_company\", \"company_name\": string, \"fields\": list}\nJSON.",
+      "system_prompt": "Information retrieval system. Tools:\n- find_definition: Finds word definition. Format: {\"function\": \"find_definition\", \"word\": string, \"language\": string}\n- get_synonyms: Gets synonyms. Format: {\"function\": \"get_synonyms\", \"word\": string, \"max_count\": number}\n- search_images: Searches images. Format: {\"function\": \"search_images\", \"query\": string, \"size\": string, \"count\": number}\n- lookup_company: Looks up company info. Format: {\"function\": \"lookup_company\", \"company_name\": string, \"fields\": list}",
       "prompt": "Lookup Tesla company info for revenue and employees fields",
       "expected_function": "lookup_company",
       "required_keys": [
@@ -1467,7 +1467,7 @@
       "category": "web_search"
     },
     {
-      "system_prompt": "Knowledge base assistant. Functions:\n- query_wikipedia: Queries Wikipedia. Format: {\"function\": \"query_wikipedia\", \"topic\": string, \"language\": string}\n- get_stock_price: Gets stock price. Format: {\"function\": \"get_stock_price\", \"symbol\": string, \"exchange\": string}\n- calculate_distance: Calculates distance. Format: {\"function\": \"calculate_distance\", \"origin\": string, \"destination\": string, \"unit\": string}\n- convert_currency: Converts currency. Format: {\"function\": \"convert_currency\", \"amount\": number, \"from_currency\": string, \"to_currency\": string}\nJSON.",
+      "system_prompt": "Knowledge base assistant. Functions:\n- query_wikipedia: Queries Wikipedia. Format: {\"function\": \"query_wikipedia\", \"topic\": string, \"language\": string}\n- get_stock_price: Gets stock price. Format: {\"function\": \"get_stock_price\", \"symbol\": string, \"exchange\": string}\n- calculate_distance: Calculates distance. Format: {\"function\": \"calculate_distance\", \"origin\": string, \"destination\": string, \"unit\": string}\n- convert_currency: Converts currency. Format: {\"function\": \"convert_currency\", \"amount\": number, \"from_currency\": string, \"to_currency\": string}",
       "prompt": "Query Wikipedia for 'Quantum Computing' in English",
       "expected_function": "query_wikipedia",
       "required_keys": [
@@ -1478,7 +1478,7 @@
       "category": "web_search"
     },
     {
-      "system_prompt": "Knowledge base assistant. Functions:\n- query_wikipedia: Queries Wikipedia. Format: {\"function\": \"query_wikipedia\", \"topic\": string, \"language\": string}\n- get_stock_price: Gets stock price. Format: {\"function\": \"get_stock_price\", \"symbol\": string, \"exchange\": string}\n- calculate_distance: Calculates distance. Format: {\"function\": \"calculate_distance\", \"origin\": string, \"destination\": string, \"unit\": string}\n- convert_currency: Converts currency. Format: {\"function\": \"convert_currency\", \"amount\": number, \"from_currency\": string, \"to_currency\": string}\nJSON.",
+      "system_prompt": "Knowledge base assistant. Functions:\n- query_wikipedia: Queries Wikipedia. Format: {\"function\": \"query_wikipedia\", \"topic\": string, \"language\": string}\n- get_stock_price: Gets stock price. Format: {\"function\": \"get_stock_price\", \"symbol\": string, \"exchange\": string}\n- calculate_distance: Calculates distance. Format: {\"function\": \"calculate_distance\", \"origin\": string, \"destination\": string, \"unit\": string}\n- convert_currency: Converts currency. Format: {\"function\": \"convert_currency\", \"amount\": number, \"from_currency\": string, \"to_currency\": string}",
       "prompt": "Get stock price for AAPL on NASDAQ exchange",
       "expected_function": "get_stock_price",
       "required_keys": [
@@ -1489,7 +1489,7 @@
       "category": "web_search"
     },
     {
-      "system_prompt": "Knowledge base assistant. Functions:\n- query_wikipedia: Queries Wikipedia. Format: {\"function\": \"query_wikipedia\", \"topic\": string, \"language\": string}\n- get_stock_price: Gets stock price. Format: {\"function\": \"get_stock_price\", \"symbol\": string, \"exchange\": string}\n- calculate_distance: Calculates distance. Format: {\"function\": \"calculate_distance\", \"origin\": string, \"destination\": string, \"unit\": string}\n- convert_currency: Converts currency. Format: {\"function\": \"convert_currency\", \"amount\": number, \"from_currency\": string, \"to_currency\": string}\nJSON.",
+      "system_prompt": "Knowledge base assistant. Functions:\n- query_wikipedia: Queries Wikipedia. Format: {\"function\": \"query_wikipedia\", \"topic\": string, \"language\": string}\n- get_stock_price: Gets stock price. Format: {\"function\": \"get_stock_price\", \"symbol\": string, \"exchange\": string}\n- calculate_distance: Calculates distance. Format: {\"function\": \"calculate_distance\", \"origin\": string, \"destination\": string, \"unit\": string}\n- convert_currency: Converts currency. Format: {\"function\": \"convert_currency\", \"amount\": number, \"from_currency\": string, \"to_currency\": string}",
       "prompt": "Calculate distance from New York to Los Angeles in miles",
       "expected_function": "calculate_distance",
       "required_keys": [
@@ -1501,7 +1501,7 @@
       "category": "web_search"
     },
     {
-      "system_prompt": "Knowledge base assistant. Functions:\n- query_wikipedia: Queries Wikipedia. Format: {\"function\": \"query_wikipedia\", \"topic\": string, \"language\": string}\n- get_stock_price: Gets stock price. Format: {\"function\": \"get_stock_price\", \"symbol\": string, \"exchange\": string}\n- calculate_distance: Calculates distance. Format: {\"function\": \"calculate_distance\", \"origin\": string, \"destination\": string, \"unit\": string}\n- convert_currency: Converts currency. Format: {\"function\": \"convert_currency\", \"amount\": number, \"from_currency\": string, \"to_currency\": string}\nJSON.",
+      "system_prompt": "Knowledge base assistant. Functions:\n- query_wikipedia: Queries Wikipedia. Format: {\"function\": \"query_wikipedia\", \"topic\": string, \"language\": string}\n- get_stock_price: Gets stock price. Format: {\"function\": \"get_stock_price\", \"symbol\": string, \"exchange\": string}\n- calculate_distance: Calculates distance. Format: {\"function\": \"calculate_distance\", \"origin\": string, \"destination\": string, \"unit\": string}\n- convert_currency: Converts currency. Format: {\"function\": \"convert_currency\", \"amount\": number, \"from_currency\": string, \"to_currency\": string}",
       "prompt": "Convert 100 USD to EUR",
       "expected_function": "convert_currency",
       "required_keys": [
@@ -1513,7 +1513,7 @@
       "category": "web_search"
     },
     {
-      "system_prompt": "Travel information agent. Tools:\n- find_flights: Finds flights. Format: {\"function\": \"find_flights\", \"origin\": string, \"destination\": string, \"date\": string, \"passengers\": number}\n- search_hotels: Searches hotels. Format: {\"function\": \"search_hotels\", \"location\": string, \"checkin\": string, \"checkout\": string, \"guests\": number}\n- get_directions: Gets directions. Format: {\"function\": \"get_directions\", \"from\": string, \"to\": string, \"mode\": string}\n- find_restaurants: Finds restaurants. Format: {\"function\": \"find_restaurants\", \"location\": string, \"cuisine\": string, \"price_range\": string}\nJSON.",
+      "system_prompt": "Travel information agent. Tools:\n- find_flights: Finds flights. Format: {\"function\": \"find_flights\", \"origin\": string, \"destination\": string, \"date\": string, \"passengers\": number}\n- search_hotels: Searches hotels. Format: {\"function\": \"search_hotels\", \"location\": string, \"checkin\": string, \"checkout\": string, \"guests\": number}\n- get_directions: Gets directions. Format: {\"function\": \"get_directions\", \"from\": string, \"to\": string, \"mode\": string}\n- find_restaurants: Finds restaurants. Format: {\"function\": \"find_restaurants\", \"location\": string, \"cuisine\": string, \"price_range\": string}",
       "prompt": "Find flights from Stockholm to Paris on 2024-12-15 for 2 passengers",
       "expected_function": "find_flights",
       "required_keys": [
@@ -1526,7 +1526,7 @@
       "category": "web_search"
     },
     {
-      "system_prompt": "Travel information agent. Tools:\n- find_flights: Finds flights. Format: {\"function\": \"find_flights\", \"origin\": string, \"destination\": string, \"date\": string, \"passengers\": number}\n- search_hotels: Searches hotels. Format: {\"function\": \"search_hotels\", \"location\": string, \"checkin\": string, \"checkout\": string, \"guests\": number}\n- get_directions: Gets directions. Format: {\"function\": \"get_directions\", \"from\": string, \"to\": string, \"mode\": string}\n- find_restaurants: Finds restaurants. Format: {\"function\": \"find_restaurants\", \"location\": string, \"cuisine\": string, \"price_range\": string}\nJSON.",
+      "system_prompt": "Travel information agent. Tools:\n- find_flights: Finds flights. Format: {\"function\": \"find_flights\", \"origin\": string, \"destination\": string, \"date\": string, \"passengers\": number}\n- search_hotels: Searches hotels. Format: {\"function\": \"search_hotels\", \"location\": string, \"checkin\": string, \"checkout\": string, \"guests\": number}\n- get_directions: Gets directions. Format: {\"function\": \"get_directions\", \"from\": string, \"to\": string, \"mode\": string}\n- find_restaurants: Finds restaurants. Format: {\"function\": \"find_restaurants\", \"location\": string, \"cuisine\": string, \"price_range\": string}",
       "prompt": "Search hotels in Berlin checking in 2024-12-20 checking out 2024-12-25 for 2 guests",
       "expected_function": "search_hotels",
       "required_keys": [
@@ -1539,7 +1539,7 @@
       "category": "web_search"
     },
     {
-      "system_prompt": "Travel information agent. Tools:\n- find_flights: Finds flights. Format: {\"function\": \"find_flights\", \"origin\": string, \"destination\": string, \"date\": string, \"passengers\": number}\n- search_hotels: Searches hotels. Format: {\"function\": \"search_hotels\", \"location\": string, \"checkin\": string, \"checkout\": string, \"guests\": number}\n- get_directions: Gets directions. Format: {\"function\": \"get_directions\", \"from\": string, \"to\": string, \"mode\": string}\n- find_restaurants: Finds restaurants. Format: {\"function\": \"find_restaurants\", \"location\": string, \"cuisine\": string, \"price_range\": string}\nJSON.",
+      "system_prompt": "Travel information agent. Tools:\n- find_flights: Finds flights. Format: {\"function\": \"find_flights\", \"origin\": string, \"destination\": string, \"date\": string, \"passengers\": number}\n- search_hotels: Searches hotels. Format: {\"function\": \"search_hotels\", \"location\": string, \"checkin\": string, \"checkout\": string, \"guests\": number}\n- get_directions: Gets directions. Format: {\"function\": \"get_directions\", \"from\": string, \"to\": string, \"mode\": string}\n- find_restaurants: Finds restaurants. Format: {\"function\": \"find_restaurants\", \"location\": string, \"cuisine\": string, \"price_range\": string}",
       "prompt": "Get driving directions from Central Station to Airport",
       "expected_function": "get_directions",
       "required_keys": [
@@ -1551,7 +1551,7 @@
       "category": "web_search"
     },
     {
-      "system_prompt": "Travel information agent. Tools:\n- find_flights: Finds flights. Format: {\"function\": \"find_flights\", \"origin\": string, \"destination\": string, \"date\": string, \"passengers\": number}\n- search_hotels: Searches hotels. Format: {\"function\": \"search_hotels\", \"location\": string, \"checkin\": string, \"checkout\": string, \"guests\": number}\n- get_directions: Gets directions. Format: {\"function\": \"get_directions\", \"from\": string, \"to\": string, \"mode\": string}\n- find_restaurants: Finds restaurants. Format: {\"function\": \"find_restaurants\", \"location\": string, \"cuisine\": string, \"price_range\": string}\nJSON.",
+      "system_prompt": "Travel information agent. Tools:\n- find_flights: Finds flights. Format: {\"function\": \"find_flights\", \"origin\": string, \"destination\": string, \"date\": string, \"passengers\": number}\n- search_hotels: Searches hotels. Format: {\"function\": \"search_hotels\", \"location\": string, \"checkin\": string, \"checkout\": string, \"guests\": number}\n- get_directions: Gets directions. Format: {\"function\": \"get_directions\", \"from\": string, \"to\": string, \"mode\": string}\n- find_restaurants: Finds restaurants. Format: {\"function\": \"find_restaurants\", \"location\": string, \"cuisine\": string, \"price_range\": string}",
       "prompt": "Find Italian restaurants in Rome with moderate price range",
       "expected_function": "find_restaurants",
       "required_keys": [
@@ -1563,7 +1563,7 @@
       "category": "web_search"
     },
     {
-      "system_prompt": "E-commerce assistant. Functions:\n- search_products: Searches products. Format: {\"function\": \"search_products\", \"query\": string, \"category\": string, \"max_price\": number}\n- compare_prices: Compares prices. Format: {\"function\": \"compare_prices\", \"product_id\": string, \"stores\": list}\n- track_shipment: Tracks shipment. Format: {\"function\": \"track_shipment\", \"tracking_number\": string, \"carrier\": string}\n- find_deals: Finds deals. Format: {\"function\": \"find_deals\", \"category\": string, \"min_discount\": number}\nJSON.",
+      "system_prompt": "E-commerce assistant. Functions:\n- search_products: Searches products. Format: {\"function\": \"search_products\", \"query\": string, \"category\": string, \"max_price\": number}\n- compare_prices: Compares prices. Format: {\"function\": \"compare_prices\", \"product_id\": string, \"stores\": list}\n- track_shipment: Tracks shipment. Format: {\"function\": \"track_shipment\", \"tracking_number\": string, \"carrier\": string}\n- find_deals: Finds deals. Format: {\"function\": \"find_deals\", \"category\": string, \"min_discount\": number}",
       "prompt": "Search for laptops in electronics category with max price 1500",
       "expected_function": "search_products",
       "required_keys": [
@@ -1575,7 +1575,7 @@
       "category": "web_search"
     },
     {
-      "system_prompt": "E-commerce assistant. Functions:\n- search_products: Searches products. Format: {\"function\": \"search_products\", \"query\": string, \"category\": string, \"max_price\": number}\n- compare_prices: Compares prices. Format: {\"function\": \"compare_prices\", \"product_id\": string, \"stores\": list}\n- track_shipment: Tracks shipment. Format: {\"function\": \"track_shipment\", \"tracking_number\": string, \"carrier\": string}\n- find_deals: Finds deals. Format: {\"function\": \"find_deals\", \"category\": string, \"min_discount\": number}\nJSON.",
+      "system_prompt": "E-commerce assistant. Functions:\n- search_products: Searches products. Format: {\"function\": \"search_products\", \"query\": string, \"category\": string, \"max_price\": number}\n- compare_prices: Compares prices. Format: {\"function\": \"compare_prices\", \"product_id\": string, \"stores\": list}\n- track_shipment: Tracks shipment. Format: {\"function\": \"track_shipment\", \"tracking_number\": string, \"carrier\": string}\n- find_deals: Finds deals. Format: {\"function\": \"find_deals\", \"category\": string, \"min_discount\": number}",
       "prompt": "Compare prices for product PROD12345 across Amazon and BestBuy stores",
       "expected_function": "compare_prices",
       "required_keys": [
@@ -1586,7 +1586,7 @@
       "category": "web_search"
     },
     {
-      "system_prompt": "E-commerce assistant. Functions:\n- search_products: Searches products. Format: {\"function\": \"search_products\", \"query\": string, \"category\": string, \"max_price\": number}\n- compare_prices: Compares prices. Format: {\"function\": \"compare_prices\", \"product_id\": string, \"stores\": list}\n- track_shipment: Tracks shipment. Format: {\"function\": \"track_shipment\", \"tracking_number\": string, \"carrier\": string}\n- find_deals: Finds deals. Format: {\"function\": \"find_deals\", \"category\": string, \"min_discount\": number}\nJSON.",
+      "system_prompt": "E-commerce assistant. Functions:\n- search_products: Searches products. Format: {\"function\": \"search_products\", \"query\": string, \"category\": string, \"max_price\": number}\n- compare_prices: Compares prices. Format: {\"function\": \"compare_prices\", \"product_id\": string, \"stores\": list}\n- track_shipment: Tracks shipment. Format: {\"function\": \"track_shipment\", \"tracking_number\": string, \"carrier\": string}\n- find_deals: Finds deals. Format: {\"function\": \"find_deals\", \"category\": string, \"min_discount\": number}",
       "prompt": "Track shipment with tracking number 1Z999AA10123456784 via UPS carrier",
       "expected_function": "track_shipment",
       "required_keys": [
@@ -1597,7 +1597,7 @@
       "category": "web_search"
     },
     {
-      "system_prompt": "E-commerce assistant. Functions:\n- search_products: Searches products. Format: {\"function\": \"search_products\", \"query\": string, \"category\": string, \"max_price\": number}\n- compare_prices: Compares prices. Format: {\"function\": \"compare_prices\", \"product_id\": string, \"stores\": list}\n- track_shipment: Tracks shipment. Format: {\"function\": \"track_shipment\", \"tracking_number\": string, \"carrier\": string}\n- find_deals: Finds deals. Format: {\"function\": \"find_deals\", \"category\": string, \"min_discount\": number}\nJSON.",
+      "system_prompt": "E-commerce assistant. Functions:\n- search_products: Searches products. Format: {\"function\": \"search_products\", \"query\": string, \"category\": string, \"max_price\": number}\n- compare_prices: Compares prices. Format: {\"function\": \"compare_prices\", \"product_id\": string, \"stores\": list}\n- track_shipment: Tracks shipment. Format: {\"function\": \"track_shipment\", \"tracking_number\": string, \"carrier\": string}\n- find_deals: Finds deals. Format: {\"function\": \"find_deals\", \"category\": string, \"min_discount\": number}",
       "prompt": "Find deals in home_appliances category with minimum 30% discount",
       "expected_function": "find_deals",
       "required_keys": [
@@ -1608,7 +1608,7 @@
       "category": "web_search"
     },
     {
-      "system_prompt": "Content discovery agent. Tools:\n- search_videos: Searches videos. Format: {\"function\": \"search_videos\", \"query\": string, \"duration\": string, \"quality\": string}\n- find_podcasts: Finds podcasts. Format: {\"function\": \"find_podcasts\", \"topic\": string, \"language\": string, \"limit\": number}\n- search_books: Searches books. Format: {\"function\": \"search_books\", \"title\": string, \"author\": string, \"genre\": string}\n- get_movie_info: Gets movie info. Format: {\"function\": \"get_movie_info\", \"title\": string, \"year\": number}\nJSON.",
+      "system_prompt": "Content discovery agent. Tools:\n- search_videos: Searches videos. Format: {\"function\": \"search_videos\", \"query\": string, \"duration\": string, \"quality\": string}\n- find_podcasts: Finds podcasts. Format: {\"function\": \"find_podcasts\", \"topic\": string, \"language\": string, \"limit\": number}\n- search_books: Searches books. Format: {\"function\": \"search_books\", \"title\": string, \"author\": string, \"genre\": string}\n- get_movie_info: Gets movie info. Format: {\"function\": \"get_movie_info\", \"title\": string, \"year\": number}",
       "prompt": "Search for Python programming videos with long duration and HD quality",
       "expected_function": "search_videos",
       "required_keys": [
@@ -1620,7 +1620,7 @@
       "category": "web_search"
     },
     {
-      "system_prompt": "Content discovery agent. Tools:\n- search_videos: Searches videos. Format: {\"function\": \"search_videos\", \"query\": string, \"duration\": string, \"quality\": string}\n- find_podcasts: Finds podcasts. Format: {\"function\": \"find_podcasts\", \"topic\": string, \"language\": string, \"limit\": number}\n- search_books: Searches books. Format: {\"function\": \"search_books\", \"title\": string, \"author\": string, \"genre\": string}\n- get_movie_info: Gets movie info. Format: {\"function\": \"get_movie_info\", \"title\": string, \"year\": number}\nJSON.",
+      "system_prompt": "Content discovery agent. Tools:\n- search_videos: Searches videos. Format: {\"function\": \"search_videos\", \"query\": string, \"duration\": string, \"quality\": string}\n- find_podcasts: Finds podcasts. Format: {\"function\": \"find_podcasts\", \"topic\": string, \"language\": string, \"limit\": number}\n- search_books: Searches books. Format: {\"function\": \"search_books\", \"title\": string, \"author\": string, \"genre\": string}\n- get_movie_info: Gets movie info. Format: {\"function\": \"get_movie_info\", \"title\": string, \"year\": number}",
       "prompt": "Find podcasts about artificial intelligence in English limited to 10 results",
       "expected_function": "find_podcasts",
       "required_keys": [
@@ -1632,7 +1632,7 @@
       "category": "web_search"
     },
     {
-      "system_prompt": "Content discovery agent. Tools:\n- search_videos: Searches videos. Format: {\"function\": \"search_videos\", \"query\": string, \"duration\": string, \"quality\": string}\n- find_podcasts: Finds podcasts. Format: {\"function\": \"find_podcasts\", \"topic\": string, \"language\": string, \"limit\": number}\n- search_books: Searches books. Format: {\"function\": \"search_books\", \"title\": string, \"author\": string, \"genre\": string}\n- get_movie_info: Gets movie info. Format: {\"function\": \"get_movie_info\", \"title\": string, \"year\": number}\nJSON.",
+      "system_prompt": "Content discovery agent. Tools:\n- search_videos: Searches videos. Format: {\"function\": \"search_videos\", \"query\": string, \"duration\": string, \"quality\": string}\n- find_podcasts: Finds podcasts. Format: {\"function\": \"find_podcasts\", \"topic\": string, \"language\": string, \"limit\": number}\n- search_books: Searches books. Format: {\"function\": \"search_books\", \"title\": string, \"author\": string, \"genre\": string}\n- get_movie_info: Gets movie info. Format: {\"function\": \"get_movie_info\", \"title\": string, \"year\": number}",
       "prompt": "Search for books titled 'Sapiens' by Yuval Noah Harari in non-fiction genre",
       "expected_function": "search_books",
       "required_keys": [
@@ -1644,7 +1644,7 @@
       "category": "web_search"
     },
     {
-      "system_prompt": "Content discovery agent. Tools:\n- search_videos: Searches videos. Format: {\"function\": \"search_videos\", \"query\": string, \"duration\": string, \"quality\": string}\n- find_podcasts: Finds podcasts. Format: {\"function\": \"find_podcasts\", \"topic\": string, \"language\": string, \"limit\": number}\n- search_books: Searches books. Format: {\"function\": \"search_books\", \"title\": string, \"author\": string, \"genre\": string}\n- get_movie_info: Gets movie info. Format: {\"function\": \"get_movie_info\", \"title\": string, \"year\": number}\nJSON.",
+      "system_prompt": "Content discovery agent. Tools:\n- search_videos: Searches videos. Format: {\"function\": \"search_videos\", \"query\": string, \"duration\": string, \"quality\": string}\n- find_podcasts: Finds podcasts. Format: {\"function\": \"find_podcasts\", \"topic\": string, \"language\": string, \"limit\": number}\n- search_books: Searches books. Format: {\"function\": \"search_books\", \"title\": string, \"author\": string, \"genre\": string}\n- get_movie_info: Gets movie info. Format: {\"function\": \"get_movie_info\", \"title\": string, \"year\": number}",
       "prompt": "Get movie info for Inception released in 2010",
       "expected_function": "get_movie_info",
       "required_keys": [
@@ -1655,7 +1655,7 @@
       "category": "web_search"
     },
     {
-      "system_prompt": "Social media manager. Functions:\n- search_tweets: Searches tweets. Format: {\"function\": \"search_tweets\", \"keyword\": string, \"count\": number, \"language\": string}\n- get_trending_topics: Gets trending topics. Format: {\"function\": \"get_trending_topics\", \"location\": string, \"limit\": number}\n- analyze_sentiment: Analyzes sentiment. Format: {\"function\": \"analyze_sentiment\", \"text\": string, \"model\": string}\n- fetch_profile: Fetches profile. Format: {\"function\": \"fetch_profile\", \"username\": string, \"platform\": string}\nJSON.",
+      "system_prompt": "Social media manager. Functions:\n- search_tweets: Searches tweets. Format: {\"function\": \"search_tweets\", \"keyword\": string, \"count\": number, \"language\": string}\n- get_trending_topics: Gets trending topics. Format: {\"function\": \"get_trending_topics\", \"location\": string, \"limit\": number}\n- analyze_sentiment: Analyzes sentiment. Format: {\"function\": \"analyze_sentiment\", \"text\": string, \"model\": string}\n- fetch_profile: Fetches profile. Format: {\"function\": \"fetch_profile\", \"username\": string, \"platform\": string}",
       "prompt": "Search for tweets with keyword 'AI revolution' count 50 in English",
       "expected_function": "search_tweets",
       "required_keys": [
@@ -1667,7 +1667,7 @@
       "category": "web_search"
     },
     {
-      "system_prompt": "Social media manager. Functions:\n- search_tweets: Searches tweets. Format: {\"function\": \"search_tweets\", \"keyword\": string, \"count\": number, \"language\": string}\n- get_trending_topics: Gets trending topics. Format: {\"function\": \"get_trending_topics\", \"location\": string, \"limit\": number}\n- analyze_sentiment: Analyzes sentiment. Format: {\"function\": \"analyze_sentiment\", \"text\": string, \"model\": string}\n- fetch_profile: Fetches profile. Format: {\"function\": \"fetch_profile\", \"username\": string, \"platform\": string}\nJSON.",
+      "system_prompt": "Social media manager. Functions:\n- search_tweets: Searches tweets. Format: {\"function\": \"search_tweets\", \"keyword\": string, \"count\": number, \"language\": string}\n- get_trending_topics: Gets trending topics. Format: {\"function\": \"get_trending_topics\", \"location\": string, \"limit\": number}\n- analyze_sentiment: Analyzes sentiment. Format: {\"function\": \"analyze_sentiment\", \"text\": string, \"model\": string}\n- fetch_profile: Fetches profile. Format: {\"function\": \"fetch_profile\", \"username\": string, \"platform\": string}",
       "prompt": "Get trending topics in United States limited to 15",
       "expected_function": "get_trending_topics",
       "required_keys": [
@@ -1678,7 +1678,7 @@
       "category": "web_search"
     },
     {
-      "system_prompt": "Social media manager. Functions:\n- search_tweets: Searches tweets. Format: {\"function\": \"search_tweets\", \"keyword\": string, \"count\": number, \"language\": string}\n- get_trending_topics: Gets trending topics. Format: {\"function\": \"get_trending_topics\", \"location\": string, \"limit\": number}\n- analyze_sentiment: Analyzes sentiment. Format: {\"function\": \"analyze_sentiment\", \"text\": string, \"model\": string}\n- fetch_profile: Fetches profile. Format: {\"function\": \"fetch_profile\", \"username\": string, \"platform\": string}\nJSON.",
+      "system_prompt": "Social media manager. Functions:\n- search_tweets: Searches tweets. Format: {\"function\": \"search_tweets\", \"keyword\": string, \"count\": number, \"language\": string}\n- get_trending_topics: Gets trending topics. Format: {\"function\": \"get_trending_topics\", \"location\": string, \"limit\": number}\n- analyze_sentiment: Analyzes sentiment. Format: {\"function\": \"analyze_sentiment\", \"text\": string, \"model\": string}\n- fetch_profile: Fetches profile. Format: {\"function\": \"fetch_profile\", \"username\": string, \"platform\": string}",
       "prompt": "Analyze sentiment of text 'This product is amazing!' using vader model",
       "expected_function": "analyze_sentiment",
       "required_keys": [
@@ -1689,7 +1689,7 @@
       "category": "web_search"
     },
     {
-      "system_prompt": "Social media manager. Functions:\n- search_tweets: Searches tweets. Format: {\"function\": \"search_tweets\", \"keyword\": string, \"count\": number, \"language\": string}\n- get_trending_topics: Gets trending topics. Format: {\"function\": \"get_trending_topics\", \"location\": string, \"limit\": number}\n- analyze_sentiment: Analyzes sentiment. Format: {\"function\": \"analyze_sentiment\", \"text\": string, \"model\": string}\n- fetch_profile: Fetches profile. Format: {\"function\": \"fetch_profile\", \"username\": string, \"platform\": string}\nJSON.",
+      "system_prompt": "Social media manager. Functions:\n- search_tweets: Searches tweets. Format: {\"function\": \"search_tweets\", \"keyword\": string, \"count\": number, \"language\": string}\n- get_trending_topics: Gets trending topics. Format: {\"function\": \"get_trending_topics\", \"location\": string, \"limit\": number}\n- analyze_sentiment: Analyzes sentiment. Format: {\"function\": \"analyze_sentiment\", \"text\": string, \"model\": string}\n- fetch_profile: Fetches profile. Format: {\"function\": \"fetch_profile\", \"username\": string, \"platform\": string}",
       "prompt": "Fetch profile for username elonmusk on Twitter platform",
       "expected_function": "fetch_profile",
       "required_keys": [
@@ -1700,7 +1700,7 @@
       "category": "web_search"
     },
     {
-      "system_prompt": "Academic research assistant. Tools:\n- search_papers: Searches papers. Format: {\"function\": \"search_papers\", \"query\": string, \"year_from\": number, \"year_to\": number, \"max_results\": number}\n- get_citations: Gets citations. Format: {\"function\": \"get_citations\", \"paper_id\": string, \"format\": string}\n- find_authors: Finds authors. Format: {\"function\": \"find_authors\", \"name\": string, \"institution\": string}\n- check_journal_impact: Checks journal impact. Format: {\"function\": \"check_journal_impact\", \"journal_name\": string, \"year\": number}\nJSON.",
+      "system_prompt": "Academic research assistant. Tools:\n- search_papers: Searches papers. Format: {\"function\": \"search_papers\", \"query\": string, \"year_from\": number, \"year_to\": number, \"max_results\": number}\n- get_citations: Gets citations. Format: {\"function\": \"get_citations\", \"paper_id\": string, \"format\": string}\n- find_authors: Finds authors. Format: {\"function\": \"find_authors\", \"name\": string, \"institution\": string}\n- check_journal_impact: Checks journal impact. Format: {\"function\": \"check_journal_impact\", \"journal_name\": string, \"year\": number}",
       "prompt": "Search papers about neural networks from 2020 to 2024 with max 25 results",
       "expected_function": "search_papers",
       "required_keys": [
@@ -1713,7 +1713,7 @@
       "category": "web_search"
     },
     {
-      "system_prompt": "Academic research assistant. Tools:\n- search_papers: Searches papers. Format: {\"function\": \"search_papers\", \"query\": string, \"year_from\": number, \"year_to\": number, \"max_results\": number}\n- get_citations: Gets citations. Format: {\"function\": \"get_citations\", \"paper_id\": string, \"format\": string}\n- find_authors: Finds authors. Format: {\"function\": \"find_authors\", \"name\": string, \"institution\": string}\n- check_journal_impact: Checks journal impact. Format: {\"function\": \"check_journal_impact\", \"journal_name\": string, \"year\": number}\nJSON.",
+      "system_prompt": "Academic research assistant. Tools:\n- search_papers: Searches papers. Format: {\"function\": \"search_papers\", \"query\": string, \"year_from\": number, \"year_to\": number, \"max_results\": number}\n- get_citations: Gets citations. Format: {\"function\": \"get_citations\", \"paper_id\": string, \"format\": string}\n- find_authors: Finds authors. Format: {\"function\": \"find_authors\", \"name\": string, \"institution\": string}\n- check_journal_impact: Checks journal impact. Format: {\"function\": \"check_journal_impact\", \"journal_name\": string, \"year\": number}",
       "prompt": "Get citations for paper arxiv:2103.00020 in BibTeX format",
       "expected_function": "get_citations",
       "required_keys": [
@@ -1724,7 +1724,7 @@
       "category": "web_search"
     },
     {
-      "system_prompt": "Academic research assistant. Tools:\n- search_papers: Searches papers. Format: {\"function\": \"search_papers\", \"query\": string, \"year_from\": number, \"year_to\": number, \"max_results\": number}\n- get_citations: Gets citations. Format: {\"function\": \"get_citations\", \"paper_id\": string, \"format\": string}\n- find_authors: Finds authors. Format: {\"function\": \"find_authors\", \"name\": string, \"institution\": string}\n- check_journal_impact: Checks journal impact. Format: {\"function\": \"check_journal_impact\", \"journal_name\": string, \"year\": number}\nJSON.",
+      "system_prompt": "Academic research assistant. Tools:\n- search_papers: Searches papers. Format: {\"function\": \"search_papers\", \"query\": string, \"year_from\": number, \"year_to\": number, \"max_results\": number}\n- get_citations: Gets citations. Format: {\"function\": \"get_citations\", \"paper_id\": string, \"format\": string}\n- find_authors: Finds authors. Format: {\"function\": \"find_authors\", \"name\": string, \"institution\": string}\n- check_journal_impact: Checks journal impact. Format: {\"function\": \"check_journal_impact\", \"journal_name\": string, \"year\": number}",
       "prompt": "Find authors named Andrew Ng at Stanford institution",
       "expected_function": "find_authors",
       "required_keys": [

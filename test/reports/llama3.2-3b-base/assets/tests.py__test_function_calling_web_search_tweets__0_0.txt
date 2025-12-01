@@ -1,0 +1,95 @@
+Here's an example of how you can implement the `search_tweets` function in JavaScript:
+
+```javascript
+const Twitter = require('twitter');
+
+function search_tweets(keyword, count, language) {
+  const client = new Twitter({
+    consumer_key: 'your_consumer_key',
+    consumer_secret: 'your_consumer_secret',
+    access_token: 'your_access_token',
+    access_token_secret: 'your_access_token_secret',
+  });
+
+  const params = {
+    q: keyword,
+    count: count,
+    lang: language,
+  };
+
+  client.get('search/tweets', params, (error, tweets, response) => {
+    if (error) {
+      console.error(error);
+    } else {
+      console.log(tweets);
+    }
+  });
+}
+
+// Example usage:
+search_tweets('AI revolution', 50, 'en');
+```
+
+However, this is a basic implementation and does not include error handling or any other features you might need. For a production-level application, consider using a more robust library like `twit` or `twitter-api-v2`.
+
+Here's an example using `twit`:
+
+```javascript
+const Twit = require('twit');
+
+function search_tweets(keyword, count, language) {
+  const T = new Twit({
+    consumer_key: 'your_consumer_key',
+    consumer_secret: 'your_consumer_secret',
+    access_token: 'your_access_token',
+    access_token_secret: 'your_access_token_secret',
+  });
+
+  const params = {
+    q: keyword,
+    count: count,
+    lang: language,
+  };
+
+  T.get('search/tweets', params, (err, data, response) => {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log(data);
+    }
+  });
+}
+
+// Example usage:
+search_tweets('AI revolution', 50, 'en');
+```
+
+And here's an example using `twitter-api-v2`:
+
+```javascript
+const TwitterApi = require('twitter-api-v2');
+
+function search_tweets(keyword, count, language) {
+  const api = new TwitterApi({
+    access_token: 'your_access_token',
+    access_token_secret: 'your_access_token_secret',
+  });
+
+  const params = {
+    q: keyword,
+    count: count,
+    lang: language,
+  };
+
+  api.search.tweets(params, (err, data, response) => {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log(data);
+    }
+  });
+}
+
+// Example usage:
+search_tweets('AI revolution', 50, 'en');
+```

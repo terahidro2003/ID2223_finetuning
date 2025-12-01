@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "A bat and ball cost $1.10 together. The bat costs $1 more than the ball. How much does the ball cost in cents?"
+  }
+]

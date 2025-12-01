@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "If a red house is made of red bricks, and a blue house is made of blue bricks, what is a greenhouse made of?"
+  }
+]

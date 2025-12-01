@@ -1,0 +1,19 @@
+Here's an example of how you can use the `audit_logs` function to review logs for the auth-service in the last 24 hours, filtering for failed logins:
+
+```json
+{
+  "function": "audit_logs",
+  "service": "auth-service",
+  "time_range": "24h",
+  "filter": "failed_logins"
+}
+```
+
+This JSON object specifies the following:
+
+- `function`: The function to call, which is `audit_logs`.
+- `service`: The service to review logs for, which is `auth-service`.
+- `time_range`: The time range to review logs for, which is the last 24 hours (`24h`).
+- `filter`: The filter to apply to the logs, which is `failed_logins`.
+
+When you call this function, it will return a list of logs for the auth-service in the last 24 hours that match the filter for failed logins.

@@ -9,6 +9,7 @@ import pytest
 from pytest_html import extras as extras_html
 from typing import Dict, Any, List
 from openai import OpenAI
+from text_to_num import text2num
 
 # ===========================
 # CONFIGURATION
@@ -20,7 +21,10 @@ MODELS = {
         "url": "https://akeelaf-2022--llama-3-2-1b-base-serve.modal.run/v1/",
         "name": "unsloth/Llama-3.2-1B-Instruct-bnb-4bit",
     },
-    # "Llama 3.2 3B base": "",
+    "Llama 3.2 3B base": {
+        "url": "https://akeelaf-2022--llama-3-2-3b-base-serve.modal.run/v1/",
+        "name": "unsloth/Llama-3.2-3B-Instruct-bnb-4bit",
+    },
     "Llama 3.2 3B lora": {
         "url": "https://akeelaf-2022--llama-3-2-3b-lora-serve.modal.run/v1/",
         "name": "hellstone1918/Llama-3.2-3B-basic-lora-model",
@@ -29,10 +33,10 @@ MODELS = {
 
 
 CLIENT = OpenAI(
-    base_url=MODELS['Llama 3.2 1B base']['url'],
+    base_url=MODELS['Llama 3.2 3B base']['url'],
     api_key="token-not-needed-for-local-vllm" 
 )
-MODEL_NAME = MODELS['Llama 3.2 1B base']['name'] # The client often auto-detects, but good to specify
+MODEL_NAME = MODELS['Llama 3.2 3B base']['name'] # The client often auto-detects, but good to specify
 IS_STREAMING = False
 
 class TestDataLoader:
@@ -83,17 +87,83 @@ class TextMatcher:
     """Utility for matching text deterministically"""
     
     @staticmethod
-    def normalize(text: str) -> str:
-        """Normalize text for comparison (lower, strip punctuation/whitespace)"""
-        if not text: return ""
+    def normalize(text: str, extract_pattern: str = None) -> str:
+        """
+        Normalize text for comparison (lower, strip punctuation/whitespace).
+        Optionally extract answer from a pattern first.
+        
+        Args:
+            text: Input text to normalize
+            extract_pattern: Optional regex pattern to extract answer from.
+                            Use a capturing group to specify what to extract.
+        
+        Returns:
+            Normalized text string
+        """
+        if not text:
+            return ""
+        
+        # Extract answer from pattern if provided
+        if extract_pattern:
+            # Find all matches (in case pattern appears multiple times)
+            matches = re.findall(extract_pattern, text, re.IGNORECASE | re.DOTALL)
+            if matches:
+                # Use the last match (final answer)
+                text = matches[-1] if isinstance(matches[-1], str) else matches[-1][0]
+        
         text = text.lower()
         text = re.sub(r'\s+', ' ', text)
         text = re.sub(r'[.,!?;:\"\'\`]', '', text)
         return text.strip()
     
     @staticmethod
-    def contains(haystack: str, needle: str) -> bool:
-        return TextMatcher.normalize(needle) in TextMatcher.normalize(haystack)
+    def contains(haystack: str, needle: str | list[str]) -> bool:
+        """
+        Check if haystack contains needle(s).
+        
+        Args:
+            haystack: The text to search in
+            needle: A single string or list of strings to search for.
+                    Returns True if ANY needle is found.
+        
+        Returns:
+            True if any needle is found in haystack, False otherwise
+        """
+        # Normalize to list for consistent handling
+        if isinstance(needle, str):
+            needles = [needle]
+        else:
+            needles = needle
+        
+        # Check if any needle matches
+        return any(n in haystack for n in needles)
+    
+    @staticmethod
+    def normalize_number(value):
+        """Convert number words or digit strings to float."""
+        if isinstance(value, (int, float)):
+            return float(value)
+        
+        # Try parsing as numeric first
+        try:
+            return float(value)
+        except (ValueError, TypeError):
+            pass
+        
+        # Try parsing as number words
+        try:
+            # Remove extra spaces and normalize
+            normalized = re.sub(r'\s+', ' ', str(value).strip())
+            return float(text2num(normalized, "en"))
+        except:
+            raise ValueError(f"Cannot parse '{value}' as number")
+
+    # Use in test assertions
+    def assert_number_equals(expected, actual, tolerance=0.01):
+        """Compare numbers allowing word or digit format."""
+        expected_num = normalize_number(expected)
+        actual_num = normalize_number(actual)
+        assert abs(expected_num - actual_num) < tolerance
     
     @staticmethod
     def extract_json(text: str) -> Dict[str, Any]:
@@ -141,7 +211,10 @@ def test_reasoning(test_case: Dict[str, Any], extras):
     prompt = test_case["prompt"]
     expected = test_case["expected_answer"]
     
-    messages = [{"role": "user", "content": prompt}]
+    messages = [
+        {"role": "system", "content": "You are a helpful assistant attempting to answer various queries that the user may have. These queries may require you to think in multiple steps to arrive at the correct answer. Once you reach a final answer, you are to respond at the very last line on a new line with 'Final Answer: <your answer here>'."},
+        {"role": "user", "content": prompt},
+    ]
     
     # Get full response (accumulated from stream)
     response = ModelInterface.query(messages)
@@ -169,7 +242,7 @@ def test_function_calling(test_case: Dict[str, Any], extras):
     required_keys = test_case["required_keys"]
     
     messages = [
-        {"role": "system", "content": system_prompt},
+        {"role": "system", "content": system_prompt + "\n**You MUST ONLY respond in JSON format specifying the function to call that you have access to and its respective parameters and values. You are NEVER to write your OWN program/script to meet the users need.**"},
         {"role": "user", "content": user_prompt}
     ]
     
@@ -201,5 +274,5 @@ if __name__ == "__main__":
     pytest.main([__file__, "-v", "--html=report.html", "--self-contained-html"])
 
 # Run 
-# uv run pytest tests.py -v --html=<report path>.html
+# uv run pytest tests.py -n 16 -v --html=reports/llama3.2-3b-base/report.html
 # add -n <number of parallel processes> if you'd like

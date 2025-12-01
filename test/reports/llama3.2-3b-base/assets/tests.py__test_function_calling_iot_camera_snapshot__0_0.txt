@@ -1,0 +1,11 @@
+Here's an example of how you can use the `camera_snapshot` function to take a high-quality snapshot from the `front_door` camera:
+
+```json
+{
+  "function": "camera_snapshot",
+  "camera_id": "front_door",
+  "quality": "high"
+}
+```
+
+This will send a request to the IoT device manager to take a high-quality snapshot from the `front_door` camera. The output will likely be a base64-encoded image string, which you can then use as needed.

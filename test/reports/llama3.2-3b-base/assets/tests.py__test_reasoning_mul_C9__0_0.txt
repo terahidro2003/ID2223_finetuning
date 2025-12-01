@@ -1,0 +1,3 @@
+The correct answer is C) 2.
+
+A prime number is a positive integer that is divisible only by itself and 1. By this definition, 2 is the smallest prime number, as it can only be divided by 1 and itself, 2.

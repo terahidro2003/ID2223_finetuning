@@ -1,0 +1,11 @@
+The correct answer is C) 404.
+
+The HTTP status code 404 indicates that the requested resource was not found. It is commonly used when a web page or URL cannot be located.
+
+Here's a brief explanation of the other options:
+
+A) 200: This status code indicates that the request was successful and the requested resource was found.
+
+B) 301: This status code indicates that the requested resource has been permanently moved to a new location.
+
+D) 500: This status code indicates that an internal server error occurred, and the request cannot be processed.

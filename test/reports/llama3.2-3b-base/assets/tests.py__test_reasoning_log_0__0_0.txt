@@ -1,0 +1,23 @@
+To find the result, we need to multiply all the numbers on a telephone dial pad (1-9 and 0).
+
+First, let's multiply the numbers 1-9:
+1 × 2 = 2
+2 × 3 = 6
+6 × 4 = 24
+24 × 5 = 120
+120 × 6 = 720
+720 × 7 = 5040
+5040 × 8 = 40320
+40320 × 9 = 362880
+
+Now, let's multiply 0 by each of these results:
+0 × 362880 = 0
+0 × 40320 = 0
+0 × 5040 = 0
+0 × 720 = 0
+0 × 120 = 0
+0 × 24 = 0
+0 × 6 = 0
+0 × 2 = 0
+
+The final result is 0.

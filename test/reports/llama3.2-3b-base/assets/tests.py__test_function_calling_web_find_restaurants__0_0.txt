@@ -1,0 +1,12 @@
+Here's a JSON request to find Italian restaurants in Rome with a moderate price range:
+
+```json
+{
+  "function": "find_restaurants",
+  "location": "Rome",
+  "cuisine": "Italian",
+  "price_range": "Moderate"
+}
+```
+
+This request will return a list of Italian restaurants in Rome with moderate prices.

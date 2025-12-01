@@ -1,0 +1,38 @@
+Here's an example of how you can join the customers and orders tables using the `join_tables` function:
+
+```json
+{
+  "function": "join_tables",
+  "left_table": "customers",
+  "right_table": "orders",
+  "join_key": "customer_id"
+}
+```
+
+This will join the customers and orders tables on the `customer_id` column, creating a new table that combines data from both tables. The resulting table will have columns from both tables, with the `customer_id` column serving as the common key.
+
+For example, if the customers table has the following columns:
+
+| customer_id | name | email |
+|-------------|-----|-------|
+| 1           | John | john@example.com |
+| 2           | Jane | jane@example.com |
+| 3           | Bob  | bob@example.com  |
+
+And the orders table has the following columns:
+
+| order_id | customer_id | order_date |
+|----------|-------------|------------|
+| 1        | 1           | 2022-01-01 |
+| 2        | 1           | 2022-01-15 |
+| 3        | 2           | 2022-02-01 |
+| 4        | 3           | 2022-03-01 |
+
+The resulting joined table would have the following columns:
+
+| customer_id | name | email | order_id | order_date |
+|-------------|-----|-------|----------|------------|
+| 1           | John | john@example.com | 1        | 2022-01-01 |
+| 1           | John | john@example.com | 2        | 2022-01-15 |
+| 2           | Jane | jane@example.com | 3        | 2022-02-01 |
+| 3           | Bob  | bob@example.com  | 4        | 2022-03-01 |

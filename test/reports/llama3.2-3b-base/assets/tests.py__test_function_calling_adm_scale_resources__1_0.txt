@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "Infrastructure manager. Tools:\n- deploy_service: Deploys service. Format: {\"function\": \"deploy_service\", \"name\": string, \"version\": string, \"environment\": string}\n- scale_resources: Scales resources. Format: {\"function\": \"scale_resources\", \"service\": string, \"replicas\": number}\n- restart_server: Restarts server. Format: {\"function\": \"restart_server\", \"server_id\": string, \"graceful\": boolean}\n- update_config: Updates config. Format: {\"function\": \"update_config\", \"service\": string, \"key\": string, \"value\": string}\nJSON response."
+  },
+  {
+    "role": "user",
+    "content": "Scale backend-api service to 5 replicas"
+  }
+]

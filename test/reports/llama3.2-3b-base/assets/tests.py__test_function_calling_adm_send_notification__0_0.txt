@@ -1,0 +1,23 @@
+Here's an example of how you can send a critical notification to a Slack channel using the provided tools:
+
+```json
+{
+  "function": "send_notification",
+  "channel": "your-slack-channel",
+  "message": "Database connection failed",
+  "severity": "critical"
+}
+```
+
+However, if you want to customize the notification message or add more details, you can modify the JSON as follows:
+
+```json
+{
+  "function": "send_notification",
+  "channel": "your-slack-channel",
+  "message": "Database connection failed. Please investigate and take corrective action.",
+  "severity": "critical"
+}
+```
+
+Make sure to replace `"your-slack-channel"` with the actual name of your Slack channel.

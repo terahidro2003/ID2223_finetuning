@@ -1,0 +1,9 @@
+```json
+{
+  "function": "find_authors",
+  "name": "Andrew Ng",
+  "institution": "Stanford"
+}
+```
+
+This will search for authors with the name "Andrew Ng" and affiliation with "Stanford" institution.

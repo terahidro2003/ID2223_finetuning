@@ -1,0 +1,53 @@
+Here's an example of how you can analyze the sentiment of the text 'This product is amazing!' using the VaderSentiment model in Python:
+
+```python
+import json
+from nltk.sentiment.vader import SentimentIntensityAnalyzer
+
+def analyze_sentiment(text, model):
+    """
+    Analyzes the sentiment of a given text using the specified model.
+
+    Args:
+        text (str): The text to analyze.
+        model (str): The sentiment model to use.
+
+    Returns:
+        dict: A dictionary containing the sentiment scores.
+    """
+    if model == "vader":
+        # Initialize the SentimentIntensityAnalyzer
+        sia = SentimentIntensityAnalyzer()
+        
+        # Analyze the sentiment of the text
+        sentiment_scores = sia.polarity_scores(text)
+        
+        # Return the sentiment scores
+        return sentiment_scores
+    else:
+        # If the model is not recognized, return an error message
+        return {"error": "Model not recognized"}
+
+# Example usage
+text = "This product is amazing!"
+model = "vader"
+
+sentiment_scores = analyze_sentiment(text, model)
+
+print("Sentiment Scores:")
+print(f"  - Positive: {sentiment_scores['pos']:.2f}")
+print(f"  - Negative: {sentiment_scores['neg']:.2f}")
+print(f"  - Neutral: {sentiment_scores['neu']:.2f}")
+print(f"  - Compound: {sentiment_scores['compound']:.2f}")
+```
+
+This code defines a function `analyze_sentiment` that takes a text and a model as input, analyzes the sentiment of the text using the specified model, and returns a dictionary containing the sentiment scores. The function uses the `nltk` library to access the VaderSentiment model.
+
+In the example usage, we analyze the sentiment of the text 'This product is amazing!' using the VaderSentiment model and print the sentiment scores.
+
+Note that the sentiment scores are calculated as follows:
+
+*   Positive: The proportion of text that falls in the positive sentiment category.
+*   Negative: The proportion of text that falls in the negative sentiment category.
+*   Neutral: The proportion of text that falls in the neutral sentiment category.
+*   Compound: A measure of the overall sentiment of the text, ranging from -1 (very negative) to 1 (very positive).

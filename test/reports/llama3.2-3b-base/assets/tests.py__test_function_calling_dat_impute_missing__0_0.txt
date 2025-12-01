@@ -1,0 +1,11 @@
+Here's an example of how you can impute missing values in the "age" column using the median strategy:
+
+```json
+{
+  "function": "impute_missing",
+  "column": "age",
+  "strategy": "median"
+}
+```
+
+This JSON object specifies the function to use, the column to impute, and the strategy to use (in this case, the median). The function will then impute the missing values in the "age" column using the median of the existing values.

@@ -1,0 +1,11 @@
+Here's an example of how you can use the `get_trending_topics` function to get trending topics in the United States, limited to 15:
+
+```json
+{
+  "function": "get_trending_topics",
+  "location": "United States",
+  "limit": 15
+}
+```
+
+This JSON object specifies the function to call, the location ("United States"), and the limit (15) for the trending topics.

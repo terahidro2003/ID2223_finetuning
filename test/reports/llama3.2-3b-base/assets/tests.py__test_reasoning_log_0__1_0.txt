@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "If you multiply all the numbers on a telephone dial pad (1-9 and 0), what is the result?"
+  }
+]

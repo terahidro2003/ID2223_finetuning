@@ -1,0 +1,15 @@
+The correct answer is B) Merge Sort.
+
+Merge Sort is a divide-and-conquer algorithm that splits the input array into two halves, recursively sorts each half, and then merges the two sorted halves. Its average time complexity is O(n log n), making it one of the most efficient sorting algorithms for large datasets.
+
+Merge Sort is often used in practice because it has a number of desirable properties, including:
+
+* Stability: Merge Sort is a stable sorting algorithm, meaning that it preserves the order of equal elements.
+* Efficiency: Merge Sort has an average time complexity of O(n log n), making it suitable for large datasets.
+* Scalability: Merge Sort can be easily parallelized, making it a good choice for large-scale sorting tasks.
+
+The other options are not correct because:
+
+* Bubble Sort (A) has a worst-case time complexity of O(n^2), making it less efficient than Merge Sort.
+* Selection Sort (C) has a worst-case time complexity of O(n^2), making it less efficient than Merge Sort.
+* Insertion Sort (D) has a worst-case time complexity of O(n^2), making it less efficient than Merge Sort for large datasets.

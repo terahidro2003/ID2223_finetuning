@@ -1,0 +1,5 @@
+To make a word meaning 'tasted', you need to remove the letter 'S' from 'STARTLED'. The resulting word is 'ARTLED', but that's not a valid word. 
+
+However, if you remove the letter 'S' from 'STARTLED', you get 'ARTLED' which isn't a valid word. 
+
+If you remove the letter 'T' from 'STARTLED', you get 'STARLED', which is a valid word.

@@ -1,0 +1,11 @@
+Here's the JSON output for enabling the motion sensor in the hallway with a sensitivity of 8:
+
+```json
+{
+  "function": "enable_motion_sensor",
+  "sensor_id": "hallway_sensor",
+  "sensitivity": 8
+}
+```
+
+In this example, the `sensor_id` is assumed to be "hallway_sensor". You can replace it with the actual ID of the motion sensor you want to enable.

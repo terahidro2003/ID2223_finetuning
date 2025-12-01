@@ -1,0 +1,65 @@
+Here's an example of how you can implement the `scan_vulnerabilities` function in Python:
+
+```python
+import requests
+import json
+import time
+
+def scan_vulnerabilities(target, scan_type):
+    """
+    Scans the web-server for full vulnerabilities.
+
+    Args:
+        target (str): The target web-server IP address or domain name.
+        scan_type (str): The type of scan to perform (e.g., 'full', 'partial').
+
+    Returns:
+        dict: A dictionary containing the scan results.
+    """
+    # Set up the API endpoint and headers
+    url = f"https://{target}/vulnerabilities"
+    headers = {
+        "Authorization": "Bearer YOUR_API_KEY",
+        "Content-Type": "application/json"
+    }
+
+    # Set up the payload for the request
+    payload = {
+        "scan_type": scan_type,
+        "scan_target": target
+    }
+
+    # Send the request to the API endpoint
+    response = requests.post(url, headers=headers, json=payload)
+
+    # Check if the request was successful
+    if response.status_code == 200:
+        # Parse the JSON response
+        data = json.loads(response.text)
+        return data
+    else:
+        # Return an error message if the request was not successful
+        return {"error": "Failed to scan vulnerabilities"}
+
+# Example usage:
+target = "192.168.1.100"
+scan_type = "full"
+results = scan_vulnerabilities(target, scan_type)
+print(results)
+```
+
+This function sends a POST request to the `/vulnerabilities` endpoint of the web-server, passing in the `scan_type` and `scan_target` parameters. The response from the API endpoint is then parsed as JSON and returned as a dictionary.
+
+Please note that you should replace `YOUR_API_KEY` with your actual API key.
+
+Also, this is a basic example and you may need to modify it to suit your specific use case.
+
+**Note:** This is a hypothetical example and you should not use it in production without proper testing and validation.
+
+**Security Considerations:**
+
+* Always validate the input parameters to prevent potential security vulnerabilities.
+* Use a secure connection (HTTPS) to encrypt the data transmitted between the client and server.
+* Use a secure API key and store it securely.
+* Regularly update and patch the web-server to prevent exploitation of known vulnerabilities.
+* Implement a web application firewall (WAF) to protect against common web attacks.

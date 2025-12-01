@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "Monitoring dashboard. Tools:\n- track_metric: Tracks KPI. Format: {\"function\": \"track_metric\", \"metric_name\": string, \"value\": number, \"timestamp\": string}\n- create_alert: Sets alert. Format: {\"function\": \"create_alert\", \"condition\": string, \"threshold\": number, \"notification\": string}\n- generate_dashboard: Creates dashboard. Format: {\"function\": \"generate_dashboard\", \"widgets\": list, \"layout\": string}\n- schedule_report: Schedules report. Format: {\"function\": \"schedule_report\", \"report_type\": string, \"frequency\": string, \"recipients\": list}\nJSON."
+  },
+  {
+    "role": "user",
+    "content": "Track conversion_rate metric with value 3.5 at 2024-11-30T10:00:00"
+  }
+]

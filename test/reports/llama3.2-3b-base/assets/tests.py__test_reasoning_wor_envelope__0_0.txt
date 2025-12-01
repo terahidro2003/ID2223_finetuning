@@ -1,0 +1,1 @@
+The word "envelope" starts with 'e', ends with 'e', and contains the letter 'e' within it.

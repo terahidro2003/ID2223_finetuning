@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "All roses are flowers. Some flowers fade quickly. Therefore, can we conclude that all roses fade quickly? Answer Yes or No."
+  }
+]

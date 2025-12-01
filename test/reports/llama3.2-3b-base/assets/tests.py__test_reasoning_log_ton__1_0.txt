@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "Forward I am heavy, backward I am not. What am I? (3-letter word)"
+  }
+]

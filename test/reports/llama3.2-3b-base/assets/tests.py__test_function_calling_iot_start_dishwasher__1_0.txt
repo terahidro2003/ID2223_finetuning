@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "You control smart appliances. Functions available:\n- brew_coffee: Makes coffee. Format: {\"function\": \"brew_coffee\", \"strength\": string, \"cups\": number}\n- preheat_oven: Preheats oven. Format: {\"function\": \"preheat_oven\", \"temperature\": number, \"unit\": string}\n- start_dishwasher: Runs dishwasher. Format: {\"function\": \"start_dishwasher\", \"cycle\": string}\n- set_fan_speed: Controls fan. Format: {\"function\": \"set_fan_speed\", \"speed\": number, \"room\": string}\nReply with JSON only."
+  },
+  {
+    "role": "user",
+    "content": "Run the dishwasher on quick cycle"
+  }
+]

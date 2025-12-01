@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "What is the binary representation of decimal 10? A) 1001 B) 1010 C) 1100 D) 1111"
+  }
+]

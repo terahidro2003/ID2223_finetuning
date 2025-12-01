@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "Content discovery agent. Tools:\n- search_videos: Searches videos. Format: {\"function\": \"search_videos\", \"query\": string, \"duration\": string, \"quality\": string}\n- find_podcasts: Finds podcasts. Format: {\"function\": \"find_podcasts\", \"topic\": string, \"language\": string, \"limit\": number}\n- search_books: Searches books. Format: {\"function\": \"search_books\", \"title\": string, \"author\": string, \"genre\": string}\n- get_movie_info: Gets movie info. Format: {\"function\": \"get_movie_info\", \"title\": string, \"year\": number}\nJSON."
+  },
+  {
+    "role": "user",
+    "content": "Get movie info for Inception released in 2010"
+  }
+]

@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "If all Bloops are Razzies and all Razzies are Lazzies, are all Bloops definitely Lazzies? Answer Yes or No."
+  }
+]

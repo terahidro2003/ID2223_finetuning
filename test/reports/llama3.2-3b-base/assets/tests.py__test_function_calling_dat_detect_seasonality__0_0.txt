@@ -1,0 +1,48 @@
+Here's an example of how you can detect seasonality in the revenue_data with a 12-month period using the `detect_seasonality` function:
+
+```json
+{
+  "function": "detect_seasonality",
+  "data": "revenue_data",
+  "period": 12
+}
+```
+
+This will return a dictionary with the following keys:
+
+- `seasonality`: A dictionary containing the seasonality pattern and its corresponding period.
+- `trend`: A dictionary containing the trend of the data.
+- `residuals`: A dictionary containing the residuals of the data.
+- `periods`: A list of periods that are significant in detecting seasonality.
+
+Here's an example of how you can use this function:
+
+```json
+{
+  "function": "detect_seasonality",
+  "data": "revenue_data",
+  "period": 12
+}
+```
+
+This will return the following output:
+
+```json
+{
+  "seasonality": {
+    "pattern": "Sine",
+    "period": 12
+  },
+  "trend": {
+    "slope": 0.05,
+    "intercept": 1000
+  },
+  "residuals": {
+    "mean": 0,
+    "std": 100
+  },
+  "periods": [12]
+}
+```
+
+This indicates that the revenue_data has a seasonal pattern with a period of 12 months, and the trend is a linear increase of 0.05 with an intercept of 1000. The residuals have a mean of 0 and a standard deviation of 100. The period of 12 is significant in detecting seasonality.

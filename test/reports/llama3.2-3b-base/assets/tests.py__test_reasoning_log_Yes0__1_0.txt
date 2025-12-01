@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "Three switches control three light bulbs in another room. You can flip switches but can only check the room once. Can you determine which switch controls which bulb? Answer Yes or No."
+  }
+]

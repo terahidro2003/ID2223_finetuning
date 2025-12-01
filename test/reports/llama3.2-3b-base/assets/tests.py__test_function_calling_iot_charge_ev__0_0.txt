@@ -1,0 +1,7 @@
+```json
+{
+  "function": "charge_ev",
+  "charge_limit": 80,
+  "rate": "fast"
+}
+```

@@ -1,0 +1,11 @@
+The correct answer is B) Network.
+
+The Network layer (Layer 3) of the OSI model is responsible for routing. It provides logical addressing and routing of data between different networks. The Network layer uses routing tables and protocols such as RIP (Routing Information Protocol) and OSPF (Open Shortest Path First) to forward data between networks.
+
+Here's a brief overview of the other layers:
+
+A) Transport layer (Layer 4): responsible for reliable data transfer between devices, using protocols like TCP (Transmission Control Protocol) and UDP (User Datagram Protocol).
+
+C) Data Link layer (Layer 2): responsible for framing, error detection and correction, and flow control of data between two devices on the same network.
+
+D) Application layer (Layer 7): responsible for providing services to end-user applications, such as email, file transfer, and web browsing.

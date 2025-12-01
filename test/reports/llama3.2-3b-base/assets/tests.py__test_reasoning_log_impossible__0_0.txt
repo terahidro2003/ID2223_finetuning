@@ -1,0 +1,7 @@
+This is a classic lateral thinking puzzle.
+
+The answer is: Impossible.
+
+In a race, you can't pass the person in last place because that person is already in last place. By definition, they are the last person in the race, so it's not possible for you to pass them.
+
+So, the correct answer is that you are still in last place.

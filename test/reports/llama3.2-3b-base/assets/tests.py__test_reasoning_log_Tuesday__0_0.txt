@@ -1,0 +1,1 @@
+The answer is Tuesday. Since Monday comes before Tuesday, and Tuesday comes before Wednesday, it means that Tuesday is the middle day between Monday and Wednesday.

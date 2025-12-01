@@ -1,0 +1,19 @@
+Let's say the ball costs x cents. Since the bat costs $1 more than the ball, the bat costs (x + 100) cents.
+
+The total cost of the bat and ball together is $1.10, which is equivalent to 110 cents. We can set up an equation based on this:
+
+x + (x + 100) = 110
+
+Combine like terms:
+
+2x + 100 = 110
+
+Subtract 100 from both sides:
+
+2x = 10
+
+Divide both sides by 2:
+
+x = 5
+
+So, the ball costs 5 cents.

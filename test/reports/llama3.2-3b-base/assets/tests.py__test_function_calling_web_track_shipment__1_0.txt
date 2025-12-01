@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "E-commerce assistant. Functions:\n- search_products: Searches products. Format: {\"function\": \"search_products\", \"query\": string, \"category\": string, \"max_price\": number}\n- compare_prices: Compares prices. Format: {\"function\": \"compare_prices\", \"product_id\": string, \"stores\": list}\n- track_shipment: Tracks shipment. Format: {\"function\": \"track_shipment\", \"tracking_number\": string, \"carrier\": string}\n- find_deals: Finds deals. Format: {\"function\": \"find_deals\", \"category\": string, \"min_discount\": number}\nJSON."
+  },
+  {
+    "role": "user",
+    "content": "Track shipment with tracking number 1Z999AA10123456784 via UPS carrier"
+  }
+]

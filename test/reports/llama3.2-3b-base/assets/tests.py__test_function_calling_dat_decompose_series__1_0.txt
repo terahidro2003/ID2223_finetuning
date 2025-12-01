@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "Time series analyzer. Tools:\n- decompose_series: Decomposes time series. Format: {\"function\": \"decompose_series\", \"series\": string, \"model\": string}\n- detect_seasonality: Detects patterns. Format: {\"function\": \"detect_seasonality\", \"data\": string, \"period\": number}\n- forecast_values: Forecasts future. Format: {\"function\": \"forecast_values\", \"series\": string, \"periods\": number, \"model\": string}\n- calculate_correlation: Finds correlation. Format: {\"function\": \"calculate_correlation\", \"x\": string, \"y\": string, \"method\": string}\nJSON."
+  },
+  {
+    "role": "user",
+    "content": "Decompose monthly_sales series using additive model"
+  }
+]

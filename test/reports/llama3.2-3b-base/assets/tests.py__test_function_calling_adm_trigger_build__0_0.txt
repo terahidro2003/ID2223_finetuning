@@ -1,0 +1,18 @@
+Here's an example of how you can trigger a build for the frontend-app on the main branch with debug parameters:
+
+```json
+{
+  "function": "trigger_build",
+  "project": "frontend-app",
+  "branch": "main",
+  "parameters": {
+    "debug": true
+  }
+}
+```
+
+This JSON object calls the `trigger_build` function with the following parameters:
+
+- `project`: `frontend-app`
+- `branch`: `main`
+- `parameters`: An object with a single key-value pair, where the key is `"debug"` and the value is `true`. This tells the build process to run in debug mode.

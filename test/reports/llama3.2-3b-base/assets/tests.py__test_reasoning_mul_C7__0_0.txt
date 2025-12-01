@@ -1,0 +1,9 @@
+The correct answer is C) Mitochondria.
+
+The mitochondria is often referred to as the "powerhouse" of the cell because it generates most of the cell's energy through a process called cellular respiration. It converts the energy from the food we eat into a form that the cell can use, called ATP (adenosine triphosphate). This energy is then used to power the cell's various functions, such as muscle contraction, nerve impulses, and biosynthesis.
+
+The other options are not correct because:
+
+* The nucleus (A) is the control center of the cell, containing the genetic material and regulating cell growth and division.
+* The ribosome (B) is responsible for protein synthesis, translating messenger RNA into proteins.
+* The chloroplast (D) is found in plant cells and is responsible for photosynthesis, the process of converting light energy into chemical energy.
