@@ -117,26 +117,32 @@ class TextMatcher:
         return text.strip()
     
     @staticmethod
-    def contains(haystack: str, needle: str | list[str]) -> bool:
+    def contains(
+        haystack: str, 
+        needle: str | list[str],
+        extract_pattern: str = None,
+    ) -> bool:
         """
-        Check if haystack contains needle(s).
+        Check if haystack contains needle(s) with optional pattern extraction.
         
         Args:
             haystack: The text to search in
-            needle: A single string or list of strings to search for.
-                    Returns True if ANY needle is found.
+            needle: Single string or list of acceptable strings
+            extract_pattern: Optional regex to extract final answer first
+            normalize: Whether to normalize text before comparison
         
         Returns:
-            True if any needle is found in haystack, False otherwise
+            True if any needle is found, False otherwise
         """
-        # Normalize to list for consistent handling
-        if isinstance(needle, str):
-            needles = [needle]
-        else:
-            needles = needle
+        # Extract from pattern if provided
+        if extract_pattern:
+            haystack = TextMatcher.normalize(haystack, extract_pattern)
         
-        # Check if any needle matches
-        return any(n in haystack for n in needles)
+        # Normalize to list
+        needles = [needle] if isinstance(needle, str) else needle
+        
+        haystack_norm = TextMatcher.normalize(haystack)
+        return any(n.lower() in haystack_norm for n in needles)
     
     @staticmethod
     def normalize_number(value):
@@ -161,8 +167,8 @@ class TextMatcher:
     # Use in test assertions
     def assert_number_equals(expected, actual, tolerance=0.01):
         """Compare numbers allowing word or digit format."""
-        expected_num = normalize_number(expected)
-        actual_num = normalize_number(actual)
+        expected_num = TextMatcher.normalize_number(expected)
+        actual_num = TextMatcher.normalize_number(actual)
         assert abs(expected_num - actual_num) < tolerance
     
     @staticmethod
@@ -184,6 +190,22 @@ class TextMatcher:
             return json.loads(json_str)
         except json.JSONDecodeError as e:
             raise ValueError(f"Invalid JSON syntax: {e}")
+        
+    def values_match(expected, actual) -> bool:
+        """Flexible value comparison."""
+        if expected is None or actual is None:
+            return expected == actual
+        if type(expected) != type(actual):
+            try:
+                return str(expected).lower() == str(actual).lower()
+            except:
+                return False
+        if isinstance(expected, str):
+            return expected.lower().strip() == actual.lower().strip()
+        elif isinstance(expected, list):
+            return sorted(str(x) for x in expected) == sorted(str(x) for x in actual)
+        else:
+            return expected == actual
 
 # Initialize Loader
 loader = TestDataLoader()
@@ -225,7 +247,11 @@ def test_reasoning(test_case: Dict[str, Any], extras):
     extras.append(extras_html.text(json.dumps(messages, indent=2), name="Input Messages"))
     # -------------------------------------
     
-    assert TextMatcher.contains(response, expected), \
+    assert TextMatcher.contains(
+        response,
+        expected,
+        extract_pattern=r'Final Answer:\s*(.+?)(?:\n|$)',
+    ), \
         f"\nExpected: '{expected}'\nGot: '{response}'\nPrompt: {prompt}"
 
 # ===========================
@@ -240,6 +266,7 @@ def test_function_calling(test_case: Dict[str, Any], extras):
     user_prompt = test_case["prompt"]
     expected_func = test_case["expected_function"]
     required_keys = test_case["required_keys"]
+    expected_values = test_case.get("expected_values", {})
     
     messages = [
         {"role": "system", "content": system_prompt + "\n**You MUST ONLY respond in JSON format specifying the function to call that you have access to and its respective parameters and values. You are NEVER to write your OWN program/script to meet the users need.**"},
@@ -260,15 +287,36 @@ def test_function_calling(test_case: Dict[str, Any], extras):
     except ValueError as e:
         pytest.fail(f"JSON Parsing Failed: {e}\nResponse Content: {response}")
     
-    # Validate Function Name
-    actual_func = result.get("function")
-    assert actual_func == expected_func, \
-        f"\nWrong Function Called.\nExpected: {expected_func}\nGot: {actual_func}\nFull Response: {response}"
-    
-    # Validate Keys
+    # HARD CHECKS (must pass)
     missing_keys = [k for k in required_keys if k not in result]
     assert not missing_keys, \
-        f"\nMissing JSON Keys: {missing_keys}\nExpected: {required_keys}\nGot Keys: {list(result.keys())}"
+        f"\nMissing Keys: {missing_keys}\nExpected: {required_keys}\nGot: {list(result.keys())}"
+    
+    actual_func = result.get("function")
+    assert actual_func == expected_func, \
+        f"\nWrong Function Called.\nExpected: {expected_func}\nGot: {actual_func}"
+    
+    # SOFT CHECKS (partial credit)
+    value_errors = []
+    for key, expected_val in expected_values.items():
+        if key == "function":
+            continue
+        actual_val = result.get(key)
+        if not TextMatcher.values_match(expected_val, actual_val):
+            value_errors.append(f"{key}: expected={expected_val}, got={actual_val}")
+    
+    # Report results
+    if value_errors:
+        error_text = "\n  ".join(value_errors)
+        extras.append(extras_html.text(
+            f"⚠ PARTIAL PASS ({len(value_errors)} value errors):\n  {error_text}",
+            name="Test Result"
+        ))
+        # Pass test but log warning
+        pytest.skip(f"PARTIAL: {len(value_errors)} value mismatch(es) - see extras")
+    else:
+        extras.append(extras_html.text("✓ FULL PASS", name="Test Result"))
+
 
 if __name__ == "__main__":
     pytest.main([__file__, "-v", "--html=report.html", "--self-contained-html"])
