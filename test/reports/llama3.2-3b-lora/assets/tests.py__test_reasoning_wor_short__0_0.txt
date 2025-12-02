@@ -1,1 +1,5 @@
-The answer is "short". When you add "er" to the end of "short", it becomes "shorter".
+To solve this, let's think about words that can be shortened by adding letters. 
+
+One possible solution is the word "short". When you add the letters "en" to "short", you get the word "shorten". 
+
+Final Answer: shorten

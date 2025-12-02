@@ -1,1 +1,6 @@
-{"function": "open_garage", "door_number": 1}
+```
+{
+  "function": "open_garage",
+  "door_number": 1
+}
+```

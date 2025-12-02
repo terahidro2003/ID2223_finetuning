@@ -4,22 +4,20 @@
   "dataset": "user_data",
   "operations": [
     {
-      "function": "remove_duplicates",
-      "column": "user_id",
-      "strategy": "keep_first"
-    },
-    {
-      "function": "handle_nulls",
+      "function": "impute_missing",
       "column": "age",
       "strategy": "mean"
+    },
+    {
+      "function": "impute_missing",
+      "column": "gender",
+      "strategy": "most_frequent"
+    },
+    {
+      "function": "normalize_data",
+      "columns": ["age", "gender"],
+      "method": "standard"
     }
   ]
 }
 ```
-
-This JSON response indicates that the `clean_dataset` function is being used to clean the `user_data` dataset. The `operations` array contains two operations:
-
-1. `remove_duplicates`: This operation removes duplicate rows from the dataset. The `strategy` parameter is set to `keep_first`, which means that only the first duplicate row is kept. This is done to ensure that each user has a unique `user_id`.
-2. `handle_nulls`: This operation handles null values in the `age` column. The `strategy` parameter is set to `mean`, which means that the mean age of each user is calculated and used as the value for null users. This is done to provide a reasonable estimate of the user's age for null users.
-
-Note: The `clean_dataset` function is assumed to be implemented in a separate module, and the `operations` array is a part of that module. The actual implementation of these functions may vary depending on the specific requirements and the chosen programming language.

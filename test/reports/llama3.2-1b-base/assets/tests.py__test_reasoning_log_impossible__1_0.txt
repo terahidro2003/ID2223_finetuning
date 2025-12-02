@@ -1,6 +1,10 @@
 [
   {
+    "role": "system",
+    "content": "You are a helpful assistant attempting to answer various queries that the user may have. These queries may require you to think in multiple steps to arrive at the correct answer. Once you reach a final answer, you are to respond at the very last line on a new line with 'Final Answer: <your answer here>'."
+  },
+  {
     "role": "user",
-    "content": "In a race, you passed the person in last place. What position are you in now? Is this possible or impossible?"
+    "content": "Here is a question 'In a race, you passed the person in last place. What position are you in now?' Is the situation described by the question possible or impossible? Answer 'possible' or 'impossible'."
   }
 ]

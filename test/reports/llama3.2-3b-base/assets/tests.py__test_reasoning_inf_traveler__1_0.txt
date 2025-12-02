@@ -1,6 +1,0 @@
-[
-  {
-    "role": "user",
-    "content": "A laptop has stickers from multiple countries and airlines. What does this suggest about the owner?"
-  }
-]

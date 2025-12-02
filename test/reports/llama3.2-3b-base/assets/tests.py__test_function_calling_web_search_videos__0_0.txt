@@ -1,27 +1,6 @@
-Here's an example of how you can use the `search_videos` function to search for Python programming videos with long duration and HD quality:
-
-```json
 {
   "function": "search_videos",
   "query": "Python programming",
   "duration": "long",
   "quality": "HD"
 }
-```
-
-This will return a list of videos that match the specified criteria. You can then use the `find_podcasts` function to filter the results and get the video titles, descriptions, and other relevant information.
-
-Alternatively, you can also use the following JSON object to search for Python programming videos with long duration and HD quality:
-
-```json
-{
-  "function": "search_videos",
-  "query": "Python programming",
-  "duration": ["long", "long", "long"],
-  "quality": ["HD", "HD", "HD"]
-}
-```
-
-This will return a list of videos that match the specified duration and quality criteria.
-
-Note that the `duration` and `quality` parameters can be specified as arrays, which allows you to filter the results based on multiple criteria.

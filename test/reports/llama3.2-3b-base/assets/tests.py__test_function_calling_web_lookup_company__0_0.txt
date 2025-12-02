@@ -1,11 +1,1 @@
-Here's an example of how you can use the `lookup_company` function to retrieve Tesla's company info for revenue and employees fields:
-
-```json
-{
-  "function": "lookup_company",
-  "company_name": "Tesla, Inc.",
-  "fields": ["revenue", "employees"]
-}
-```
-
-This JSON object specifies the `lookup_company` function and passes in the company name "Tesla, Inc." along with the fields `revenue` and `employees` that you want to retrieve.
+{"function": "lookup_company", "company_name": "Tesla", "fields": ["revenue", "employees"]}

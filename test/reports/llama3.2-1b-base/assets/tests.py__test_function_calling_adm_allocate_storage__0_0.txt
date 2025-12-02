@@ -1,50 +1,8 @@
-Here's an example of how you can use the Cloud Resource Manager to allocate 500GB SSD storage mounted at `/data`:
-
-```yml
-resources:
-  - name: allocate_storage
-    function: allocate_storage
-    parameters:
-      size_gb: 500
-      type: SSD
-      mount_point: /data
-```
-
-This YAML file defines a single resource called `allocate_storage`. It specifies the following:
-
-- `function`: The function to use for the resource. In this case, we're using the `allocate_storage` function.
-- `parameters`: The parameters to pass to the function. We're specifying the following:
-  - `size_gb`: The size of the storage in GB. We're setting this to 500.
-  - `type`: The type of storage. We're setting this to `SSD`.
-  - `mount_point`: The mount point for the storage. We're setting this to `/data`.
-
-When you run this YAML file, it will create a new resource called `allocate_storage` and allocate 500GB SSD storage mounted at `/data`.
-
-Here's an example of what the output might look like:
-
-```yml
+```json
 {
-  "id": "arn:aws:ec2:region:account-id:instance/allocate-storage",
-  "status": "Created",
-  "created_at": "2023-12-01T12:00:00Z",
-  "description": "allocate_storage"
+  "function": "allocate_storage",
+  "size_gb": 500,
+  "type": "SSD",
+  "mount_point": "/data"
 }
 ```
-
-You can then use the `allocate_storage` function to create the resource programmatically. Here's an example:
-
-```python
-import boto3
-
-ec2 = boto3.client('ec2', region_name='region_name')
-
-response = ec2.allocate_storage(
-    SizeGB=500,
-    Type='SSD',
-    MountPoint='/data'
-)
-
-print(response)
-```
-
-This code will create a new resource called `allocate_storage` and allocate 500GB SSD storage mounted at `/data`.

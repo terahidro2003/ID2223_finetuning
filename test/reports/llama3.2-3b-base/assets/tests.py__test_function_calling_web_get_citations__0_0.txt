@@ -1,11 +1,1 @@
-Here's how you can get the citations for the paper arxiv:2103.00020 in BibTeX format:
-
-```json
-{
-  "function": "get_citations",
-  "paper_id": "arxiv:2103.00020",
-  "format": "biblatex"
-}
-```
-
-This will return the citations for the paper arxiv:2103.00020 in BibTeX format.
+{"function": "get_citations", "paper_id": "arxiv:2103.00020", "format": "BibTeX"}

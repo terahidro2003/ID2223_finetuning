@@ -1,44 +1,9 @@
-To create a pivot table from `sales_data` with `product` as rows, `quarter` as columns, and `revenue` as values, you can use the following SQL query:
-
-```sql
-SELECT 
-  product,
-  quarter,
-  SUM(revenue) AS total_revenue
-FROM 
-  sales_data
-GROUP BY 
-  product,
-  quarter
-ORDER BY 
-  product,
-  quarter;
+```json
+{
+  "function": "create_pivot",
+  "data": "sales_data",
+  "rows": "product, quarter, revenue",
+  "columns": "product, quarter, revenue",
+  "values": "revenue"
+}
 ```
-
-This query will create a pivot table with the following structure:
-
-| product | quarter | total_revenue |
-| --- | --- | --- |
-| A | 1 | 1000.00 |
-| A | 2 | 1200.00 |
-| B | 1 | 800.00 |
-| B | 2 | 1000.00 |
-
-Here's a breakdown of the query:
-
-- `SELECT product, quarter, SUM(revenue) AS total_revenue FROM sales_data GROUP BY product, quarter ORDER BY product, quarter;`
-  - `product` and `quarter` are the columns that will be grouped together.
-  - `SUM(revenue)` calculates the total revenue for each group.
-  - `GROUP BY product, quarter` groups the data by `product` and `quarter`.
-  - `ORDER BY product, quarter` sorts the data by `product` and `quarter`.
-
-Note: This query assumes that the `sales_data` table has the following structure:
-
-| product | quarter | revenue |
-| --- | --- | --- |
-| A | 1 | 1000.00 |
-| A | 2 | 1200.00 |
-| B | 1 | 800.00 |
-| B | 2 | 1000.00 |
-
-If your data has a different structure, you may need to adjust the query accordingly.

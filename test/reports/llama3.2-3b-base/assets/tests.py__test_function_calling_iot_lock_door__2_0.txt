@@ -1,0 +1,2 @@
+⚠ PARTIAL PASS (1 value errors):
+  door_id: expected=front, got=front_door

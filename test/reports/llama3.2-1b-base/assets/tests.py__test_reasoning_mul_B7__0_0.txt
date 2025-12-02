@@ -1,6 +1,8 @@
-To find the result of 2^10, we need to calculate 2 multiplied by itself 10 times.
+To find the result of 2^10, we need to calculate 2 to the power of 10.
 
 2^10 = 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2
-= 1024
+2^10 = 1024
 
 So, the result of 2^10 is 1024.
+
+Final Answer: 1024

@@ -1,45 +1,7 @@
-Here are the announcements you requested:
-
-**Voice Announcement**
 ```json
 {
   "function": "voice_announce",
-  "message": "Dinner is ready in kitchen and dining room.",
-  "rooms": ["Kitchen", "Dining Room"]
+  "message": "Dinner is ready",
+  "rooms": ["kitchen", "dining_room"]
 }
 ```
-
-**Schedule Routine**
-```json
-{
-  "function": "schedule_routine",
-  "name": "Dinner Time",
-  "time": "18:00",
-  "actions": [
-    "Turn on lights in kitchen and dining room.",
-    "Open the dining room door.",
-    "Turn on the kitchen lights.",
-    "Open the kitchen door."
-  ]
-}
-```
-
-**Check Sensor**
-```json
-{
-  "function": "check_sensor",
-  "sensor_type": "light",
-  "location": "Dining Room"
-}
-```
-
-**Remote Control**
-```json
-{
-  "function": "remote_control",
-  "device": "IR Device in Dining Room",
-  "command": "Turn on lights in dining room."
-}
-```
-
-Note: The above JSON responses are just examples and may vary based on the actual smart device or system you are using.

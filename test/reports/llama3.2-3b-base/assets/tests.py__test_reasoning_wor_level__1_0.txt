@@ -1,6 +1,0 @@
-[
-  {
-    "role": "user",
-    "content": "What 5-letter palindrome means to observe or notice?"
-  }
-]

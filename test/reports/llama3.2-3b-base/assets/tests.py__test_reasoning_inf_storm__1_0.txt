@@ -1,6 +1,0 @@
-[
-  {
-    "role": "user",
-    "content": "The grocery store is out of milk, eggs, and bread. What event likely happened or is expected?"
-  }
-]

@@ -1,17 +1,13 @@
-The correct answer is B) Singleton.
+To answer this question, let's consider the characteristics of each design pattern mentioned:
 
-The Singleton design pattern ensures that a class has only one instance and provides a global point of access to that instance. It is often used when a class needs to maintain a state that needs to be shared across an application, and only one instance of that class is needed.
+A) Factory: This pattern is used to create objects without specifying the exact class of object that will be created. It doesn't ensure a class has only one instance.
 
-Here's a simple example of the Singleton pattern in Python:
+B) Singleton: This pattern ensures that only one instance of a class is created, and provides a global point of access to that instance.
 
-```python
-class Singleton:
-    _instance = None
+C) Observer: This pattern is used to notify objects of changes to other objects, and doesn't relate to the number of instances of a class.
 
-    def __new__(cls):
-        if cls._instance is None:
-            cls._instance = super(Singleton, cls).__new__(cls)
-        return cls._instance
-```
+D) Strategy: This pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable. It doesn't ensure a class has only one instance.
 
-This design pattern is useful when you need to control access to a resource that should have only one instance, such as a database connection or a logging mechanism.
+Considering the characteristics of each pattern, the correct answer is:
+
+Final Answer: B

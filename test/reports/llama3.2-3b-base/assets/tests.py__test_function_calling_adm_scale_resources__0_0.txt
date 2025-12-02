@@ -1,11 +1,1 @@
-To scale the backend-api service to 5 replicas, you can use the `scale_resources` function. Here's an example:
-
-```json
-{
-  "function": "scale_resources",
-  "service": "backend-api",
-  "replicas": 5
-}
-```
-
-This JSON object specifies the function to use (`scale_resources`), the service to scale (`backend-api`), and the number of replicas to deploy (`5`).
+{"function": "scale_resources", "service": "backend-api", "replicas": 5}

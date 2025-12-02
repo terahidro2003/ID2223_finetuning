@@ -1,7 +1,0 @@
-```json
-{
-  "function": "turn_on_lights",
-  "room": "bedroom",
-  "brightness": 80
-}
-```

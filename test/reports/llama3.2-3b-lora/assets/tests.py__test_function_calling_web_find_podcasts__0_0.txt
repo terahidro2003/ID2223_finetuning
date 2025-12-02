@@ -1,12 +1,1 @@
-Here's an example of how you can use the `find_podcasts` function to find podcasts about artificial intelligence in English, limited to 10 results:
-
-```json
-{
-  "function": "find_podcasts",
-  "topic": "artificial intelligence",
-  "language": "english",
-  "limit": 10
-}
-```
-
-This will return a list of 10 podcasts related to artificial intelligence in English.
+{"function": "find_podcasts", "topic": "artificial intelligence", "language": "english", "limit": 10}

@@ -1,39 +1,36 @@
-The correct answer is A) Factory.
+To solve this problem, we need to identify the design pattern that ensures a class has only one instance.
 
-The Factory design pattern ensures that a class has only one instance. It creates an object without specifying the type of object that will be created. The Factory pattern is used to create objects without specifying the type of object.
+The correct answer is: B) Singleton
 
-Here's an example of the Factory pattern in action:
+Here's why:
+
+A singleton design pattern is a creational pattern that ensures a class has only one instance. It achieves this by making the class itself a singleton, i.e., it has a single instance and provides a global point of access to it.
+
+Here's a simple example of a singleton class in Java:
 
 ```java
-public class AnimalFactory {
-    public static Animal createAnimal(String type) {
-        if (type.equals("dog")) {
-            return new Dog();
-        } else if (type.equals("cat")) {
-            return new Cat();
-        } else {
-            return null;
+public class Singleton {
+    private static Singleton instance;
+
+    private Singleton() {}
+
+    public static Singleton getInstance() {
+        if (instance == null) {
+            instance = new Singleton();
         }
-    }
-}
-
-public class Dog {
-    public void sound() {
-        System.out.println("Woof!");
-    }
-}
-
-public class Cat {
-    public void sound() {
-        System.out.println("Meow!");
+        return instance;
     }
 }
 ```
 
-In this example, the `AnimalFactory` class is responsible for creating instances of `Dog` and `Cat` classes. The `createAnimal` method takes a string parameter `type` and returns an instance of the corresponding class. The `AnimalFactory` class ensures that there is only one instance of `Dog` and `Cat` classes, as they are created only once.
+In this example, the `Singleton` class has a private constructor, which means it can only be instantiated once. The `getInstance()` method checks if an instance of the class already exists. If not, it creates a new instance and assigns it to the `instance` variable. If an instance already exists, it returns the existing instance.
 
-The other options are not correct:
+This design pattern is useful when you need to access a class instance from multiple threads or multiple locations, as it ensures that only one instance is created.
 
-* B) Singleton: A Singleton is a design pattern that ensures a class has only one instance. However, it does not guarantee that the instance is thread-safe.
-* C) Observer: The Observer pattern is used to notify objects about changes to other objects. It does not ensure that a class has only one instance.
-* D) Strategy: The Strategy pattern is used to define a family of algorithms, so they can be used interchangeably. It does not ensure that a class has only one instance.
+The other options are not correct because:
+
+A) Factory: A factory design pattern is used to create objects, but it does not ensure that a class has only one instance.
+
+C) Observer: An observer design pattern is used to notify objects about events, but it does not ensure that a class has only one instance.
+
+D) Strategy: A strategy design pattern is used to define a family of algorithms, but it does not ensure that a class has only one instance.

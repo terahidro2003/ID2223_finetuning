@@ -1,7 +1,7 @@
 ```json
 {
   "function": "set_alarm",
-  "time": "07:00",
+  "time": "7 AM",
   "label": "work"
 }
 ```

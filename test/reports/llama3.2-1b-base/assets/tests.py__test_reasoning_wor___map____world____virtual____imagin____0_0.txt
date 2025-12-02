@@ -1,0 +1,9 @@
+To solve this riddle, let's analyze each statement:
+
+1. Cities: You have cities, but you don't have houses. This means you have cities but not houses.
+2. Forests: You have forests, but you don't have trees. This means you have forests but not trees.
+3. Water: You have water, but you don't have fish. This means you have water but not fish.
+
+Since the statements are mutually exclusive (you can't have both cities and houses, forests and trees, and water and fish), the answer is not a city, a forest, or a body of water. However, the answer is not a city, a forest, or a body of water either.
+
+After some thought, I think I have it: you are a map. A map is a representation of a real-world location, but it doesn't show the actual location itself. It's a city, a forest, or a body of water, but not the actual thing.

@@ -1,12 +1,1 @@
-Here's an example of how you can allocate 500GB SSD storage mounted at `/data` using the cloud resource manager:
-
-```json
-{
-  "function": "allocate_storage",
-  "size_gb": 500,
-  "type": "ssd",
-  "mount_point": "/data"
-}
-```
-
-This JSON object specifies the function to allocate storage, the size of the storage in GB, the type of storage (SSD), and the mount point where the storage should be mounted.
+{"function": "allocate_storage", "size_gb": 500, "type": "SSD", "mount_point": "/data"}

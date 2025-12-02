@@ -1,0 +1,2 @@
+⚠ PARTIAL PASS (1 value errors):
+  target_language: expected=Spanish, got=es

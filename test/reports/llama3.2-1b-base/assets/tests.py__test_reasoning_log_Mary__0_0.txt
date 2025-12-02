@@ -1,1 +1,7 @@
-Since there are 5 daughters and the question asks for the fifth daughter's name, it's likely that the question is asking for the fifth daughter, not the fifth daughter's name. In that case, the answer would be "Nona".
+To find the fifth daughter's name, we need to know the first name of Mary's father. However, the problem statement does not provide this information. 
+
+Assuming Mary's father is a man, we can try to figure it out. Since there are 5 daughters, Mary must be a girl. 
+
+If Mary is a girl, then Mary's father must be a man. In that case, Mary's father would have 4 daughters: Nana, Nene, Nini, and Nono. 
+
+Since Mary's father has 5 daughters, it is likely that Mary is one of the daughters. Therefore, the fifth daughter's name is Nono.

@@ -1,11 +1,7 @@
-Here's an example of how you can set a security alert notification using the provided IoT device manager functions:
-
 ```json
 {
   "function": "set_notification",
-  "type": "security",
+  "type": "alert",
   "message": "Motion detected"
 }
 ```
-
-This will send a notification to the specified recipient with the message "Motion detected".

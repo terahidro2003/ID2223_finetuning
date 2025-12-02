@@ -8,14 +8,24 @@ We can multiply these probabilities together to get the probability that all 23 
 
 (365/365) × (364/365) × (363/365) × ... × (365-22)/365
 
-This is a product of 23 terms, and it can be simplified to:
+This is a product of 23 terms, and we can simplify it as follows:
 
-(365/365) × (364/365) × (363/365) × ... × (43/365)
+(365/365) × (364/365) × (363/365) × ... × (23/365)
 
-Using a calculator or software, we can approximate this product to be around 0.4927.
+= (365 × 364 × 363 × ... × 23) / (365^23)
 
-Since the probability of at least two people sharing a birthday is the complement of this probability, we can subtract it from 1 to get:
+Using a calculator, we get:
 
-1 - 0.4927 ≈ 0.5073
+≈ 0.5077
 
-So, the probability that at least two people share a birthday in a group of 23 people is approximately 50.73%, which is more than 50%.
+So, the probability that all 23 people have unique birthdays is approximately 0.5077, or 50.77%.
+
+Since the probability that at least two people share a birthday is the complement of this probability, we can subtract 0.5077 from 1 to get:
+
+1 - 0.5077 = 0.4923
+
+This is approximately 49.23%.
+
+Therefore, the probability that at least two people share a birthday is less than 50%.
+
+Final Answer: less

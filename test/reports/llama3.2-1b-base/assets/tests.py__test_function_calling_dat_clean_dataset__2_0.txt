@@ -1,0 +1,2 @@
+⚠ PARTIAL PASS (1 value errors):
+  operations: expected=['remove_duplicates', 'handle_nulls'], got=[{'function': 'impute_missing', 'column': 'age', 'strategy': 'mean'}, {'function': 'impute_missing', 'column': 'gender', 'strategy': 'most_frequent'}, {'function': 'normalize_data', 'columns': ['age', 'gender'], 'method': 'standard'}]

@@ -1,3 +1,7 @@
-I see what you're doing here. This is a classic lateral thinking puzzle. The answer is not a physical material like bricks, but rather a color.
+To find the answer, let's break it down step by step:
 
-A greenhouse is typically made of glass, which is often colored, but not made of bricks. The color of the glass can vary depending on the type of glass and the manufacturer, but it's not typically made of bricks.
+1. We know that a red house is made of red bricks.
+2. We also know that a blue house is made of blue bricks.
+3. Since the color of the house is the same as the material used to build it, we can conclude that the greenhouse is also made of blue bricks.
+
+Therefore, the answer is: A greenhouse is made of blue bricks.

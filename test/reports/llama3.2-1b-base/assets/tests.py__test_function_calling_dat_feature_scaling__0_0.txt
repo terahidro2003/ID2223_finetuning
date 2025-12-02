@@ -1,56 +1,7 @@
-Here's an example of how to scale the 'price' and 'quantity' features using the Standard Scaler in scikit-learn:
-
-```python
-# Import necessary libraries
-from sklearn.preprocessing import StandardScaler
-import pandas as pd
-import numpy as np
-
-# Load the dataset
-def load_dataset(file_path):
-    try:
-        data = pd.read_csv(file_path)
-        return data
-    except FileNotFoundError:
-        print("File not found. Please check the file path.")
-        return None
-
-# Scale the features
-def scale_features(data):
-    try:
-        # Split the data into features and target
-        X = data.drop(['price', 'quantity'], axis=1)
-        y = data['price']
-
-        # Scale the features
-        scaler = StandardScaler()
-        X_scaled = scaler.fit_transform(X)
-
-        # Convert the scaled data back to a DataFrame
-        X_scaled = pd.DataFrame(X_scaled, columns=X.columns)
-        X_scaled['price'] = y
-        return X_scaled
-    except Exception as e:
-        print(f"An error occurred: {e}")
-        return None
-
-# Example usage
-file_path = 'data.csv'  # Replace with your dataset file path
-data = load_dataset(file_path)
-if data is not None:
-    data = scale_features(data)
-    print(data.head())
+```json
+{
+  "function": "feature_scaling",
+  "features": ["price", "quantity"],
+  "scaler": "StandardScaler"
+}
 ```
-
-In this code:
-
-1. We define two functions: `load_dataset` to load the dataset and `scale_features` to scale the features.
-2. In the `load_dataset` function, we use `pd.read_csv` to load the dataset from a CSV file.
-3. We split the data into features (`X`) and target (`y`).
-4. We create a `StandardScaler` object and fit it to the features.
-5. We use the `fit_transform` method to scale the features.
-6. We convert the scaled data back to a DataFrame and assign it to the `X_scaled` variable.
-7. We return the scaled data.
-8. In the `scale_features` function, we split the data into features and target, scale the features using `StandardScaler`, and convert the scaled data back to a DataFrame.
-9. We return the scaled data.
-10. We provide an example usage of the `load_dataset` and `scale_features` functions.

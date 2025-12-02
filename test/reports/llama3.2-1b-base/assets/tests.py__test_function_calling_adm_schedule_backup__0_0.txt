@@ -1,46 +1,9 @@
-Here's an example of how you can schedule daily backups for the "customer-data" resource with a 30-day retention period using the provided tools:
-
 ```json
-"function": "schedule_backup",
-"resource": "customer-data",
-"frequency": "daily",
-"retention": "30",
-"destination": "backup-store",
-"source": "customer-data",
-"type": "daily"
+{
+  "function": "schedule_backup",
+  "resource": "customer-data",
+  "frequency": "daily",
+  "retention": 30,
+  "target": "customer-data"
+}
 ```
-
-This JSON object defines the following:
-
-- `function`: The function to be used for scheduling the backup. In this case, it's `schedule_backup`.
-- `resource`: The resource to be backed up. In this case, it's "customer-data".
-- `frequency`: The frequency of the backup. In this case, it's "daily".
-- `retention`: The retention period for the backup. In this case, it's "30" days.
-- `destination`: The destination for the backup. In this case, it's "backup-store".
-- `source`: The source for the backup. In this case, it's "customer-data".
-- `type`: The type of backup. In this case, it's "daily".
-
-You can also specify the backup type, such as `daily`, `weekly`, or `monthly`, depending on your needs.
-
-To use this tool, you would need to:
-
-1. Create a backup manager instance.
-2. Call the `schedule_backup` function with the required parameters.
-3. The backup manager will schedule the backup for the specified resource, frequency, and retention period.
-
-Here's an example of how you can call this function:
-
-```javascript
-const backupManager = new BackupManager();
-const backup = await backupManager.scheduleBackup({
-  function: 'schedule_backup',
-  resource: 'customer-data',
-  frequency: 'daily',
-  retention: '30',
-  destination: 'backup-store',
-  source: 'customer-data',
-  type: 'daily'
-});
-```
-
-This code creates a new instance of the `BackupManager` class and calls the `schedule_backup` function with the required parameters. The backup manager will then schedule the backup for the specified resource, frequency, and retention period.

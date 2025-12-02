@@ -1,6 +1,0 @@
-```json
-{
-  "function": "lock_door",
-  "door_id": "front_door"
-}
-```

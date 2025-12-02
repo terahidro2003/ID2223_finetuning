@@ -1,38 +1,7 @@
-```json
-{
-  "function": "set_scene",
-  "scene_name": "movie_scene",
-  "rooms": [
-    "living_room",
-    "bedroom"
-  ]
-}
 ```
-
-```json
-{
-  "function": "set_scene",
-  "scene_name": "movie_scene",
-  "rooms": [
-    "living_room",
-    "bedroom",
-    "kitchen"
-  ]
-}
-```
-
-```json
 {
   "function": "set_scene",
   "scene_name": "movie_scene",
   "rooms": ["living_room", "bedroom"]
-}
-```
-
-```json
-{
-  "function": "set_scene",
-  "scene_name": "movie_scene",
-  "rooms": ["living_room", "bedroom", "guest_room"]
 }
 ```

@@ -1,6 +1,0 @@
-[
-  {
-    "role": "user",
-    "content": "If you overtake the person in 2nd place in a race, what position are you in now?"
-  }
-]

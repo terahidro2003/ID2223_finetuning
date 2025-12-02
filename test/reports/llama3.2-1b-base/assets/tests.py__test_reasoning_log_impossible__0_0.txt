@@ -1,5 +1,7 @@
-In a typical racing scenario, the person in last place is usually the one who is farthest behind the leader. If you passed the person in last place, it's likely that you are now in the lead position.
+To determine the position you are in, let's analyze the situation step by step:
 
-However, it's not possible to pass someone who is already behind you. In a racing scenario, the person in last place is usually the one who is farthest behind the leader, and they are not in a position to be passed.
+1. You passed the person in last place.
+2. This means you are ahead of the person in last place.
+3. Since the person in last place is behind you, you are now ahead of them.
 
-So, in this case, you are now in the lead position, but it's not possible to pass the person in last place.
+Therefore, the situation described by the question is possible.

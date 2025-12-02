@@ -5,5 +5,3 @@
   "database": "customers"
 }
 ```
-
-This query will return all the users from the customers database.

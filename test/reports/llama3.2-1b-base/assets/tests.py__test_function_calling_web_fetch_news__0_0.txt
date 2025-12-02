@@ -1,3 +1,1 @@
 {"function": "fetch_news", "topic": "technology", "language": "english", "limit": "5"}
-
-This will fetch the latest technology news in English and return a maximum of 5 articles.

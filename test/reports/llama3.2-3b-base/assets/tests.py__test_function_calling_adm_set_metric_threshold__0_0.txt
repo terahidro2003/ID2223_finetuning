@@ -1,12 +1,1 @@
-Here's an example of how you can set the threshold for the `cpu_usage` metric greater than 80 using the provided tools:
-
-```json
-{
-  "function": "set_metric_threshold",
-  "metric": "cpu_usage",
-  "operator": "gt",
-  "value": 80
-}
-```
-
-In this example, the `set_metric_threshold` function is used to set the threshold for the `cpu_usage` metric. The `operator` is set to "gt" (greater than), and the `value` is set to 80. This means that if the `cpu_usage` metric exceeds 80, the system will trigger an alert.
+{"function": "set_metric_threshold", "metric": "cpu_usage", "operator": "gt", "value": 80}

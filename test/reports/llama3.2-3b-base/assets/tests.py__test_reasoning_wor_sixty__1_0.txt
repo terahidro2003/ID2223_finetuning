@@ -1,6 +1,0 @@
-[
-  {
-    "role": "user",
-    "content": "What 5-letter word has 6 left when you take 2 away?"
-  }
-]

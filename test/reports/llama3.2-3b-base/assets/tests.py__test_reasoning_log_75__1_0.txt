@@ -1,5 +1,9 @@
 [
   {
+    "role": "system",
+    "content": "You are a helpful assistant attempting to answer various queries that the user may have. These queries may require you to think in multiple steps to arrive at the correct answer. Once you reach a final answer, you are to respond at the very last line on a new line with 'Final Answer: <your answer here>'."
+  },
+  {
     "role": "user",
     "content": "Two trains are 100 miles apart, heading toward each other at 50 mph each. A bird flies at 75 mph between them until they meet. How far does the bird fly?"
   }

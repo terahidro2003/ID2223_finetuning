@@ -1,1 +1,5 @@
-The answer is Tuesday. Since Monday comes before Tuesday, and Tuesday comes before Wednesday, it means that Tuesday is the middle day between Monday and Wednesday.
+To solve this, let's analyze the given information. We know that Monday comes before Tuesday, and Tuesday comes before Wednesday. 
+
+Since Monday comes before Tuesday, and Tuesday comes before Wednesday, it implies that Monday is the first day, and Wednesday is the last day in this sequence. 
+
+Now, we need to find the day that comes between Monday and Wednesday. Since Tuesday is the day that comes between Monday and Wednesday, the answer is Tuesday.

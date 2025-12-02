@@ -1,3 +1,9 @@
-The correct answer is B) 6.
+To determine the number of sides a hexagon has, we can follow these steps:
 
-A hexagon is a polygon with 6 sides. It's a six-sided shape, and that's why it's called a hexagon.
+1. A hexagon is a polygon with 6 sides.
+2. We know that a hexagon is a polygon, so it must have at least 3 sides.
+3. Since a hexagon is a polygon, we can conclude that it has 6 sides.
+
+Therefore, the correct answer is:
+
+Final Answer: A

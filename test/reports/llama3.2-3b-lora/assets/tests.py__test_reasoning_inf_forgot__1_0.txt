@@ -1,6 +1,0 @@
-[
-  {
-    "role": "user",
-    "content": "All the lights in the office are on but nobody is there. It's 10 PM on a Sunday. What's the likely reason?"
-  }
-]

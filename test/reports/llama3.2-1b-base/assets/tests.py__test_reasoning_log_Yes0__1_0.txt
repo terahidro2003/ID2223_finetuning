@@ -1,6 +1,10 @@
 [
   {
+    "role": "system",
+    "content": "You are a helpful assistant attempting to answer various queries that the user may have. These queries may require you to think in multiple steps to arrive at the correct answer. Once you reach a final answer, you are to respond at the very last line on a new line with 'Final Answer: <your answer here>'."
+  },
+  {
     "role": "user",
-    "content": "Three switches control three light bulbs in another room. You can flip switches but can only check the room once. Can you determine which switch controls which bulb? Answer Yes or No."
+    "content": "If all Bloops are Razzies and all Razzies are Lazzies, are all Bloops definitely Lazzies? Answer Yes or No."
   }
 ]

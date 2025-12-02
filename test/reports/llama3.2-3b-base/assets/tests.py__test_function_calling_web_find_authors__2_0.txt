@@ -1,0 +1,2 @@
+⚠ PARTIAL PASS (1 value errors):
+  institution: expected=Stanford Institution, got=Stanford

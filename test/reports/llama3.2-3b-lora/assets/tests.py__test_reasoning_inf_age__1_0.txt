@@ -1,6 +1,0 @@
-[
-  {
-    "role": "user",
-    "content": "A book's pages are yellowed and brittle despite being kept indoors. What factor caused this?"
-  }
-]

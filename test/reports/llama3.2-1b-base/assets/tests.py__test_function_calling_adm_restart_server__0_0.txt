@@ -1,9 +1,7 @@
-```
+```json
 {
   "function": "restart_server",
   "server_id": "srv-prod-01",
   "graceful": true
 }
 ```
-
-This will attempt to restart the server `srv-prod-01` in a graceful manner, meaning it will not take down the service until the restart is complete. If the restart is successful, the service will be restarted and the deployment will continue. If the restart fails, the service will be left in its current state and the deployment will continue.

@@ -1,6 +1,0 @@
-[
-  {
-    "role": "user",
-    "content": "A child asks 'why' after every statement you make. What developmental stage are they in?"
-  }
-]

@@ -1,1 +1,1 @@
-{"function": "adjust_blinds", "room": "living room", "position": "20%"}
+{"function": "adjust_blinds", "room": "living room", "position": 20}

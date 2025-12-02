@@ -1,1 +1,1 @@
-{"function": "lock_door", "door_id": "front door"}
+{"function": "lock_door", "door_id": "front_door"}

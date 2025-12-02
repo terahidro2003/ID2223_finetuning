@@ -1,11 +1,3 @@
-Here's how you can scale the 'price' and 'quantity' features using a standard scaler in the ML data toolkit:
-
 ```json
-{
-  "function": "feature_scaling",
-  "features": ["price", "quantity"],
-  "scaler": "standard"
-}
+{"function": "feature_scaling", "features": ["price", "quantity"], "scaler": "standard"}
 ```
-
-This JSON object specifies that you want to scale the 'price' and 'quantity' features using a standard scaler. The `standard` scaler is a type of scaler that subtracts the mean and divides by the standard deviation for each feature.

@@ -1,1 +1,15 @@
-The answer is "short". When you add two letters to "short", it becomes "shorter".
+To solve this problem, let's analyze the given information. We have a 5-letter word that becomes shorter when we add two letters to it.
+
+Step 1: We know that the word has 5 letters. 
+
+Step 2: We also know that adding two letters to the word makes it shorter.
+
+Step 3: We can start by listing all possible 5-letter words: A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z.
+
+Step 4: Now, let's try adding two letters to each of these 5-letter words to see if any of them become shorter.
+
+Step 5: After trying different combinations, we find that the word "Hale" becomes shorter when we add the letters "El" to it.
+
+Step 6: Therefore, the 5-letter word that becomes shorter when we add two letters to it is "Hale".
+
+Final Answer: Hale

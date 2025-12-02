@@ -1,38 +1,8 @@
-To create a B-Tree index on the `customers` table for the `email` and `phone` columns, you can use the following SQL query:
-
-```sql
-CREATE INDEX idx_customers_email_phone ON customers (email, phone);
+```json
+{
+  "function": "create_index",
+  "table": "customers",
+  "columns": ["email", "phone"],
+  "index_type": "B-tree"
+}
 ```
-
-This query creates an index named `idx_customers_email_phone` on the `customers` table, using the `email` and `phone` columns as the key. The `B-Tree` index is used to efficiently store and retrieve data.
-
-Here's a breakdown of the query:
-
-* `CREATE INDEX`: This is the command to create an index.
-* `idx_customers_email_phone`: This is the name of the index.
-* `ON`: This specifies the table on which the index will be created.
-* `customers`: This is the name of the table.
-* `(email, phone)`: This specifies the columns that will be used as the key for the index.
-
-Note: The exact syntax may vary depending on the database management system (DBMS) you are using. The above query is for PostgreSQL.
-
-**Example Use Case:**
-
-Suppose you have a `customers` table with the following structure:
-
-| column_name | data_type |
-|-------------|-----------|
-| email        | VARCHAR(255) |
-| phone        | VARCHAR(20) |
-
-You can create the index as follows:
-
-```sql
-CREATE TABLE customers (
-    id SERIAL PRIMARY KEY,
-    email VARCHAR(255) NOT NULL,
-    phone VARCHAR(20) NOT NULL
-) WITH (B-tree_index ON (email, phone));
-```
-
-This will create a B-Tree index on the `customers` table, using the `email` and `phone` columns as the key.

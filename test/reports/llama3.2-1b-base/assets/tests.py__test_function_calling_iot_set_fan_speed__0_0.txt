@@ -1,1 +1,7 @@
-{"function": "set_fan_speed", "speed": 3, "room": "bedroom"}
+```json
+{
+  "function": "set_fan_speed",
+  "speed": 3,
+  "room": "bedroom"
+}
+```

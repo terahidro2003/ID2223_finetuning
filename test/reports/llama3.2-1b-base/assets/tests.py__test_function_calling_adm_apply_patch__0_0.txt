@@ -1,39 +1,16 @@
-I can provide you with a sample command to apply the security patch. Please note that you should have the necessary permissions and access to the database server to apply the patch.
-
-```bash
-sudo apt update
-sudo apt install -y git
-sudo apt install -y git
-sudo apt install -y curl
-sudo apt install -y unzip
-sudo apt install -y wget
-sudo apt install -y unzip
-sudo apt install -y apt-get
-sudo apt install -y apt
-
-# Download the security patch
-curl -s -f https://example.com/cve-2024-1234.patch -o /tmp/cve-2024-1234.patch
-
-# Apply the security patch
-apt-get update
-apt-get install -y patch
-patch -i -s /tmp/cve-2024-1234.patch
+```
+{
+  "function": "apply_patch",
+  "system": "prod-db",
+  "patch_id": "CVE-2024-1234",
+  "schedule": "daily",
+  "parameters": {
+    "patch_version": "1.0.0"
+  },
+  "values": {
+    "patch_version": "1.0.0"
+  }
+}
 ```
 
-Please replace `https://example.com/cve-2024-1234.patch` with the actual URL of the security patch.
-
-Alternatively, you can use the following command to apply the patch:
-
-```bash
-apt-get update
-apt-get install -y patch
-patch -i -s /tmp/cve-2024-1234.patch
-```
-
-After applying the patch, you can verify that the patch was applied successfully by running the following command:
-
-```bash
-apt-get show -y | grep Patch
-```
-
-This command will show you the patch ID and other information about the patch.
+This JSON object specifies the function to call as "apply_patch", with the system as "prod-db". The patch ID is "CVE-2024-1234" and the schedule is "daily". The patch version is specified as "1.0.0".

@@ -1,12 +1,3 @@
-Here's how you can split the `customer_data` into 80% training and 20% testing using the `split_dataset` function:
-
-```json
-{
-  "function": "split_dataset",
-  "dataset": "customer_data",
-  "train_ratio": 0.8,
-  "test_ratio": 0.2
-}
 ```
-
-This JSON object specifies the function to use (`split_dataset`), the dataset to split (`customer_data`), and the ratios for training and testing data (80% for training and 20% for testing).
+{"function": "split_dataset", "dataset": "customer_data", "train_ratio": 0.8, "test_ratio": 0.2}
+```

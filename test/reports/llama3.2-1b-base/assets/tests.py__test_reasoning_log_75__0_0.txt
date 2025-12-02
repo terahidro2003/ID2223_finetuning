@@ -1,14 +1,18 @@
-To find the distance the bird flies, we need to calculate the time it takes for the two trains to meet. 
+To find the distance the bird flies, we need to calculate the time it takes for the two trains to meet and then use that time to find the distance the bird flies.
 
-Since the trains are moving towards each other, we can use the formula: Time = Distance / Speed.
+First, let's calculate the combined speed of the two trains:
+50 mph + 50 mph = 100 mph
 
-First, let's find the combined speed of the two trains. 
-Combined speed = 50 mph + 50 mph = 100 mph.
+Since the trains are heading towards each other, we can use the formula:
+Time = Distance / Speed
+Time = 100 miles / 100 mph
+Time = 1 hour
 
-Now, we can find the time it takes for the trains to meet:
-Time = 100 miles / 100 mph = 1 hour.
-
-Since the bird flies at 75 mph, we can multiply the time by the bird's speed to find the distance it flies:
-Distance = Speed x Time = 75 mph x 1 hour = 75 miles.
+Now, we can use the formula:
+Distance = Speed x Time
+Distance = 75 mph x 1 hour
+Distance = 75 miles
 
 So, the bird flies 75 miles.
+
+Final Answer: 75

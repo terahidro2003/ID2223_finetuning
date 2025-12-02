@@ -1,35 +1,9 @@
-To find the probability that at least two people share a birthday, we can use the complementary probability approach.
+To find the probability that at least two people share a birthday, we can first find the probability that no two people share a birthday.
 
-First, let's find the probability that no two people share a birthday. This is the probability that each person's birthday is unique.
+Since each person has a 365/365 = 1 (100%) chance of having a unique birthday, the probability that no two people share a birthday is (365/365) * (364/365) * (363/365) * ... * (1/365) = 1/365.
 
-There are 365 possible birthdays for the first person, 364 for the second, 363 for the third, and so on. So, the probability that the first person's birthday is unique is 365/365 = 1.
+Now, we can find the probability that at least two people share a birthday by subtracting the probability that no two people share a birthday from 1:
 
-For the second person, there are 364 possible birthdays, so the probability that the second person's birthday is unique is 364/365.
+1 - 1/365 = 364/365 ≈ 1.0003
 
-For the third person, there are 363 possible birthdays, so the probability that the third person's birthday is unique is 363/365.
-
-We can continue this pattern for all 23 people.
-
-The probability that all 23 people's birthdays are unique is the product of these probabilities:
-
-(365/365) × (364/365) × (363/365) × ... × (343/365)
-
-This is a very large number, and we can simplify it by canceling out the common factors:
-
-(365 × 364 × 363 × ... × 343) / (365^23)
-
-This is the probability that all 23 people's birthdays are unique.
-
-Now, we can find the probability that at least two people share a birthday by subtracting this probability from 1:
-
-1 - (365 × 364 × 363 × ... × 343) / (365^23)
-
-This is the probability that at least two people share a birthday.
-
-Using a calculator, we get:
-
-1 - (365 × 364 × 363 × ... × 343) / (365^23) ≈ 0.5
-
-This is the probability that at least two people share a birthday.
-
-So, the probability that at least two people share a birthday is approximately 50%.
+This is more than 50%.

@@ -1,1 +1,27 @@
-Yes.
+To solve this problem, we need to consider the order in which the farmer can take the items across the river.
+
+Since the fox eats the chicken, the farmer must take the chicken across the river first. Then, he must take the grain across the river, but he cannot leave the grain with the chicken. So, he must take the chicken back to the original side.
+
+Here's a possible sequence of steps:
+
+1. Farmer takes the chicken across the river.
+2. Farmer takes the grain across the river and leaves it on the other side.
+3. Farmer goes back to the original side and picks up the chicken.
+4. Farmer takes the chicken back to the original side.
+5. Farmer takes the fox across the river.
+6. Farmer leaves the fox on the other side and goes back to the original side.
+7. Farmer picks up the chicken and takes it across the river.
+8. Farmer leaves the chicken on the other side and goes back to the original side.
+9. Farmer picks up the grain and takes it across the river.
+
+However, this sequence is not the most efficient. A more efficient sequence is:
+
+1. Farmer takes the chicken across the river.
+2. Farmer takes the grain across the river and leaves it on the other side.
+3. Farmer goes back to the original side and picks up the chicken.
+4. Farmer takes the chicken back to the original side.
+5. Farmer picks up the fox and takes it across the river.
+6. Farmer leaves the fox on the other side and goes back to the original side.
+7. Farmer picks up the chicken and takes it across the river.
+
+So, the answer is Yes.

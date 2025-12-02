@@ -1,5 +1,11 @@
-To find 15% of 200, multiply 200 by 0.15 (since 15% is equal to 15/100 or 0.15).
+To find 15% of 200, we need to first convert the percentage to a decimal. 
+
+15% = 15/100 = 0.15
+
+Now, we multiply 200 by 0.15:
 
 200 * 0.15 = 30
 
-So, the correct answer is C) 30.
+So, 15% of 200 is 30.
+
+Final Answer: 30

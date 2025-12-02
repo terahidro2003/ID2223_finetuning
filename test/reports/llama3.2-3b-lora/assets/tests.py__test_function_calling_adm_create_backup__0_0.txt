@@ -1,12 +1,1 @@
-Here's an example of how you can create a full backup of `database-prod` to S3 using the provided tools:
-
-```json
-{
-  "function": "create_backup",
-  "source": "database-prod",
-  "destination": "s3://backups/",
-  "type": "full"
-}
-```
-
-This JSON object specifies the `create_backup` function, which will create a full backup of `database-prod` and store it in the `s3://backups/` location.
+{"function": "create_backup", "source": "database-prod", "destination": "s3://backups/", "type": "full"}

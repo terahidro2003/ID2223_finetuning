@@ -1,10 +1,13 @@
-This is a classic puzzle. To solve it, you need to ask a question that will give you the same answer from both guards, regardless of their nature.
+To solve this problem, we need to figure out which guard is the truth-teller and which one is the liar. 
 
-You should ask: "If I were to ask the other guard which door leads to freedom, what would they say?"
+We can ask one of the guards, "If I were to ask the other guard which door leads to freedom, what would they say?" 
 
-Think about it: 
+If the guard we ask is the truth-teller, they will tell us what the liar would say, which would be the door that leads to death. 
 
-- If you ask the truth-teller, they will tell you what the liar would say, which is the door that leads to death.
-- If you ask the liar, they will lie about what the truth-teller would say, which is also the door that leads to death.
+If the guard we ask is the liar, they will lie about what the truth-teller would say, which would also be the door that leads to death.
 
-In both cases, the answer will be the same: the door that leads to death. So, you can safely choose the other door.
+In either case, the guard we ask will tell us that the other guard would point to the door that leads to death. 
+
+So, we can safely assume that the guard we asked is the truth-teller, and we can ask the other guard which door leads to freedom.
+
+Final Answer: Ask the other guard which door leads to freedom.

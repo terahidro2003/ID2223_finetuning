@@ -1,3 +1,1 @@
-```
-{"function": "check_weather", "location": "Stockholm", "genre": "weather"}
-```
+{"function": "check_weather", "location": "Stockholm", "genre": "weather", "time": "current", "label": "Weather in Stockholm"}}

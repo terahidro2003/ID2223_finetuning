@@ -1,7 +1,0 @@
-```json
-{
-  "function": "adjust_shade",
-  "room": "office",
-  "tilt": 45
-}
-```

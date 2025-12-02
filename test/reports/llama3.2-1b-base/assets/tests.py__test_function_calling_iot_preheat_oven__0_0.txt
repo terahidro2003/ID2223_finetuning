@@ -1,1 +1,0 @@
-{"function": "preheat_oven", "temperature": "180", "unit": "degrees Celsius"}

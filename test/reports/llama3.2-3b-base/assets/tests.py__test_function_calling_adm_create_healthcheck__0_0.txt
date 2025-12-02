@@ -1,5 +1,3 @@
-Here's an example of how you can create a healthcheck for `https://api.example.com/health` every 60 seconds with a 5 second timeout using the provided tools:
-
 ```json
 {
   "function": "create_healthcheck",
@@ -8,10 +6,3 @@ Here's an example of how you can create a healthcheck for `https://api.example.c
   "timeout": 5
 }
 ```
-
-This JSON object defines a healthcheck that:
-
-- Uses the `create_healthcheck` function
-- Points to the `https://api.example.com/health` endpoint
-- Checks the health every 60 seconds
-- Waits for a maximum of 5 seconds for the endpoint to respond

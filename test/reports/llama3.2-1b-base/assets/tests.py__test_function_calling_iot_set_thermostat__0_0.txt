@@ -1,7 +1,0 @@
-```json
-{
-  "function": "set_thermostat",
-  "temperature": 22,
-  "unit": "C"
-}
-```

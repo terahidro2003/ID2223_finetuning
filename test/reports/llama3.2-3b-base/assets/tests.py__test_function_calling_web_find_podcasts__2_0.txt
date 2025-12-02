@@ -1,0 +1,2 @@
+⚠ PARTIAL PASS (1 value errors):
+  topic: expected=artificial, got=artificial intelligence

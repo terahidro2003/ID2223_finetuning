@@ -1,42 +1,7 @@
-Here's an example of how you can scale the `backend-api` service to 5 replicas using the provided tools:
-
 ```json
-// Update the deploy_service function to deploy the service with 5 replicas
-deploy_service: {
-  "function": "deploy_service",
-  "name": "backend-api",
-  "version": "1.0.0",
-  "environment": "prod"
-}
-
-// Update the scale_resources function to scale the service to 5 replicas
-scale_resources: {
+{
   "function": "scale_resources",
   "service": "backend-api",
   "replicas": 5
 }
-
-// Update the restart_server function to restart the server after scaling
-restart_server: {
-  "function": "restart_server",
-  "server_id": "backend-api",
-  "graceful": false
-}
-
-// Update the update_config function to update the config with the new replicas
-update_config: {
-  "function": "update_config",
-  "service": "backend-api",
-  "key": "replicas",
-  "value": "5"
-}
 ```
-
-Here's a step-by-step explanation of the code:
-
-1. The `deploy_service` function is updated to deploy the `backend-api` service with the specified version and environment.
-2. The `scale_resources` function is updated to scale the `backend-api` service to 5 replicas.
-3. The `restart_server` function is updated to restart the `backend-api` server after scaling.
-4. The `update_config` function is updated to update the config with the new replicas (in this case, 5 replicas).
-
-After making these changes, the `backend-api` service will be scaled to 5 replicas, and the server will be restarted after scaling.

@@ -1,21 +1,7 @@
-Here's an example of how you can decompose the `monthly_sales` series using an additive model:
-
-```json
+```
 {
   "function": "decompose_series",
   "series": "monthly_sales",
   "model": "additive"
 }
 ```
-
-This will decompose the `monthly_sales` series into three components:
-
-- Trend (long-term changes in the series)
-- Seasonal (recurring patterns, e.g., daily, weekly, monthly, yearly)
-- Residual (short-term random fluctuations)
-
-The `additive` model assumes that the series can be decomposed into the sum of three components, each of which is a function of time. The decomposition is typically represented as:
-
-`Series = Trend + Seasonal + Residual`
-
-Note that the `additive` model is a common choice for time series decomposition, but other models like `multiplicative` or `holt-winters` may also be used depending on the characteristics of the series.

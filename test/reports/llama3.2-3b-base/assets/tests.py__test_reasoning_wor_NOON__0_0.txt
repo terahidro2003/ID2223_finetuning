@@ -1,1 +1,7 @@
-The answer is "SWIMS." When written forward, backward, or upside down, it remains the same.
+To solve this, let's consider the properties of the word you're looking for. It needs to be a 4-letter word that can be read the same when written forward, backward, and upside down.
+
+One possible solution is the word "SWIMS". When written forward, it's "SWIMS". When written backward, it's still "SWIMS". However, when written upside down, it's not the same.
+
+Another possible solution is the word "NOON". When written forward, it's "NOON". When written backward, it's still "NOON". And when written upside down, it's still "NOON".
+
+Considering these properties, a more suitable solution is the word "NOON".

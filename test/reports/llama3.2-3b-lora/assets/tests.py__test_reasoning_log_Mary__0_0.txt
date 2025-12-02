@@ -1,1 +1,7 @@
-The answer is "Mary". The question states "Mary's father has 5 daughters", so Mary must be one of the daughters.
+To find the fifth daughter's name, we need to look at the pattern of the names given. The names are all variations of "Nana" with different suffixes: -a, -e, -i, and -o.
+
+If we follow this pattern, the next suffix would be -u. 
+
+So, the fifth daughter's name would be Nanau.
+
+Final Answer: Nanau

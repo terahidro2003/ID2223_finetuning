@@ -1,29 +1,14 @@
-To find the binary representation of decimal 10, we need to convert 10 to binary.
+To find the binary representation of decimal 10, we need to convert it to binary first.
 
-First, let's find the largest power of 2 that is less than or equal to 10:
+1. Divide 10 by 2: 10 ÷ 2 = 5 with remainder 0
+2. Divide 5 by 2: 5 ÷ 2 = 2 with remainder 1
+3. Divide 2 by 2: 2 ÷ 2 = 1 with remainder 0
+4. Divide 1 by 2: 1 ÷ 2 = 0 with remainder 1
 
-2^3 = 8
-2^2 = 4
-2^1 = 2
-2^0 = 1
+Now, we can write the binary representation as the sequence of remainders in reverse order:
 
-The largest power of 2 less than or equal to 10 is 2^3 = 8.
+10 = 1 (1) 0 (0) 1 (1) 1 (1) 0 (0)
 
-Now, subtract 8 from 10:
+So, the binary representation of decimal 10 is 1010100.
 
-10 - 8 = 2
-
-So, we have 2 left to find the remainder.
-
-2 / 2 = 1
-
-Now, we have 1 left to find the remainder.
-
-1 / 2 = 0
-
-Now, we have found the binary representation of 10:
-
-10 = 2^3 + 2^2 + 2^1 + 2^0
-10 = 1110 in binary
-
-The correct answer is D) 1111.
+Final Answer: 1010100

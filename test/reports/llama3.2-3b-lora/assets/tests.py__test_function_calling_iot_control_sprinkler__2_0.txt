@@ -1,0 +1,2 @@
+⚠ PARTIAL PASS (1 value errors):
+  zone: expected=front yard, got=front_yard

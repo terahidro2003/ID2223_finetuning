@@ -1,14 +1,1 @@
-Here's an example of how you can use the `voice_announce` function to make an announcement in the kitchen and dining room:
-
-```json
-{
-  "function": "voice_announce",
-  "message": "Dinner is ready",
-  "rooms": [
-    "kitchen",
-    "dining room"
-  ]
-}
-```
-
-This JSON object specifies the function to be executed as `voice_announce`, the message to be announced as "Dinner is ready", and the rooms where the announcement should be made as a list containing "kitchen" and "dining room".
+{"function": "voice_announce", "message": "Dinner is ready", "rooms": ["kitchen", "dining room"]}

@@ -1,6 +1,0 @@
-[
-  {
-    "role": "user",
-    "content": "The bread is moldy but was bought only 2 days ago. What condition likely caused this?"
-  }
-]

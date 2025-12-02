@@ -1,1 +1,0 @@
-{"function": "query_database", "query": "SELECT * FROM users", "database": "customers"}

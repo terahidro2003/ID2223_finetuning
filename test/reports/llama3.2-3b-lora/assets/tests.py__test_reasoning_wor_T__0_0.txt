@@ -1,1 +1,5 @@
-To make a word meaning 'tasted', you need to remove the letter 'L' from 'STARTLED'. The resulting word is 'STARTED', which means 'past tense of the verb to start or initiate something'.
+To form a word meaning 'tasted', we need to remove one letter from 'STARTLED'. 
+
+The word 'tasted' is formed by removing the letter 'S' from 'STARTLED'. 
+
+Final Answer: S

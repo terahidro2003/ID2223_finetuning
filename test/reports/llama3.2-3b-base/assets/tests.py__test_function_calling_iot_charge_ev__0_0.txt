@@ -1,7 +1,1 @@
-```json
-{
-  "function": "charge_ev",
-  "charge_limit": 80,
-  "rate": "fast"
-}
-```
+{"function": "charge_ev", "charge_limit": 0.8, "rate": "fast"}

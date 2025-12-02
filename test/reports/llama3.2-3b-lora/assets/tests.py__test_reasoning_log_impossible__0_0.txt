@@ -1,5 +1,7 @@
-In a race, if you passed the person in last place, that means you are now ahead of them.
+To determine if the situation is possible or impossible, let's analyze the information given. 
 
-Since there are only two people in this scenario, you are now in the last place position, and the person you passed is in the second-to-last place position.
+In a race, you passed the person in last place. This means you are now ahead of the person who was in last place. 
 
-So, the answer is: you are now in the last place position.
+Since you passed the person in last place, you are now in a position that is better than the last place. 
+
+Therefore, the situation described by the question is possible.

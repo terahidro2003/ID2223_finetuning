@@ -1,5 +1,3 @@
-Here's an example of how you can use the provided security admin functions to audit logs for the `auth-service` in the last 24 hours, filtering for failed logins:
-
 ```json
 {
   "function": "audit_logs",
@@ -8,51 +6,3 @@ Here's an example of how you can use the provided security admin functions to au
   "filter": "failed logins"
 }
 ```
-
-This JSON object specifies the following:
-
-- `function`: The function to use for auditing logs. In this case, it's `audit_logs`.
-- `service`: The service to audit. In this case, it's `auth-service`.
-- `time_range`: The time range to audit. In this case, it's `last 24 hours`.
-- `filter`: The filter to apply to the audit logs. In this case, it's `failed logins`.
-
-When you run this JSON object, it will generate a list of audit logs for the specified service, time range, and filter. The list will include failed login attempts.
-
-Here's an example of what the output might look like:
-
-```json
-[
-  {
-    "timestamp": "2023-12-30T00:00:00Z",
-    "service": "auth-service",
-    "action": "login",
-    "user": "admin",
-    "ip_address": "192.168.1.100",
-    "failed": true
-  },
-  {
-    "timestamp": "2023-12-29T23:59:59Z",
-    "service": "auth-service",
-    "action": "login",
-    "user": "admin",
-    "ip_address": "192.168.1.100",
-    "failed": true
-  },
-  {
-    "timestamp": "2023-12-28T12:00:00Z",
-    "service": "auth-service",
-    "action": "login",
-    "user": "admin",
-    "ip_address": "192.168.1.100",
-    "failed": true
-  }
-]
-```
-
-This output shows the following:
-
-- Two failed login attempts for the `auth-service` in the last 24 hours.
-- The user and IP address for each failed login attempt.
-- The timestamp for each failed login attempt.
-
-By using this JSON object, you can easily audit logs for the specified service, time range, and filter, and get a clear view of any failed login attempts.

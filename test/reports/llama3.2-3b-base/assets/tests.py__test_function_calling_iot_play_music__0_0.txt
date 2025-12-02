@@ -1,1 +1,0 @@
-{"function": "play_music", "service": "spotify", "genre": "jazz"}

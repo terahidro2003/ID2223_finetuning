@@ -1,11 +1,13 @@
-This is a classic puzzle. The correct answer is to ask one of the guards: "If I were to ask the other guard which door leads to freedom, what would he say?"
+To solve this problem, I would ask the following question:
 
-If the guard with the truth always tells the truth, he will say that the other guard would point to the door to freedom.
+"If I ask the first guard which door leads to freedom, what will he say?"
 
-If the guard with the lie always lies, he will point to the door to death.
+If the first guard says the door to freedom, then the second guard will also say the door to freedom, as both will be lying about their previous statement.
 
-Since the guard with the truth always tells the truth, he will point to the door to freedom. This means that the other guard will point to the door to death.
+However, if the first guard says the door to death, then the second guard will tell the truth, saying the door to death.
 
-So, you would ask the first guard: "If I were to ask the other guard which door leads to freedom, what would he say?" The answer would be: "The other guard would point to the door to death." 
+In this case, the first guard will lie, and the second guard will tell the truth. 
 
-This means that you should choose the door to death.
+So, the correct answer is: The first guard will say the door to death, and the second guard will say the door to freedom. 
+
+Final Answer: The first guard will say the door to death, and the second guard will say the door to freedom.

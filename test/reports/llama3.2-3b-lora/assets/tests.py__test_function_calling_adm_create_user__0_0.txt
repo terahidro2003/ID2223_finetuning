@@ -1,8 +1,1 @@
-```json
-{
-  "function": "create_user",
-  "username": "jdoe",
-  "role": "admin",
-  "department": "IT"
-}
-```
+{"function": "create_user", "username": "jdoe", "role": "admin", "department": "IT"}

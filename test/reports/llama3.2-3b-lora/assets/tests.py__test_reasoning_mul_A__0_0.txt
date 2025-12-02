@@ -1,3 +1,10 @@
-The correct answer is A) Central Processing Unit.
+To answer this question, let's analyze each option:
 
-The Central Processing Unit (CPU) is the primary component of a computer that performs calculations and executes instructions. It is the brain of the computer, responsible for executing most instructions that a computer receives.
+A) Central Processing Unit - This is a widely recognized term in the field of computer hardware.
+B) Computer Personal Unit - This term is not commonly used in the context of computer hardware.
+C) Central Program Utility - This term is not a standard term in the field of computer hardware.
+D) Core Processing Utility - This term is not a standard term in the field of computer hardware.
+
+Considering the options, the most widely recognized and correct term for CPU is Central Processing Unit.
+
+Final Answer: A) Central Processing Unit

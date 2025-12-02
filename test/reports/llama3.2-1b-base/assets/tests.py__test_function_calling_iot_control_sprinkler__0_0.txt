@@ -1,7 +1,7 @@
 ```json
 {
-    "function": "control_sprinkler",
-    "zone": "front yard",
-    "action": "on"
+  "function": "control_sprinkler",
+  "zone": "front yard",
+  "action": "on"
 }
 ```

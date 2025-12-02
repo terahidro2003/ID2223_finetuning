@@ -1,9 +1,1 @@
-```json
-{
-  "function": "verify_integrity",
-  "backup_id": "backup_20241129",
-  "checksum_type": "SHA256"
-}
-```
-
-This JSON object represents a request to verify the integrity of the backup with the ID `backup_20241129` using the SHA256 checksum type.
+{"function": "verify_integrity", "backup_id": "backup_20241129", "checksum_type": "SHA256"}

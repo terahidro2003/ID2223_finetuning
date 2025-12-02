@@ -1,0 +1,3 @@
+⚠ PARTIAL PASS (2 value errors):
+  rows: expected=product, got=product, quarter, revenue
+  columns: expected=quarter, got=product, quarter, revenue

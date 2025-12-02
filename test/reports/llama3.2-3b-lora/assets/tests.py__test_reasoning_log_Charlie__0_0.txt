@@ -1,10 +1,7 @@
-Based on the information provided, we can conclude that:
+To determine the shortest person, we need to analyze the given information.
 
-1. Alice is taller than Bob.
-2. Bob is taller than Charlie.
+We know that Alice is taller than Bob, and Bob is taller than Charlie. 
 
-From these statements, we can infer that:
+From this information, we can conclude that Alice is the tallest, and Charlie is the shortest.
 
-- Alice is taller than Charlie (since Alice is taller than Bob, and Bob is taller than Charlie).
-
-Therefore, Charlie is the shortest.
+Final Answer: Charlie.

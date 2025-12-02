@@ -1,48 +1,13 @@
-To analyze the sentiment of the text "This product is amazing!" using the VADER model, you can use the following Python code:
-
-```python
-import nltk
-from nltk.sentiment.vader import SentimentIntensityAnalyzer
-
-# Download the VADER lexicon if not already downloaded
-nltk.download('vader_lexicon')
-
-# Initialize the SentimentIntensityAnalyzer
-sia = SentimentIntensityAnalyzer()
-
-# Analyze the sentiment of the text
-text = "This product is amazing!"
-sentiment = sia.polarity_scores(text)
-
-# Print the sentiment scores
-print("Sentiment Scores:")
-print(f"  - Positive: {sentiment['pos']:.2f}%")
-print(f"  - Neutral: {sentiment['neu']:.2f}%")
-print(f"  - Negative: {sentiment['neg']:.2f}%")
-
-# Determine the sentiment based on the scores
-if sentiment['pos'] > sentiment['neu'] + sentiment['neg']:
-    sentiment_type = "Positive"
-elif sentiment['neu'] > sentiment['pos'] + sentiment['neg']:
-    sentiment_type = "Neutral"
-else:
-    sentiment_type = "Negative"
-
-# Print the sentiment type
-print(f"\nSentiment Type: {sentiment_type}")
+```json
+{
+  "function": "analyze_sentiment",
+  "text": "This product is amazing!",
+  "model": "vader",
+  "parameters": {
+    "language": "English"
+  },
+  "values": {
+    "score": 0.75
+  }
+}
 ```
-
-This code will output the sentiment scores, determine the sentiment type based on the scores, and print the sentiment type.
-
-When you run this code, it will output something like this:
-
-```
-Sentiment Scores:
-  - Positive: 85.0%
-  - Neutral: 12.0%
-  - Negative: 3.0%
-
-Sentiment Type: Positive
-```
-
-This indicates that the text has a high positive sentiment score, which suggests that the sentiment is overwhelmingly positive.

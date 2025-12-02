@@ -1,6 +1,0 @@
-[
-  {
-    "role": "user",
-    "content": "A movie theater is packed on a rainy Saturday afternoon. Why?"
-  }
-]

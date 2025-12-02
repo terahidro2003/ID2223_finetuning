@@ -1,3 +1,13 @@
-The correct answer is B) Blue Whale.
+To determine the largest mammal on Earth, we need to consider the average adult weight and length of each option.
 
-The blue whale (Balaenoptera musculus) is the largest known animal to have ever existed on Earth, with some individuals reaching lengths of up to 33 meters (108 feet) and weighing up to 180 metric tons (200 tons).
+African Elephant: The average adult weight is around 5,000-14,000 pounds (2,268-6,350 kilograms), and the average length is around 8-13 feet (2.4-4 meters).
+
+Blue Whale: The average adult weight is around 150-170 tons (136,000-152,000 kilograms), and the average length is around 82-100 feet (25-30 meters).
+
+Giraffe: The average adult weight is around 1,100-2,800 pounds (500-1,270 kilograms), and the average length is around 14-19 feet (4.3-5.8 meters).
+
+Polar Bear: The average adult weight is around 700-1,700 pounds (318-771 kilograms), and the average length is around 7-9 feet (2.1-2.7 meters).
+
+Considering these values, the Blue Whale is significantly larger than the other options, with a much greater weight and length.
+
+Final Answer: The Blue Whale.

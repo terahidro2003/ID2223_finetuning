@@ -1,10 +1,1 @@
-```json
-{
-  "function": "convert_currency",
-  "amount": 100,
-  "from_currency": "USD",
-  "to_currency": "EUR"
-}
-```
-
-This will return the conversion result in EUR.
+{"function": "convert_currency", "amount": "100", "from_currency": "USD", "to_currency": "EUR"}

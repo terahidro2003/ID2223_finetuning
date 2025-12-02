@@ -1,1 +1,7 @@
-{"function": "adjust_ac", "mode": "cooling", "temperature": 23}
+```json
+{
+  "function": "adjust_ac",
+  "mode": "cooling",
+  "temperature": 23
+}
+```

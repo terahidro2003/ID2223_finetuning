@@ -1,12 +1,1 @@
-Here's an example of how you can apply the security patch using the provided functions:
-
-```json
-{
-  "function": "apply_patch",
-  "system": "prod-db",
-  "patch_id": "CVE-2024-1234",
-  "schedule": "immediately"
-}
-```
-
-This JSON object represents the command to apply the security patch to the `prod-db` system, with the patch ID `CVE-2024-1234`, and scheduling it to be applied immediately.
+{"function": "apply_patch", "system": "prod-db", "patch_id": "CVE-2024-1234", "schedule": "immediately"}

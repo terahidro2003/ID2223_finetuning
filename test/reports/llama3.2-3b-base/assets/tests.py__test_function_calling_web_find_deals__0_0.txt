@@ -1,9 +1,1 @@
-```json
-{
-  "function": "find_deals",
-  "category": "home_appliances",
-  "min_discount": 30
-}
-```
-
-This JSON object represents a request to find deals in the home appliances category with a minimum discount of 30%. The `find_deals` function will return a list of products that meet this criteria.
+{"function": "find_deals", "category": "home_appliances", "min_discount": 30}

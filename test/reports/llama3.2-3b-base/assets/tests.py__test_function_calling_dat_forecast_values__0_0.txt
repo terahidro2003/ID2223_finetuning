@@ -1,16 +1,3 @@
-Here's an example of how you can use the `forecast_values` function to forecast the next 6 periods for the `stock_prices` series using an ARIMA model:
-
 ```json
-{
-  "function": "forecast_values",
-  "series": "stock_prices",
-  "periods": 6,
-  "model": "ARIMA(1,1,1)"
-}
+{"function": "forecast_values", "series": "stock_prices", "periods": 6, "model": "ARIMA"}
 ```
-
-In this example, we're using an ARIMA model with 1 autoregressive term, 1 differencing term, and 1 moving average term. The `(1,1,1)` part of the string specifies these parameters.
-
-Please note that the `forecast_values` function requires a valid series and a valid model. The model string should be in the format `ARIMA(p,d,q)`, where `p` is the number of autoregressive terms, `d` is the number of differencing terms, and `q` is the number of moving average terms.
-
-Also, make sure that the `stock_prices` series is a valid time series and that the model is correctly specified. If the model is not correctly specified, the forecast may not be accurate.

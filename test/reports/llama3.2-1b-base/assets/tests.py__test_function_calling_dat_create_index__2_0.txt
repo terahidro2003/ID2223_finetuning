@@ -1,0 +1,2 @@
+⚠ PARTIAL PASS (1 value errors):
+  index_type: expected=btree, got=B-tree

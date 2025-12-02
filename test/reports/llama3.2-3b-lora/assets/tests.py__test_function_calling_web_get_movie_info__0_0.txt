@@ -1,11 +1,1 @@
-Here's a JSON request to get the movie info for Inception released in 2010:
-
-```json
-{
-  "function": "get_movie_info",
-  "title": "Inception",
-  "year": 2010
-}
-```
-
-This request uses the `get_movie_info` function to retrieve information about the movie "Inception" released in 2010.
+{"function": "get_movie_info", "title": "Inception", "year": 2010}

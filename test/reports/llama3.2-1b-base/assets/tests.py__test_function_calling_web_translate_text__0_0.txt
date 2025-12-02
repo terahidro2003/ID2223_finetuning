@@ -1,1 +1,1 @@
-{"function": "translate_text", "text": "Hello, how are you?", "target_language": "es"}
+{"function": "translate_text", "text": "Hello, how are you?", "target_language": "es", "language": "auto"}

@@ -1,3 +1,13 @@
-The correct answer is C) 2.
+To determine the smallest prime number, we need to understand what a prime number is. A prime number is a positive integer that is divisible only by itself and 1.
 
-A prime number is a positive integer that is divisible only by itself and 1. By this definition, 2 is the smallest prime number, as it can only be divided by 1 and itself, 2.
+Let's evaluate the options given:
+
+A) 0: By definition, a prime number cannot be 0 because it must be divisible by 1 and itself, and 0 does not have a multiplicative inverse.
+
+B) 1: Similarly, 1 is not considered a prime number because it is divisible by 1 and itself, but it does not meet the traditional definition of a prime number.
+
+C) 2: This is the smallest positive integer that is only divisible by 1 and itself, making it the smallest prime number.
+
+D) 3: Although 3 is a prime number, it is not the smallest one.
+
+Final Answer: 2

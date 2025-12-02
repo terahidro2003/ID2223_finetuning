@@ -1,4 +1,4 @@
-To find the binary representation of decimal 10, we need to divide 10 by 2 and keep track of the remainders.
+To find the binary representation of the decimal number 10, we need to divide it by 2 and keep track of the remainders.
 
 10 / 2 = 5 remainder 0
 5 / 2 = 2 remainder 1
@@ -7,4 +7,4 @@ To find the binary representation of decimal 10, we need to divide 10 by 2 and k
 
 Now, let's read the remainders from bottom to top: 1010.
 
-So, the binary representation of decimal 10 is 1010.
+Therefore, the binary representation of the decimal number 10 is 1010.

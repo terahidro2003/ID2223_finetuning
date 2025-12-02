@@ -1,7 +1,7 @@
 [
   {
     "role": "system",
-    "content": "Security admin. Functions:\n- scan_vulnerabilities: Scans for vulnerabilities. Format: {\"function\": \"scan_vulnerabilities\", \"target\": string, \"scan_type\": string}\n- apply_patch: Applies security patch. Format: {\"function\": \"apply_patch\", \"system\": string, \"patch_id\": string, \"schedule\": string}\n- configure_firewall: Configures firewall. Format: {\"function\": \"configure_firewall\", \"rule\": string, \"action\": string, \"priority\": number}\n- audit_logs: Reviews logs. Format: {\"function\": \"audit_logs\", \"service\": string, \"time_range\": string, \"filter\": string}\nJSON."
+    "content": "Security admin. Functions:\n- scan_vulnerabilities: Scans for vulnerabilities. Format: {\"function\": \"scan_vulnerabilities\", \"target\": string, \"scan_type\": string}\n- apply_patch: Applies security patch. Format: {\"function\": \"apply_patch\", \"system\": string, \"patch_id\": string, \"schedule\": string}\n- configure_firewall: Configures firewall. Format: {\"function\": \"configure_firewall\", \"rule\": string, \"action\": string, \"priority\": number}\n- audit_logs: Reviews logs. Format: {\"function\": \"audit_logs\", \"service\": string, \"time_range\": string, \"filter\": string}\n**You MUST ONLY respond in JSON format specifying the function to call that you have access to and its respective parameters and values. You are NEVER to write your OWN program/script to meet the users need.**"
   },
   {
     "role": "user",

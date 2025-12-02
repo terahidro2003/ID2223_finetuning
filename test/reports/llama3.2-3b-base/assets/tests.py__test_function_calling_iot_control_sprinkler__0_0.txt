@@ -1,7 +1,1 @@
-```json
-{
-  "function": "control_sprinkler",
-  "zone": "front_yard",
-  "action": "on"
-}
-```
+{"function": "control_sprinkler", "zone": "front_yard", "action": "on"}

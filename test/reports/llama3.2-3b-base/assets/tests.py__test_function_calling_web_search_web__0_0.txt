@@ -1,1 +1,0 @@
-{"function": "search_web", "query": "machine learning tutorials", "max_results": 10}

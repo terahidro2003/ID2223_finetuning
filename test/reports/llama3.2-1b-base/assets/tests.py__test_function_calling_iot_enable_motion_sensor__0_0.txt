@@ -1,15 +1,7 @@
-Here's the JSON output for the specified function:
-
 ```json
 {
   "function": "enable_motion_sensor",
-  "sensor_id": "hallway",
+  "sensor_id": "hallway_1",
   "sensitivity": 8
 }
 ```
-
-This JSON object represents the following:
-
-- `function`: The function being called, which is `enable_motion_sensor`.
-- `sensor_id`: The ID of the motion sensor, which is `hallway`.
-- `sensitivity`: The sensitivity level of the motion sensor, which is `8`.

@@ -1,12 +1,1 @@
-To get driving directions from Central Station to Airport, I'll use the `get_directions` function. Here's the JSON request:
-
-```json
-{
-  "function": "get_directions",
-  "from": "Central Station",
-  "to": "Airport",
-  "mode": "driving"
-}
-```
-
-Please note that you should replace "Central Station" and "Airport" with the actual names of the locations you want to travel from and to.
+{"function": "get_directions", "from": "Central Station", "to": "Airport", "mode": "driving"}

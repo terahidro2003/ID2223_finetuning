@@ -1,1 +1,0 @@
-{"function": "query_wikipedia", "topic": "Quantum Computing", "language": "English"}

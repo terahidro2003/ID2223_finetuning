@@ -1,11 +1,1 @@
-Here's an example of how you can set a security alert notification saying 'Motion detected':
-
-```json
-{
-  "function": "set_notification",
-  "type": "security",
-  "message": "Motion detected"
-}
-```
-
-This JSON object specifies the function to be executed as `set_notification`, the type of notification as `security`, and the message to be displayed as 'Motion detected'.
+{"function": "set_notification", "type": "security", "message": "Motion detected"}

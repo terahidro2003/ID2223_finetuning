@@ -1,1 +1,5 @@
-The correct answer is B) 6. A hexagon by definition has 6 sides.
+To determine the number of sides of a hexagon, we need to understand what a hexagon is. A hexagon is a polygon with six sides. The prefix "hex-" means six, and the suffix "-gon" means angle or corner. 
+
+So, by definition, a hexagon has six sides. 
+
+Final Answer: 6

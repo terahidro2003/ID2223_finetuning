@@ -1,6 +1,0 @@
-[
-  {
-    "role": "user",
-    "content": "Your phone battery drains much faster than usual today. You haven't changed settings. What's a likely cause?"
-  }
-]

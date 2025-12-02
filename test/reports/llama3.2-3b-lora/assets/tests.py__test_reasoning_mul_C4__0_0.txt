@@ -1,11 +1,5 @@
-The correct answer is B) 7.
+To answer this question, we need to consider the definition of a continent. A continent is a large area of land that is separated from other areas of land by oceans. 
 
-The 7 continents are:
+There are seven continents: Africa, Antarctica, Asia, Australia, Europe, North America, and South America. 
 
-1. Africa
-2. Antarctica
-3. Asia
-4. Australia
-5. Europe
-6. North America
-7. South America
+So, the correct answer is C) 7.

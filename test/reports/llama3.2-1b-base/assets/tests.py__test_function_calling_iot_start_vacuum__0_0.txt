@@ -1,1 +1,6 @@
-{"function": "start_vacuum", "room": "kitchen"}
+```json
+{
+  "function": "start_vacuum",
+  "room": "kitchen"
+}
+```

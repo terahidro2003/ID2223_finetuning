@@ -1,10 +1,1 @@
-```json
-{
-  "function": "deploy_service",
-  "name": "api-gateway",
-  "version": "2.1.0",
-  "environment": "production"
-}
-```
-
-This JSON object represents the command to deploy the `api-gateway` service to the `production` environment with version `2.1.0`.
+{"function": "deploy_service", "name": "api-gateway", "version": "2.1.0", "environment": "production"}

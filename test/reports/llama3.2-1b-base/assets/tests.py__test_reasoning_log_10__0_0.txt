@@ -1,11 +1,17 @@
-To find the number of rungs above water, we need to subtract the number of rungs below water from the total number of rungs.
+To find the number of rungs above water, we need to calculate the total number of rungs and then subtract the number of rungs that are submerged.
 
-At low tide, 10 rungs are above water.
-The tide rises 5 feet, which is equivalent to 5 * 12 = 60 rungs.
+Since the tide rises 5 feet, we can assume that the ship is 5 feet above the waterline. 
 
-So, the total number of rungs is 10 + 60 = 70.
+The ship is 10 rungs above water at low tide. This means that the ship is 10 rungs + 5 rungs = 15 rungs above the waterline.
 
-Now, we subtract the number of rungs below water from the total:
-70 - 10 = 60
+Now, we need to find the number of rungs that are submerged. Since the rungs are 1 foot apart, we can divide the total number of rungs by 2 to find the number of rungs that are submerged.
 
-Therefore, there are 60 rungs above water.
+15 rungs / 2 = 7.5 rungs
+
+Since we can't have a fraction of a rung, we round down to 7 rungs. 
+
+Now, we can find the number of rungs above water by subtracting the number of submerged rungs from the total number of rungs.
+
+15 rungs - 7 rungs = 8 rungs
+
+So, there are 8 rungs above water.

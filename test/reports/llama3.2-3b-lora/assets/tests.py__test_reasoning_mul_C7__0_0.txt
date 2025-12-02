@@ -1,3 +1,11 @@
-The correct answer is C) Mitochondria.
+To answer this question, let's consider the function of each cell component mentioned.
 
-The mitochondria is often referred to as the "powerhouse" of the cell because it generates most of the cell's energy through a process called cellular respiration. It converts glucose and other nutrients into ATP (adenosine triphosphate), which is then used to power the cell's various functions.
+A) The nucleus is the control center of the cell, containing most of the cell's genetic material. It's not typically referred to as the "powerhouse."
+
+B) Ribosomes are small organelles found throughout the cell, responsible for protein synthesis. They're not the primary source of energy.
+
+C) Mitochondria are often referred to as the "powerhouses" of the cell because they generate most of the cell's energy through a process called cellular respiration.
+
+D) Chloroplasts are found in plant cells and are responsible for photosynthesis, the process of converting light energy into chemical energy. While they do produce energy, they're not the primary source of energy for all cells.
+
+Considering these functions, the correct answer is C) Mitochondria.

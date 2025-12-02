@@ -1,7 +1,7 @@
-This is a classic lateral thinking puzzle.
+To determine if the situation is possible or impossible, let's analyze the information given.
 
-The answer is: Impossible.
+In a race, you passed the person in last place. This means that you are now ahead of the person who was in last place.
 
-In a race, you can't pass the person in last place because that person is already in last place. By definition, they are the last person in the race, so it's not possible for you to pass them.
+Since you passed the person in last place, you are now in a position that is better than the last place. Therefore, you are now in a position that is better than the last place.
 
-So, the correct answer is that you are still in last place.
+Final Answer: Possible.

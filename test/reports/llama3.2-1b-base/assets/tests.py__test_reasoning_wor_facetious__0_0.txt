@@ -1,1 +1,7 @@
-The word "Aeolipile" contains all five vowels (A, E, I, O, and U) in alphabetical order.
+To find the word that contains all five vowels in alphabetical order, I'll start by listing the vowels in alphabetical order: a, e, i, o, u.
+
+Next, I'll think of a word that contains all five vowels. After some research, I found that the word "eunoia" meets the criteria. It is a Greek word that means "beautiful thinking" and it contains all five vowels in alphabetical order.
+
+Here's the word: eunoia
+
+Final Answer: eunoia

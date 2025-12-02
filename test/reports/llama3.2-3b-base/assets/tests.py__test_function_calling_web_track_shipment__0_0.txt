@@ -1,7 +1,1 @@
-To track shipment, you can use the following function:
-
-```
 {"function": "track_shipment", "tracking_number": "1Z999AA10123456784", "carrier": "UPS"}
-```
-
-This will return the current status of the shipment.

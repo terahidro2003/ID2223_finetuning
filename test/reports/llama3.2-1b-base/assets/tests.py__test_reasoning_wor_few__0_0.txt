@@ -1,5 +1,7 @@
-I think I can help you out. Based on your hint, I'm going to take a guess that you are the word "fewer". 
+To solve this, let's analyze the given letters: W-I-R-E.
 
-If I add "two" to "fewer", I get "fewer two". And if I add "fewer" to "fewer two", I get "fewer fewer". 
+1. We start with the letters W-I-R-E.
+2. Adding two letters to the beginning of the word, we get W-I-R-E-T.
+3. Adding two letters to the end of the word, we get W-I-R-E-T-O.
 
-Am I correct?
+Since the word is "WIRE" and we added two letters to the beginning and the end, the correct answer is: W-I-R-E-T-O.

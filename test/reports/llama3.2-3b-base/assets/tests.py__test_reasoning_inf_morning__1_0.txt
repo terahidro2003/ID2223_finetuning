@@ -1,6 +1,0 @@
-[
-  {
-    "role": "user",
-    "content": "The coffee shop has a long line at 8 AM on Monday but is nearly empty at 2 PM. Why?"
-  }
-]

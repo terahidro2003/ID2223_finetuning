@@ -1,21 +1,7 @@
-To find out how many more books can fit, we need to first find out how many books are already on the shelves. 
+To find out how many more books can fit, we need to first find out how many books are already on the shelves. We know that each shelf can hold 7 books, and there are 5 shelves. So, the total number of books already on the shelves is 7 * 5 = 35.
 
-Number of books already on the shelves = 28
-Number of books per shelf = 7
-Number of shelves = 5
+Now, we need to find out how many books can fit in total. We know that there are 28 books already on the shelves, and we want to know how many more books can fit. So, the total number of books that can fit is 35 + 28 = 63.
 
-Total books already on the shelves = Number of books already on the shelves * Number of shelves
-= 28 * 5
-= 140
+To find out how many more books can fit, we need to subtract the number of books already on the shelves from the total number of books that can fit. So, 63 - 28 = 35.
 
-Now, we need to find out how many books can fit in total. 
-Total books that can fit = Total books already on the shelves + Number of books that can fit
-= 140 + 28
-= 168
-
-Now, we need to find out how many more books can fit. 
-Number of books that can fit = Total books that can fit - Number of books already on the shelves
-= 168 - 140
-= 28
-
-So, 28 more books can fit on the bookshelf.
+Therefore, 35 more books can fit on the bookshelf.

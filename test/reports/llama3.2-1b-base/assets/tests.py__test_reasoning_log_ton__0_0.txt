@@ -1,1 +1,8 @@
-Based on your hint, I'm going to take a guess that the 3-letter word is "fat". Is that correct?
+To solve this riddle, let's break it down step by step:
+
+1. "Forward" is a 3-letter word.
+2. "Backward" is a 3-letter word.
+
+Since both words are the same, we can conclude that the answer is a 3-letter word that is both "forward" and "backward". 
+
+The answer is: 'I'.

@@ -1,12 +1,1 @@
-Here's an example of how you can create a B-tree index on the `customers` table for the `email` and `phone` columns:
-
-```json
-{
-  "function": "create_index",
-  "table": "customers",
-  "columns": ["email", "phone"],
-  "index_type": "btree"
-}
-```
-
-This JSON object specifies the function to use (`create_index`), the table to create the index on (`customers`), the columns to include in the index (`email` and `phone`), and the type of index to create (`btree`).
+{"function": "create_index", "table": "customers", "columns": ["email", "phone"], "index_type": "btree"}

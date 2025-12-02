@@ -1,1 +1,10 @@
-The correct answer is C) Paris. Paris is the capital and largest city of France, located in the northern part of the country.
+To answer this question, we need to identify the correct capital of France from the given options.
+
+First, let's eliminate the options that are not the capital of France:
+- London is the capital of the United Kingdom, not France.
+- Berlin is the capital of Germany, not France.
+- Madrid is the capital of Spain, not France.
+
+Now, we are left with one option: Paris. This is the correct answer, as Paris is widely known as the capital of France.
+
+Final Answer: Paris

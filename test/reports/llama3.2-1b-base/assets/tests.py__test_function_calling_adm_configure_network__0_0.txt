@@ -1,5 +1,3 @@
-Here's a JSON configuration for the functions you've mentioned:
-
 ```json
 {
   "function": "configure_network",
@@ -8,9 +6,3 @@ Here's a JSON configuration for the functions you've mentioned:
   "internet_gateway": true
 }
 ```
-
-This configuration will:
-
-- Configure a VPC with ID `vpc-12345`
-- Create a subnet with IP address `10.0.1.0/24`
-- Enable the Internet Gateway for the VPC.

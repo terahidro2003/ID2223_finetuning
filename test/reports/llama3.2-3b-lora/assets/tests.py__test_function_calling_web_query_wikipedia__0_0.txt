@@ -1,9 +1,1 @@
-I can simulate the Wikipedia query function for you. Here's the result:
-
-{
-  "title": "Quantum Computing",
-  "content": "Quantum computing is a field of computer science that uses quantum mechanics to perform calculations that are beyond the capabilities of classical computers. It is a rapidly growing field, with significant potential to revolutionize many areas of science and technology.",
-  "url": "https://en.wikipedia.org/wiki/Quantum_computing"
-}
-
-Note that the actual Wikipedia content may vary depending on the current state of the article. This is just a simulated result.
+{"function": "query_wikipedia", "topic": "Quantum Computing", "language": "en"}

@@ -1,14 +1,9 @@
-A child who knows the alphabet song but can't identify individual letters is missing the skill of phonemic awareness. Phonemic awareness is the ability to hear and manipulate the individual sounds (phonemes) in words.
+To solve this problem, let's break down the steps involved in the alphabet song:
 
-In the case of the alphabet song, the child is likely missing the ability to identify and manipulate individual sounds, such as /a/, /i/, /o/, and /u/. This skill is essential for reading and writing, as it allows children to recognize and blend sounds together to form words.
+1. **Identifying the sequence**: The child needs to recognize the sequence of letters in the alphabet song.
+2. **Recognizing individual letters**: The child should be able to identify each individual letter in the sequence.
+3. **Understanding the song's purpose**: The child should understand that the alphabet song is a tool for learning and remembering the sequence of letters.
 
-Phonemic awareness is a critical component of phonemic literacy, which is the ability to read and write with accuracy and fluency. Children who have developed phonemic awareness skills are better equipped to recognize and blend sounds together, which is essential for reading and writing.
+Given these steps, the child is missing the **skill of phonological awareness**. Phonological awareness is the ability to recognize and manipulate sounds in words. In this case, the child needs to recognize the sequence of letters in the alphabet song, which requires phonological awareness.
 
-If you're concerned about your child's phonemic awareness skills, you can try the following activities:
-
-* Read the alphabet song together, and ask your child to identify the individual sounds.
-* Use flashcards or pictures to help your child recognize individual sounds.
-* Play games that involve identifying sounds, such as "What sound does the word 'cat' make?"
-* Read simple stories together, and ask your child to identify the individual sounds in each word.
-
-By working on phonemic awareness, your child can develop the skills they need to become a confident reader and writer.
+Without phonological awareness, the child may struggle to recognize individual letters, even if they can sing the alphabet song.

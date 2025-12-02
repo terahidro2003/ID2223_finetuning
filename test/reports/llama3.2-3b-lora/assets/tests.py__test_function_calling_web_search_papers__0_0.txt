@@ -1,1 +1,0 @@
-{"function": "search_papers", "query": "neural networks", "year_from": 2020, "year_to": 2024, "max_results": 25}

@@ -1,7 +1,0 @@
-```json
-{
-  "function": "toggle_pool_heater",
-  "state": true,
-  "target_temp": 28
-}
-```

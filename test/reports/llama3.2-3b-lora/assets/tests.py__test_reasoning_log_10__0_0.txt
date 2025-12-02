@@ -1,15 +1,17 @@
-To find out how many rungs are above water, we need to consider the rise in the tide and the distance between the rungs.
+To solve this problem, we need to determine the total height of the rungs above water and compare it to the height of the water when the tide rises.
 
-Since the tide rises 5 feet, and the rungs are 1 foot apart, we can calculate the number of rungs that will be above water as follows:
+Since the rungs are 1 foot apart, and there are 10 rungs above water initially, we can calculate the total height of these rungs as 10 rungs * 1 foot/rung = 10 feet.
 
-10 rungs (initially above water) + 5 feet (tide rise) = 15 feet
+Now, when the tide rises 5 feet, the water level increases. To find out how many rungs are now above water, we need to subtract the height of the water from the total height of the rungs.
 
-Since the rungs are 1 foot apart, we can divide the total distance (15 feet) by the distance between the rungs (1 foot):
+However, we need to consider that the rungs are floating, so they will also rise with the water. This means that the effective height of the rungs above water will be reduced by the height of the water.
 
-15 feet / 1 foot = 15 rungs
+Since the rungs are floating, we can assume that they will rise by the same amount as the water level, which is 5 feet. This means that the effective height of the rungs above water will be 10 feet - 5 feet = 5 feet.
 
-However, we need to subtract the initial 10 rungs that were above water, since the tide has risen and some of them are now below water:
+Now, we need to find out how many rungs are above water at this height. Since the rungs are 1 foot apart, we can divide the effective height by the spacing between the rungs to get the number of rungs above water.
 
-15 rungs - 10 rungs = 5 rungs
+5 feet / 1 foot/rung = 5 rungs
 
-So, 5 rungs are now above water.
+So, there are 5 rungs above water when the tide rises 5 feet.
+
+Final Answer: 5

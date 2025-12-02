@@ -1,11 +1,7 @@
-I'll simulate an IoT device manager request. Here's the output in JSON format:
-
 ```json
 {
-    "function": "camera_snapshot",
-    "camera_id": "front_door",
-    "quality": "high"
+  "function": "camera_snapshot",
+  "camera_id": "front_door",
+  "quality": "high"
 }
 ```
-
-This request will take a high-quality snapshot from the camera located at the front door. The quality of the snapshot can be adjusted using the `quality` parameter. In this case, the quality is set to "high".

@@ -5,5 +5,3 @@
   "rate": "fast"
 }
 ```
-
-Please note that the "fast" rate is typically 30-60 kW, which is the fastest charging rate available. If you have a 50 kW charger, you would use the "fast" rate instead.

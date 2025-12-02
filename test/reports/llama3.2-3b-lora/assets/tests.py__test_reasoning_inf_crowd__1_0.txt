@@ -1,6 +1,0 @@
-[
-  {
-    "role": "user",
-    "content": "The park has extra trash bins installed before the weekend. What are authorities anticipating?"
-  }
-]

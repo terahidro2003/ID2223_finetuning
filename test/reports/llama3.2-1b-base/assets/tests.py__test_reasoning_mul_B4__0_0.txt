@@ -1,3 +1,5 @@
-The correct answer is B) 0.
+To find the freezing point of water in Celsius, we need to subtract 0 from the freezing point of water in Fahrenheit. The freezing point of water in Fahrenheit is 32 degrees. 
 
-The freezing point of water is 0 degrees Celsius (0°C).
+So, the freezing point of water in Celsius is 32 - 0 = 32 degrees.
+
+Final Answer: 32

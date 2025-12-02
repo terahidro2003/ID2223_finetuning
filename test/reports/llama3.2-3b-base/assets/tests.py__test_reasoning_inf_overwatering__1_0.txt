@@ -1,6 +1,0 @@
-[
-  {
-    "role": "user",
-    "content": "A plant's leaves are turning yellow despite regular watering. What's likely wrong?"
-  }
-]

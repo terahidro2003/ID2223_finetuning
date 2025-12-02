@@ -1,13 +1,1 @@
-Here's an example of how you can create a pivot table using the `create_pivot` function:
-
-```json
-{
-  "function": "create_pivot",
-  "data": "sales_data",
-  "rows": "product",
-  "columns": "quarter",
-  "values": "revenue"
-}
-```
-
-This will create a pivot table where the rows are the unique products, the columns are the unique quarters, and the values are the total revenue for each product in each quarter.
+{"function": "create_pivot", "data": "sales_data", "rows": "product", "columns": "quarter", "values": "revenue"}

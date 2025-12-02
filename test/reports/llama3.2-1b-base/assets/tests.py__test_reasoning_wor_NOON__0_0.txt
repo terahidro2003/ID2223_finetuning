@@ -1,5 +1,14 @@
-The answer is "SWIMS." 
+To solve this, let's consider the constraints:
 
-- When written forward, it's "SWIMS."
-- When written backward, it's "SMYS."
-- When written upside down, it's still "SWIMS."
+1. The word must be 4 letters long.
+2. It must be able to be written forward, backward, or upside down and still be read the same.
+
+After some thought, I think I have a possible solution:
+
+The word is "swap".
+
+Forward: S-W-A-P
+Backward: P-A-W-S
+Upside Down: S-P-A-W
+
+This word meets all the criteria, and it's a common English word that fits the description.

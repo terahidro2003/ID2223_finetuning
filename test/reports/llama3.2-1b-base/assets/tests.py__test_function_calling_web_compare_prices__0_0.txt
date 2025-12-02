@@ -1,147 +1,17 @@
-I'll use the following API keys to simulate the requests:
-
-Amazon: `AKIAIOS0BMQ83EXAMPLE`
-BestBuy: `EXAMPLE`
-
-Here are the requests:
-
-**Search Products**
-```json
-{
-  "function": "search_products",
-  "query": "PROD12345",
-  "category": "Electronics",
-  "max_price": 100
-}
-```
-
-**Compare Prices**
 ```json
 {
   "function": "compare_prices",
   "product_id": "PROD12345",
-  "stores": ["Amazon", "BestBuy"]
+  "stores": [
+    {
+      "store_name": "Amazon",
+      "price": 49.99
+    },
+    {
+      "store_name": "Best Buy",
+      "price": 49.99
+    }
+  ],
+  "min_discount": 0
 }
 ```
-
-**Track Shipment**
-```json
-{
-  "function": "track_shipment",
-  "tracking_number": "1234567890",
-  "carrier": "UPS"
-}
-```
-
-**Find Deals**
-```json
-{
-  "function": "find_deals",
-  "category": "Electronics",
-  "min_discount": 10
-}
-```
-
-Now, let's compare the prices for the product PROD12345 across Amazon and BestBuy stores:
-
-**Amazon**
-```json
-{
-  "function": "compare_prices",
-  "product_id": "PROD12345",
-  "stores": ["Amazon"]
-}
-```
-
-**BestBuy**
-```json
-{
-  "function": "compare_prices",
-  "product_id": "PROD12345",
-  "stores": ["BestBuy"]
-}
-```
-
-**Amazon Response**
-```json
-{
-  "function": "compare_prices",
-  "product_id": "PROD12345",
-  "stores": ["Amazon"],
-  "price": 99.99,
-  "discount": 0.0
-}
-```
-
-**BestBuy Response**
-```json
-{
-  "function": "compare_prices",
-  "product_id": "PROD12345",
-  "stores": ["BestBuy"],
-  "price": 99.99,
-  "discount": 0.0
-}
-```
-
-As expected, the prices are the same on both Amazon and BestBuy. The discount is also the same on both stores.
-
-**Amazon Tracking**
-```json
-{
-  "function": "track_shipment",
-  "tracking_number": "1234567890",
-  "carrier": "UPS"
-}
-```
-
-**Amazon Response**
-```json
-{
-  "function": "track_shipment",
-  "tracking_number": "1234567890",
-  "carrier": "UPS",
-  "status": "Shipped"
-}
-```
-
-**Amazon Response**
-```json
-{
-  "function": "track_shipment",
-  "tracking_number": "1234567890",
-  "carrier": "UPS",
-  "status": "Shipped"
-}
-```
-
-**BestBuy Tracking**
-```json
-{
-  "function": "track_shipment",
-  "tracking_number": "1234567890",
-  "carrier": "UPS"
-}
-```
-
-**BestBuy Response**
-```json
-{
-  "function": "track_shipment",
-  "tracking_number": "1234567890",
-  "carrier": "UPS",
-  "status": "Shipped"
-}
-```
-
-**BestBuy Response**
-```json
-{
-  "function": "track_shipment",
-  "tracking_number": "1234567890",
-  "carrier": "UPS",
-  "status": "Shipped"
-}
-```
-
-Both Amazon and BestBuy have shipped the product PROD12345 to the customer.

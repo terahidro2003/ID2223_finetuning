@@ -1,5 +1,8 @@
-To find out how many sheep are left, we need to subtract the number of sheep that died (9) from the total number of sheep (17).
+To find out how many sheep are left, we need to subtract the number of sheep that died from the total number of sheep.
+
+Total number of sheep: 17
+Number of sheep that died: 9
 
 17 (total sheep) - 9 (sheep that died) = 8
 
-So, there are 8 sheep left.
+So, the farmer has 8 sheep left.

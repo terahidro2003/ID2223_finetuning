@@ -1,7 +1,63 @@
-To find the number of days it takes for the snail to reach the top of the well, we need to calculate the net progress each day.
+To solve this problem, we need to find the net progress the snail makes each day. 
 
-Each day, the snail climbs 3 feet up and slides back 2 feet at night. So, the net progress is 3 - 2 = 1 foot per day.
+Day 1: The snail climbs 3 feet and slides back 2 feet, so it reaches 1 foot. 
 
-Since the well is 30 feet deep, the snail will reach the top after 30 days.
+Day 2: The snail climbs 3 feet and slides back 2 feet, so it reaches 1 foot. 
 
-So, the answer is 30 days.
+Day 3: The snail climbs 3 feet and slides back 2 feet, so it reaches 1 foot. 
+
+Day 4: The snail climbs 3 feet and slides back 2 feet, so it reaches 1 foot. 
+
+Day 5: The snail climbs 3 feet and slides back 2 feet, so it reaches 1 foot. 
+
+Day 6: The snail climbs 3 feet and slides back 2 feet, so it reaches 1 foot. 
+
+Day 7: The snail climbs 3 feet and slides back 2 feet, so it reaches 1 foot. 
+
+Day 8: The snail climbs 3 feet and slides back 2 feet, so it reaches 1 foot. 
+
+Day 9: The snail climbs 3 feet and slides back 2 feet, so it reaches 1 foot. 
+
+Day 10: The snail climbs 3 feet and slides back 2 feet, so it reaches 1 foot. 
+
+Day 11: The snail climbs 3 feet and slides back 2 feet, so it reaches 1 foot. 
+
+Day 12: The snail climbs 3 feet and slides back 2 feet, so it reaches 1 foot. 
+
+Day 13: The snail climbs 3 feet and slides back 2 feet, so it reaches 1 foot. 
+
+Day 14: The snail climbs 3 feet and slides back 2 feet, so it reaches 1 foot. 
+
+Day 15: The snail climbs 3 feet and slides back 2 feet, so it reaches 1 foot. 
+
+Day 16: The snail climbs 3 feet and slides back 2 feet, so it reaches 1 foot. 
+
+Day 17: The snail climbs 3 feet and slides back 2 feet, so it reaches 1 foot. 
+
+Day 18: The snail climbs 3 feet and slides back 2 feet, so it reaches 1 foot. 
+
+Day 19: The snail climbs 3 feet and slides back 2 feet, so it reaches 1 foot. 
+
+Day 20: The snail climbs 3 feet and slides back 2 feet, so it reaches 1 foot. 
+
+Day 21: The snail climbs 3 feet and slides back 2 feet, so it reaches 1 foot. 
+
+Day 22: The snail climbs 3 feet and slides back 2 feet, so it reaches 1 foot. 
+
+Day 23: The snail climbs 3 feet and slides back 2 feet, so it reaches 1 foot. 
+
+Day 24: The snail climbs 3 feet and slides back 2 feet, so it reaches 1 foot. 
+
+Day 25: The snail climbs 3 feet and slides back 2 feet, so it reaches 1 foot. 
+
+Day 26: The snail climbs 3 feet and slides back 2 feet, so it reaches 1 foot. 
+
+Day 27: The snail climbs 3 feet and slides back 2 feet, so it reaches 1 foot. 
+
+Day 28: The snail climbs 3 feet and slides back 2 feet, so it reaches 1 foot. 
+
+Day 29: The snail climbs 3 feet and slides back 2 feet, so it reaches 1 foot. 
+
+Day 30: The snail climbs 3 feet and slides back 2 feet, so it reaches the top of the well.
+
+Therefore, it will take 30 days for the snail to reach the top of the well.

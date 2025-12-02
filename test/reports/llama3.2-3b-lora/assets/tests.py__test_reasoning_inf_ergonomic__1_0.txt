@@ -1,6 +1,0 @@
-[
-  {
-    "role": "user",
-    "content": "Someone's desk has a standing desk converter, ergonomic keyboard, and wrist rest. What problem are they addressing?"
-  }
-]

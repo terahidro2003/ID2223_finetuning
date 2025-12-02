@@ -1,6 +1,6 @@
-Let's say the ball costs x cents. Since the bat costs $1 more than the ball, the bat costs (x + 100) cents.
+To solve this problem, let's start by assigning variables to the unknowns. Let's say the cost of the ball is x cents. Since the bat costs $1 more than the ball, the cost of the bat is (x + 100) cents.
 
-We know that the total cost of the bat and ball together is $1.10, which is equivalent to 110 cents. So, we can set up the equation:
+We know that the total cost of the bat and ball together is $1.10, which is equivalent to 110 cents. We can set up an equation based on this information:
 
 x + (x + 100) = 110
 
@@ -17,3 +17,5 @@ Divide both sides by 2:
 x = 5
 
 So, the ball costs 5 cents.
+
+Final Answer: 5

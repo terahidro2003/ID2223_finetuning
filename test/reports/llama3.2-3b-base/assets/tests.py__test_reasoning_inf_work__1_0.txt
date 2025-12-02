@@ -1,6 +1,0 @@
-[
-  {
-    "role": "user",
-    "content": "The gym parking lot is full at 6 AM but half-empty at noon. What explains this pattern?"
-  }
-]

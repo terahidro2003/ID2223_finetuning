@@ -1,1 +1,7 @@
-{"function": "water_plants", "zone": "backyard", "duration": 15}
+```
+{
+  "function": "water_plants",
+  "zone": "backyard",
+  "duration": 15
+}
+```
