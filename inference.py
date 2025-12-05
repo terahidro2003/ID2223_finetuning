@@ -31,6 +31,7 @@ import modal
 
 vllm_image = (
     modal.Image.from_registry("nvidia/cuda:12.8.0-devel-ubuntu22.04", add_python="3.12")
+    .apt_install("wget")
     .entrypoint([])
     .uv_pip_install(
         "vllm==0.11.2",
@@ -44,9 +45,10 @@ vllm_image = (
 # ## Download the model weights
 # A single H100 GPU has enough VRAM to store an 8,000,000,000 parameter model,
 
-DEPLOYMENT_NAME = "Llama-3.2-3B-lora"
-MODEL_NAME = "unsloth/Llama-3.2-3B-Instruct-bnb-4bit"
-LORA_NAME = "hellstone1918/Llama-3.2-3B-basic-lora-model"
+DEPLOYMENT_NAME = "Prometheus-judge"
+MODEL_NAME = "prometheus-eval/prometheus-7b-v2.0-Q4-K-M"
+LORA_NAME = ""
+# LORA_NAME = "hellstone1918/Llama-3.2-3B-basic-lora-model"
 
 # MODEL_REVISION = "220b46e3b2180893580a4454f21f22d3ebb187d3"  # avoid nasty surprises when repos update!
 
@@ -117,12 +119,16 @@ VLLM_PORT = 8000
 @modal.web_server(port=VLLM_PORT, startup_timeout=120 * MINUTES)
 def serve():
     import subprocess
-
+    # run the following to upload the model to the volume
+    # uv run modal volume put model-cache prometheus-7b-v2.0.Q4_K_M.gguf
     cmd = [
+        # "wget", "https://huggingface.co/mradermacher/prometheus-7b-v2.0-GGUF/resolve/main/prometheus-7b-v2.0.Q4_K_M.gguf", "&&", # use this if the gguf model is not cached in volume yet
         "vllm",
         "serve",
         "--uvicorn-log-level=info",
-        MODEL_NAME,
+        # MODEL_NAME, # please comment to load the judge properly
+        "/root/.cache/model/prometheus-7b-v2.0.Q4_K_M.gguf", # uncomment to load the judge
+        "--tokenizer", "prometheus-eval/prometheus-7b-v2.0", # uncomment to load the judge
         "--served-model-name",
         LORA_NAME if LORA_NAME else MODEL_NAME,
         "llm",
@@ -147,6 +153,8 @@ def serve():
     cmd += ["--tensor-parallel-size", str(N_GPU)]
 
     print(cmd)
+
+    
 
     subprocess.Popen(" ".join(cmd), shell=True)
 
