@@ -222,7 +222,7 @@ class TextMatcher:
     def extract_json(text: str) -> Dict[str, Any]:
         """Extract JSON from text, handling markdown blocks"""
         # 1. Try finding markdown JSON block
-        match = re.search(r'``````', text, re.DOTALL)
+        match = re.search(r'```json\s*(.+?)\s*```', text, re.DOTALL)
         json_str = match.group(1) if match else None
         
         # 2. If no block, try finding the first outer bracket pair
