@@ -430,6 +430,225 @@ def test_function_calling(test_case: Dict[str, Any], extras):
         extras.append(extras_html.text("✓ FULL PASS", name="Test Result"))
 
 
+# JUDGE_SCORES_FILE = Path(".pytest_cache/judge_scores.jsonl")  # Note: .jsonl
+
+# def record_score(dataset_name: str, score: int):
+#     """Append-only logging (naturally thread-safe on most filesystems)"""
+#     JUDGE_SCORES_FILE.parent.mkdir(parents=True, exist_ok=True)
+    
+#     # Append one line (atomic on most systems)
+#     with open(JUDGE_SCORES_FILE, 'a') as f:
+#         f.write(json.dumps({"dataset": dataset_name, "score": score}) + '\n')
+
+
+# @pytest.fixture(scope="session", autouse=True)
+# def print_judge_summary(request):
+#     """Print summary of judge scores at the end of test session"""
+#     # Clear scores file at start
+#     if JUDGE_SCORES_FILE.exists():
+#         JUDGE_SCORES_FILE.unlink()
+    
+#     yield
+    
+#     # This runs after all tests - aggregate from log
+#     if not JUDGE_SCORES_FILE.exists():
+#         return
+    
+#     all_scores = {"finetome_dataset": [], "finance_dataset": []}
+    
+#     with open(JUDGE_SCORES_FILE, 'r') as f:
+#         for line in f:
+#             entry = json.loads(line.strip())
+#             all_scores[entry["dataset"]].append(entry["score"])
+    
+#     print("\n" + "="*80)
+#     print("PROMETHEUS JUDGE SCORING SUMMARY")
+#     print("="*80)
+    
+#     for dataset_name, scores in all_scores.items():
+#         if scores:
+#             avg_score = sum(scores) / len(scores)
+#             print(f"\n{dataset_name.upper()}:")
+#             print(f"  Total Evaluated: {len(scores)}")
+#             print(f"  Average Score: {avg_score:.2f}/5.0")
+#             print(f"  Score Distribution:")
+#             for i in range(1, 6):
+#                 count = scores.count(i)
+#                 percentage = (count / len(scores)) * 100
+#                 bar = "█" * int(percentage / 2)
+#                 print(f"    Score {i}: {count:3d} ({percentage:5.1f}%) {bar}")
+    
+#     print("="*80)
+
+# # ===========================
+# # SHARED CACHE (No threading!)
+# # ===========================
+
+# # Global cache that tests write to and read from
+# _RESPONSE_CACHE: Dict[str, Dict[str, Any]] = {}
+
+
+# def pytest_collection_modifyitems(config, items):
+#     """Hook to ensure 'collect' tests run before 'evaluate' tests"""
+#     collect_tests = []
+#     evaluate_tests = []
+#     other_tests = []
+    
+#     for item in items:
+#         if "collect" in item.keywords:
+#             collect_tests.append(item)
+#         elif "evaluate" in item.keywords:
+#             evaluate_tests.append(item)
+#         else:
+#             other_tests.append(item)
+    
+#     # Reorder: collect first, then evaluate, then everything else
+#     items[:] = collect_tests + evaluate_tests + other_tests
+
+
+# # ===========================
+# # PHASE 1: COLLECT
+# # ===========================
+
+# finetome_tests = loader.get_finetome_tests()
+# finetome_width = len(str(len(finetome_tests)))
+# finetome_ids = [f"finetome_{i:0{finetome_width}d}" for i in range(len(finetome_tests))]
+
+# finance_tests = loader.get_finance_tests()
+# finance_width = len(str(len(finance_tests)))
+# finance_ids = [f"finance_{i:0{finance_width}d}" for i in range(len(finance_tests))]
+
+# @pytest.mark.judge
+# @pytest.mark.collect
+# @pytest.mark.finetome
+# @pytest.mark.parametrize("test_case", finetome_tests, ids=finetome_ids)
+# def test_finetome_collect(test_case: Dict[str, Any], extras):
+#     """Generate model response (pytest handles parallelization)"""
+#     test_id = finetome_ids[finetome_tests.index(test_case)]
+    
+#     system_msg = test_case.get("system", "").strip()
+#     user_msg = test_case["user"]
+#     expected_response = test_case["assistant"]
+    
+#     messages = []
+#     if system_msg and system_msg != "\n":
+#         messages.append({"role": "system", "content": system_msg})
+#     messages.append({"role": "user", "content": user_msg})
+    
+#     # Generate response (pytest -n 16 runs 16 of these in parallel)
+#     model_response = ModelInterface.query(messages)
+    
+#     # Store in cache
+#     _RESPONSE_CACHE[test_id] = {
+#         "user_msg": user_msg,
+#         "model_response": model_response,
+#         "expected_response": expected_response,
+#         "messages": messages
+#     }
+    
+#     extras.append(extras_html.text(model_response, name="Model Response"))
+#     assert True  # Just collecting
+
+# @pytest.mark.judge
+# @pytest.mark.collect
+# @pytest.mark.finance
+# @pytest.mark.parametrize("test_case", finance_tests, ids=finance_ids)
+# def test_finance_collect(test_case: Dict[str, Any], extras):
+#     """Generate model response (pytest handles parallelization)"""
+#     test_id = finance_ids[finance_tests.index(test_case)]
+    
+#     system_msg = test_case.get("system", "").strip()
+#     user_msg = test_case["user"]
+#     expected_response = test_case["assistant"]
+    
+#     messages = []
+#     if system_msg and system_msg != "\n":
+#         messages.append({"role": "system", "content": system_msg})
+#     messages.append({"role": "user", "content": user_msg})
+    
+#     # Generate response (pytest -n 16 runs 16 of these in parallel)
+#     model_response = ModelInterface.query(messages)
+    
+#     # Store in cache
+#     _RESPONSE_CACHE[test_id] = {
+#         "user_msg": user_msg,
+#         "model_response": model_response,
+#         "expected_response": expected_response,
+#         "messages": messages
+#     }
+    
+#     extras.append(extras_html.text(model_response, name="Model Response"))
+#     assert True  # Just collecting
+
+
+# # ===========================
+# # PHASE 2: EVALUATE
+# # ===========================
+# @pytest.mark.judge
+# @pytest.mark.evaluate
+# @pytest.mark.finetome
+# @pytest.mark.parametrize("test_id", finetome_ids)
+# def test_finetome_evaluate(test_id: str, extras):
+#     """Judge response (pytest handles parallelization)"""
+#     cached = _RESPONSE_CACHE[test_id]
+    
+#     # Judge it (pytest -n 16 runs 16 of these in parallel)
+#     judge_result = PrometheusJudge.evaluate(
+#         instruction=cached["user_msg"],
+#         response=cached["model_response"],
+#         reference_answer=cached["expected_response"]
+#     )
+    
+#     score = judge_result["score"]
+#     record_score("finance_dataset", score)
+    
+#     # --- SAVE FULL RESPONSE FOR REVIEW ---
+#     extras.append(extras_html.text(cached["model_response"], name="Model Response"))
+#     extras.append(extras_html.text(cached["expected_response"], name="Expected Response"))
+#     extras.append(extras_html.text(f"{'★' * score}{'☆' * (5 - score)} ({score}/5)", name="Judge Score"))
+#     extras.append(extras_html.text(judge_result["feedback"], name="Judge Feedback"))
+#     # -------------------------------------
+    
+#     if score > 2 and score < 5:
+#         pytest.skip(f"PARTIAL: Score {score}/5 - see extras")
+#     elif score < 3:
+#         pytest.fail(f"FAIL: Score {score}/5 - see extras")
+#     else:
+#         assert True
+
+# @pytest.mark.judge
+# @pytest.mark.evaluate
+# @pytest.mark.finance
+# @pytest.mark.parametrize("test_id", finance_ids)
+# def test_finance_evaluate(test_id: str, extras):
+#     """Judge response (pytest handles parallelization)"""
+#     cached = _RESPONSE_CACHE[test_id]
+    
+#     # Judge it (pytest -n 16 runs 16 of these in parallel)
+#     judge_result = PrometheusJudge.evaluate(
+#         instruction=cached["user_msg"],
+#         response=cached["model_response"],
+#         reference_answer=cached["expected_response"]
+#     )
+    
+#     score = judge_result["score"]
+#     record_score("finance_dataset", score)
+    
+#     # --- SAVE FULL RESPONSE FOR REVIEW ---
+#     extras.append(extras_html.text(cached["model_response"], name="Model Response"))
+#     extras.append(extras_html.text(cached["expected_response"], name="Expected Response"))
+#     extras.append(extras_html.text(f"{'★' * score}{'☆' * (5 - score)} ({score}/5)", name="Judge Score"))
+#     extras.append(extras_html.text(judge_result["feedback"], name="Judge Feedback"))
+#     # -------------------------------------
+    
+#     if score > 2 and score < 5:
+#         pytest.skip(f"PARTIAL: Score {score}/5 - see extras")
+#     elif score < 3:
+#         pytest.fail(f"FAIL: Score {score}/5 - see extras")
+#     else:
+#         assert True
+
+
 if __name__ == "__main__":
     pytest.main([__file__, "-v", "--html=report.html", "--self-contained-html"])
 
