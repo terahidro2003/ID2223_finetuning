@@ -29,6 +29,14 @@ MODELS = {
         "url": "https://akeelaf-2022--llama-3-2-3b-lora-serve.modal.run/v1/",
         "name": "hellstone1918/Llama-3.2-3B-basic-lora-model",
     },
+    "Llama 3.2 3B lora finance": {
+        "url": "https://akeelaf-2022--llama-3-2-3b-lora-finance-serve.modal.run/v1/",
+        "name": "hellstone1918/Llama-3.2-3B-finance-lora-model-v6",
+    },
+    "Prometheus Judge": {
+        "url": "https://akeelaf-2022--prometheus-judge-serve.modal.run/v1/",
+        "name": "prometheus-eval/prometheus-7b-v2.0-Q4-K-M",
+    },
 }
 
 
@@ -38,6 +46,20 @@ CLIENT = OpenAI(
 )
 MODEL_NAME = MODELS['Llama 3.2 3B base']['name'] # The client often auto-detects, but good to specify
 IS_STREAMING = False
+
+# Prometheus Judge Client (separate from main model)
+JUDGE_CLIENT = OpenAI(
+    base_url=MODELS['Prometheus Judge']['url'],
+    api_key="token-not-needed-for-local-vllm"
+)
+JUDGE_MODEL_NAME = MODELS['Prometheus Judge']['name']
+
+# Storage for judge scores (accumulated during test run)
+JUDGE_SCORES = {
+    "finetome_dataset": [],
+    "finance_dataset": []
+}
+
 
 class TestDataLoader:
     """Loads and manages test data"""
@@ -51,6 +73,13 @@ class TestDataLoader:
     
     def get_function_calling_tests(self) -> List[Dict]:
         return self.data.get("function_calling", [])
+
+    def get_finetome_tests(self) -> List[Dict]:
+        return self.data.get("finetome_dataset", [])
+
+    def get_finance_tests(self) -> List[Dict]:
+        return self.data.get("finance_dataset", [])
+
 
 class ModelInterface:
     """Handles communication with the LLM via OpenAI Client"""
@@ -82,6 +111,24 @@ class ModelInterface:
 
         except Exception as e:
             pytest.fail(f"API Request Error: {str(e)}")
+
+    @staticmethod
+    def query_judge(messages: List[Dict[str, str]], temperature: float = 0.0) -> str:
+        """
+        Query the Prometheus judge model.
+        Returns the judge's feedback and score.
+        """
+        try:
+            response = JUDGE_CLIENT.chat.completions.create(
+                model=JUDGE_MODEL_NAME,
+                messages=messages,
+                temperature=temperature,
+                stream=False
+            )
+            return response.choices[0].message.content
+        except Exception as e:
+            pytest.fail(f"Judge API Request Error: {str(e)}")
+
 
 class TextMatcher:
     """Utility for matching text deterministically"""
@@ -206,6 +253,71 @@ class TextMatcher:
             return sorted(str(x) for x in expected) == sorted(str(x) for x in actual)
         else:
             return expected == actual
+
+
+class PrometheusJudge:
+    """Handles Prometheus-based evaluation of model responses"""
+
+    JUDGE_PROMPT_TEMPLATE = """###Task Description:
+An instruction (might include an Input inside it), a response to evaluate, a reference answer that gets a score of 5, and a score rubric representing an evaluation criteria are given.
+1. Write a detailed feedback that assesses the quality of the response strictly based on the given score rubric, not evaluating in general.
+2. After writing a feedback, write a score that is an integer between 1 and 5. You should refer to the score rubric.
+3. The output format should look as follows: "Feedback: (write a feedback for criteria) [RESULT] (an integer number between 1 and 5)"
+4. Please do not generate any other opening, closing, and explanations.
+
+###The instruction to evaluate:
+{instruction}
+
+###Response to evaluate:
+{response}
+
+###Reference Answer (Score 5):
+{reference_answer}
+
+###Score Rubrics:
+[Is the response helpful, accurate, and appropriate for the given financial/instructional context?]
+Score 1: The response is completely incorrect, irrelevant, or fails to address the instruction.
+Score 2: The response has major errors or missing critical information, barely addressing the instruction.
+Score 3: The response is partially correct but lacks depth, clarity, or has minor inaccuracies.
+Score 4: The response is mostly correct and helpful, with minor room for improvement in completeness or clarity.
+Score 5: The response is excellent, accurate, comprehensive, and directly addresses the instruction with appropriate depth.
+
+###Feedback:"""
+
+    @staticmethod
+    def evaluate(instruction: str, response: str, reference_answer: str) -> Dict[str, Any]:
+        """
+        Evaluate a response using Prometheus judge.
+
+        Returns:
+            Dict with 'score' (int) and 'feedback' (str)
+        """
+        prompt = PrometheusJudge.JUDGE_PROMPT_TEMPLATE.format(
+            instruction=instruction,
+            response=response,
+            reference_answer=reference_answer
+        )
+
+        messages = [
+            {"role": "user", "content": prompt}
+        ]
+
+        judge_response = ModelInterface.query_judge(messages)
+
+        # Parse score from [RESULT] pattern
+        score_match = re.search(r'\[RESULT\]\s*(\d)', judge_response)
+        score = int(score_match.group(1)) if score_match else 0
+
+        # Extract feedback (everything before [RESULT])
+        feedback_match = re.search(r'Feedback:\s*(.+?)\s*\[RESULT\]', judge_response, re.DOTALL)
+        feedback = feedback_match.group(1).strip() if feedback_match else judge_response
+
+        return {
+            "score": score,
+            "feedback": feedback,
+            "raw_judge_response": judge_response
+        }
+
 
 # Initialize Loader
 loader = TestDataLoader()
