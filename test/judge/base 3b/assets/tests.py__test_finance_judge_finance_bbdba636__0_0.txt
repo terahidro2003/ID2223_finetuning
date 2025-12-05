@@ -1,0 +1,12 @@
+The central bank is the primary monetary policy institution for a country. Its main functions are:
+
+1. **Monetary Policy**: The central bank sets interest rates and regulates the money supply to achieve the government's economic goals, such as inflation control, economic growth, and employment.
+2. **Currency Management**: The central bank is responsible for issuing and managing the country's currency, including printing and distributing coins and banknotes.
+3. **Financial Stability**: The central bank monitors and regulates the financial system to prevent instability, maintain financial stability, and protect the public interest.
+4. **Regulation**: The central bank oversees and regulates commercial banks, other financial institutions, and financial markets to ensure their stability and soundness.
+5. **Supervision**: The central bank supervises and inspects banks, financial institutions, and other financial service providers to ensure compliance with regulatory requirements.
+6. **Payment Systems**: The central bank operates and maintains the country's payment systems, including the electronic funds transfer system.
+7. **Lender of Last Resort**: The central bank acts as a lender of last resort, providing emergency loans to banks and other financial institutions during times of financial stress.
+8. **Financial Market Regulation**: The central bank regulates and oversees financial markets, including stock exchanges, commodity exchanges, and other financial markets.
+
+Overall, the central bank plays a crucial role in maintaining the stability and soundness of the financial system, promoting economic growth, and ensuring the country's economic well-being.

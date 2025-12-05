@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "Find all PII entities in the text and present them in JSON format. Exclude any that are not mentioned."
+  },
+  {
+    "role": "user",
+    "content": "**Requester Details:**\n- Name: Alexandra Spencer-Davis\n- Email: tmack@example.com\n- Phone: +61359964603\n\n**Service Details:**\n- Type: Cloud Migration\n- Description: Migration of existing on-premises servers to the cloud.\n- Priority: High\n- Expected Completion Date: 2023-12-31"
+  }
+]

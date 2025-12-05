@@ -1,0 +1,71 @@
+# Smart Beaver Game
+
+This code solves the Smart Beaver game problem.
+
+## Code
+```python
+import sys
+
+def smart_beaver_game(n, sequence):
+    """
+    Calculate the minimum number of moves needed to make the first k elements of the original sequence equal to zero.
+    
+    Parameters:
+    n (int): The length of the sequence.
+    sequence (list): The initial sequence.
+    
+    Returns:
+    list: A list of minimum number of moves needed for each k.
+    """
+    # Initialize a list to store the minimum number of moves needed for each k.
+    moves = [0] * n
+    
+    # Iterate over each element in the sequence.
+    for i in range(1, n):
+        # Initialize the current number of moves.
+        current_moves = 0
+        
+        # Iterate over each element in the sequence starting from the current element.
+        for j in range(i, n):
+            # If the current element is not zero, add the current number of moves to the total moves and break the loop.
+            if sequence[j] > 0:
+                moves[i] += current_moves
+                current_moves = 0
+                break
+            # Otherwise, increment the current number of moves.
+            current_moves += 1
+    
+    return moves
+
+def main():
+    """
+    Read input and print the output.
+    """
+    # Read the number of elements in the sequence.
+    n = int(input())
+    
+    # Read the initial sequence.
+    sequence = list(map(int, input().split()))
+    
+    # Calculate the minimum number of moves needed for each k.
+    moves = smart_beaver_game(n, sequence)
+    
+    # Print the minimum number of moves needed for each k.
+    for i in range(n - 1):
+        print(moves[i])
+
+if __name__ == "__main__":
+    main()
+```
+
+## Usage
+To run the code, save it to a file (e.g., `smart_beaver_game.py`) and run it using Python (e.g., `python smart_beaver_game.py`). Then, follow the prompts to input the number of elements in the sequence and the initial sequence.
+
+For example, if you input `4` and `1 0 1 2`, the output will be:
+```
+1
+1
+3
+```
+
+This code should work for all valid inputs.

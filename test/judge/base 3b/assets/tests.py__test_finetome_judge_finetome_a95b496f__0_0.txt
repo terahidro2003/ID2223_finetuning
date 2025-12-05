@@ -1,0 +1,31 @@
+To find the number of vertices of a pentagonal prism, we can break it down into two parts: the base (a pentagon) and the lateral faces.
+
+1. The base (pentagon): A pentagon has 5 vertices.
+
+2. The lateral faces: Each lateral face is a rectangle with 4 vertices. Since there are 5 lateral faces (one for each side of the pentagon), we multiply the number of vertices per face by 5:
+
+4 vertices/face * 5 faces = 20 vertices
+
+However, the vertices of the lateral faces are shared with the base, so we need to subtract the duplicate vertices. The base has 5 vertices, and each lateral face shares 2 vertices with the base. Since there are 5 lateral faces, we subtract a total of 10 duplicate vertices:
+
+20 vertices - 10 duplicate vertices = 10 vertices
+
+However, we also need to include the top and bottom vertices of the prism. Since the base is a pentagon, the top and bottom vertices are also part of the pentagon, and we already counted them as part of the base. However, the pentagon can also be split into two pentagons at the top and bottom, and then we can count the vertices for each pentagon as 5. This will give us a total of 10 + 5 + 5 = 20 vertices.
+
+But, this is still incorrect, as it is double counting the vertices. We should find the total number of vertices of the 5 pentagons (top, bottom, left, right, and middle), and then subtract the duplicate vertices.
+
+Let's recount the vertices:
+
+- Top pentagon: 5 vertices
+- Bottom pentagon: 5 vertices
+- Left pentagonal prism: 5 vertices
+- Right pentagonal prism: 5 vertices
+- Middle pentagonal prism: 5 vertices
+
+Total number of vertices: 5 + 5 + 5 + 5 + 5 = 25
+
+But, we have to subtract the duplicate vertices. Each pentagonal prism shares 2 vertices with the adjacent pentagons. Since there are 5 pentagonal prisms, we subtract a total of 10 duplicate vertices:
+
+25 - 10 = 15
+
+The correct answer is 15.

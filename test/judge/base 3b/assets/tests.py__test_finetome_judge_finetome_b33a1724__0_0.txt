@@ -1,0 +1,45 @@
+The Global Interpreter Lock (GIL) is a mechanism used in CPython (the default Python interpreter) to synchronize access to Python objects, preventing multiple native threads from executing Python bytecodes at once. This lock prevents multiple threads from accessing the interpreter simultaneously, which could lead to unpredictable behavior.
+
+The GIL is primarily necessary because Python's memory management is not thread-safe. When a thread executes Python bytecodes, it's essentially accessing Python memory, which isn't thread-safe. Without the GIL, multiple threads could access Python memory at the same time, potentially causing data corruption.
+
+However, the GIL is not a true lock in the sense that it's not a mutex (mutual exclusion) lock. It's more of a spinlock, which allows threads to spin and check if the lock is free without actually blocking.
+
+Here are some key points about the GIL:
+
+-   **Only one thread can execute Python bytecodes at a time**: The GIL ensures that only one thread can execute Python bytecodes at any given time. This is why multithreading in Python can't take full advantage of multi-core processors.
+-   **No GIL in other languages**: Python's GIL is a unique feature that prevents it from being used for multithreading in the same way as other languages like Java, C++, or C#.
+-   **Exceptions**: The GIL is not a hard requirement. Python 3.5 and later versions use an "async-to-sync" model, where the GIL is released when an async operation is waiting on I/O, allowing other threads to execute Python bytecodes during that time.
+-   **Threads vs. Processes**: Python threads share the same memory space, which is why the GIL is necessary. If you want to achieve true parallelism, you'd need to use multiple processes.
+
+Here's a code snippet demonstrating the GIL in action:
+
+```python
+import threading
+import time
+
+def cpu_bound_task():
+    # Simulate a CPU-bound task
+    result = 0
+    for i in range(100000000):
+        result += i
+    return result
+
+def main():
+    # Create 10 threads
+    threads = []
+    for _ in range(10):
+        t = threading.Thread(target=cpu_bound_task)
+        t.start()
+        threads.append(t)
+
+    # Wait for all threads to finish
+    for t in threads:
+        t.join()
+
+    print("All threads finished")
+
+if __name__ == "__main__":
+    main()
+```
+
+In this code snippet, even though we have 10 threads, they all execute the same CPU-bound task, which demonstrates how the GIL prevents multiple threads from executing Python bytecodes at the same time.

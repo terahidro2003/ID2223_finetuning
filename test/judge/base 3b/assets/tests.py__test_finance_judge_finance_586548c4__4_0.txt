@@ -1,0 +1,2 @@
+The response fails to address the instruction, which specifically asked for the extraction of personally identifiable information (PII). Instead, the response dismisses the request for PII extraction, which is not helpful or appropriate for the given financial/instructional context. The response does not provide any of the requested information, such as the user's date of birth or SSN, and it does not attempt to extract or provide any of the PII provided in the instruction. Therefore, the response is completely incorrect and irrelevant to the instruction given. 
+[RESULT] 1

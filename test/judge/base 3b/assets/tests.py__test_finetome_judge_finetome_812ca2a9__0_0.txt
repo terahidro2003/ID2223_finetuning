@@ -1,0 +1,19 @@
+from collections import Counter
+
+class Solution:
+    def minSteps(self, s: str, t: str) -> int:
+        def count_letters(s):
+            return sum(Counter(s)[c] for c in set(s))
+
+        def min_steps(s, t):
+            if count_letters(s) == count_letters(t):
+                return 0
+            if count_letters(s) > count_letters(t):
+                s, t = t, s
+            diff = count_letters(t) - count_letters(s)
+            steps = diff
+            for c in set(s):
+                steps += min(count_letters(s.replace(c, '', 1)), count_letters(t.replace(c, '', 1)))
+            return steps
+
+        return min_steps(s, t)

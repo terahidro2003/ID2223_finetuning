@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "Extract the named entities in this text using 139 XBRL tags in the IOB2 format. Return the results in JSON format."
+  },
+  {
+    "role": "user",
+    "content": "20 Table of Contents LEIDOS HOLDINGS , INC . NOTES TO CONDENSED CONSOLIDATED FINANCIAL STATEMENTS ( UNAUDITED ) The Company 's financial instruments measured at fair value on a recurring basis consisted of the following : The Company 's derivatives consisted of the fair value interest rate swaps on its $ 450 million , fixed rate 4.45 % senior secured notes maturing in December 2020 and cash flow interest rate swaps on $ 1.5 billion of the Company 's variable rate senior secured term loans ( see \" Note 13-Derivative Instruments \" ) ."
+  }
+]

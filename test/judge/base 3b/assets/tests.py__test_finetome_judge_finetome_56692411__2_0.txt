@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "How can I write a Java program to count the number of vowels in a sentence?"
+  }
+]

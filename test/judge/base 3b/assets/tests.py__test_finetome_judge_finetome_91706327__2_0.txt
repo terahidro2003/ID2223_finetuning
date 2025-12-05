@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "What is the primary role of mitochondria in a cell, and what processes occur within them?"
+  }
+]

@@ -1,0 +1,9 @@
+Since the distance from the x-axis to point P is half the distance from the y-axis to point P, let's denote the distance from the y-axis as 'd'. Then, the distance from the x-axis is 'd/2'.
+
+The distance from the x-axis to a point (x, y) is the absolute value of y, so we have |d/2| = 6.
+
+Since 'd' is a distance and must be positive, we can drop the absolute value sign and write the equation as d/2 = 6.
+
+Multiplying both sides of the equation by 2 gives d = 12.
+
+So, point P is 12 units from the y-axis.

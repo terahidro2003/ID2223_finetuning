@@ -1,0 +1,7 @@
+Hidden layers are used in Artificial Neural Networks to process and transform the input data to extract complex, abstract and non-linear features that can help to solve the problem at hand. These layers consist of a series of nodes or artificial neurons, organized in one or multiple layers, between the input layer and the output layer.
+
+Each hidden layer neuron receives weighted inputs, sums them up and applies an activation function to produce an output. This output is then passed as input to the neurons in the subsequent hidden layer or the output layer, if it is the final hidden layer. During training, the weights of the connections between neurons are adjusted to minimize the difference between the predicted output and the actual output.
+
+Hidden layers allow the neural network to create and learn multiple levels of abstraction, gradually refining the representation of the input data and improving the accuracy of the predictions. They essentially serve as a container for the learned knowledge of the neural network, encapsulating the relationships and patterns it has identified in the data.
+
+The number of hidden layers and the number of neurons in each layer is problem-specific and can significantly impact the performance of the neural network, so finding the optimal architecture is an important part of training and designing a neural network.

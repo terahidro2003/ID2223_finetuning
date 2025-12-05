@@ -1,0 +1,35 @@
+Step 1:  To solve this problem, we need to traverse the binary tree and calculate the number of root to leaf paths along with their path lengths.
+Step 2:  We can start by implementing a recursive function to traverse the binary tree and keep track of the path lengths.
+Step 3:  We also need to use a dictionary to store the path lengths along with the count of root to leaf paths of that length.
+Step 4:  After traversing the tree, we can print the path lengths and the number of root to leaf paths of each length separated by "$".
+```python
+# Step 5:  Define a function to calculate the number of root to leaf paths of each length in a binary tree and print the results.
+def pathCounts(root):
+    # Step 6:  Initialize an empty dictionary to store the path lengths and their counts.
+    
+    d = dict()
+    # Step 7:  Call the recursive function D to traverse the tree and calculate the path lengths along with their counts.
+    
+    D(d, root, 1)
+    # Step 8:  Print the path lengths and the number of root to leaf paths of each length separated by "$" using the dictionary.
+    
+    for i in d:
+        print(i, d[i], end=' $')
+    print()
+
+# Step 9:  Recursive function to traverse the binary tree and calculate the number of root to leaf paths of each length.
+def D(d, root, k):
+    # Step 10:  Check if the root is a leaf node. If so, update the dictionary with the path length and its count.
+    
+    if root and (not root.left) and (not root.right):
+        if k not in d:
+            d[k] = 1
+        else:
+            d[k] += 1
+    # Step 11:  Traverse the left and right subtrees recursively, updating the path length as we move down the tree.
+    
+    if root:
+        D(d, root.left, k + 1)
+        D(d, root.right, k + 1)
+
+```

@@ -1,0 +1,15 @@
+Here is a simple Python program that calculates the area of a circle using a given radius:
+
+```
+import math
+
+def circle_area(radius):
+    area = math.pi * radius ** 2
+    return area
+
+radius = 5
+result = circle_area(radius)
+print(f"The area of a circle with a radius of {radius} units is {result:.2f} square units.")
+```
+
+This program imports the math module to use the value of the mathematical constant pi. The circle_area function calculates the area of a circle using the formula `area = pi * radius ** 2` and returns the result. The program then prompts the user to enter the value of the radius, in this case, 5 units. The program then calls the circle_area function, passing in the provided radius, and stores the returned result in the `result` variable. Finally, the program prints the result, rounded to two decimal places, using a formatted string (f-string).

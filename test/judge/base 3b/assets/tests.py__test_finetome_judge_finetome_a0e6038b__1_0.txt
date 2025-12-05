@@ -1,0 +1,7 @@
+```python
+import html
+
+def escape_attribute(value):
+    escaped = html.escape(value)
+    return f'"{escaped}"'
+```

@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "What is CP violation and how is it investigated in B meson decays? Describe the experimental techniques and methods used to study CP violation in B meson decays, and discuss the implications of these measurements for our understanding of fundamental physics."
+  }
+]

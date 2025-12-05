@@ -1,0 +1,5 @@
+Investments are generally negatively correlated with interest rates due to the concept of Present Value (PV). An increase in interest rates reduces the PV of future cash flows, making investment projects less attractive to investors.
+
+In a small, closed economy, higher interest rates can discourage investments because borrowing becomes more expensive. This is known as the crowding-out effect, where increased interest rates lead to a reduction in private investment as businesses face higher costs of borrowing.
+
+In a large, open economy, the relationship is more complex. While higher interest rates can still discourage domestic borrowing and investment, they may also attract foreign investors who seek higher returns. This inflow of foreign capital can increase investment in the country, as both domestic and foreign investors lend money to take advantage of the higher interest rates. However, it is essential to note that high interest rates primarily encourage lending over investing or consuming, as lenders can earn more by lending funds instead of pursuing investment opportunities.

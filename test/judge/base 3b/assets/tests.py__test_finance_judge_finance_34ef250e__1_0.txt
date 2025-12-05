@@ -1,0 +1,15 @@
+To find Maya's weekly profit, we need to calculate her daily profit and then multiply it by 7.
+
+Maya sells 3 large candles and 5 small candles per day.
+
+The profit per large candle is $15 - 8 = 7$.
+The profit per small candle is $8 - 4 = 4$.
+
+The daily profit from large candles is $3 * 7 = 21$.
+The daily profit from small candles is $5 * 4 = 20$.
+
+The total daily profit is $21 + 20 = 41$.
+
+The weekly profit is $41 * 7 = 287$.
+
+Thus, Maya makes a profit of \\boxed{287} dollars per week.

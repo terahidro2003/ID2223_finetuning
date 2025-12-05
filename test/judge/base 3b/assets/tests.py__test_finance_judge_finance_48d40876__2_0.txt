@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "Extract all personally identifiable information from the text and return it in JSON format."
+  },
+  {
+    "role": "user",
+    "content": "**Patch Note**\n\n**Customer ID:** X-869441-W\n**Employee ID:** EMP759818\n**Date:** Jun 12, 2007\n\n**Changes Made:**\n- Updated customer's email to kwheeler@example.com\n- Changed employee's date of birth to 20.01.1977\n\n**Reason for Changes:**\n- Customer requested email update for better communication.\n- Employee provided incorrect date of birth, rectified upon review."
+  }
+]

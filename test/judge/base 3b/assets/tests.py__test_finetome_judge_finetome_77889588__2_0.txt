@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "Write Python code to solve the task:\nYou have been given a positive integer N. You need to find and print the Factorial  of this number. The Factorial of a positive integer N refers to the product of all number in the range from 1 to N. You can read more about the factorial of a number here.\n\nInput Format:\nThe first and only line of the input contains a single integer N denoting the number whose factorial you need to find. \n\nOutput Format\nOutput a single line denoting the factorial of the number N.\n\nConstraints\n 1 \u2264 N \u2264 10   \n\nSAMPLE INPUT\n2\n\nSAMPLE OUTPUT\n2"
+  }
+]

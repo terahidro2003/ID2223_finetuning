@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "Find the number of vertices of a pentagonal prism."
+  }
+]

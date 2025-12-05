@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "Can you explain the function of Python's Global Interpreter Lock? Do other languages that are compiled to bytecode use a similar mechanism?"
+  }
+]

@@ -1,0 +1,25 @@
+Ultraviolet (UV) light does not pass through glass due to the material's optical properties and the interaction between the light and the glass. Here's a breakdown of the factors that determine whether a material will be transparent to electromagnetic waves at a specific frequency:
+
+1. **Material's refractive index**: The refractive index of a material is a measure of how much it bends light. Materials with high refractive indices, like glass, tend to refract UV light, causing it to be absorbed or reflected rather than transmitted.
+2. **Optical absorption**: Materials can absorb UV light, which means they can interact with the energy of the photons. This absorption can occur due to various mechanisms, such as:
+	* **Electronic transitions**: The energy from UV photons can excite electrons to higher energy levels, leading to absorption.
+	* **Vibrational transitions**: The energy from UV photons can also excite vibrations in the material, leading to absorption.
+3. **Surface roughness and impurities**: Glass surfaces can have roughness and impurities, such as scratches, dust, or contamination, which can scatter or absorb UV light.
+4. **Density and atomic structure**: The density and atomic structure of the material can affect its optical properties. For example, glass has a high density and a crystalline structure, which contributes to its high refractive index and UV absorption.
+5. **Wavelength-dependent absorption**: Different materials have different absorption spectra, meaning they absorb UV light at specific wavelengths. This is due to the unique electronic and vibrational structures of the material.
+
+In general, materials with high refractive indices and optical absorption tend to be more transparent to UV light. Examples of materials that are relatively transparent to UV light include:
+
+* Glass (especially low-iron glass)
+* Clear plastics (e.g., polycarbonate, acrylic)
+* Quartz
+* Some metals (e.g., aluminum, silver)
+
+On the other hand, materials with low refractive indices and high optical absorption tend to be more opaque to UV light. Examples of materials that are relatively opaque to UV light include:
+
+* Metal oxides (e.g., iron oxide, titanium dioxide)
+* Dyes and pigments
+* Some ceramics (e.g., colored glass, ceramics with metal oxides)
+* Materials with high atomic densities (e.g., dense metals, some minerals)
+
+Keep in mind that these are general trends, and the specific optical properties of a material can vary depending on its composition, structure, and processing history.

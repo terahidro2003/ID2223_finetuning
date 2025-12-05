@@ -1,0 +1,10 @@
+{
+  "house_number": "47",
+  "street": "Highfield Road",
+  "city": "Birmingham",
+  "postal_code": "B15 3DP",
+  "state": "West Midlands",
+  "country": "United Kingdom",
+  "normalized": "47 Highfield Road, Birmingham B15 3DP, UK",
+  "simplified": "47 Highfield Road, Birmingham B15 3DP"
+}

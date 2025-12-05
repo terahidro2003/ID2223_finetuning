@@ -1,0 +1,16 @@
+Step 1:  To find the factorial of a number N, we need to multiply all the numbers in the range from 1 to N.
+Step 2:  We can start by initializing a variable to store the factorial and set it to the value of N initially.
+Step 3:  Then, we can iterate through the range from N-1 down to 1 and multiply the factorial by each number.
+Step 4:  After the iteration, we can print the factorial as the result.
+```python
+# Step 5:  Read the input N as an integer.
+num = int(input())
+# Step 6:  Initialize a variable to store the factorial and set it to the value of N initially.
+fact = num
+# Step 7:  Iterate through the range from N-1 down to 1 and multiply the factorial by each number to find the factorial.
+for i in range(num-1, 1, -1):
+	fact *= i
+# Step 8:  Print the factorial as the result.
+print(fact)
+
+```

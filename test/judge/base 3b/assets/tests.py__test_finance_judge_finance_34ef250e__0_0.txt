@@ -1,0 +1,22 @@
+To find the profit per day, we need to calculate the revenue and cost for both large and small candles.
+
+Large candles:
+- Number of large candles sold per day: 3
+- Revenue per large candle: $15
+- Cost per large candle: $8
+- Revenue per day: 3 * $15 = $45
+- Cost per day: 3 * $8 = $24
+- Profit per day on large candles: $45 - $24 = $21
+
+Small candles:
+- Number of small candles sold per day: 8 - 3 = 5
+- Revenue per small candle: $8
+- Cost per small candle: $4
+- Revenue per day: 5 * $8 = $40
+- Cost per day: 5 * $4 = $20
+- Profit per day on small candles: $40 - $20 = $20
+
+Total profit per day: $21 + $20 = $41
+Total profit per 7-day week: $41 * 7 = $287
+
+Maya makes a profit of $287 per 7-day week.

@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "How does the expansion of mobile phone usage to tens of millions of women in the developing world contribute to economic development, and what are the potential long-term effects on poverty reduction and economic growth?"
+  }
+]

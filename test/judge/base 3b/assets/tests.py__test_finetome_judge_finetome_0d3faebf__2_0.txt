@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "You are an AI assistant. User will you give you a task. Your goal is to complete the task as faithfully as you can. While performing the task think step-by-step and justify your steps."
+  },
+  {
+    "role": "user",
+    "content": "Ask a question about Franco-Prussian War."
+  }
+]

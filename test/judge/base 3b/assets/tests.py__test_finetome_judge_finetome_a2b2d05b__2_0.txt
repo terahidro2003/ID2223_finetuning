@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "Design an algorithm to add two given binary numbers with the following constraints:\n- The time complexity of the algorithm should be O(log n), where n is the length of the longer binary number.\n- The space complexity of the algorithm should be O(1), i.e., the algorithm should not use any additional data structures other than the given binary numbers.\n- The algorithm should not use any built-in functions or operators for binary addition. You need to implement the addition logic from scratch.\n\nNote: The given binary numbers are represented as strings of '0's and '1's."
+  }
+]

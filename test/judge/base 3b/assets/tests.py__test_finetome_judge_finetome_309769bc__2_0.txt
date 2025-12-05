@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "Explain how the shape of the solar nebula influenced the orbits of the planets."
+  }
+]

@@ -1,0 +1,16 @@
+The Double Slit Experiment can be explained using basic Quantum Mechanics concepts without resorting to Path Integrals. When there is no potential (or a constant potential), the Schrödinger equation simplifies to describe a free particle as a wave. 
+
+For the double slit scenario, two wave functions emanate from each slit. According to the superposition principle, these wave functions combine, creating an interference pattern identical to that seen in the classical Young's Slit Experiment. 
+
+In a simple visualization:
+- Where wave crests from one slit align with crests from the other (light grey meeting light grey), the combined amplitude is increased, leading to a bright spot on the screen (white).
+- Conversely, where a crest meets a trough (light grey meeting dark grey), the waves cancel out, resulting in a dark area (mid-grey).
+
+The key difference between the classical interpretation and Quantum Mechanics comes in the interpretation of the wave function. In Quantum Mechanics, the wave function provides the probability distribution for finding a particle upon measurement. This is exemplified by experiments like that of Dr. Tonomura in 1989, where an interference pattern emerged as individual electrons were passed through the slits, demonstrating that each electron's probabilistic behavior contributes to the overall pattern.
+
+1. (b) - 200 electrons
+2. (c) - 6000 electrons
+3. (d) - 40,000 electrons
+4. (e) - 140,000 electrons
+
+These images show the progressive build-up of the interference pattern as more electrons pass through the slits, confirming the quantum nature of the phenomenon.

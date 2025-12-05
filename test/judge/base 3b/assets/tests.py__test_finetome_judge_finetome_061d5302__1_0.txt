@@ -1,0 +1,24 @@
+```python
+import random
+import math
+import stdio
+
+# Initialize variables
+num_points = 1000000  # Number of random points to generate
+points_inside_circle = 0
+
+# Generate random points and count the number of points inside the quarter circle
+for _ in range(num_points):
+    x = random.uniform(0, 1)  # Generate random x-coordinate
+    y = random.uniform(0, 1)  # Generate random y-coordinate
+    if x*x + y*y <= 1.0:  # Check if the point is inside the quarter circle
+        points_inside_circle += 1
+
+# Estimate the value of π
+estimated_pi = 4 * points_inside_circle / num_points
+
+# Print the estimated value of π
+stdio.writeln("Estimated value of π: " + str(estimated_pi))
+```
+
+This solution completes the code snippet by generating random points within the square, counting the number of points inside the quarter circle, and using the ratio of points to estimate the value of π. The estimated value of π is then printed to the console.

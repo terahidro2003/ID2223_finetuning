@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "Extract the named entities in this text that belong to these categories: Person, Organization, Location, Animal, Biological entity, Celestial body, Disease, Event, Food, Institution, Media, Mythological entity, Plant, Time, Vehicle. Return the results in JSON format."
+  },
+  {
+    "role": "user",
+    "content": "Foi o primeiro mestre de piano de Fr\u00e9d\u00e9ric Chopin ."
+  }
+]

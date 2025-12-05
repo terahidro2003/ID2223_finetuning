@@ -1,0 +1,51 @@
+[Reasoning]
+To create such a function, we can use Python's built-in string methods to escape any special characters in the attribute value. Specifically, we'll use the `replace` method to replace the ampersand (`&`) character with its HTML-escaped equivalent (`&amp;`), and the `replace` method again to replace the less-than (`<`) and greater-than (`>`) characters with their HTML-escaped equivalents (`&lt;` and `&gt;`).
+
+[Implementation]
+```python
+import html
+
+def escape_attribute(value):
+    """
+    Escapes a string value to be assigned to an HTML attribute.
+
+    Args:
+        value (str): The string value to be escaped.
+
+    Returns:
+        str: The escaped string value.
+    """
+    escaped_value = value.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+    return escaped_value
+```
+
+[Explanation]
+This implementation uses the `html.escape` function from Python's standard library to escape any special characters in the attribute value. However, since we need to handle the ampersand, less-than, and greater-than characters manually, we use the `replace` method instead.
+
+[Tests]
+You can write the following test cases to ensure it works correctly:
+
+```python
+import unittest
+
+class TestEscapeAttribute(unittest.TestCase):
+    def test_escaped_value(self):
+        value = "Hello & World"
+        expected_output = "Hello &amp; World"
+        self.assertEqual(escape_attribute(value), expected_output)
+
+    def test_escaped_value_with_lt_and_gt(self):
+        value = "<Hello & World>"
+        expected_output = "&lt;Hello &amp; World&gt;"
+        self.assertEqual(escape_attribute(value), expected_output)
+
+    def test_escaped_value_with_multiple_special_chars(self):
+        value = "Hello & World &lt;1,2,3&gt;"
+        expected_output = "Hello &amp; World &amp;lt;1,2,3&gt;"
+        self.assertEqual(escape_attribute(value), expected_output)
+
+if __name__ == '__main__':
+    unittest.main()
+```
+
+These test cases cover various scenarios to validate the correctness of the `escape_attribute` function.
