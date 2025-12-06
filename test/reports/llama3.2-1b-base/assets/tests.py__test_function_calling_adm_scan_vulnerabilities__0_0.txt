@@ -1,0 +1,7 @@
+```json
+{
+  "function": "scan_vulnerabilities",
+  "target": "web-server",
+  "scan_type": "full"
+}
+```

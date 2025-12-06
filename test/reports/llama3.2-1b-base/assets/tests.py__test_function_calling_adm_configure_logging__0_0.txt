@@ -1,0 +1,8 @@
+```json
+{
+  "function": "configure_logging",
+  "service": "payment-service",
+  "level": "INFO",
+  "retention_days": 90
+}
+```

@@ -1,0 +1,9 @@
+To solve this riddle, let's analyze the given statement. The word is heavy when spelled forward, but not when spelled backward.
+
+Considering the 3-letter word, one possible solution is the word "ton". 
+
+When spelled forward, "ton" means a unit of weight or mass, which is heavy. 
+
+When spelled backward, "ton" becomes "not", which matches the given condition.
+
+Final Answer: "ton".

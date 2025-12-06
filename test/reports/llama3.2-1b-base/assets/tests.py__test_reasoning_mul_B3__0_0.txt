@@ -1,0 +1,14 @@
+To find the correct answer, let's analyze the information provided:
+
+1. The programming language is known for web development.
+2. It uses a snake as its logo.
+
+Based on these clues, we can eliminate some options:
+
+- Java (A) is not typically associated with web development, as it's more commonly used for Android app development and enterprise software.
+- Ruby (C) is not typically used for web development, as it's more commonly used for web development with Ruby on Rails.
+- PHP (D) is a popular server-side scripting language, but it's not typically associated with web development, as it's more commonly used for web development with PHP frameworks like Laravel.
+
+This leaves us with Python (B) as the most likely candidate. Python is widely used for web development, especially with frameworks like Django and Flask, which are popular for building scalable and efficient web applications.
+
+So, the correct answer is Python (B).

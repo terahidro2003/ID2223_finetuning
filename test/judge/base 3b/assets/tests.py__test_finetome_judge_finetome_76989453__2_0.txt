@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "Why doesn't ultraviolet light pass through glass, and what factors determine if a material will be transparent to electromagnetic waves at a specific frequency?"
+  }
+]

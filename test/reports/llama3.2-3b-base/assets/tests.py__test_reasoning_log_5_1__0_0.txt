@@ -1,0 +1,13 @@
+To solve this problem, we need to understand the relationship between the number of machines and the time it takes to make widgets.
+
+First, let's analyze the given information: 5 machines take 5 minutes to make 5 widgets. This means that each machine takes 5 minutes to make 1 widget.
+
+Now, if we have 100 machines, we can calculate the time it takes for each machine to make 1 widget. Since each machine takes 5 minutes to make 1 widget, 100 machines will also take 5 minutes to make 1 widget.
+
+To find the total time it takes for 100 machines to make 100 widgets, we can multiply the time it takes for 1 machine to make 1 widget (5 minutes) by the total number of widgets (100).
+
+100 widgets * 5 minutes/widget = 500 minutes
+
+So, it would take 100 machines 500 minutes to make 100 widgets.
+
+Final Answer: 500 minutes.

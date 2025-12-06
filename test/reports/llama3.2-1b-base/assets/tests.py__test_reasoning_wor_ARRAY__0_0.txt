@@ -1,0 +1,11 @@
+To unscramble the word "ARARY" (data structure), I will break it down into its individual letters and try to form a valid word.
+
+After rearranging the letters, I came up with the following solution:
+
+"ARARY" unscrambled is "ARROWY".
+
+However, I think a more common and correct solution would be:
+
+"ARARY" unscrambled is "ARROWY" or more likely "ARROWY" is not correct, the correct answer is:
+
+"ARARY" unscrambled is "ARROWY"

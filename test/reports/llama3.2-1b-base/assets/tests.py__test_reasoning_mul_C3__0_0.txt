@@ -1,0 +1,11 @@
+To find the square root of 144, we can start by finding the factors of 144. 
+
+The factors of 144 are: 1, 2, 3, 4, 6, 8, 9, 12, 16, 18, 24, 36, 48, 72, and 144.
+
+Now, we can find the square root of 144 by finding the largest factor that is less than or equal to 144. 
+
+The largest factor less than or equal to 144 is 12.
+
+Therefore, the square root of 144 is 12.
+
+Final Answer: 12

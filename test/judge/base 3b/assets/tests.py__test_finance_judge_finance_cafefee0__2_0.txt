@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "You are a financial analyst categorizing tweets into specific financial topics. Given a tweet, classify it into one of the following topics: ['Analyst Update', 'Fed | Central Banks', 'Company | Product News', 'Treasuries | Corporate Debt', 'Dividend', 'Earnings', 'Energy' | Oil', 'Financials', 'Currencies', 'General News | Opinion', 'Gold | Metals | Materials', 'IPO', 'Legal | Regulation', 'M&A | Investments', 'Macro', 'Markets', 'Politics', 'Personnel Change', 'Stock Commentary', 'Stock Movement']Output only the topic name."
+  },
+  {
+    "role": "user",
+    "content": "Ukraine is seeking to delay payments on foreign debt and change terms of GDP warrants as Russias invasion undermines the economy  https://t.co/6vxhEf8Z0N"
+  }
+]

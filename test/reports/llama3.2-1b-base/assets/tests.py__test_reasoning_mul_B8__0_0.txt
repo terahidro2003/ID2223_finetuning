@@ -1,0 +1,11 @@
+To solve this problem, we need to find a sorting algorithm that has an average time complexity of O(n log n) and is often used in practice.
+
+Bubble Sort (A) has a time complexity of O(n^2) in the worst case, which is not O(n log n). Insertion Sort (D) has a time complexity of O(n^2) in the worst case, which is also not O(n log n).
+
+Merge Sort (B) has a time complexity of O(n log n) in the average case, making it a strong candidate for the correct answer.
+
+Selection Sort (C) has a time complexity of O(n^2) in the worst case, which is not O(n log n). While it is not the most efficient sorting algorithm, it is still used in practice for certain scenarios.
+
+Therefore, the correct answer is B) Merge Sort.
+
+Final Answer: B) Merge Sort.

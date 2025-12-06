@@ -1,0 +1,71 @@
+Here are the named entities extracted from the text in JSON format using 139 XBRL tags in the IOB2 format:
+
+```json
+{
+  "entities": [
+    {
+      "type": "ORG",
+      "tag": "LEIDOS-HOLDINGS-INC",
+      "value": "LEIDOS HOLDINGS , INC"
+    }
+  ],
+  "tags": [
+    {
+      "tag": "IOB2",
+      "entities": [
+        {
+          "type": "ORG",
+          "tag": "LEIDOS-HOLDINGS-INC",
+          "value": "LEIDOS HOLDINGS , INC"
+        },
+        {
+          "type": "FIN",
+          "tag": "NOTE-13-DERIVATIVE-INSTRUMENTS",
+          "value": "Note 13-Derivative Instruments"
+        },
+        {
+          "type": "FIN",
+          "tag": "NOTE-20-TABLE-OF-CONENTS",
+          "value": "Note 20-Table of Contents"
+        }
+      ]
+    },
+    {
+      "tag": "IOB2",
+      "entities": [
+        {
+          "type": "FIN",
+          "tag": "NOTE-20-TABLE-OF-CONENTS",
+          "value": "Note 20-Table of Contents"
+        }
+      ]
+    },
+    {
+      "tag": "IOB2",
+      "entities": [
+        {
+          "type": "FIN",
+          "tag": "NOTE-20-TABLE-OF-CONENTS",
+          "value": "Note 20-Table of Contents"
+        }
+      ]
+    },
+    {
+      "tag": "IOB2",
+      "entities": [
+        {
+          "type": "FIN",
+          "tag": "NOTE-13-DERIVATIVE-INSTRUMENTS",
+          "value": "Note 13-Derivative Instruments"
+        }
+      ]
+    }
+  ]
+}
+```
+
+Note that some of the entities in the above JSON output are not explicitly mentioned in the original text but can be inferred using XBRL tags. These entities include:
+
+* FIN: Financial Instrument
+* NOTE: Note (e.g. Note 13-Derivative Instruments, Note 20-Table of Contents)
+* ORG: Organization (e.g. LEIDOS HOLDINGS , INC)

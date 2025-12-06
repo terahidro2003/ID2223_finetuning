@@ -1,0 +1,41 @@
+You can use a for loop to iterate over each element in the list and print it on a new line. Here's a simple Python script that accomplishes this:
+
+```python
+def print_list_elements(input_list):
+    """Prints each element of the input list on a new line."""
+    for element in input_list:
+        print(element)
+
+# Example usage:
+my_list = [1, 2, 3, 4, 5]
+print_list_elements(my_list)
+```
+
+In this script, the `print_list_elements` function takes a list as input, iterates over each element using a for loop, and prints it using the `print` function. The `print` function automatically appends a newline character (`\n`) at the end of its output, so each element is printed on a new line.
+
+Alternatively, you can use a more concise approach using a list comprehension:
+
+```python
+def print_list_elements(input_list):
+    """Prints each element of the input list on a new line."""
+    for element in input_list:
+        print(element)
+
+# Example usage:
+my_list = [1, 2, 3, 4, 5]
+print_list_elements(my_list)
+```
+
+Or you can use the `join` function with a newline character:
+
+```python
+def print_list_elements(input_list):
+    """Prints each element of the input list on a new line."""
+    print('\n'.join(map(str, input_list)))
+
+# Example usage:
+my_list = [1, 2, 3, 4, 5]
+print_list_elements(my_list)
+```
+
+Note that the `map(str, input_list)` part converts each element to a string before joining them together with newline characters.

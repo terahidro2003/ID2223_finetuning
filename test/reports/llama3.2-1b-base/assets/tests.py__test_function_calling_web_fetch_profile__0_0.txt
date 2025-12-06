@@ -1,0 +1,7 @@
+```
+{
+  "function": "fetch_profile",
+  "username": "elonmusk",
+  "platform": "twitter"
+}
+```

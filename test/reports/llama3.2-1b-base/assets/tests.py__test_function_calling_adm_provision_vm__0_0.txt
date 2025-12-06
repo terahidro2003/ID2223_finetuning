@@ -1,0 +1,8 @@
+```json
+{
+  "function": "provision_vm",
+  "instance_type": "t3.large",
+  "region": "us-west-2",
+  "os": "Ubuntu"
+}
+```

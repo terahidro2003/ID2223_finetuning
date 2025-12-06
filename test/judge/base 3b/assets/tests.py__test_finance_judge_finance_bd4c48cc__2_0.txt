@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "How are investments related to interest rates in different economic models?\n\nIn the context of economics, how does an increase in interest rates affect investments? Specifically, in a small, closed economy, how does the relationship between interest rates and investments differ from that in a large, open economy, considering the roles of both domestic and foreign investors?"
+  }
+]

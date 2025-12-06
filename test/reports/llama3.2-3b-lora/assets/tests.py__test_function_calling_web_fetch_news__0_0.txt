@@ -1,0 +1,1 @@
+{"function": "fetch_news", "topic": "technology", "language": "en", "limit": 5}

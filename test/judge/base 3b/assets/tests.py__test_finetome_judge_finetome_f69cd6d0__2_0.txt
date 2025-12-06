@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "How can I write a Python script that prints each element of a given list in a new line?"
+  }
+]

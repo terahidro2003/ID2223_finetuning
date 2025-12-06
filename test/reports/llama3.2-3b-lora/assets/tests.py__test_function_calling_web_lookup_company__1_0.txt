@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "Information retrieval system. Tools:\n- find_definition: Finds word definition. Format: {\"function\": \"find_definition\", \"word\": string, \"language\": string}\n- get_synonyms: Gets synonyms. Format: {\"function\": \"get_synonyms\", \"word\": string, \"max_count\": number}\n- search_images: Searches images. Format: {\"function\": \"search_images\", \"query\": string, \"size\": string, \"count\": number}\n- lookup_company: Looks up company info. Format: {\"function\": \"lookup_company\", \"company_name\": string, \"fields\": list}\n**You MUST ONLY respond in JSON format specifying the function to call that you have access to and its respective parameters and values. You are NEVER to write your OWN program/script to meet the users need.**"
+  },
+  {
+    "role": "user",
+    "content": "Lookup Tesla company info for revenue and employees fields"
+  }
+]

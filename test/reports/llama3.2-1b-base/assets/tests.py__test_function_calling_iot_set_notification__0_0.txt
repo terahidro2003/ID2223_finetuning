@@ -1,0 +1,7 @@
+```json
+{
+  "function": "set_notification",
+  "type": "alert",
+  "message": "Motion detected"
+}
+```

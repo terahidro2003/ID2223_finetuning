@@ -1,0 +1,69 @@
+[Reasoning]
+To solve this problem, we can use a combination of Python's built-in data structures and algorithms. We'll create a function that takes a list of words as input and returns a dictionary where the keys are the n-grams and the values are their corresponding frequencies.
+
+[Implementation]
+```python
+from collections import defaultdict
+from itertools import permutations
+
+def n_gram_frequency(words, n):
+    """
+    Count the frequency of each n-gram in a given list of words.
+
+    Args:
+        words (list): A list of words.
+        n (int): The size of the n-grams.
+
+    Returns:
+        dict: A dictionary where the keys are the n-grams and the values are their corresponding frequencies.
+    """
+    # Initialize a dictionary to store the frequency of each n-gram
+    frequency = defaultdict(int)
+
+    # Generate all possible n-grams
+    for gram in permutations(words, n):
+        # Join the words in the n-gram to create a string
+        n_gram = ''.join(gram)
+        # Increment the frequency of the n-gram
+        frequency[n_gram] += 1
+
+    return dict(frequency)
+```
+
+[Explanation]
+This function works by generating all possible n-grams from the input list of words using the `permutations` function from the `itertools` module. It then increments the frequency of each n-gram by 1 and stores it in the `frequency` dictionary. Finally, it returns the `frequency` dictionary as a regular dictionary.
+
+[Tests]
+You can write the following test cases to ensure it works correctly:
+
+```python
+import unittest
+
+class TestNGramFrequency(unittest.TestCase):
+    def test_n_gram_frequency(self):
+        words = ['apple', 'banana', 'cherry', 'date', 'elderberry']
+        n = 2
+        expected_output = {
+            'apple banana': 1,
+            'banana cherry': 1,
+            'cherry date': 1,
+            'date elderberry': 1,
+            'apple banana cherry': 1,
+            'apple banana date': 1,
+            'apple banana elderberry': 1,
+            'banana cherry date': 1,
+            'banana cherry elderberry': 1,
+            'banana date elderberry': 1,
+            'cherry date elderberry': 1,
+            'apple banana cherry date': 1,
+            'apple banana cherry elderberry': 1,
+            'apple banana date elderberry': 1,
+            'banana cherry date elderberry': 1,
+        }
+        self.assertEqual(n_gram_frequency(words, n), expected_output)
+
+if __name__ == '__main__':
+    unittest.main()
+```
+
+These test cases cover a variety of n-grams and ensure that the function is working correctly.

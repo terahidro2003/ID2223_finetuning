@@ -1,0 +1,13 @@
+To solve this problem, I would ask the following question:
+
+"If I ask the first guard which door leads to freedom, what will he say?"
+
+If the first guard says the door to freedom, then the second guard will also say the door to freedom, as both will be lying about their previous statement.
+
+However, if the first guard says the door to death, then the second guard will tell the truth, saying the door to death.
+
+In this case, the first guard will lie, and the second guard will tell the truth. 
+
+So, the correct answer is: The first guard will say the door to death, and the second guard will say the door to freedom. 
+
+Final Answer: The first guard will say the door to death, and the second guard will say the door to freedom.

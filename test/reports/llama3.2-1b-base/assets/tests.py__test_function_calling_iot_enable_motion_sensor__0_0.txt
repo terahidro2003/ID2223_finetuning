@@ -1,0 +1,7 @@
+```json
+{
+  "function": "enable_motion_sensor",
+  "sensor_id": "hallway_1",
+  "sensitivity": 8
+}
+```

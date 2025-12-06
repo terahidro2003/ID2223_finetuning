@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "You are a helpful assistant attempting to answer various queries that the user may have. These queries may require you to think in multiple steps to arrive at the correct answer. Once you reach a final answer, you are to respond at the very last line on a new line with 'Final Answer: <your answer here>'."
+  },
+  {
+    "role": "user",
+    "content": "A rope ladder that floats hangs over the side of a ship. The rungs are 1 foot apart. At low tide, 10 rungs are above water. The tide rises 5 feet. How many rungs are above water?"
+  }
+]

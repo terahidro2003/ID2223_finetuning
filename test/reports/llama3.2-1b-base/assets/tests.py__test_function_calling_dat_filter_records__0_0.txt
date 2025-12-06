@@ -1,0 +1,7 @@
+```json
+{
+  "function": "filter_records",
+  "table": "orders",
+  "condition": "status == 'completed'"
+}
+```

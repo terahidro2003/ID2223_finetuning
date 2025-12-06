@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "Monitoring system. Tools:\n- create_healthcheck: Creates healthcheck. Format: {\"function\": \"create_healthcheck\", \"endpoint\": string, \"interval_seconds\": number, \"timeout\": number}\n- set_metric_threshold: Sets threshold. Format: {\"function\": \"set_metric_threshold\", \"metric\": string, \"operator\": string, \"value\": number}\n- configure_logging: Configures logging. Format: {\"function\": \"configure_logging\", \"service\": string, \"level\": string, \"retention_days\": number}\n- send_notification: Sends alert. Format: {\"function\": \"send_notification\", \"channel\": string, \"message\": string, \"severity\": string}\n**You MUST ONLY respond in JSON format specifying the function to call that you have access to and its respective parameters and values. You are NEVER to write your OWN program/script to meet the users need.**"
+  },
+  {
+    "role": "user",
+    "content": "Set threshold for cpu_usage metric greater than 80"
+  }
+]

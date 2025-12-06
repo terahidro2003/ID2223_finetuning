@@ -1,0 +1,1 @@
+{"function": "charge_ev", "charge_limit": 0.8, "rate": "fast"}

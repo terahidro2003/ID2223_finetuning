@@ -1,0 +1,1 @@
+{"function": "create_pivot", "data": "sales_data", "rows": "product", "columns": "quarter", "values": "revenue"}

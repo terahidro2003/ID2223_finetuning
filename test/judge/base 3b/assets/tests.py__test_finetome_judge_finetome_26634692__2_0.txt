@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "How can I write a program that compares two different strings and returns true if they are the same? Can you provide a code example?"
+  }
+]

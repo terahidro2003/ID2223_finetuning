@@ -1,0 +1,13 @@
+```json
+{
+  "function": "analyze_sentiment",
+  "text": "This product is amazing!",
+  "model": "vader",
+  "parameters": {
+    "language": "English"
+  },
+  "values": {
+    "score": 0.75
+  }
+}
+```

@@ -1,0 +1,104 @@
+[Reasoning]
+To create a decorator that counts the number of times a function is called, we'll define a new decorator `count_calls` that takes another function `func` as an argument. The decorator will return a new function that wraps the original function. This new function will keep track of the call frequency and store it in a dictionary.
+
+[Implementation]
+```python
+def count_calls(func):
+    """
+    Decorator to count the number of times a function is called.
+    """
+    def wrapper(*args, **kwargs):
+        wrapper.call_count += 1
+        wrapper.func_counts[func.__name__] = wrapper.call_count
+        return func(*args, **kwargs)
+    wrapper.call_count = 0
+    wrapper.func_counts = {}
+    return wrapper
+```
+
+[Explanation]
+This implementation creates a new decorator `count_calls` that modifies the original function in-place. The new function `wrapper` keeps track of the call frequency and stores it in a dictionary `func_counts`. The `call_count` variable is initialized to 0, and the `func_counts` dictionary is initialized as an empty dictionary.
+
+[Tests]
+You can write the following test cases to ensure it works correctly:
+
+```python
+import functools
+import unittest
+
+class TestCountCalls(unittest.TestCase):
+    def test_count_calls(self):
+        @count_calls
+        def func():
+            return 1
+
+        func_counts = {}
+
+        def wrapper(func):
+            return count_calls(func)
+
+        wrapper(func)
+
+        self.assertEqual(func_counts, {"func": 1})
+
+        func_counts = wrapper(func)
+
+        self.assertEqual(func_counts, {"func": 2})
+
+        func_counts = wrapper(func)
+
+        self.assertEqual(func_counts, {"func": 3})
+
+    def test_count_calls_negative(self):
+        @count_calls
+        def func():
+            return 1
+
+        func_counts = {}
+
+        def wrapper(func):
+            return count_calls(func)
+
+        wrapper(func)
+
+        self.assertEqual(func_counts, {"func": -1})
+
+        func_counts = wrapper(func)
+
+        self.assertEqual(func_counts, {"func": -2})
+
+        func_counts = wrapper(func)
+
+        self.assertEqual(func_counts, {"func": -3})
+
+    def test_multiple_functions(self):
+        @count_calls
+        def func1():
+            return 1
+
+        @count_calls
+        def func2():
+            return 2
+
+        func_counts = {}
+
+        def wrapper(func):
+            return count_calls(func)
+
+        wrapper(func1)
+
+        self.assertEqual(func_counts, {"func1": 1})
+
+        wrapper(func2)
+
+        self.assertEqual(func_counts, {"func1": 1, "func2": 1})
+
+        wrapper(func1)
+
+        self.assertEqual(func_counts, {"func1": 2, "func2": 1})
+
+if __name__ == '__main__':
+    unittest.main()
+```
+
+These test cases cover the `count_calls` decorator with a single function and multiple functions to validate its correctness.

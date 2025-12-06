@@ -1,0 +1,8 @@
+```json
+{
+  "function": "split_dataset",
+  "dataset": "customer_data",
+  "train_ratio": 0.8,
+  "test_ratio": 0.2
+}
+```

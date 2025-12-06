@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "What tools do ecologists use to study the behavior and interactions of plant and animal species in an ecosystem?"
+  }
+]

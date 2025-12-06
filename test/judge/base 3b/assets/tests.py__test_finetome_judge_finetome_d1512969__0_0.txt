@@ -1,0 +1,37 @@
+Here's the Python code that solves the problem:
+
+```python
+def calculate_weight(s):
+    """Calculate the weight of the string."""
+    return sum(ord(c) for c in s)
+
+def reverse_string(s):
+    """Reverse the input string."""
+    return s[::-1]
+
+def solve_problem(s):
+    """Solve the problem based on the parity of the weight."""
+    weight = calculate_weight(s)
+    length = len(s)
+    if weight % 2 != 0:
+        return reverse_string(s)
+    else:
+        return s
+
+def main():
+    """Main function."""
+    t = int(input())
+    for _ in range(t):
+        s = input()
+        result = solve_problem(s)
+        print(result)
+
+if __name__ == "__main__":
+    main()
+```
+
+This code defines three functions: `calculate_weight`, `reverse_string`, and `solve_problem`. The `calculate_weight` function calculates the weight of the string by summing up the ASCII values of its characters. The `reverse_string` function reverses the input string using slicing. The `solve_problem` function solves the problem based on the parity of the weight. If the weight is odd, it reverses the string; otherwise, it returns the original string.
+
+The `main` function reads the number of test cases, loops through each test case, and calls the `solve_problem` function to get the result. The result is then printed to the console.
+
+You can run this code to get the output for the given input.

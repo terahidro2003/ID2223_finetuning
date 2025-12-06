@@ -1,0 +1,19 @@
+```
+{
+  "Person": ["Frédéric Chopin"],
+  "Organization": [],
+  "Location": [],
+  "Animal": [],
+  "Biological entity": [],
+  "Celestial body": [],
+  "Disease": [],
+  "Event": [],
+  "Food": [],
+  "Institution": [],
+  "Media": [],
+  "Mythological entity": [],
+  "Plant": [],
+  "Time": [],
+  "Vehicle": []
+}
+```

@@ -1,0 +1,7 @@
+Anions are formed when an atom or molecule gains one or more electrons. This can happen when an atom or molecule reacts with another atom or molecule that has a lower electronegativity. For example, when sodium reacts with chlorine, the sodium atom gives up an electron to the chlorine atom, forming a sodium ion (Na+) and a chloride ion (Cl-).
+
+Anions are attracted to positively charged ions, such as cations. This attraction is what holds ionic compounds together. For example, sodium chloride (NaCl) is an ionic compound that is held together by the attraction between sodium ions and chloride ions.
+
+Anions play an important role in many chemical reactions. For example, anions are involved in the formation of acids and bases. Acids are substances that donate protons (H+ ions), and bases are substances that accept protons. When an acid and a base react, the anion from the acid combines with the cation from the base to form a salt.
+####
+An anion is a negatively charged ion. It is formed when an atom or molecule gains one or more electrons. Anions are attracted to positively charged ions, such as cations, and form ionic bonds.

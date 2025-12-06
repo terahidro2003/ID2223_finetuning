@@ -1,0 +1,1 @@
+{"function": "aggregate_data", "table": "sales", "group_by": "region", "operation": "sum"}

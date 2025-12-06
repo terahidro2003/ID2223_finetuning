@@ -1,0 +1,1 @@
+{"function": "generate_plot", "data_source": "monthly_revenue", "plot_type": "bar chart"}

@@ -1,0 +1,13 @@
+To answer this question, let's consider the characteristics mentioned: the language is used in web development and has a snake as its logo.
+
+A) Java is primarily used for Android app development, desktop applications, and enterprise software development, but it's not particularly known for its snake logo.
+
+B) Python is a versatile language used in various domains, including web development, data analysis, and artificial intelligence. However, it's not typically associated with a snake logo.
+
+C) Ruby is known for its use in web development, particularly with the Ruby on Rails framework. The Ruby programming language is indeed represented by a snake logo, which is a nod to the language's creator, Yukihiro Matsumoto.
+
+D) PHP is a server-side scripting language used for web development, but it's not associated with a snake logo.
+
+Considering these points, the answer is clear.
+
+Final Answer: C

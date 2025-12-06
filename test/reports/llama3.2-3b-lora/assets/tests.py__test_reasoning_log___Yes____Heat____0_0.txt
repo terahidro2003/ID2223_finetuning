@@ -1,0 +1,15 @@
+To solve this problem, we can use a process of elimination. Here's one possible approach:
+
+1. Start by flipping switch 1 to the "on" position for 5 minutes.
+2. Then, flip switch 1 to the "off" position and flip switch 2 to the "on" position.
+3. Immediately go into the room and observe the bulbs.
+
+Now, let's analyze the possible outcomes:
+
+- If a bulb is on, it must be controlled by switch 2.
+- If a bulb is off but warm, it must be controlled by switch 1.
+- If a bulb is off and cold, it must be controlled by switch 3.
+
+By doing this, you can determine which switch controls which bulb in just one visit to the room.
+
+Final Answer: Yes

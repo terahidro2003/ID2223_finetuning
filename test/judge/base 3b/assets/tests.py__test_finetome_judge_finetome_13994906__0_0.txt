@@ -1,0 +1,12 @@
+def reverse_string(s):
+    """
+    Generator function to yield the reverse of a given string.
+
+    Args:
+        s (str): The input string.
+
+    Yields:
+        str: Characters of the reversed string.
+    """
+    for char in reversed(s):
+        yield char

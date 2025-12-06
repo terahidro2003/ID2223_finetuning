@@ -1,0 +1,71 @@
+[Reasoning]
+To solve this problem, we can create a Python function that iterates through the list of words, creating n-grams of a specified size (n). For each n-gram, we check if it's already in our dictionary. If it is, we increment its frequency by 1. If it's not, we add it to the dictionary with a frequency of 1. We repeat this process for all n-grams in the list.
+
+[Implementation]
+```python
+from collections import defaultdict
+
+def count_ngrams(words, n):
+    """
+    Counts the frequency of each n-gram in a given list of words.
+
+    Args:
+        words (list): A list of words.
+        n (int): The size of the n-grams.
+
+    Returns:
+        dict: A dictionary where the keys are the n-grams and the values are the corresponding frequencies.
+    """
+    ngram_freq = defaultdict(int)
+    for i in range(len(words) - n + 1):
+        ngram = ' '.join(words[i:i+n])
+        ngram_freq[ngram] += 1
+    return dict(ngram_freq)
+```
+
+[Explanation]
+This function uses a `defaultdict` from the `collections` module to create a dictionary where the default value for each key is 0. This allows us to easily keep track of the frequency of each n-gram. We iterate through the list of words, creating n-grams of size n. For each n-gram, we increment its frequency by 1.
+
+[Tests]
+You can write the following test cases to ensure it works correctly:
+
+```python
+import unittest
+
+class TestCountNgrams(unittest.TestCase):
+    def test_ngram_frequency(self):
+        words = ['the', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog']
+        n = 2
+        expected_output = {
+            'the quick': 2,
+            'quick brown': 1,
+            'brown fox': 1,
+            'fox jumps': 1,
+            'jumps over': 1,
+            'over the': 1,
+            'the lazy': 1,
+            'lazy dog': 1
+        }
+        self.assertEqual(count_ngrams(words, n), expected_output)
+
+    def test_ngram_frequency_with_duplicates(self):
+        words = ['the', 'the', 'quick', 'quick', 'brown', 'brown', 'fox', 'fox', 'jumps', 'jumps', 'over', 'over', 'the', 'the', 'lazy', 'lazy', 'dog', 'dog']
+        n = 2
+        expected_output = {
+            'the the': 4,
+            'the quick': 2,
+            'quick brown': 2,
+            'brown fox': 2,
+            'fox jumps': 2,
+            'jumps over': 2,
+            'over the': 2,
+            'the lazy': 2,
+            'lazy dog': 2
+        }
+        self.assertEqual(count_ngrams(words, n), expected_output)
+
+if __name__ == '__main__':
+    unittest.main()
+```
+
+These test cases cover both unique and duplicate n-grams to validate the correctness of the `count_ngrams` function.

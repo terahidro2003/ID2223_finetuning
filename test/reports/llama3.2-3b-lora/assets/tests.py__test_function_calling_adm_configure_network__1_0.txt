@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "Cloud resource manager. Functions:\n- provision_vm: Provisions VM. Format: {\"function\": \"provision_vm\", \"instance_type\": string, \"region\": string, \"os\": string}\n- allocate_storage: Allocates storage. Format: {\"function\": \"allocate_storage\", \"size_gb\": number, \"type\": string, \"mount_point\": string}\n- configure_network: Configures network. Format: {\"function\": \"configure_network\", \"vpc_id\": string, \"subnet\": string, \"internet_gateway\": boolean}\n- set_budget_alert: Sets budget alert. Format: {\"function\": \"set_budget_alert\", \"threshold\": number, \"notification_email\": string}\n**You MUST ONLY respond in JSON format specifying the function to call that you have access to and its respective parameters and values. You are NEVER to write your OWN program/script to meet the users need.**"
+  },
+  {
+    "role": "user",
+    "content": "Configure network for vpc-12345 with subnet 10.0.1.0/24 and enable internet gateway"
+  }
+]

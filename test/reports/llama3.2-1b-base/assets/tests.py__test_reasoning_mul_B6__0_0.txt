@@ -1,0 +1,15 @@
+To determine the correct answer, let's analyze each option:
+
+A) Queue: A queue is a First-In-First-Out (FIFO) data structure. It follows the principle of the first element being added to the end of the queue, and the last element being removed from the front of the queue.
+
+B) Stack: A stack is a Last-In-First-Out (LIFO) data structure. It follows the principle of the last element being added to the top of the stack, and the first element being removed from the top of the stack.
+
+C) Array: An array is a linear data structure where elements are stored in contiguous memory locations. It does not follow the principle of LIFO.
+
+D) Tree: A tree is a hierarchical data structure where each node has a fixed number of children. It does not follow the principle of LIFO.
+
+Based on the analysis, the correct answer is:
+
+B) Stack
+
+Final Answer: B

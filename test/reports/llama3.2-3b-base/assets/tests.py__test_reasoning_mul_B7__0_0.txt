@@ -1,0 +1,16 @@
+To find the result of 2^10, we need to calculate 2 multiplied by itself 10 times.
+
+2^1 = 2
+2^2 = 2 * 2 = 4
+2^3 = 2 * 4 = 8
+2^4 = 2 * 8 = 16
+2^5 = 2 * 16 = 32
+2^6 = 2 * 32 = 64
+2^7 = 2 * 64 = 128
+2^8 = 2 * 128 = 256
+2^9 = 2 * 256 = 512
+2^10 = 2 * 512 = 1024
+
+Therefore, the result of 2^10 is 1024. 
+
+Final Answer: 1024

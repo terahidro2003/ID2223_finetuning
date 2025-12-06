@@ -1,0 +1,11 @@
+To solve this puzzle, let's break it down step by step.
+
+We know that there are two fathers and two sons, and they each catch one fish. The total number of fish caught is 3.
+
+One possible explanation is that the two fathers are also the two sons' fathers. In other words, the two fathers are the grandfather and the father of the two sons.
+
+Since the two fathers are the same two people, they can't both catch a fish. However, the two sons can catch two fish between them.
+
+So, the two fathers (grandfather and father) catch one fish together, and the two sons catch the other two fish.
+
+Final Answer: A grandfather and his son (the father) go fishing.

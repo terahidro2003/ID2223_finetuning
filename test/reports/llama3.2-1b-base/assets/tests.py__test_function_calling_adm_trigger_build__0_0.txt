@@ -1,0 +1,10 @@
+```json
+{
+  "function": "trigger_build",
+  "project": "frontend-app",
+  "branch": "main",
+  "parameters": {
+    "debug": "true"
+  }
+}
+```

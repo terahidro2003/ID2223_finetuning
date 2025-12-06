@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "Maya has started a candle business. She is selling 8 candles per day at the local market. Three candles per day are her large candles that sell for $15. The large candles cost her $8 to make. The remaining candles are small candles that sell for $8. They cost $4 to produce. How much profit, in dollars, does Maya make per 7-day week?"
+  }
+]

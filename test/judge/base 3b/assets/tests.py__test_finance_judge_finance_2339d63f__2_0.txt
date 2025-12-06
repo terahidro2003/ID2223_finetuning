@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "Find all PII entities in the text and present them in JSON format. Exclude any that are not mentioned."
+  },
+  {
+    "role": "user",
+    "content": "2022-09-03 11:32:57,U91077892410,BIO-5342982575,match"
+  }
+]

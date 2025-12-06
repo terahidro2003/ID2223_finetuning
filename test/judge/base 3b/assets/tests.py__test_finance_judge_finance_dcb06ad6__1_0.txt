@@ -1,0 +1,14 @@
+{
+  "ssn": [
+    "832-50-9726"
+  ],
+  "date_of_birth": [
+    "1941-07-18"
+  ],
+  "employee_id": [
+    "Ij-55256"
+  ],
+  "medical_record_number": [
+    "MED44678276"
+  ]
+}

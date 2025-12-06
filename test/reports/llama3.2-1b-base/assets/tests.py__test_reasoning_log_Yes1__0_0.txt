@@ -1,0 +1,13 @@
+To solve this problem, we need to consider the constraints and the behavior of the animals.
+
+1. The farmer wants to cross the river with a fox and a chicken.
+2. The boat holds only the farmer and one item.
+3. Fox eats chicken, and chicken eats grain if left alone.
+
+Since the farmer can only take one item with him, the farmer can either take the chicken or the grain. However, the farmer cannot take both the chicken and the grain because the fox will eat the chicken.
+
+So, the farmer can either take the chicken or the grain. If the farmer takes the chicken, the fox will eat the chicken, and the farmer will not be able to cross the river. If the farmer takes the grain, the fox will eat the grain, and the farmer will not be able to cross the river.
+
+Therefore, the farmer cannot get all across the river.
+
+Final Answer:  No

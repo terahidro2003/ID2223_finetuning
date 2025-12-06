@@ -1,0 +1,1 @@
+{"function": "send_notification", "channel": "slack", "message": "Database connection failed", "severity": "critical"}

@@ -1,0 +1,1 @@
+{"function": "allocate_storage", "size_gb": 500, "type": "SSD", "mount_point": "/data"}

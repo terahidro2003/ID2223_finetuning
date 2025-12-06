@@ -1,0 +1,9 @@
+To find the probability that at least two people share a birthday, we can first find the probability that no two people share a birthday.
+
+Since each person has a 365/365 = 1 (100%) chance of having a unique birthday, the probability that no two people share a birthday is (365/365) * (364/365) * (363/365) * ... * (1/365) = 1/365.
+
+Now, we can find the probability that at least two people share a birthday by subtracting the probability that no two people share a birthday from 1:
+
+1 - 1/365 = 364/365 ≈ 1.0003
+
+This is more than 50%.

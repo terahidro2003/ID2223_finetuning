@@ -1,0 +1,1 @@
+{'DerivativeFixedInterestRate': ['4.45']}

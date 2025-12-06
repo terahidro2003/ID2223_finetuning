@@ -1,0 +1,46 @@
+Here's a simple Java program that counts the number of vowels in a given sentence.
+
+```java
+import java.util.Scanner;
+
+public class VowelCounter {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a sentence: ");
+        String sentence = scanner.nextLine();
+        int vowelCount = countVowels(sentence);
+        System.out.println("Number of vowels in the sentence: " + vowelCount);
+    }
+
+    /**
+     * This method counts the number of vowels in a given sentence.
+     * 
+     * @param sentence The input sentence.
+     * @return The number of vowels in the sentence.
+     */
+    public static int countVowels(String sentence) {
+        int vowelCount = 0;
+        for (char c : sentence.toLowerCase().toCharArray()) {
+            if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
+                vowelCount++;
+            }
+        }
+        return vowelCount;
+    }
+}
+```
+
+### How it works:
+
+1. The program asks the user to input a sentence using `Scanner`.
+2. The `countVowels` method takes the input sentence, converts it to lowercase, and iterates over each character.
+3. If the character is a vowel (a, e, i, o, or u), the `vowelCount` is incremented.
+4. The final vowel count is printed out.
+
+### Example use case:
+
+When you run the program, it will prompt you to enter a sentence. After you enter a sentence, it will print out the number of vowels in that sentence.
+
+### Note:
+
+This program counts only the standard English vowels (a, e, i, o, and u) and does not account for accented vowels or other special characters.

@@ -1,0 +1,5 @@
+A pentagonal prism has 5 sides on each of its 2 bases, and 5 vertices on each base. So, the total number of vertices of a pentagonal prism is:
+
+5 (vertices on one base) + 5 (vertices on the other base) = 10
+
+So, the number of vertices of a pentagonal prism is 10.

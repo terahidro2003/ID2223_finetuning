@@ -1,0 +1,7 @@
+To determine if the situation is possible or impossible, let's analyze the information given.
+
+In a race, you passed the person in last place. This means that you are now ahead of the person who was in last place.
+
+Since you passed the person in last place, you are now in a position that is better than the last place. Therefore, you are now in a position that is better than the last place.
+
+Final Answer: Possible.

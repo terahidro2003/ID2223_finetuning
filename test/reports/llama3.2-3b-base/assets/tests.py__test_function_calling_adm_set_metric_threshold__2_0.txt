@@ -1,0 +1,2 @@
+⚠ PARTIAL PASS (1 value errors):
+  operator: expected=>, got=gt

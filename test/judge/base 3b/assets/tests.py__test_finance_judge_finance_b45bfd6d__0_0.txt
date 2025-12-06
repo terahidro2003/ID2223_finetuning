@@ -1,0 +1,23 @@
+To solve this problem, we will use the concept of combinations.
+
+In a regular dodecahedron, there are 30 edges. We want to choose three edges such that no two of them share a common vertex. 
+
+Let's consider the number of ways to choose the first edge. We can choose any of the 30 edges as the first edge.
+
+For the second edge, we cannot choose the edge that shares a common vertex with the first edge. Therefore, there are 27 edges remaining to choose from for the second edge.
+
+For the third edge, we cannot choose the edges that share a common vertex with the first two edges. Therefore, there are 24 edges remaining to choose from for the third edge.
+
+However, this approach counts each combination multiple times. To correct for this, we need to divide by the number of ways to order the three edges, which is 3!.
+
+The total number of ways to choose three edges is therefore:
+
+(30 * 27 * 24) / 3! = (30 * 27 * 24) / 6 = 27 * 24 = 648
+
+However, we have overcounted by a factor of 2 since we are choosing edges, not the order in which they appear. Therefore, we need to divide by 2.
+
+The total number of ways to choose three edges is therefore:
+
+648 / 2 = 324
+
+Therefore, there are 324 ways to choose three edges in a regular dodecahedron such that no two of them share a common vertex.

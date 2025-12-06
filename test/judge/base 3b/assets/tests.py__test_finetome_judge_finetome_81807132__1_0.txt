@@ -1,0 +1,13 @@
+Consider incorporating these strategies to enliven the course material:
+
+1. Use Logical Riddles: Introduce puzzles from authors like Charles Lutwidge Dodgson (Lewis Carroll) or Raymond Smullyan. Their books are filled with logical riddles that can help students practice and understand the concepts in a more interactive way.
+
+2. Historical Context: Provide a brief historical background on the development of set theory and logic. Discuss how sets came into mathematics in the 19th century, the challenges like Frege's disaster and Russell's paradox, Zermelo's response, and the significance of the cumulative hierarchy.
+
+3. Conceptual Discussions: Explore the motivations behind the key ideas in the subject. For instance, discuss why the choice of first-order logic as a standard, the objections from constructivists to the law of excluded middle, and the complexity of representing indicative conditionals.
+
+4. Axiomatic vs. Natural Deduction: Highlight the differences between different approaches to logic and the reasons behind their development, such as Frege's quantifier/variable system for general propositions.
+
+5. Partially Historical Approach: Start by teaching the historical context and the mathematics and philosophy related to the development of these concepts, before diving into the technical details. This can provide a more meaningful foundation for students.
+
+By sharing your own curiosity and passion for these topics, you can inspire your students and make the class more engaging.

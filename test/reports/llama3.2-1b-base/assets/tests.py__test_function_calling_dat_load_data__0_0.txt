@@ -1,0 +1,8 @@
+```json
+{
+  "function": "load_data",
+  "source": "s3://bucket/data.csv",
+  "destination": "analytics_db.sales",
+  "format": "parquet"
+}
+```

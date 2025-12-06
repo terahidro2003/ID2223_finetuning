@@ -1,0 +1,12 @@
+Here's a JSON response specifying the function to call, its parameters, and values:
+
+```json
+{
+  "function": "create_healthcheck",
+  "endpoint": "https://api.example.com/health",
+  "interval_seconds": 60,
+  "timeout": 5
+}
+```
+
+This healthcheck will be created every 60 seconds and will have a 5-second timeout.

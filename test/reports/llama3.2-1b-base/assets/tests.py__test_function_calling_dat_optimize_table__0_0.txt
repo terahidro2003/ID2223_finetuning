@@ -1,0 +1,11 @@
+```json
+{
+  "function": "optimize_table",
+  "table": "transactions",
+  "operation": "vacuum",
+  "parameters": {
+    "table": "transactions",
+    "operation": "vacuum"
+  }
+}
+```

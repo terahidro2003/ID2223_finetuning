@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "Who is credited with the invention of the concept of a utility function, and are there any historical precedents for the idea?"
+  }
+]

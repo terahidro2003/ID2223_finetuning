@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "Create a generator function that yields the reverse of a given string."
+  }
+]

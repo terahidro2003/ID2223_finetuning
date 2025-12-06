@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "How do superconducting magnets contribute to energy efficiency in hadron accelerators, despite causing increased energy loss due to bending?"
+  }
+]

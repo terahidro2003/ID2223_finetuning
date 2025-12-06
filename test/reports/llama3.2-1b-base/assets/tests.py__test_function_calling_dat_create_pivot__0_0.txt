@@ -1,0 +1,9 @@
+```json
+{
+  "function": "create_pivot",
+  "data": "sales_data",
+  "rows": "product, quarter, revenue",
+  "columns": "product, quarter, revenue",
+  "values": "revenue"
+}
+```

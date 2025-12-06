@@ -1,0 +1,1 @@
+{"function": "search_hotels", "location": "Berlin", "checkin": "2024-12-20", "checkout": "2024-12-25", "guests": 2}

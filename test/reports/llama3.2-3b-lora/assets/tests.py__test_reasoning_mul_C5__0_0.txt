@@ -1,0 +1,16 @@
+To answer this question, we need to identify the primary colors. Primary colors are colors that cannot be created by mixing other colors together. The three primary colors are:
+
+1. Red
+2. Yellow
+3. Blue
+
+Now, let's examine the options given:
+
+A) Red - Primary color
+B) Yellow - Primary color
+C) Green - Not a primary color (it can be created by mixing blue and yellow)
+D) Blue - Primary color
+
+Since Green is not a primary color, it is the correct answer.
+
+Final Answer: Green.

@@ -1,0 +1,2 @@
+⚠ PARTIAL PASS (1 value errors):
+  condition: expected=status equals completed, got=status = 'completed'

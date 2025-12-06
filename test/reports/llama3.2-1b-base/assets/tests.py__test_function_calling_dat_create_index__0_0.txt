@@ -1,0 +1,8 @@
+```json
+{
+  "function": "create_index",
+  "table": "customers",
+  "columns": ["email", "phone"],
+  "index_type": "B-tree"
+}
+```

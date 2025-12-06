@@ -1,0 +1,9 @@
+To determine the shortest person, we need to analyze the given information.
+
+We know that Alice is taller than Bob, and Bob is taller than Charlie. 
+
+From this information, we can conclude that Alice is taller than Charlie.
+
+Since Alice is taller than Charlie, Charlie must be the shortest person.
+
+Final Answer: Charlie.

@@ -1,0 +1,1 @@
+{"function": "search_images", "query": "large images of mountains", "size": "large", "count": 20}

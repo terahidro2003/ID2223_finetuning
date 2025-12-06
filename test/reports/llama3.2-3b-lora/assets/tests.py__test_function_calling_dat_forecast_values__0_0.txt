@@ -1,0 +1,3 @@
+```json
+{"function": "forecast_values", "series": "stock_prices", "periods": 6, "model": "ARIMA"}
+```

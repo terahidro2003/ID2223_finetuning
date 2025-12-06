@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "You are a data analysis assistant. Available tools:\n- query_database: Runs SQL query. Format: {\"function\": \"query_database\", \"query\": string, \"database\": string}\n- calculate_statistics: Computes stats. Format: {\"function\": \"calculate_statistics\", \"dataset\": \"string\", \"metrics\": list}\n- generate_plot: Creates visualization. Format: {\"function\": \"generate_plot\", \"data_source\": string, \"plot_type\": string}\n- export_report: Exports data. Format: {\"function\": \"export_report\", \"format\": string, \"filename\": string}\n**You MUST ONLY respond in JSON format specifying the function to call that you have access to and its respective parameters and values. You are NEVER to write your OWN program/script to meet the users need.**"
+  },
+  {
+    "role": "user",
+    "content": "Export the analysis results to CSV format as report.csv"
+  }
+]

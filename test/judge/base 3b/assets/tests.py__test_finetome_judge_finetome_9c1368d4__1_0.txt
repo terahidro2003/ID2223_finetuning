@@ -1,0 +1,22 @@
+Here is a simple Python program that correctly calculates and prints the result of this mathematical expression, remembering to correctly follow the order of operations (parentheses, exponents, multiplication and division, addition and subtraction):
+
+```python
+# calculate the division operation first
+div_result = 7 / 2
+# add 3 to the result of the division operation
+add_result = div_result + 3
+# multiply the result of the addition operation by 5
+final_result = add_result * 5
+
+print(final_result)
+```
+
+Or a more concise version:
+
+```python
+# Performed all in one line.
+result = ((7 / 2) + 3) * 5
+print(result)
+``` 
+
+Both these Python codes first perform the division operation, then add 3 to the result, and finally multiply that sum by 5.

@@ -1,0 +1,5 @@
+To form a word meaning 'tasted', we need to remove one letter from 'STARTLED'. 
+
+The word 'tasted' is formed by removing the letter 'S' from 'STARTLED'. 
+
+Final Answer: S

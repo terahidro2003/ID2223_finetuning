@@ -1,0 +1,9 @@
+The reason arteries appear red and veins appear blue when observed through the skin is due to the way light interacts with the different types of blood vessels.
+
+When light passes through the skin, it encounters the hemoglobin in red blood cells (which are primarily found in arteries). Hemoglobin absorbs red light and scatters blue light, causing the arteries to appear red. This is because the red light is being absorbed, leaving mainly the blue light to be scattered and reflected back to our eyes.
+
+Veins, on the other hand, contain more oxygen-depleted red blood cells (which are also rich in hemoglobin). These cells absorb blue light and scatter red light, causing the veins to appear blue. This is because the blue light is being scattered, leaving mainly the red light to be absorbed and reflected back to our eyes.
+
+This phenomenon is known as the "oxyhemoglobin dissociation curve" and is a result of the way that hemoglobin interacts with different wavelengths of light. The exact shade of red or blue can vary depending on the concentration of hemoglobin, the oxygenation level of the blood, and the individual's skin tone.
+
+It's worth noting that this effect is not just limited to arteries and veins. Other structures in the body, such as muscles and organs, can also appear red or blue depending on their function and the type of tissue they are made of. However, the combination of the presence of hemoglobin and the way that light interacts with it is the primary reason why arteries appear red and veins appear blue.

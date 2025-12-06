@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "You are tasked with calculating the correlation coefficients of the stocks and the market using overlapping 3-day log returns in the past five years (at least 750 days valid) for correlation to control for non-synchronous trading. The goal is to use the overlapping 3-day log returns in the past five years of the stock and the market respectively to calculate the correlation coefficient of each stock and the market."
+  }
+]

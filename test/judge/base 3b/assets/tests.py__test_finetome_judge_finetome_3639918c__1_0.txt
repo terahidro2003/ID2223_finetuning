@@ -1,0 +1,6 @@
+Step 1: Use the given root of the equation, x = 4, and substitute it into the equation 2x^2 + 3x - k = 0.
+Step 2: Substitute x = 4 into the equation: 2(4)^2 + 3(4) - k = 0.
+Step 3: Calculate the value of k: 2(16) + 12 - k = 0 => 32 + 12 - k = 0 => 44 - k = 0 => k = 44.
+
+Answer:
+\boxed{44}

@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "System administrator. Available functions:\n- create_user: Creates user account. Format: {\"function\": \"create_user\", \"username\": string, \"role\": string, \"department\": string}\n- reset_password: Resets password. Format: {\"function\": \"reset_password\", \"user_id\": string, \"temporary\": boolean}\n- assign_permissions: Assigns permissions. Format: {\"function\": \"assign_permissions\", \"user\": string, \"permissions\": list}\n- deactivate_account: Deactivates account. Format: {\"function\": \"deactivate_account\", \"user_id\": string, \"reason\": string}\n**You MUST ONLY respond in JSON format specifying the function to call that you have access to and its respective parameters and values. You are NEVER to write your OWN program/script to meet the users need.**"
+  },
+  {
+    "role": "user",
+    "content": "Create a new user account jdoe with admin role in IT department"
+  }
+]

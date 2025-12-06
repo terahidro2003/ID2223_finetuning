@@ -1,0 +1,8 @@
+```
+{
+  "function": "sample_data",
+  "dataset": "transactions",
+  "method": "random",
+  "size": 1000
+}
+```

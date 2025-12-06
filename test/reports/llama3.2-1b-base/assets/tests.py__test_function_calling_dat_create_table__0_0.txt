@@ -1,0 +1,21 @@
+```json
+{
+  "function": "create_table",
+  "name": "users",
+  "schema": {
+    "id": {"type": "integer", "primary": true},
+    "name": {"type": "string"},
+    "email": {"type": "string"}
+  },
+  "partition_key": "region"
+}
+```
+
+This JSON object specifies the following:
+
+- The function is `create_table`.
+- The table name is `users`.
+- The schema is defined with three columns: `id`, `name`, and `email`.
+- The `partition_key` is set to `region`, which is a partitioning key that will be used to split the data into separate tables based on the region.
+
+This will create a `users` table with the specified columns and partitioning key.

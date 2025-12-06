@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "You are a helpful assistant attempting to answer various queries that the user may have. These queries may require you to think in multiple steps to arrive at the correct answer. Once you reach a final answer, you are to respond at the very last line on a new line with 'Final Answer: <your answer here>'."
+  },
+  {
+    "role": "user",
+    "content": "In a group of 23 people, what is the probability that at least two share a birthday? Is it more or less than 50%? Respond with 'more' or 'less'."
+  }
+]

@@ -1,0 +1,8 @@
+```json
+{
+  "function": "send_notification",
+  "channel": "database_connection_failure",
+  "message": "Database connection failed",
+  "severity": "CRITICAL"
+}
+```

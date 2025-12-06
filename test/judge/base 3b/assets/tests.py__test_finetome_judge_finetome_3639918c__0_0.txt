@@ -1,0 +1,18 @@
+To solve the problem, we will use the given root to find the value of k.
+
+The given equation is: 2x^2 + 3x - k = 0
+
+We know that one root of the equation is 4. We can substitute x = 4 into the equation and solve for k.
+
+2(4)^2 + 3(4) - k = 0
+2(16) + 12 - k = 0
+32 + 12 - k = 0
+44 - k = 0
+
+Now, we can solve for k by isolating it on one side of the equation.
+
+k = 44
+
+So, the value of k is 44.
+
+\boxed{44}

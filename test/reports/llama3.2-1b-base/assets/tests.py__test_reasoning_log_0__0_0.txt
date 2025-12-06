@@ -1,0 +1,15 @@
+To find the result, we need to multiply all the numbers on the telephone dial pad (1-9 and 0). 
+
+First, let's multiply the numbers 1 and 9:
+1 * 9 = 9
+
+Next, let's multiply the numbers 1 and 0:
+1 * 0 = 0
+
+Now, let's multiply the numbers 9 and 0:
+9 * 0 = 0
+
+Finally, let's multiply the numbers 9 and 0:
+9 * 0 = 0
+
+The final result is: 0

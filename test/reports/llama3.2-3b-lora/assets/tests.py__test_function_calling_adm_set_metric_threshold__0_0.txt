@@ -1,0 +1,1 @@
+{"function": "set_metric_threshold", "metric": "cpu_usage", "operator": "gt", "value": 80}

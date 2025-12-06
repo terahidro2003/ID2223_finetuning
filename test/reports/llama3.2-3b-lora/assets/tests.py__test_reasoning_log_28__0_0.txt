@@ -1,0 +1,13 @@
+To solve this problem, we need to calculate the net progress of the snail each day. 
+
+The snail climbs 3 feet up during the day, but slides back 2 feet at night. So, the net progress each day is 3 - 2 = 1 foot.
+
+Since the well is 30 feet deep, we need to find out how many days it will take for the snail to cover 30 feet at a net progress of 1 foot per day.
+
+To do this, we can divide the total depth of the well (30 feet) by the net progress per day (1 foot).
+
+30 feet / 1 foot per day = 30 days
+
+So, it will take the snail 30 days to reach the top of the 30-foot well.
+
+Final Answer: 30

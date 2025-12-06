@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "How can the theory of Evolution be related to the concept of Adaptation using the formula:\nAdaptation = Variation + Natural Selection\nand\nEvolution = Descent with Modification \nwhere Modification = Genetic Variation + Natural Selection."
+  }
+]

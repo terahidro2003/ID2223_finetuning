@@ -1,0 +1,31 @@
+Here's an example of a simple string comparison program in Python:
+
+```python
+def compare_strings(str1, str2):
+    """
+    Compare two strings and return True if they are the same.
+    
+    Args:
+    str1 (str): The first string to compare.
+    str2 (str): The second string to compare.
+    
+    Returns:
+    bool: True if the strings are the same, False otherwise.
+    """
+    return str1 == str2
+
+# Example usage:
+str1 = "Hello, World!"
+str2 = "Hello, World!"
+
+result = compare_strings(str1, str2)
+print(f"Are '{str1}' and '{str2}' the same? {result}")
+
+str3 = "Goodbye, World!"
+result = compare_strings(str1, str3)
+print(f"Are '{str1}' and '{str3}' the same? {result}")
+```
+
+This program defines a function `compare_strings` that takes two strings as arguments and returns a boolean indicating whether they are the same. The `==` operator is used to compare the strings, which is a built-in operator in Python that returns `True` if the strings are equal and `False` otherwise.
+
+When you run this program, it will print out whether the first pair of strings are the same, and then whether the first pair of strings are the same as the second pair.

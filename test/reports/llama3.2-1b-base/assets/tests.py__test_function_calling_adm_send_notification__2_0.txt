@@ -1,0 +1,2 @@
+⚠ PARTIAL PASS (1 value errors):
+  channel: expected=slack, got=database_connection_failure

@@ -1,0 +1,9 @@
+```json
+{
+  "function": "normalize_data",
+  "columns": ["salary", "experience"],
+  "method": "min-max"
+}
+```
+
+This function will normalize the 'salary' and 'experience' columns using the min-max method. The min-max method scales the data to a common range, typically between 0 and 1, which is ideal for many machine learning algorithms.

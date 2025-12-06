@@ -1,0 +1,17 @@
+```json
+{
+  "function": "compare_prices",
+  "product_id": "PROD12345",
+  "stores": [
+    {
+      "store_name": "Amazon",
+      "price": 49.99
+    },
+    {
+      "store_name": "Best Buy",
+      "price": 49.99
+    }
+  ],
+  "min_discount": 0
+}
+```

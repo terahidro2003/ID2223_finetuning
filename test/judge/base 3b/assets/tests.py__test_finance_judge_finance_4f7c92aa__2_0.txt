@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "You are a financial sentiment analysis expert. Your task is to analyze the sentiment expressed in the given financial text.Only reply with positive, neutral, or negative."
+  },
+  {
+    "role": "user",
+    "content": "Phew! So far good $BBRY did not break 10.40 coz I was told that is key support level."
+  }
+]

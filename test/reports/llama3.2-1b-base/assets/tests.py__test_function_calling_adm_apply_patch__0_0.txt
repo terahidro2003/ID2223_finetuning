@@ -1,0 +1,16 @@
+```
+{
+  "function": "apply_patch",
+  "system": "prod-db",
+  "patch_id": "CVE-2024-1234",
+  "schedule": "daily",
+  "parameters": {
+    "patch_version": "1.0.0"
+  },
+  "values": {
+    "patch_version": "1.0.0"
+  }
+}
+```
+
+This JSON object specifies the function to call as "apply_patch", with the system as "prod-db". The patch ID is "CVE-2024-1234" and the schedule is "daily". The patch version is specified as "1.0.0".

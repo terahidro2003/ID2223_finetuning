@@ -1,0 +1,14 @@
+Ultraviolet (UV) light does not pass through glass because of the way glass interacts with electromagnetic radiation. Glass is typically made up of silicon dioxide (SiO2) molecules, which are held together by strong covalent bonds. These bonds are not easily broken by UV light, so the light is reflected back or absorbed by the glass.
+
+There are several factors that determine if a material will be transparent to electromagnetic waves at a specific frequency:
+
+1. **Material composition and structure**: The material's molecular structure and composition can affect its ability to transmit or absorb electromagnetic radiation. For example, some materials have a higher refractive index, which means they bend light more, making it difficult for the light to pass through.
+2. **Interatomic and intermolecular forces**: The forces between atoms and molecules in a material can influence its ability to transmit electromagnetic radiation. For example, hydrogen bonds in water molecules can absorb UV radiation, making water opaque to UV light.
+3. **Bandgap energy**: The bandgap energy is the minimum energy required for an electron to jump from the valence band to the conduction band in a material. If the energy of the electromagnetic radiation is less than the bandgap energy, the material will absorb the radiation, making it opaque.
+4. **Refractive index**: The refractive index of a material can affect its ability to transmit electromagnetic radiation. Materials with a high refractive index tend to bend light more, making it difficult for the light to pass through.
+5. **Absorption coefficients**: The absorption coefficient is a measure of how strongly a material absorbs electromagnetic radiation at a specific frequency. Materials with high absorption coefficients tend to be opaque to that frequency.
+6. **Scattering and diffraction**: Electromagnetic radiation can also be scattered or diffracted by the material's structure, leading to absorption or reflection of the radiation.
+
+In the case of UV glass, the material is often made up of silicon dioxide (SiO2) with a high refractive index, which helps to bend UV light back and reflect it. The bandgap energy of SiO2 is relatively high, which means that UV light with energies above the bandgap energy is absorbed by the material, making it opaque to UV radiation.
+
+In summary, the combination of material composition, structure, interatomic and intermolecular forces, bandgap energy, refractive index, absorption coefficients, scattering, and diffraction all play a role in determining whether a material will be transparent to electromagnetic waves at a specific frequency.

@@ -1,0 +1,9 @@
+To solve this riddle, let's break it down step by step.
+
+You mentioned you're a word of letters three. This means you have three letters in your word.
+
+The riddle also states that if you add two, there will be fewer. This implies that if you add two letters to your word, the resulting word will have one less letter.
+
+Considering this, I'm going to take a guess that your word is "few". When you add two letters to "few", you get "fewer", which indeed has one less letter.
+
+Final Answer: few

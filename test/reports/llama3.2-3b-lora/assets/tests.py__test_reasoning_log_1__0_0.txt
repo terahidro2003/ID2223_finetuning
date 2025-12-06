@@ -1,0 +1,8 @@
+To find out how many apples you have left, we need to subtract the number of apples you gave away from the total number of apples you initially had.
+
+You started with 3 apples.
+You gave away 2 apples.
+
+3 (initial apples) - 2 (apples given away) = 1
+
+So, you have 1 apple left.

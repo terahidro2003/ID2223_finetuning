@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "How can I make the introductory set theory and predicate logic part of my \"proof techniques\" class more engaging and enjoyable for sophomore math majors?"
+  }
+]

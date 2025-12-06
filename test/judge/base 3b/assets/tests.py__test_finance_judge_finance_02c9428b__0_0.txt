@@ -1,0 +1,31 @@
+## Step 1: Determine the interest rate per period for both plans.
+For Plan A, the interest rate per period is $8\% / 2 = 4\%$ since the interest compounds semiannually. For Plan B, the interest rate per period is $8\%$ since the interest compounds annually.
+
+## Step 2: Calculate the number of periods for each plan.
+Since the interest compounds semiannually in Plan A, there are $15 \times 2 = 30$ periods. Since the interest compounds annually in Plan B, there are $15$ periods.
+
+## Step 3: Calculate the total amount in Plan A after 10 years using the compound interest formula.
+The compound interest formula is given by $A=P(1+\frac{r}{n})^{nt}$. For Plan A, the total amount after 10 years is $A=20000(1+\frac{0.08}{2})^{30}$. After calculating, we get $A \approx 20000(1.04)^{15} \approx 20000 \times 2.1716 \approx 43432.12$.
+
+## Step 4: Calculate the amount withdrawn after 10 years under Plan A.
+Emily withdraws one-third of her balance after 10 years. The amount withdrawn is $43432.12 / 3 \approx 14477.04$.
+
+## Step 5: Calculate the total amount in Plan A after 15 years.
+The total amount after 15 years is $A=43432.12(1+\frac{0.08}{2})^{30} \approx 43432.12(1.04)^{15} \approx 43432.12 \times 2.1716 \approx 94411.21$.
+
+## Step 6: Calculate the total withdrawals under Plan A.
+The total withdrawals under Plan A are $14477.04 + 94411.21 \approx 108888.25$.
+
+## Step 7: Calculate the total amount in Plan B after 15 years.
+The total amount after 15 years is $A=20000(1+\frac{0.08}{1})^{15} = 20000(1.08)^{15} \approx 20000 \times 2.659 \approx 53180$.
+
+## Step 8: Calculate the total withdrawals under Plan B.
+The total withdrawals under Plan B are $53180$.
+
+## Step 9: Calculate the difference between the total withdrawals under Plan A and Plan B.
+The difference is $|108888.25 - 53180| \approx 54708.25$.
+
+## Step 10: Round the difference to the nearest dollar.
+The difference rounded to the nearest dollar is $54708$.
+
+The final answer is: $\boxed{54708}$

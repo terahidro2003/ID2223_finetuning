@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "Alex opens a new water park. The initial investment to open the park is $250,000. The daily operational cost is 2% of the initial investment. The park sells 200 tickets per day for $15 each. How many days will it take for Alex to break even and recover the initial investment?"
+  }
+]

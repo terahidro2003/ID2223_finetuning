@@ -1,0 +1,3 @@
+```json
+{"function": "normalize_data", "columns": ["salary", "experience"], "method": "min-max"}
+```

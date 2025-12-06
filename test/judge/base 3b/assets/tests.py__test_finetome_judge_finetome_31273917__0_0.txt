@@ -1,0 +1,48 @@
+Here's the corrected Python code to estimate the value of π using the Monte Carlo method:
+
+```python
+import random
+import math
+
+def estimate_pi(num_points):
+    # Initialize counters for points within and outside the quarter circle
+    points_inside_circle = 0
+    points_outside_circle = 0
+
+    # Generate random points within the square
+    for _ in range(num_points):
+        # Generate a random point within the square (x, y) between (0, 0) and (1, 1)
+        x = random.uniform(0, 1)
+        y = random.uniform(0, 1)
+
+        # Check if the point is within the quarter circle
+        distance = math.sqrt(x**2 + y**2)
+        if distance <= 1:
+            points_inside_circle += 1
+        else:
+            points_outside_circle += 1
+
+    # Calculate the ratio of points within the quarter circle to the total number of points
+    ratio = points_inside_circle / num_points
+
+    # Estimate the value of π using the ratio
+    estimated_pi = 4 * ratio
+
+    return estimated_pi
+
+# Example usage: estimate the value of π with 1 million points
+num_points = 1000000
+estimated_pi = estimate_pi(num_points)
+print(f"Estimated value of π: {estimated_pi}")
+```
+
+In this corrected code:
+
+1.  We define a function `estimate_pi` that takes the number of points as an argument.
+2.  We initialize counters for points within and outside the quarter circle.
+3.  We generate random points within the square using the `random.uniform` function and check if each point falls within the quarter circle by calculating its distance from the origin.
+4.  We calculate the ratio of points within the quarter circle to the total number of points and use this ratio to estimate the value of π.
+5.  We return the estimated value of π from the function.
+6.  In the example usage, we call the `estimate_pi` function with 1 million points and print the estimated value of π.
+
+This corrected code implements the Monte Carlo method to estimate the value of π and provides a more accurate result.

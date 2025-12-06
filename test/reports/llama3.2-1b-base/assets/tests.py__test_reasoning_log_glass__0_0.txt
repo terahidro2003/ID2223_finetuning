@@ -1,0 +1,7 @@
+To find the answer, let's break it down step by step:
+
+1. We know that a red house is made of red bricks.
+2. We also know that a blue house is made of blue bricks.
+3. Since the color of the house is the same as the material used to build it, we can conclude that the greenhouse is also made of blue bricks.
+
+Therefore, the answer is: A greenhouse is made of blue bricks.

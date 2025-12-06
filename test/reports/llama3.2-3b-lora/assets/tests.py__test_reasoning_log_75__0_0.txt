@@ -1,0 +1,13 @@
+To solve this problem, we need to find the time it takes for the two trains to meet. Since they are heading towards each other, we can add their speeds to find their relative speed.
+
+Relative speed = 50 mph + 50 mph = 100 mph
+
+Now, we can use the formula: Time = Distance / Speed
+
+Time = 100 miles / 100 mph = 1 hour
+
+Since the bird flies at 75 mph, we can use the formula: Distance = Speed * Time
+
+Distance = 75 mph * 1 hour = 75 miles
+
+Final Answer: 75 miles

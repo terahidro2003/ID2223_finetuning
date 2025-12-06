@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "Extract any address components from the user's message, ignoring irrelevant data. Correct any typos you find. Provide them in JSON format following the specified structure. Include all available fields; omit those that are not present:\nOutput Structure:\n{\n  \"house_number\": \"<building number>\",\n  \"street\": \"<street name>\",\n  \"city\": \"<city name>\",\n  \"postal_code\": \"<postal or zip code>\",\n  \"state\": \"<state or province name>\",\n  \"country\": \"<country name>\",\n  \"normalized\": \"<human readable normalized address>\",\n  \"simplified\": \"<simplified format, minimal and easiest information required for geocoding>\"\n}\n-Only reply with the JSON object."
+  },
+  {
+    "role": "user",
+    "content": "Oh, if you're looking for my address, it's 47, Highfield Road, you know, in Birmingham. The postal code is B15 3DP. It's right near the Botanical Gardens, quite a lovely area. Sometimes the post gets a bit confused because there's a Unit 5 in the building, but just make sure they know it's for the main flat."
+  }
+]

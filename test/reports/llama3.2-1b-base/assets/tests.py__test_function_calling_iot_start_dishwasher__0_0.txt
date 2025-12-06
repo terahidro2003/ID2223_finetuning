@@ -1,0 +1,8 @@
+```json
+{
+  "function": "start_dishwasher",
+  "cycle": "quick",
+  "strength": "strong",
+  "cups": 1
+}
+```

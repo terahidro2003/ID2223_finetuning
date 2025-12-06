@@ -1,0 +1,10 @@
+```json
+{
+  "function": "configure_firewall",
+  "rule": "block traffic from 192.168.1.0/24 with priority 10",
+  "action": "block",
+  "priority": 10
+}
+```
+
+This configuration will block all traffic from the 192.168.1.0/24 network with a priority of 10.

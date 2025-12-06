@@ -1,0 +1,40 @@
+**Mathematical Expression Evaluator**
+
+Below is a Python program that evaluates the mathematical expression `(7/2 + 3) * 5` and prints out the result.
+
+```python
+def evaluate_expression():
+    """
+    Evaluates the mathematical expression (7/2 + 3) * 5.
+    """
+    # Define the mathematical expression as a string
+    expression = "(7/2 + 3) * 5"
+
+    # Use the eval function to evaluate the expression
+    # The eval function parses the expression passed to this method and executes Python expression(s) passed as a string.
+    result = eval(expression)
+
+    # Print out the result
+    print("Result:", result)
+
+if __name__ == "__main__":
+    evaluate_expression()
+```
+
+**Explanation**
+
+The `evaluate_expression` function defines the mathematical expression as a string and then uses the `eval` function to evaluate it. The `eval` function parses the expression and executes it, following the order of operations (PEMDAS/BODMAS).
+
+**Order of Operations**
+
+In this case, the order of operations is evaluated as follows:
+
+1. Division: 7/2 = 3.5
+2. Addition: 3.5 + 3 = 6.5
+3. Multiplication: 6.5 * 5 = 32.5
+
+Therefore, the result of the expression `(7/2 + 3) * 5` is 32.5.
+
+**Note**
+
+Using `eval` can pose a security risk if you're planning to execute user-supplied input, as it can evaluate any Python expression. In this case, we're assuming the input is a simple mathematical expression.

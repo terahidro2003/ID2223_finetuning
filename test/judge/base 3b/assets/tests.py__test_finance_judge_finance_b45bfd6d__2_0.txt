@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "In a regular dodecahedron, determine the number of ways to choose three edges such that no two of them share a common vertex."
+  }
+]
