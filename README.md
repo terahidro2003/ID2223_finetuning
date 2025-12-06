@@ -4,6 +4,9 @@ This project fine-tunes Llama 3.2B 4-bit instruct models on two datasets (FineTo
 > The resulting FineTome is an ultra-high quality dataset that includes conversations, reasoning problems, function calling, and more.
 were not strongly supported by our evaluation, as we had assumed it would be much better at those tasks.
 
+## User Interface
+UI of the chatbot for communication with the fine-tuned LLM's can be found [here](https://huggingface.co/spaces/fattha-kth/id2223-finetuning)
+
 ## Datasets
 
 - **[FineTome-100k](https://huggingface.co/datasets/mlabonne/FineTome-100k)**: Curated dataset with conversations, reasoning problems, and function calling examples
@@ -12,12 +15,11 @@ were not strongly supported by our evaluation, as we had assumed it would be muc
 ## Models Evaluated
 
 ### Fine-Tuned Models
-- Unsloth Llama 3.2B 4-bit instruct + LoRA adapters (FineTome)
-- Unsloth Llama 3.2B 4-bit instruct + RS-LoRA adapters (FineTome)
-- Unsloth Llama 3.2B 4-bit instruct + LoRA adapters (Finance)
+- [Unsloth Llama 3.2B 4-bit instruct + LoRA adapters (FineTome)](https://huggingface.co/hellstone1918/Llama-3.2-3B-basic-lora-model)
+- [Unsloth Llama 3.2B 4-bit instruct + RS-LoRA adapters (FineTome)](https://huggingface.co/hellstone1918/Llama-3.2-3B-rslora-model)
+- [Unsloth Llama 3.2B 4-bit instruct + LoRA adapters (Finance)](https://huggingface.co/hellstone1918/Llama-3.2-3B-finance-lora-model-v6)
 
-### Baseline Models
-- Llama 1B base model
+### Baseline Model
 - Llama 3B base model
 
 ## Evaluation Framework
