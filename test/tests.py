@@ -4,6 +4,7 @@ Tests reasoning and function calling capabilities deterministically.
 """
 
 import json
+from pathlib import Path
 import re
 import pytest
 from pytest_html import extras as extras_html
@@ -29,6 +30,10 @@ MODELS = {
         "url": "https://akeelaf-2022--llama-3-2-3b-lora-serve.modal.run/v1/",
         "name": "hellstone1918/Llama-3.2-3B-basic-lora-model",
     },
+    "Llama 3.2 3B rs lora": {
+        "url": "https://akeelaf-2022--llama-3-2-3b-rs-lora-serve.modal.run/v1/",
+        "name": "hellstone1918/Llama-3.2-3B-rslora-model",
+    },
     "Llama 3.2 3B lora finance": {
         "url": "https://akeelaf-2022--llama-3-2-3b-lora-finance-serve.modal.run/v1/",
         "name": "hellstone1918/Llama-3.2-3B-finance-lora-model-v6",
@@ -41,10 +46,10 @@ MODELS = {
 
 
 CLIENT = OpenAI(
-    base_url=MODELS['Llama 3.2 3B base']['url'],
+    base_url=MODELS['Llama 3.2 1B base']['url'],
     api_key="token-not-needed-for-local-vllm" 
 )
-MODEL_NAME = MODELS['Llama 3.2 3B base']['name'] # The client often auto-detects, but good to specify
+MODEL_NAME = MODELS['Llama 3.2 1B base']['name'] # The client often auto-detects, but good to specify
 IS_STREAMING = False
 
 # Prometheus Judge Client (separate from main model)
@@ -653,5 +658,7 @@ if __name__ == "__main__":
     pytest.main([__file__, "-v", "--html=report.html", "--self-contained-html"])
 
 # Run 
-# uv run pytest tests.py -n 16 -v --html=reports/llama3.2-3b-base/report.html
+# uv run pytest tests.py -n 16 -v --html=reports/llama3.2-3b-lora-finance/report.html
 # add -n <number of parallel processes> if you'd like
+# Only judge
+# uv run pytest tests.py -v -m judge --html=judge/llama3.2-1b-base/report.html
