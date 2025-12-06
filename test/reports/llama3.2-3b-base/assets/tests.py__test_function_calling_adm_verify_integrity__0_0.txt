@@ -1,0 +1,1 @@
+{"function": "verify_integrity", "backup_id": "backup_20241129", "checksum_type": "SHA256"}

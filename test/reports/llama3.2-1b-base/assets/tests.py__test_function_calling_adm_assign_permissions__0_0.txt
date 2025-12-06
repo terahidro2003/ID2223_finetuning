@@ -1,0 +1,7 @@
+```json
+{
+  "function": "assign_permissions",
+  "user": "alice",
+  "permissions": ["read", "write"]
+}
+```

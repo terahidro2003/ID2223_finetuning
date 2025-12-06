@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "What are the next steps in the EU-US free trade negotiations, as outlined in the article, and what are the prospects for reaching a broad agreement by the end of the year?"
+  }
+]

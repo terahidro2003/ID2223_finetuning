@@ -1,0 +1,13 @@
+```python
+from collections import Counter
+
+def ngram_frequency(words, n):
+    ngrams = []
+    for i in range(len(words) - n + 1):
+        ngrams.append(" ".join(words[i:i+n]))
+    freq_counter = Counter(ngrams)
+
+    return freq_counter
+```
+
+The `ngram_frequency` function takes a list of words and an integer `n` representing the size of each n-gram. It uses a sliding window to create all possible n-grams of size `n` from the words. These n-grams are added to a `Counter` object, which keeps track of the frequencies of each unique n-gram. Finally, the function returns the `Counter` object containing the frequencies of each n-gram.

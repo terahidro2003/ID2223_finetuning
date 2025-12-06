@@ -1,0 +1,10 @@
+```json
+{
+  "function": "create_backup",
+  "source": "database-prod",
+  "destination": "s3://backups/",
+  "type": "database"
+}
+```
+
+This backup will be created in the specified S3 bucket. The backup will include the database-prod database.

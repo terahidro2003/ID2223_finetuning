@@ -1,0 +1,15 @@
+{
+  "date": [
+    "Jun 12, 2007",
+    "20.01.1977"
+  ],
+  "customer_id": [
+    "X-869441-W"
+  ],
+  "employee_id": [
+    "EMP759818"
+  ],
+  "email": [
+    "kwheeler@example.com"
+  ]
+}

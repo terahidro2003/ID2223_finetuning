@@ -1,0 +1,15 @@
+To find the angle between the hour and minute hands, we need to calculate the positions of both hands in terms of degrees from the 12 o'clock position.
+
+The hour hand moves 360 degrees in 12 hours, which is equivalent to 30 degrees per hour. Since it's 3:15, the hour hand has moved 3 hours and 15 minutes from the 12 o'clock position. 
+
+15 minutes is equivalent to 15/60 = 0.25 hours. 
+So, the hour hand has moved 3 + (0.25 * 30) = 3 + 7.5 = 10.5 degrees from the 12 o'clock position.
+
+The minute hand moves 360 degrees in 60 minutes, which is equivalent to 6 degrees per minute. 
+At 15 minutes, the minute hand has moved 15 * 6 = 90 degrees from the 12 o'clock position.
+
+Now, we need to find the angle between the hour and minute hands. Since the hour hand is at 10.5 degrees and the minute hand is at 90 degrees, we can find the angle between them by subtracting the smaller angle from the larger angle.
+
+Angle = 90 - 10.5 = 79.5 degrees.
+
+Final Answer: 79.5

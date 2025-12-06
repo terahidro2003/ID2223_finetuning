@@ -1,0 +1,52 @@
+[Reasoning]
+To create such a function, we can use Python's built-in string escaping methods. We'll define a function that takes an attribute value as a string, escapes any HTML characters in it, and then wraps it in a string that can be used as an HTML attribute.
+
+[Implementation]
+```python
+import html
+
+def escape_attribute(attribute_value):
+    """
+    Escapes any HTML characters in the given attribute value and wraps it in a string 
+    that can be used as an HTML attribute.
+
+    Args:
+        attribute_value (str): The value of the HTML attribute to be escaped.
+
+    Returns:
+        str: The escaped attribute value wrapped in a string that can be used as an HTML attribute.
+    """
+    # Escape any HTML characters in the attribute value
+    escaped_value = html.escape(attribute_value)
+    
+    # Wrap the escaped value in a string that can be used as an HTML attribute
+    attribute_string = f'"{escaped_value}"'
+    
+    return attribute_string
+```
+
+[Explanation]
+This implementation uses Python's built-in `html.escape()` function to escape any HTML characters in the attribute value. It then wraps the escaped value in a string that can be used as an HTML attribute, which is a string that starts and ends with a double quote (`"`) to prevent the value from being interpreted as HTML code.
+
+[Tests]
+You can write the following test cases to ensure it works correctly:
+
+```python
+import unittest
+
+class TestEscapeAttribute(unittest.TestCase):
+    def test_escape_attribute(self):
+        attribute_value = "<script>alert('Hello World')</script>"
+        expected_output = ' &quot;<script>alert( &quot;Hello World&quot; )&quot; &quot;'  # using ' &quot;' to escape the ' &quot;' in the expected output
+        self.assertEqual(escape_attribute(attribute_value), expected_output)
+
+    def test_escape_attribute_no_html(self):
+        attribute_value = "Hello World"
+        expected_output = ' &quot;Hello World&quot; '
+        self.assertEqual(escape_attribute(attribute_value), expected_output)
+
+if __name__ == '__main__':
+    unittest.main()
+```
+
+These test cases cover both cases where the attribute value contains HTML characters and where it does not. They ensure that the `escape_attribute` function correctly escapes any HTML characters in the attribute value and wraps it in a string that can be used as an HTML attribute.

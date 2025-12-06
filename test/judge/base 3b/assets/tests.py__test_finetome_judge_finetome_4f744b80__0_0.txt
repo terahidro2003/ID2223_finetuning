@@ -1,0 +1,60 @@
+Here is the Python solution to the task:
+
+```python
+import sys
+
+def calculate_moves(n, sequence):
+    """
+    Calculates the minimum number of moves needed to make the first k elements of the original sequence equal to zero.
+
+    Args:
+    n (int): The number of elements in the sequence.
+    sequence (list): The initial sequence of non-negative integers.
+
+    Returns:
+    list: A list of the minimum number of moves needed to make the first k elements of the original sequence equal to zero.
+    """
+
+    # Initialize a list to store the minimum number of moves for each prefix of the sequence
+    moves = [0] * n
+
+    # Iterate over each element in the sequence
+    for i in range(1, n):
+        # Initialize the minimum number of moves for the current prefix
+        min_moves = float('inf')
+
+        # Iterate over each prefix of the sequence
+        for j in range(i):
+            # Calculate the number of moves needed to make the first j elements of the sequence equal to zero
+            current_moves = sum(sequence[k] for k in range(j, i + 1))
+
+            # Update the minimum number of moves for the current prefix
+            min_moves = min(min_moves, current_moves)
+
+        # Update the minimum number of moves for the current prefix
+        moves[i] = min_moves
+
+    # Return the list of the minimum number of moves needed to make the first k elements of the original sequence equal to zero
+    return moves
+
+def main():
+    # Read the input
+    n = int(sys.stdin.readline())
+    sequence = list(map(int, sys.stdin.readline().split()))
+
+    # Calculate the minimum number of moves
+    moves = calculate_moves(n, sequence)
+
+    # Print the result
+    for i in range(1, n):
+        print(moves[i])
+
+if __name__ == "__main__":
+    main()
+```
+
+This code defines a function `calculate_moves` that calculates the minimum number of moves needed to make the first k elements of the original sequence equal to zero. The function uses dynamic programming to compute the minimum number of moves for each prefix of the sequence.
+
+The `main` function reads the input, calls the `calculate_moves` function to calculate the minimum number of moves, and prints the result.
+
+You can run this code by saving it to a file (e.g., `moves.py`) and running it with Python (e.g., `python moves.py`). The input should be provided through standard input, and the output should be printed to standard output.

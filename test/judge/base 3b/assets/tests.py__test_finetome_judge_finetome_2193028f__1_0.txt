@@ -1,0 +1,18 @@
+To graph the equation #(x^2 / 4) - (y^2 / 9) =1#, we can use the following steps:
+
+1. Identify the type of conic section:
+The equation is in the standard form of a hyperbola, which is #(x^2 / a^2) - (y^2 / b^2) = 1#. In this case, a = 2 and b = 3.
+
+2. Find the center:
+The center of the hyperbola is at (0, 0).
+
+3. Find the vertices:
+The vertices are located on the transverse axis, which is the x-axis in this case. The distance from the center to each vertex is a, so the vertices are at (±2, 0).
+
+4. Find the asymptotes:
+The asymptotes of the hyperbola are given by the equations y = ±(b/a)x. In this case, b/a = 3/2, so the asymptotes are y = ±(3/2)x.
+
+5. Sketch the graph:
+Using the information we have gathered, we can sketch the graph of the hyperbola. The hyperbola will open East-West, and the vertices and asymptotes will help us to draw the shape accurately.
+####
+This hyperbola will open East-West and be centered at the origin. The vertices are at (±2, 0) and the asymptotes have slopes of ±3/2.

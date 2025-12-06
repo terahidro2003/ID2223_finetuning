@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "Write Python code to solve the task:\nXavier asks his friend to perform a particular task.The task is to find out the ASCII value of each character of a given STRING and then add them up to find the weight of the given string as 'W',now after finding out the weight his task is to divide the weight of string W with the length of string 'L'such that the final answer is 'F' rounded of to previous integer value in case of float or double value.\n\nNow Xavier introduces a twist in the tail the twist seems to be as follows:-\n\n1.If 'F' is odd then to needs to find out reverse of the given string.For eg:- if 'F'\n  is 109 and input string is xyzabc the output must be cbazyx.\n\n2.If 'F' is even then print the original string.\n\nINPUT\n\nFirst line inputs the no of test cases T.\n\nSecond line inputs the string on which the task is to be performed.\n\nOUTPUT\n\nT no of outputs according to the above task.\n\nConstraints\n\nT \u2264 100.\nL \u2264 100.\n\nSAMPLE INPUT\n1\r\nxyzabc\n\nSAMPLE OUTPUT\ncbazyx\n\nExplanation\n\nThe input string is \"xyzabc\"\nthen,\n\nThe ASCII value of x is 120. \n\nThe ASCII value of y is 121.\n\nThe ASCII value of z is 122.\n\nThe ASCII value of a is 97.\n\nThe ASCII value of b is 98.\n\nThe ASCII value of c is 99.\n\nW=657.\n\nF=109.\n\nSo output=\"cbazyx\"."
+  }
+]

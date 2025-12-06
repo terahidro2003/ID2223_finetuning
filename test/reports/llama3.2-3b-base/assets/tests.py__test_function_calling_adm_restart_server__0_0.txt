@@ -1,0 +1,1 @@
+{"function": "restart_server", "server_id": "srv-prod-01", "graceful": true}

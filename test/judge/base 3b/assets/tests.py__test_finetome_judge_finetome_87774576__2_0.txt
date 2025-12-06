@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "How would the characteristics of dark photons differ from that of regular photons, and what experimental or observational measurements can be used to detect their presence within a dark matter environment?"
+  }
+]

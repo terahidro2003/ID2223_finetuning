@@ -1,0 +1,13 @@
+To determine the system being used by the neighbor's house lights, let's consider the possible options:
+
+1. **Timed Lighting System**: This system would involve a timer that controls the lighting schedule. However, the lights turning on and off at different times each evening doesn't seem to fit with a traditional timed lighting system.
+
+2. **Smart Home System**: This system would involve a smart home hub, such as Amazon Alexa or Google Home, that can be controlled remotely. The lights could be programmed to turn on and off at different times, but this would require the neighbor to have a smart home system and a compatible device.
+
+3. **Vacation Mode or Automated Lighting System**: Some smart home systems have a vacation mode or automated lighting system that can be programmed to turn lights on and off at different times to create the illusion of occupancy.
+
+4. **Occupancy Sensors**: These sensors can detect movement and adjust lighting accordingly. However, this system would require the neighbor to have occupancy sensors installed in the house.
+
+Considering these options, the most likely explanation is that the neighbor's house lights are using a **Vacation Mode or Automated Lighting System**. This system would allow the neighbor to create the illusion of occupancy while they're away on vacation.
+
+Final Answer: Vacation Mode or Automated Lighting System.

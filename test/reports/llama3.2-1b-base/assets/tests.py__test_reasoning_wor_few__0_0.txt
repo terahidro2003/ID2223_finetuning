@@ -1,0 +1,7 @@
+To solve this, let's analyze the given letters: W-I-R-E.
+
+1. We start with the letters W-I-R-E.
+2. Adding two letters to the beginning of the word, we get W-I-R-E-T.
+3. Adding two letters to the end of the word, we get W-I-R-E-T-O.
+
+Since the word is "WIRE" and we added two letters to the beginning and the end, the correct answer is: W-I-R-E-T-O.

@@ -1,0 +1,26 @@
+
+1. The problem is asking to find the minimum number of steps to make two strings anagrams of each other. An anagram of a string is a string that contains the same characters with a different (or the same) ordering.
+2. To solve this problem, we need to count the frequency of each character in both strings.
+3. We can use a dictionary to store the frequency of each character in the first string. For each character in the first string, we increment its count in the dictionary.
+4. Then, we iterate over the second string. For each character in the second string, we decrement its count in the dictionary.
+5. If the character is not in the dictionary or its count is already zero, it means that this character is extra in the second string and we need to append it to the first string. So, we increment the number of steps.
+6. If the character is in the dictionary and its count is not zero, it means that this character is common in both strings and we don't need to append it to the first string. So, we just decrement its count in the dictionary.
+7. After iterating over both strings, the number of steps is the minimum number of steps to make the two strings anagrams of each other.
+8. The time complexity of this solution is O(n), where n is the length of the strings, because we iterate over each string once. The space complexity is O(1), because the size of the dictionary is constant (26 for the English alphabet).
+
+
+
+def count_vowel_substrings(word: str) -> int:
+    count = 0
+    n = len(word)
+    vowels = set()
+
+    for i in range(n):
+        if word[i] in "aeiou":
+            vowels.clear()
+            for j in range(i, n):
+                if word[j] in "aeiou":
+                    vowels.add(word[j])
+                if len(vowels) == 5:
+                    count += 1
+    return count

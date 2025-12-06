@@ -1,0 +1,16 @@
+The elasticity of demand for credit with respect to interest rates measures how sensitive credit demand is to changes in interest rates. Studies have provided various estimates:
+
+- Gross and Souleles (2001) examined credit cards and found that a 1% increase in interest rates leads to a decrease in demand for credit by approximately 1.3%.
+- Follain and Dunsky (1997) focused on mortgages and reported that the elasticity could range from -1.5 to -3.5, indicating a more significant decline in credit demand.
+
+Two aspects to consider are:
+1. Shifting borrowing between sources: An increase in one borrowing rate may cause borrowers to switch to other sources, potentially overestimating the overall debt elasticity.
+2. Spending adjustments: Higher interest rates can lead to reduced spending and a shift towards cash payments, with wealthier households having the flexibility to spend less or borrow less, while poorer households may only reduce spending.
+
+Some studies that explore these effects further include:
+- Karlan, D., & Zinman, J. (2009) investigate information asymmetries in a consumer credit field experiment, detecting moral hazard and hidden information problems.
+- Mandell, L. (1971) examines the effect of the Truth-in-Lending Law on consumers' interest rate awareness, analyzing subgroups based on personal characteristics.
+- Calem, P. S., & Mester, L. J. (1995) provide empirical evidence on the stickiness of credit card interest rates, attributing it to search and switch costs for consumers and adverse selection for firms.
+- Ausubel, L. M. (1991) discusses the lack of competition in the credit card market, offering theoretical insights and counterfactual calculations.
+
+These studies contribute to understanding the elasticity of credit demand and its impact on different segments of the population.

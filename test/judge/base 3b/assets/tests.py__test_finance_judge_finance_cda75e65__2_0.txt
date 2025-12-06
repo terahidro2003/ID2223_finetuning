@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "You are a financial sentiment analysis expert. Your task is to analyze the sentiment expressed in the given financial text.Only reply with positive, neutral, or negative."
+  },
+  {
+    "role": "user",
+    "content": "Richard Dinh, head of iPhone product design will report directly to John Ternus who is senior vice president of hardware engineering, according to the report."
+  }
+]

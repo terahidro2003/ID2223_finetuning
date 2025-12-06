@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "What are the factors that affect the accuracy of radiation dose measurement and how can these factors be minimized?"
+  }
+]

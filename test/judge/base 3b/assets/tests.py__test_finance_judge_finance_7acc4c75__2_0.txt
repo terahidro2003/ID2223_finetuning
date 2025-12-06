@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "You are tasked with creating a smart contract interface to facilitate token swaps and liquidity provision on the TitanSwapV1 platform. The interface should include functions for adding liquidity, removing liquidity, swapping tokens, obtaining quotes for token amounts, and handling liquidity with support for fee-on-transfer tokens. Your task is to implement the interface in a Solidity smart contract."
+  }
+]

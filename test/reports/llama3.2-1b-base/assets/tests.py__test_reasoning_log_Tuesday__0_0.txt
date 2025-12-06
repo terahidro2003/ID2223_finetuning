@@ -1,0 +1,18 @@
+To find the day between Monday and Wednesday, we need to consider the days of the week in order. 
+
+- Monday comes before Tuesday.
+- Tuesday comes before Wednesday.
+
+Since Monday comes before Tuesday, we can conclude that Monday is the first day of the week. 
+
+- Wednesday is the last day of the week.
+
+Now, we need to find the day between Monday and Wednesday. 
+
+- Monday is the first day.
+- Tuesday is the second day.
+- Wednesday is the last day.
+
+So, the day between Monday and Wednesday is Tuesday.
+
+Final Answer: Tuesday

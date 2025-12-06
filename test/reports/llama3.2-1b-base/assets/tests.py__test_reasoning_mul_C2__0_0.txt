@@ -1,0 +1,8 @@
+To find 15% of 200, we need to first find 1% of 200 and then multiply it by 15.
+
+1% of 200 = 200 * 0.01 = 2
+
+Now, multiply 2 by 15 to find 15% of 200:
+15% of 200 = 2 * 15 = 30
+
+Final Answer: 30

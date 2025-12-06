@@ -1,0 +1,7 @@
+To determine the position you are in, let's analyze the situation step by step:
+
+1. You passed the person in last place.
+2. This means you are ahead of the person in last place.
+3. Since the person in last place is behind you, you are now ahead of them.
+
+Therefore, the situation described by the question is possible.

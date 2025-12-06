@@ -1,0 +1,22 @@
+def minSteps(s, t):
+    def count_chars(s):
+        char_count = {}
+        for char in s:
+            char_count[char] = char_count.get(char, 0) + 1
+        return char_count
+
+    s_count = count_chars(s)
+    t_count = count_chars(t)
+
+    steps = 0
+    for char in s_count:
+        if char in t_count:
+            steps += min(s_count[char], t_count[char])
+        else:
+            steps += s_count[char]
+
+    for char in t_count:
+        if char not in s_count:
+            steps += t_count[char]
+
+    return steps

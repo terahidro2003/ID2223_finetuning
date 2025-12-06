@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "What are the key differences between Hall effect sensors and Current Transformers in terms of their functionality as current sensors?"
+  }
+]

@@ -1,0 +1,1 @@
+{"function": "get_stock_price", "symbol": "AAPL", "exchange": "NASDAQ"}

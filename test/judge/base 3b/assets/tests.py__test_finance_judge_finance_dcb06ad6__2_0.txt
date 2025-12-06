@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "Find all PII entities in the text and present them in JSON format. Exclude any that are not mentioned."
+  },
+  {
+    "role": "user",
+    "content": "Project Charter: Software Integration Initiative, Employee ID Ij-55256, SSN 832-50-9726, DOB 1941-07-18, MRN MED44678276."
+  }
+]

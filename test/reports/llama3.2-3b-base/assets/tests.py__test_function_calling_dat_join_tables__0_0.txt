@@ -1,0 +1,1 @@
+{"function": "join_tables", "left_table": "customers", "right_table": "orders", "join_key": "customer_id"}

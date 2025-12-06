@@ -1,0 +1,12 @@
+Here is the extracted personally identifiable information in JSON format:
+
+```json
+{
+  "customer_id": "X-869441-W",
+  "employee_id": "EMP759818",
+  "customer_email": "kwheeler@example.com",
+  "employee_date_of_birth": "20.01.1977"
+}
+```
+
+Note: I did not include the date in the JSON output as it is not a personally identifiable piece of information. The date of birth was provided by the employee, not the customer, and was corrected upon review.

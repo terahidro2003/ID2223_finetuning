@@ -1,0 +1,83 @@
+**Mathematical Expression Evaluator**
+
+Here's a Python program that evaluates the mathematical expression `(7/2 + 3) * 5` and prints the result. This program uses the `eval()` function to evaluate the expression.
+
+```python
+def evaluate_expression():
+    """
+    Evaluates the mathematical expression (7/2 + 3) * 5 and prints the result.
+    """
+    expression = "(7/2 + 3) * 5"
+    try:
+        # Evaluate the expression using eval()
+        result = eval(expression)
+        print(f"The result of the expression is: {result}")
+    except ZeroDivisionError:
+        print("Error: Division by zero is not allowed.")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+# Call the function to evaluate the expression
+evaluate_expression()
+```
+
+However, the `eval()` function is not recommended for user-supplied input, as it can pose a security risk. If you're dealing with user-supplied input, consider using a safer alternative like `ast` or `numexpr`.
+
+**Using the `ast` Module**
+
+Here's a version of the program that uses the `ast` module to evaluate the expression.
+
+```python
+import ast
+
+def evaluate_expression():
+    """
+    Evaluates the mathematical expression (7/2 + 3) * 5 and prints the result.
+    """
+    expression = "(7/2 + 3) * 5"
+    try:
+        # Parse the expression into an abstract syntax tree
+        tree = ast.parse(expression)
+        
+        # Evaluate the expression using the abstract syntax tree
+        result = ast.literal_eval(str(tree))
+        print(f"The result of the expression is: {result}")
+    except ZeroDivisionError:
+        print("Error: Division by zero is not allowed.")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+# Call the function to evaluate the expression
+evaluate_expression()
+```
+
+**Using the `numexpr` Library**
+
+Here's a version of the program that uses the `numexpr` library to evaluate the expression.
+
+```python
+import numexpr as ne
+
+def evaluate_expression():
+    """
+    Evaluates the mathematical expression (7/2 + 3) * 5 and prints the result.
+    """
+    expression = "(7/2 + 3) * 5"
+    try:
+        # Evaluate the expression using numexpr
+        result = ne.evaluate(expression)
+        print(f"The result of the expression is: {result}")
+    except ZeroDivisionError:
+        print("Error: Division by zero is not allowed.")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+# Call the function to evaluate the expression
+evaluate_expression()
+```
+
+Note that the `numexpr` library is not included in Python's standard library, so you'll need to install it using pip:
+
+```bash
+pip install numexpr
+```

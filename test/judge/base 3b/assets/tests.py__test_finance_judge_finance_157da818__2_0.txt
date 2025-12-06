@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "What does the report say?"
+  }
+]

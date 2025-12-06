@@ -1,0 +1,9 @@
+```json
+{
+  "function": "schedule_backup",
+  "resource": "customer-data",
+  "frequency": "daily",
+  "retention": 30,
+  "target": "customer-data"
+}
+```

@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "Explain in detail the social, cognitive, economic and ethical costs associated with adopting automation technologies for businesses and organizations, citing research and real-world examples to highlight potential risks, drawbacks and long-term consequences. Consider impacts on workers, communities, marginalized groups and future generations."
+  }
+]

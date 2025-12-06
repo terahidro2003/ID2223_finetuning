@@ -1,0 +1,26 @@
+To achieve this, you can use a for loop in Python. The for loop allows you to iterate over each element in the given list and perform a specific action on each element. In this case, we want to print each element in a new line.
+
+Here's an example code snippet that demonstrates the solution in Python:
+
+```python
+# Define a list
+my_list = [1, 2, 3, 4]
+
+# Iterate over each element in the list
+for item in my_list:
+    # Print each element in a new line
+    print(item)
+```
+
+In this example, we have a list called `my_list` containing elements [1, 2, 3, 4]. The for loop iterates over each element in the list, and the `item` variable represents the current element being iterated. Inside the loop, we use the `print()` function to display each element in a new line.
+
+By running this script, you will see the output printed as follows:
+
+```
+1
+2
+3
+4
+```
+
+Feel free to replace the `my_list` variable with your desired list to print its elements in a new line.

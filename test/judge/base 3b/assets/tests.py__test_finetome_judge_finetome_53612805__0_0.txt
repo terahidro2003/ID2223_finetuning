@@ -1,0 +1,69 @@
+Here is a simple Python program that calculates the area of a circle:
+
+```python
+import math
+
+def calculate_circle_area(radius):
+    """
+    Calculates the area of a circle given its radius.
+
+    Args:
+        radius (float): The radius of the circle.
+
+    Returns:
+        float: The area of the circle.
+    """
+    area = math.pi * (radius ** 2)
+    return area
+
+# Define the radius
+radius = 5
+
+# Calculate the area
+area = calculate_circle_area(radius)
+
+# Print the result
+print(f"The area of the circle with radius {radius} is {area:.2f} square units.")
+```
+
+In this program, we use the formula for the area of a circle (A = πr²) to calculate the area, where A is the area and r is the radius. The `math.pi` constant is used to represent π, and the `** 2` operator is used to square the radius. The result is then printed to the console.
+
+Note that the `:.2f` in the print statement is used to format the output to two decimal places.
+
+Alternatively, you can also use a function from the math library that calculates the area directly:
+
+```python
+import math
+
+def calculate_circle_area(radius):
+    """
+    Calculates the area of a circle given its radius.
+
+    Args:
+        radius (float): The radius of the circle.
+
+    Returns:
+        float: The area of the circle.
+    """
+    area = math.pi * (radius ** 2)
+    return area
+
+# Define the radius
+radius = 5
+
+# Calculate the area
+area = calculate_circle_area(radius)
+
+# Print the result
+print(f"The area of the circle with radius {radius} is {area:.2f} square units.")
+```
+
+Or, you can use a one-liner solution:
+
+```python
+import math
+
+radius = 5
+area = math.pi * (radius ** 2)
+print(f"The area of the circle with radius {radius} is {area:.2f} square units.")
+```

@@ -1,0 +1,1 @@
+{"function": "configure_firewall", "rule": "192.168.1.0/24", "action": "block", "priority": 10}

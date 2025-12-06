@@ -1,0 +1,5 @@
+A pentagonal prism has two pentagonal bases and five rectangular faces. Each pentagonal base has 5 vertices. Since there are two bases, the total number of vertices for the bases is 5 + 5 = 10. 
+
+However, each vertex on the base is connected to a corresponding vertex on the other base by an edge (forming the rectangular faces). This means that the vertices on the top base correspond to the vertices on the bottom base, and no additional vertices are added.
+
+Therefore, the total number of vertices for a pentagonal prism is 10.

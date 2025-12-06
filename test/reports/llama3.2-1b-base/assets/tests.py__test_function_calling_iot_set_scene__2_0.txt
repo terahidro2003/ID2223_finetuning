@@ -1,0 +1,3 @@
+⚠ PARTIAL PASS (2 value errors):
+  scene_name: expected=movie, got=movie_scene
+  rooms: expected=['bedroom', 'living room'], got=['living_room', 'bedroom']

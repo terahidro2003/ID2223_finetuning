@@ -1,0 +1,51 @@
+Here is a Python solution that uses a depth-first search (DFS) approach to calculate the number of root-to-leaf paths and their lengths in a binary tree:
+
+```python
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+def pathCounts(root):
+    def dfs(node, path_len):
+        if not node:
+            return 0, path_len
+        paths, path_len = dfs(node.left, path_len + 1), path_len + 1
+        paths += dfs(node.right, path_len + 1)
+        if not node.left and not node.right:
+            return 1, path_len
+        return paths, path_len
+
+    paths, path_len = dfs(root, 1)
+    output = []
+    for i in range(path_len, 0, -1):
+        paths_i, _ = dfs(root, i)
+        output.append(f'{paths_i} $')
+
+    return output
+
+# Example usage
+# Construct the binary tree for example 1
+root1 = TreeNode(3)
+root1.left = TreeNode(2)
+root1.right = TreeNode(4)
+
+# Construct the binary tree for example 2
+root2 = TreeNode(10)
+root2.left = TreeNode(20)
+root2.right = TreeNode(30)
+root2.left.left = TreeNode(40)
+root2.left.right = TreeNode(60)
+
+print(pathCounts(root1))  # Output: ['2 $', '2 $']
+print(pathCounts(root2))  # Output: ['1 $', '2 $', '2 $']
+```
+
+In this code:
+
+*   We define a `TreeNode` class to represent a node in the binary tree.
+*   The `pathCounts` function takes the root of the binary tree as input and returns a list of strings, where each string represents the number of root-to-leaf paths of a certain length, followed by "$".
+*   The `dfs` function is a helper function that performs a depth-first search on the binary tree, starting from the given node and recursively exploring its left and right subtrees. It returns the number of root-to-leaf paths and the path length.
+*   In the `pathCounts` function, we call the `dfs` function starting from the root node with an initial path length of 1.
+*   We then iterate over the possible path lengths in reverse order, calling the `dfs` function for each length and appending the result to the output list.

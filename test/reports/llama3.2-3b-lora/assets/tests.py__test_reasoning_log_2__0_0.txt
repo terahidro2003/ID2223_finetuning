@@ -1,0 +1,5 @@
+You start with 3 apples, and then you take away 2. To find out how many apples you have left, you subtract 2 from 3.
+
+3 - 2 = 1
+
+So, you have 1 apple left.

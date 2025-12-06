@@ -1,0 +1,7 @@
+```json
+{
+  "function": "detect_seasonality",
+  "data": "revenue_data",
+  "period": 12
+}
+```

@@ -1,0 +1,29 @@
+You can achieve this by implementing the following Java code:
+
+```java
+public class CountVowels { 
+
+    public static int countVowels(String inputString) 
+    { 
+        int count = 0; 
+        char ch; 
+        for (int i = 0; i < inputString.length(); i++)  
+        { 
+            ch = inputString.charAt(i); 
+            if (ch == 'a' ||  ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') 
+                count++; 
+        } 
+        return count; 
+    } 
+
+    public static void main(String[] args)  
+    { 
+        String inputString = "This sentence contains five vowels"; 
+        System.out.println("Number of vowels in the given sentence: " + countVowels(inputString)); 
+    } 
+}
+```
+
+In this code, the `countVowels` method takes an input string as a parameter and iterates through each character of the string using a for loop. It checks if each character is a vowel ('a', 'e', 'i', 'o', 'u'), and if so, increments the `count` variable. Finally, it returns the total count of vowels in the input string.
+
+The `main` method sets the `inputString` variable to the desired sentence and calls the `countVowels` method with this string as an argument. The result is then printed to the console, displaying the number of vowels in the given sentence.

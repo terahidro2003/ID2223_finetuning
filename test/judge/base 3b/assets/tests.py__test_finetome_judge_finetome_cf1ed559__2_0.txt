@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "Why do arteries appear red and veins appear blue when observed through the skin?"
+  }
+]

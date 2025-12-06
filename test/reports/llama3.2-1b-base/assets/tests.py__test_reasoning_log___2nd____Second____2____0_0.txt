@@ -1,0 +1,7 @@
+To determine the position you are in, let's break down the steps:
+
+1. The person in 2nd place is ahead of you.
+2. You overtake the person in 2nd place.
+3. Since you overtook the person in 2nd place, you are now ahead of them.
+
+So, after overtaking the person in 2nd place, you are now in 1st place.

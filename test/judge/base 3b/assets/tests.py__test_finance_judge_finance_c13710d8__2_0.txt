@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "How does the PoFC consensus mechanism used in the MOS project improve upon traditional proof-of-work or proof-of-stake mechanisms in terms of flexibility and expansion?"
+  }
+]

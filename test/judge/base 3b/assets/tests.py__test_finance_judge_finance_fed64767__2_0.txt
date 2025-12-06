@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "What is the estimated elasticity of demand for credit with respect to interest rates, and how do changes in interest rates affect credit demand? Additionally, are there any studies that explore these effects on different sub-populations?"
+  }
+]

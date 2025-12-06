@@ -1,0 +1,19 @@
+Yes
+
+To solve this problem, we can use a process of elimination. We know that we can flip switches but only once, so we can check the room once and figure out which switch controls which bulb.
+
+Let's say switch 1 controls bulb A, switch 2 controls bulb B, and switch 3 controls bulb C.
+
+We can start by checking the room once. If we flip switch 1, it will turn on bulb A. If we flip switch 2, it will turn on bulb B. If we flip switch 3, it will turn on bulb C.
+
+Now, let's say we flip switch 1. We know that switch 1 controls bulb A, so we can flip switch 2 and switch 3 to turn on bulbs B and C.
+
+We can then flip switch 1 again. We know that switch 1 controls bulb A, so we can flip switch 2 and switch 3 to turn on bulbs B and C.
+
+Now, let's say we flip switch 2. We know that switch 2 controls bulb B, so we can flip switch 1 and switch 3 to turn on bulbs A and C.
+
+We can then flip switch 2 again. We know that switch 2 controls bulb B, so we can flip switch 1 and switch 3 to turn on bulbs A and C.
+
+Now, let's say we flip switch 3. We know that switch 3 controls bulb C, so we can flip switch 1 and switch 2 to turn on bulbs A and B.
+
+We have now determined which switch controls which bulb.

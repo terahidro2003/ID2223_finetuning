@@ -1,0 +1,78 @@
+To graph the equation #(x^2 / 4) - (y^2 / 9) = 1#, we can first simplify it by eliminating the absolute value signs. 
+
+We can rewrite the equation as #(x^2 / 4) - (y^2 / 9) = 1# = ((x^2 / 4) - (y^2 / 9)) = 1.
+
+Now, let's solve for y^2. 
+
+First, multiply both sides by 9 to get rid of the fraction 9:
+(x^2 / 4) - (y^2 / 9) = 1
+9 * (x^2 / 4) - 9 * (y^2 / 9) = 9 * 1
+(x^2 / 4) - (y^2 / 9) = 9
+
+Now, isolate y^2:
+y^2 = (x^2 / 4) - 9
+
+Since we are looking for the graph of the equation, we can express it in terms of y^2. 
+
+Now, we can complete the square for x^2 / 4:
+x^2 / 4 = (x^2 / 4) + 0
+y^2 = (x^2 / 4) - 9
+y^2 = ((x^2 / 4) - 9) 
+
+Now let's do the same for y^2:
+y^2 = (y^2 / 9) * (x^2 / 9)
+y^2 = ((y^2 / 9) * (x^2 / 9)) 
+
+Now we can do the following:
+y^2 = ((y^2 / 9) * (x^2 / 9)) 
+y^2 = ((y^2 / 9) * (x^2 / 9)) 
+y^2 = ((y^2 / 9) * (x^2 / 9)) 
+
+Now let's rewrite the equation in terms of x^2 and y^2:
+((x^2 / 4) - 9) = ((y^2 / 9) * (x^2 / 9)) 
+
+Now let's multiply both sides of the equation by 9 to get rid of the fraction 9:
+9 * ((x^2 / 4) - 9) = 9 * ((y^2 / 9) * (x^2 / 9)) 
+
+9 * ((x^2 / 4) - 9) = 9 * ((y^2 / 9) * (x^2 / 9)) 
+9 * (x^2 / 4) - 81 = (x^2 * y^2) / 9 
+
+Now, multiply both sides by 9:
+9 * (x^2 / 4) - 81 = (x^2 * y^2) / 9 
+81 * (x^2 / 4) - 729 = (x^2 * y^2) 
+
+Now, let's multiply both sides of the equation by 4:
+81 * (x^2 / 4) - 729 = (x^2 * y^2) 
+81x^2 - 2916 = 4x^2y^2
+
+Now, let's move the terms to the left-hand side:
+81x^2 - 2916 - 4x^2y^2 = 0
+
+Now, let's rewrite the equation in the standard form of a hyperbola:
+((x^2) / a^2) - ((y^2) / b^2) = 1 
+
+Now let's rewrite the equation in the standard form of a hyperbola:
+((x^2) / (81/4)) - ((y^2) / (2916/4)) = 1 
+((x^2) / (20.25)) - ((y^2) / (729)) = 1 
+
+Now we can find the values of a^2 and b^2:
+a^2 = 20.25
+b^2 = 729
+
+Now, we can graph the equation using the standard form of a hyperbola. The equation represents a hyperbola centered at the origin with a horizontal transverse axis. The values of a^2 and b^2 can be used to determine the orientation and position of the hyperbola.
+
+The asymptotes of the hyperbola can be found using the following equations:
+y = ± (b/a)x 
+
+y = ± (b/a)x 
+y = ± (729 / 20.25) x
+y = ± 36x 
+
+Now we can graph the equation using the standard form of a hyperbola. The equation represents a hyperbola centered at the origin with a horizontal transverse axis. The values of a^2 and b^2 can be used to determine the orientation and position of the hyperbola.
+
+To graph the equation, we can use a graphing calculator or software. We can also graph the equation by hand using a coordinate plane.
+
+Here is a graph of the equation:
+It is a hyperbola centered at the origin with a horizontal transverse axis. The asymptotes of the hyperbola are y = ± 36x.
+
+Please note that the graph is not provided here, but you can use a graphing calculator or software to visualize the equation.

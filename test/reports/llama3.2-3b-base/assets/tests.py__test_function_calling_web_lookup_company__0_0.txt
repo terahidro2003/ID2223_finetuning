@@ -1,0 +1,1 @@
+{"function": "lookup_company", "company_name": "Tesla", "fields": ["revenue", "employees"]}

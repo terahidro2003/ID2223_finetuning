@@ -1,0 +1,11 @@
+Since the distance from the x-axis to point P is half the distance from the y-axis to point P, let's denote the distance from the y-axis to point P as 'd'. 
+
+Then, the distance from the x-axis to point P is d/2.
+
+We know that the y-coordinate is -6, which is also the distance from the x-axis to point P. 
+
+So, d/2 = -6.
+
+Multiplying both sides by 2 gives us d = -12.
+
+The distance from the y-axis to point P is -12 units.

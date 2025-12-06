@@ -1,0 +1,18 @@
+Step 1:  To solve this problem, we need to find the modulo of the large positive number x when divided by 11.
+Step 2:  We can convert the string representation of x to an integer and then calculate the modulo using the % operator.
+Step 3:  The expected output for the function is an integer representing the value of x % 11.
+```python
+# Step 4: 
+class Solution:
+
+    # Step 5:  Define a function to calculate the value of x % 11 for a given big positive number x represented as a string.
+    
+    def xmod11(self, x):
+        # Step 6:  Convert the string representation of x to an integer.
+        
+        A = int(x)
+        # Step 7:  Calculate the modulo of the integer A when divided by 11.
+        
+        return A % 11
+
+```

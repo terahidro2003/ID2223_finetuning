@@ -1,0 +1,13 @@
+To answer this question, let's consider the options provided:
+
+A) 200 - This is the status code for 'OK', indicating that the request was successful.
+
+B) 301 - This is the status code for 'Moved Permanently', indicating that the requested resource has been permanently moved to a new location.
+
+C) 404 - This is the status code for 'Not Found', indicating that the requested resource could not be found.
+
+D) 500 - This is the status code for 'Internal Server Error', indicating that the server encountered an error while processing the request.
+
+Based on the above information, the correct answer is:
+
+Final Answer: C) 404

@@ -1,0 +1,31 @@
+Let's analyze the costs and revenues:
+
+Initial investment: $250,000
+Daily operational cost: 2% of $250,000 = $5,000
+
+Daily revenue: 200 tickets/day × $15/ticket = $3,000
+
+To break even, Alex needs to cover the initial investment and the daily operational costs. Let's calculate the total cost:
+
+Total cost = Initial investment + Daily operational cost × Number of days
+= $250,000 + $5,000 × Number of days
+
+Since Alex wants to break even, the total revenue should equal the total cost:
+
+Total revenue = Daily revenue × Number of days
+= $3,000 × Number of days
+
+Setting the total revenue equal to the total cost:
+
+$3,000 × Number of days = $250,000 + $5,000 × Number of days
+
+Subtracting $5,000 × Number of days from both sides:
+
+-$2,000 × Number of days = -$250,000
+
+Dividing both sides by -$2,000:
+
+Number of days = $250,000 / $2,000
+= 125 days
+
+So, it will take Alex \\boxed{125} days to break even and recover the initial investment.

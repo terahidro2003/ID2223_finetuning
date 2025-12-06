@@ -1,0 +1,6 @@
+```json
+{"function": "clean_dataset", "dataset": "user_data", "operations": [
+    {"operation": "drop_duplicates", "subset": ["column1", "column2"]},
+    {"operation": "drop_nulls", "subset": ["column3", "column4"]}
+]}
+```

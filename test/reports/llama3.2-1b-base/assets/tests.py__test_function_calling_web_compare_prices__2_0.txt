@@ -1,0 +1,2 @@
+⚠ PARTIAL PASS (1 value errors):
+  stores: expected=['Amazon', 'Bestbuy'], got=[{'store_name': 'Amazon', 'price': 49.99}, {'store_name': 'Best Buy', 'price': 49.99}]

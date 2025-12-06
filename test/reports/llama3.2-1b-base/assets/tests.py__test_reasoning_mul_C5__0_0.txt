@@ -1,0 +1,14 @@
+To determine which option is NOT a primary color, let's first identify the primary colors. The primary colors are:
+
+1. Red
+2. Blue
+3. Yellow
+
+Now, let's examine the options:
+
+A) Red - This is a primary color.
+B) Yellow - This is a primary color.
+C) Green - This is not a primary color. It is a secondary color.
+D) Blue - This is a primary color.
+
+Based on the information provided, the option that is NOT a primary color is C) Green.

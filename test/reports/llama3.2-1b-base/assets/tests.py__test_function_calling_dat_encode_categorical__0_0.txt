@@ -1,0 +1,7 @@
+```json
+{
+  "function": "encode_categorical",
+  "columns": ["category", "region"],
+  "encoding_type": "one-hot"
+}
+```

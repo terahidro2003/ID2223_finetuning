@@ -1,0 +1,9 @@
+To solve this, let's break down the clues:
+
+1. The word starts with 'e'.
+2. The word ends with 'e'.
+3. The word contains one letter.
+
+Considering the word contains only one letter, it's likely that the word is a single letter itself, which is 'e'. 
+
+Final Answer: 'e'.

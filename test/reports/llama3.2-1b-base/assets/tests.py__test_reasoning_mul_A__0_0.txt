@@ -1,0 +1,11 @@
+To determine the correct answer, let's break down the options:
+
+A) Central Processing Unit - This is the correct answer. The Central Processing Unit (CPU) is the primary component of a computer that handles most of the processing tasks, such as executing instructions, managing data, and controlling the flow of data.
+
+B) Computer Personal Unit - This is not a valid or recognized term in the computer industry.
+
+C) Central Program Utility - This is not a valid or recognized term in the computer industry.
+
+D) Core Processing Utility - This is not a valid or recognized term in the computer industry.
+
+Final Answer: A

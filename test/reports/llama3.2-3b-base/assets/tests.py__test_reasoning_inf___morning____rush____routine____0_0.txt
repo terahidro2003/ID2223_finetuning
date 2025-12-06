@@ -1,0 +1,11 @@
+To determine why the coffee shop is nearly empty at 2 PM, let's consider the typical daily routine of its customers.
+
+1. Monday is a workday, and many people start their day with a cup of coffee from the coffee shop.
+2. The line at 8 AM suggests that many customers are arriving at the shop to start their day with coffee.
+3. However, as the day progresses, many customers will likely be at work, attending classes, or engaged in other activities that don't involve visiting the coffee shop.
+4. The shop may also be closed during lunch breaks, which could further reduce the number of customers.
+5. Additionally, some customers may have already had their morning coffee and are not in need of another cup.
+
+Considering these factors, it's likely that the coffee shop is nearly empty at 2 PM because many of its regular customers are at work, and the shop is closed during lunch breaks.
+
+Final Answer: Many customers are at work, and the shop is closed during lunch breaks.

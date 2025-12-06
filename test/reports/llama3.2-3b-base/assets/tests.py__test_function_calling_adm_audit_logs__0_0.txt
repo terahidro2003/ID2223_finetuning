@@ -1,0 +1,1 @@
+{"function": "audit_logs", "service": "auth-service", "time_range": "24 hours", "filter": "failed logins"}

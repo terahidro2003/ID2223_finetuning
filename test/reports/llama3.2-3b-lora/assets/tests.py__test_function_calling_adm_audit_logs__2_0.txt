@@ -1,0 +1,3 @@
+⚠ PARTIAL PASS (2 value errors):
+  time_range: expected=last_24_hours, got=24 hours
+  filter: expected=failed_logins, got=failed logins

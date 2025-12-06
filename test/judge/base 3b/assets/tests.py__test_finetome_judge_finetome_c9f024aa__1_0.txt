@@ -1,0 +1,15 @@
+Let's denote the distance from the x-axis to point P as d_x and the distance from the y-axis to point P as d_y.
+
+According to the problem, d_x is half of d_y, so we can write the relationship as:
+d_x = 1/2 * d_y
+
+The distance from the x-axis to point P is simply the absolute value of the y-coordinate of P, because the x-axis runs horizontally and the y-coordinate tells us how far up or down from the x-axis the point is. Since the y-coordinate of P is -6, the distance from the x-axis to point P is | -6 | = 6 units.
+
+Now we can substitute d_x with 6 units in the relationship:
+6 = 1/2 * d_y
+
+To find d_y, we multiply both sides of the equation by 2:
+d_y = 2 * 6
+d_y = 12
+
+Therefore, the distance from the y-axis to point P is 12 units.

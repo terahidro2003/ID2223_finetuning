@@ -1,0 +1,8 @@
+```json
+{
+  "function": "aggregate_data",
+  "table": "sales_data",
+  "group_by": "region",
+  "operation": "sum"
+}
+```

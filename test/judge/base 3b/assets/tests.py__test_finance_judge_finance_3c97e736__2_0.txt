@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "Problem:\nA certain investment portfolio earns interest at a variable annual rate. In the first year, it earns 2% interest, in the second year, it earns 4% interest, and in each subsequent year, the interest rate increases by 2%. If Emily invests $500 in this portfolio, how much will she have after 7 years?\n\n(Note: This problem requires a different approach as it involves a variable interest rate that changes each year, whereas the original problem had a constant interest rate.)"
+  }
+]

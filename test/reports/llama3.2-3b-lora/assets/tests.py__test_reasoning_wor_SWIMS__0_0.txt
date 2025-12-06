@@ -1,0 +1,7 @@
+To solve this, let's consider the properties of the word you're looking for. Since it reads the same when viewed upside down, it's likely a palindrome. A palindrome is a word, phrase, or sequence that remains the same when its characters are reversed.
+
+Given that it's a 5-letter word typed in all capital letters, one possible solution is the word "SWIMS". However, "SWIMS" is not a palindrome.
+
+A more likely solution is the word "NOON". When viewed upside down, "NOON" remains the same.
+
+Final Answer: NOON.

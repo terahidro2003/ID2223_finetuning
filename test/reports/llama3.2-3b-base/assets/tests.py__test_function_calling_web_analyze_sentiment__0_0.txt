@@ -1,0 +1,1 @@
+{"function": "analyze_sentiment", "text": "This product is amazing!", "model": "vader"}

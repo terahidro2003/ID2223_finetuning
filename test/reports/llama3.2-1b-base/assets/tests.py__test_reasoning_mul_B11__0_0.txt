@@ -1,0 +1,36 @@
+To solve this problem, we need to identify the design pattern that ensures a class has only one instance.
+
+The correct answer is: B) Singleton
+
+Here's why:
+
+A singleton design pattern is a creational pattern that ensures a class has only one instance. It achieves this by making the class itself a singleton, i.e., it has a single instance and provides a global point of access to it.
+
+Here's a simple example of a singleton class in Java:
+
+```java
+public class Singleton {
+    private static Singleton instance;
+
+    private Singleton() {}
+
+    public static Singleton getInstance() {
+        if (instance == null) {
+            instance = new Singleton();
+        }
+        return instance;
+    }
+}
+```
+
+In this example, the `Singleton` class has a private constructor, which means it can only be instantiated once. The `getInstance()` method checks if an instance of the class already exists. If not, it creates a new instance and assigns it to the `instance` variable. If an instance already exists, it returns the existing instance.
+
+This design pattern is useful when you need to access a class instance from multiple threads or multiple locations, as it ensures that only one instance is created.
+
+The other options are not correct because:
+
+A) Factory: A factory design pattern is used to create objects, but it does not ensure that a class has only one instance.
+
+C) Observer: An observer design pattern is used to notify objects about events, but it does not ensure that a class has only one instance.
+
+D) Strategy: A strategy design pattern is used to define a family of algorithms, but it does not ensure that a class has only one instance.

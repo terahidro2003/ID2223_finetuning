@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "How do you graph the equation #(x^2 / 4) - (y^2 / 9) =1#?"
+  }
+]

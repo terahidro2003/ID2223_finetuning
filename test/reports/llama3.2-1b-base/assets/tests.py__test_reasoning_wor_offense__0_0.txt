@@ -1,0 +1,6 @@
+Based on your hints, I'm going to take a guess that you are the word "murder." 
+
+- If you remove the first letter "M", you get "urder," which is a crime.
+- If you remove the first two letters "mu", you get "der," which is an animal.
+
+Am I correct?

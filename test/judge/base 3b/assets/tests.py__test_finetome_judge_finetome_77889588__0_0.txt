@@ -1,0 +1,37 @@
+Here is a Python function that calculates the factorial of a given number:
+
+```python
+def factorial(n):
+    """
+    This function calculates the factorial of a given number.
+    
+    Args:
+        n (int): A positive integer.
+    
+    Returns:
+        int: The factorial of the given number.
+    """
+    if n < 1:
+        raise ValueError("Input must be a positive integer.")
+    
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    
+    return result
+
+def main():
+    # Read the input
+    n = int(input())
+    
+    # Calculate the factorial
+    result = factorial(n)
+    
+    # Print the result
+    print(result)
+
+if __name__ == "__main__":
+    main()
+```
+
+In this code, the `factorial` function calculates the factorial of a given number using a for loop. The `main` function reads the input, calculates the factorial, and prints the result. The code checks if the input number is less than 1, and raises a `ValueError` if it is.

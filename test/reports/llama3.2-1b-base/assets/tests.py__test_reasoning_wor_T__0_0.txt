@@ -1,0 +1,11 @@
+To find the answer, let's analyze the given word 'STARTLED'. 
+
+Removing the letter 'S' from 'STARTLED' would result in the word 'STARTLED'. 
+
+This means that the word 'STARTLED' is not a direct match for the given description 'tasted'. 
+
+However, removing the letter 'T' from 'STARTLED' would result in the word 'STARTLED'. 
+
+This means that the word 'STARTLED' is actually a match for the given description 'tasted'. 
+
+Therefore, the answer is that one letter to be removed from 'STARTLED' is the letter 'T'.

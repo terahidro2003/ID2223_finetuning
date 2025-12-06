@@ -1,0 +1,13 @@
+The concept of a utility function is often attributed to the French philosopher and economist Jean-Baptiste Say (1767-1832) and the British economist Thomas Malthus (1766-1834). However, the modern concept of a utility function as we know it today is often credited to the German economist and philosopher Adam Smith (1723-1790) and the Austrian economist Carl Menger (1840-1921).
+
+Adam Smith, in his book "The Theory of Moral Sentiments" (1759), discussed the idea of "moral sentiments" and how they relate to human preferences and desires. He argued that people's preferences are guided by their moral sentiments, which are influenced by their social and cultural context.
+
+Carl Menger, in his book "Principles of Economics" (1871), developed the concept of a utility function as a mathematical representation of a consumer's preferences. He defined the utility function as a mathematical function that describes the maximum amount of pleasure or satisfaction a consumer can get from consuming a particular good or service.
+
+The concept of a utility function has historical precedents in the works of other economists and philosophers, including:
+
+1. Jeremy Bentham (1748-1832), an English philosopher and economist, who developed the concept of "hedonic calculus," which is a mathematical representation of the pleasure and pain associated with different activities.
+2. Francis Hutcheson (1694-1759), a Scottish philosopher, who discussed the idea of "moral sentiments" and how they relate to human preferences and desires.
+3. Antoine de Montesquieu (1689-1755), a French philosopher, who discussed the idea of "desire" and how it relates to human preferences and desires.
+
+Overall, while it is difficult to attribute the invention of the concept of a utility function to a single person, Adam Smith and Carl Menger are often credited with developing the modern concept of a utility function.

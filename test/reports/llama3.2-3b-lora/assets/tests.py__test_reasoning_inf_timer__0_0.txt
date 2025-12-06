@@ -1,0 +1,8 @@
+Based on the description, it's likely that your neighbor's house lights are being controlled by a smart home system or a timer. Here are a few possibilities:
+
+1. **Smart Home System**: Many smart home systems, such as Amazon Alexa, Google Home, or Apple HomeKit, allow users to control lights and other devices remotely. If your neighbor has set up a smart home system, they might be using it to turn the lights on and off at different times each evening.
+2. **Timer**: A timer is a simple and common solution for controlling lights. Your neighbor might have set up a timer to turn the lights on and off at specific times each evening, which could be programmed to change each day.
+3. **Vacation Mode**: Some smart home systems and thermostats come with a "vacation mode" or "away mode" feature, which allows users to simulate occupancy while they're away. This feature might be turning the lights on and off at different times to make it appear as though someone is home.
+4. **Automated Lighting System**: Some homes have automated lighting systems that can be programmed to turn lights on and off at specific times. These systems might be controlled by a central hub or a smartphone app.
+
+To determine the exact system your neighbor is using, you could try to observe the lights more closely or ask them directly.

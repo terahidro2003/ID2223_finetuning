@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "who is sigurdardottir?"
+  }
+]

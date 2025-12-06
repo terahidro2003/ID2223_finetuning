@@ -1,0 +1,2 @@
+⚠ PARTIAL PASS (1 value errors):
+  table: expected=sales, got=sales_data

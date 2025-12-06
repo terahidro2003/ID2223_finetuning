@@ -1,0 +1,11 @@
+The four main chambers of the human heart are:
+
+1. **Right Atrium (RA)**: The right atrium is the upper chamber that receives oxygen-depleted blood from the body through the superior and inferior vena cava. It then pumps this blood into the right ventricle.
+
+2. **Right Ventricle (RV)**: The right ventricle is the lower chamber that pumps oxygen-depleted blood from the right atrium to the lungs through the pulmonary artery. The right ventricle is responsible for about half of the heart's total output.
+
+3. **Left Atrium (LA)**: The left atrium is the upper chamber that receives oxygen-rich blood from the lungs through the pulmonary veins. It then pumps this blood into the left ventricle.
+
+4. **Left Ventricle (LV)**: The left ventricle is the lower chamber that pumps oxygen-rich blood from the left atrium to the rest of the body through the aorta, the largest artery in the body. The left ventricle is responsible for about half of the heart's total output.
+
+In summary, the right side of the heart (right atrium and right ventricle) receives and pumps deoxygenated blood to the lungs, while the left side of the heart (left atrium and left ventricle) receives and pumps oxygenated blood to the rest of the body.

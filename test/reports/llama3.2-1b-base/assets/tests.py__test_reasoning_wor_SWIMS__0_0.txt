@@ -1,0 +1,37 @@
+To solve this, let's consider the properties of the word. 
+
+Since the word reads the same upside down when typed in all capital letters, it must be a palindrome. 
+
+A palindrome is a word, phrase, or sequence of characters that reads the same backward as it does forward. 
+
+Considering the 5-letter word, we can start by listing all possible 5-letter palindromes: 
+
+- A
+- A
+- A
+- No other 5-letter palindromes exist in English.
+
+However, we can try typing the word in all capital letters and see if it reads the same upside down: 
+
+- A
+- A
+- A
+- A
+
+Since it doesn't read the same upside down, we can try another word. 
+
+- A
+- A
+- A
+- A
+
+We can try typing the word in all capital letters and see if it reads the same upside down: 
+
+- A
+- A
+- A
+- A
+
+The word "A" is a 5-letter palindrome. 
+
+Final Answer: A

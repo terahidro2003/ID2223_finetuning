@@ -1,0 +1,7 @@
+To determine the new position, let's break it down step by step:
+
+1. Initially, you are in 3rd place.
+2. You overtake the person in 2nd place, which means you move ahead of them.
+3. Since you overtook the 2nd place person, you are now in 2nd place.
+
+Final Answer: 2nd place.

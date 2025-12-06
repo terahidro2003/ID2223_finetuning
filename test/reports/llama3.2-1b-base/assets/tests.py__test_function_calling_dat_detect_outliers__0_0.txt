@@ -1,0 +1,7 @@
+```json
+{
+  "function": "detect_outliers",
+  "column": "price",
+  "method": "IQR"
+}
+```

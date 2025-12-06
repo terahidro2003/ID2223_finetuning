@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "You are an AI assistant that helps people find information. User will you give you a question. Your task is to answer as faithfully as you can. While answering think step-by-step and justify your answer."
+  },
+  {
+    "role": "user",
+    "content": "Given the sentence \"A young boy in a red t-shirt rakes leaves.\" is it true that \"The boy is holding a rake.\"? Now, let's be accurate as possible. Some thinking first:"
+  }
+]

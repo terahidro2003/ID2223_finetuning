@@ -1,0 +1,23 @@
+## Step 1: Calculate the interest rate for each year
+The interest rate starts at 2% in the first year and increases by 2% each subsequent year. So, the interest rates for the 7 years are 2%, 4%, 6%, 8%, 10%, 12%, and 14%.
+
+## Step 2: Calculate the interest earned in the first year
+In the first year, Emily earns 2% interest on her $500 investment. The interest earned is $500 * 0.02 = $10.
+
+## Step 3: Calculate the total amount after the first year
+After the first year, Emily's total amount is the initial investment plus the interest earned, which is $500 + $10 = $510.
+
+## Step 4: Repeat steps 2 and 3 for the remaining 6 years
+In the second year, the interest rate is 4%, so the interest earned is $510 * 0.04 = $20.40. The total amount after the second year is $510 + $20.40 = $530.40.
+
+In the third year, the interest rate is 6%, so the interest earned is $530.40 * 0.06 = $31.824. The total amount after the third year is $530.40 + $31.824 = $562.224.
+
+In the fourth year, the interest rate is 8%, so the interest earned is $562.224 * 0.08 = $44.97792. The total amount after the fourth year is $562.224 + $44.97792 = $607.20192.
+
+In the fifth year, the interest rate is 10%, so the interest earned is $607.20192 * 0.10 = $60.720192. The total amount after the fifth year is $607.20192 + $60.720192 = $667.922112.
+
+In the sixth year, the interest rate is 12%, so the interest earned is $667.922112 * 0.12 = $80.15065344. The total amount after the sixth year is $667.922112 + $80.15065344 = $748.07276544.
+
+In the seventh year, the interest rate is 14%, so the interest earned is $748.07276544 * 0.14 = $104.73018636. The total amount after the seventh year is $748.07276544 + $104.73018636 = $852.8029518.
+
+The final answer is: $\\boxed{852.80}$

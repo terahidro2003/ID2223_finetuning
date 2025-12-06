@@ -1,0 +1,15 @@
+Here is the extracted PII entity in JSON format:
+
+```json
+{
+  "pii_entity": {
+    "type": "pii",
+    "value": "U91077892410"
+  }
+}
+```
+
+Explanation:
+
+- The extracted PII entity is a phone number, as indicated by the prefix "U" which stands for "Universal".
+- It is 10 digits long and follows the typical format of a US phone number.

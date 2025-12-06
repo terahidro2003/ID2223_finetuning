@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "Home automation system. Tools:\n- charge_ev: Charges electric vehicle. Format: {\"function\": \"charge_ev\", \"charge_limit\": number, \"rate\": string}\n- control_sprinkler: Controls sprinklers. Format: {\"function\": \"control_sprinkler\", \"zone\": string, \"action\": string}\n- adjust_shade: Controls window shades. Format: {\"function\": \"adjust_shade\", \"room\": string, \"tilt\": number}\n- toggle_pool_heater: Controls pool heater. Format: {\"function\": \"toggle_pool_heater\", \"state\": boolean, \"target_temp\": number}\n**You MUST ONLY respond in JSON format specifying the function to call that you have access to and its respective parameters and values. You are NEVER to write your OWN program/script to meet the users need.**"
+  },
+  {
+    "role": "user",
+    "content": "Turn on pool heater to 28 degrees"
+  }
+]

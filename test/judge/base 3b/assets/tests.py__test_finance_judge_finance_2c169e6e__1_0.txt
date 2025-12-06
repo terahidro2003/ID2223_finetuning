@@ -1,0 +1,8 @@
+{
+  "house_number": "47",
+  "street": "Highfield Road",
+  "city": "Birmingham",
+  "postal_code": "B15 3DP",
+  "normalized": "47 Highfield Road, Birmingham, B15 3DP",
+  "simplified": "47 Highfield Road, Birmingham, B15 3DP"
+}

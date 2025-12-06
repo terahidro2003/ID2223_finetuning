@@ -1,0 +1,26 @@
+```python
+func_counts = {}
+
+def count_calls(func):
+    func_name = func.__name__
+    counter = 0
+
+    def wrapper(*args, **kwargs):
+        nonlocal counter
+        counter += 1
+        func_counts[func_name] = counter
+        return func(*args, **kwargs)
+
+    return wrapper
+
+@count_calls
+def func():
+    return 1
+
+for _ in range(3):
+    func()
+
+func()
+
+print(func_counts)  # Output: {'func': 4}
+```

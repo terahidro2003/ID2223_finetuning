@@ -1,0 +1,41 @@
+Step 1:  To solve this problem, we need to calculate the weight of the input string by finding the ASCII values of each character and summing them up. 
+Step 2:  Then we need to calculate the final answer by dividing the weight by the length of the string and rounding it to the previous integer value.
+Step 3:  Depending on whether the final answer is odd or even, we need to reverse the string or print the original string.
+Step 4:  We'll use a loop to process each test case and perform the required calculations for each string in the loop.
+```python
+# Step 5:  Input the number of test cases
+t = int(input())
+# Step 6:  Iterate through the test cases
+for i in range(0, t):
+    # Step 7:  Input the string for the task
+    
+    s = input()
+    # Step 8:  Split the string into a list of characters and reverse it
+    
+    l = list(s)
+    l.reverse()
+    # Step 9:  Initialize the weight to 0
+    
+    f = 0
+    # Step 10:  Calculate the weight of the string by finding the ASCII value of each character and summing them up
+    
+    for k in range(0, len(s)):
+        f = f + ord(s[k])
+    # Step 11:  Divide the weight by the length of the string
+    
+    res = f // len(s)
+    # Step 12:  Check if the final answer is odd or even
+    
+    if(res % 2 == 0):
+        # Step 13:  Print the original string
+        
+        print(s)
+    else:
+        # Step 14:  If the final answer is odd, reverse the string
+        
+        out = ""
+        for h in range(0, len(s)):
+            out = out + l[h]
+        print(out)
+
+```

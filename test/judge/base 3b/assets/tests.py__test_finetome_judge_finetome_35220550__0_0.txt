@@ -1,0 +1,52 @@
+Here is a Python implementation of the algorithm:
+
+```python
+def add_binary_numbers(num1, num2):
+    """
+    Adds two binary numbers represented as strings of '0's and '1's.
+    
+    Args:
+        num1 (str): The first binary number.
+        num2 (str): The second binary number.
+    
+    Returns:
+        str: The sum of the two binary numbers as a string.
+    """
+    # Initialize the result and carry variables
+    result = ''
+    carry = 0
+    
+    # Find the length of the longer binary number
+    max_length = max(len(num1), len(num2))
+    
+    # Pad the shorter binary number with leading zeros
+    num1 = num1.zfill(max_length)
+    num2 = num2.zfill(max_length)
+    
+    # Iterate over the binary numbers from right to left
+    for i in range(max_length - 1, -1, -1):
+        # Get the current bits
+        bit1 = int(num1[i])
+        bit2 = int(num2[i])
+        
+        # Calculate the sum of the current bits and the carry
+        total = bit1 + bit2 + carry
+        
+        # Calculate the new carry and the current bit of the result
+        carry = total // 2
+        bit = total % 2
+        
+        # Append the current bit to the result
+        result = str(bit) + result
+    
+    # If there is still a carry after iterating over the binary numbers, append it to the result
+    if carry > 0:
+        result = str(carry) + result
+    
+    return result
+
+# Example usage
+print(add_binary_numbers('1010', '1011'))  # Output: '10101'
+```
+
+The algorithm works by iterating over the binary numbers from right to left, calculating the sum of the current bits and the carry, and updating the carry and the current bit of the result. If there is still a carry after iterating over the binary numbers, it is appended to the result. The time complexity is O(log n), where n is the length of the longer binary number, because we iterate over each bit of the binary numbers once. The space complexity is O(1) because we only use a constant amount of space to store the result and the carry variables.

@@ -1,0 +1,1 @@
+{"function": "compare_prices", "product_id": "PROD12345", "stores": ["Amazon", "BestBuy"]}

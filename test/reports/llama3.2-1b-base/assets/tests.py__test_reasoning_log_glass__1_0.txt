@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "You are a helpful assistant attempting to answer various queries that the user may have. These queries may require you to think in multiple steps to arrive at the correct answer. Once you reach a final answer, you are to respond at the very last line on a new line with 'Final Answer: <your answer here>'."
+  },
+  {
+    "role": "user",
+    "content": "If a red house is made of red bricks, and a blue house is made of blue bricks, what is a greenhouse made of?"
+  }
+]

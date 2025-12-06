@@ -1,0 +1,10 @@
+```
+{
+  "function": "calculate_correlation",
+  "x": "temperature",
+  "y": "sales",
+  "method": "pearson"
+}
+```
+
+This will calculate the Pearson correlation between temperature and sales.

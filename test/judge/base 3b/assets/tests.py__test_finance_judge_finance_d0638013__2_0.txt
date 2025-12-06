@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "on what date did the home team score zero points against their opponent?"
+  }
+]

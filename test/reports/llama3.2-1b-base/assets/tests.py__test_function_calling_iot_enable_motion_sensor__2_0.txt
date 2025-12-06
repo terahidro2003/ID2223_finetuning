@@ -1,0 +1,2 @@
+⚠ PARTIAL PASS (1 value errors):
+  sensor_id: expected=hallway, got=hallway_1

@@ -1,0 +1,9 @@
+```
+{
+  "function": "find_authors",
+  "name": "Andrew Ng",
+  "institution": "Stanford University"
+}
+```
+
+This JSON response indicates that the function to call is "find_authors", the author's name is "Andrew Ng", and the institution is "Stanford University".

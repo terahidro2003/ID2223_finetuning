@@ -1,0 +1,7 @@
+```
+{
+  "function": "set_scene",
+  "scene_name": "movie_scene",
+  "rooms": ["living_room", "bedroom"]
+}
+```

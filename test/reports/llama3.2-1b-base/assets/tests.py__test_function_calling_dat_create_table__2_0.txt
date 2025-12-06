@@ -1,0 +1,2 @@
+⚠ PARTIAL PASS (1 value errors):
+  schema: expected={'id': 'int', 'name': 'string', 'email': 'string'}, got={'id': {'type': 'integer', 'primary': True}, 'name': {'type': 'string'}, 'email': {'type': 'string'}}

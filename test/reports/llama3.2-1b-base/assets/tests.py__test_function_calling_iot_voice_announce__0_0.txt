@@ -1,0 +1,7 @@
+```json
+{
+  "function": "voice_announce",
+  "message": "Dinner is ready",
+  "rooms": ["kitchen", "dining_room"]
+}
+```

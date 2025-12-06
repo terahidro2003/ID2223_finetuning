@@ -1,0 +1,11 @@
+The human heart has four main chambers: two atria and two ventricles. Each chamber has a specific function in the process of pumping blood throughout the body.
+
+1. Right Atrium: The right atrium is the upper right chamber of the heart. Its primary function is to receive deoxygenated blood from the body through two large veins called the superior and inferior vena cava. The right atrium then contracts and sends the blood through the tricuspid valve into the right ventricle.
+
+2. Right Ventricle: The right ventricle is the lower right chamber of the heart. Its main function is to pump the deoxygenated blood received from the right atrium into the pulmonary artery, which carries the blood to the lungs for oxygenation. The right ventricle contracts and sends the blood through the pulmonary valve into the pulmonary artery.
+
+3. Left Atrium: The left atrium is the upper left chamber of the heart. Its primary function is to receive oxygen-rich blood from the lungs through the pulmonary veins. The left atrium then contracts and sends the blood through the bicuspid (mitral) valve into the left ventricle.
+
+4. Left Ventricle: The left ventricle is the lower left chamber of the heart and has the thickest walls among all chambers, as it needs to generate enough force to pump oxygenated blood throughout the body. Its main function is to pump the oxygen-rich blood received from the left atrium into the aorta, which is the main artery that distributes blood to the rest of the body. The left ventricle contracts and sends the blood through the aortic valve into the aorta.
+
+In summary, the right atrium and right ventricle work together to pump deoxygenated blood to the lungs, while the left atrium and left ventricle work together to pump oxygenated blood to the rest of the body.

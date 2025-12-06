@@ -1,0 +1,13 @@
+To solve this, let's analyze the given information step by step.
+
+You mentioned that removing your first letter makes you a crime. This suggests that the word starts with a letter that is commonly associated with a type of crime.
+
+One possibility is that the word starts with the letter "M", as in "murder". However, removing the first letter "M" from "murder" doesn't make sense, as it would result in "urder", which isn't a common crime.
+
+Another possibility is that the word starts with the letter "M", but the word is actually "murderer". If we remove the first letter "M" from "murderer", we get "urderer", which is a type of crime.
+
+Now, let's consider the second part of the puzzle. You mentioned that removing your first two letters makes you an animal. If we remove the first two letters "MU" from "murderer", we get "urderer", which is not an animal.
+
+However, if we remove the first two letters "MU" from "murderer", we get "urderer", but if we remove the first two letters "MU" from a different 7-letter word, we get "rider". A "rider" is an animal.
+
+Considering these possibilities, a possible solution is that the 7-letter word is "murderer".

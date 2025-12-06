@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "Can you explain the concept of micro-credit and how it differs from traditional banking systems?"
+  }
+]

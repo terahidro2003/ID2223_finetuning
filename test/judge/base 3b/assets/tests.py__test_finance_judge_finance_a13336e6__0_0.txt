@@ -1,0 +1,88 @@
+Below is a Python solution using the pandas library to handle time series data and the numpy library to compute the correlation coefficients. This code assumes that you have the necessary data for the stock and market, which can be either CSV files or other data formats that pandas can read.
+
+```python
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from datetime import datetime, timedelta
+
+def calculate_log_returns(df):
+    # Calculate the log returns
+    df['Date'] = pd.to_datetime(df['Date'])
+    df['Date'] = df['Date'].apply(lambda x: x.date())
+    df['Date'] = df['Date'].apply(lambda x: x - timedelta(days=1))
+    df['Date'] = df['Date'].apply(lambda x: x.date())
+    df['Date'] = df['Date'].apply(lambda x: x)
+    df['Date'] = df['Date'].astype(str)
+    
+    df['Log Return'] = np.log(df['Close'].pct_change() + 1)
+    
+    return df
+
+def calculate_correlation(df_stock, df_market):
+    # Calculate the correlation coefficient
+    correlation = np.corrcoef(df_stock['Log Return'].values, df_market['Log Return'].values)[0, 1]
+    
+    return correlation
+
+def get_overlapping_returns(df_stock, df_market, days=3):
+    # Get the overlapping returns
+    stock_returns = df_stock['Log Return'].values
+    market_returns = df_market['Log Return'].values
+    
+    overlapping_returns = []
+    for i in range(len(stock_returns) - days + 1):
+        for j in range(len(market_returns) - days + 1):
+            start_date = (datetime.strptime(df_stock['Date'].iloc[i], '%Y-%m-%d') + timedelta(days=days-1)).date()
+            end_date = (datetime.strptime(df_stock['Date'].iloc[i+days-1], '%Y-%m-%d') - timedelta(days=1)).date()
+            start_date = pd.to_datetime(start_date).date()
+            end_date = pd.to_datetime(end_date).date()
+            
+            start_date_market = (datetime.strptime(df_market['Date'].iloc[j], '%Y-%m-%d') + timedelta(days=days-1)).date()
+            end_date_market = (datetime.strptime(df_market['Date'].iloc[j+days-1], '%Y-%m-%d') - timedelta(days=1)).date()
+            start_date_market = pd.to_datetime(start_date_market).date()
+            end_date_market = pd.to_datetime(end_date_market).date()
+            
+            # Get the overlapping returns
+            stock_overlapping_returns = stock_returns[i:i+days]
+            market_overlapping_returns = market_returns[j:j+days]
+            
+            # Create a new dataframe with the overlapping returns
+            overlapping_df = pd.DataFrame({'Stock Overlapping Returns': stock_overlapping_returns, 'Market Overlapping Returns': market_overlapping_returns})
+            
+            # Calculate the correlation coefficient
+            correlation = np.corrcoef(overlapping_df['Stock Overlapping Returns'].values, overlapping_df['Market Overlapping Returns'].values)[0, 1]
+            
+            overlapping_returns.append(correlation)
+    
+    return overlapping_returns
+
+def get_data_from_csv(file_name, start_date, end_date):
+    # Read the CSV file
+    df = pd.read_csv(file_name)
+    
+    # Filter the data
+    df = df[(df['Date'] >= start_date) & (df['Date'] <= end_date)]
+    
+    return df
+
+# Load the stock and market data
+df_stock = get_data_from_csv('stock_data.csv', '2020-01-01', '2025-01-01')
+df_market = get_data_from_csv('market_data.csv', '2020-01-01', '2025-01-01')
+
+# Calculate the log returns
+df_stock = calculate_log_returns(df_stock)
+df_market = calculate_log_returns(df_market)
+
+# Get the overlapping returns
+overlapping_returns = get_overlapping_returns(df_stock, df_market, days=3)
+
+# Calculate the correlation coefficients
+correlation_coefficients = [calculate_correlation(df_stock, df_market) for _ in overlapping_returns]
+
+# Print the correlation coefficients
+for i, correlation in enumerate(correlation_coefficients):
+    print(f'Correlation Coefficient for Overlapping Returns from Day {i+1}: {correlation}')
+```
+
+Please note that this is a simplified example. In practice, you may need to handle missing values, outliers, and other potential issues in your data. Also, this code assumes that the 'Date' column in your CSV files is in the format 'YYYY-MM-DD'. If your date column is in a different format, you may need to adjust the code accordingly.

@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "Emily is investing $\\\\$20{,}000$ in a retirement fund. The fund offers her a choice between two $15$-year investment plans:\n\n${\\\\bf Plan~A.}$  Emily's investment earns $8\\\\%$ annual interest which compounds semiannually. Emily withdraws one-third of her balance after $10$ years, and the remaining at the end of the $15$ years.\n\n${\\\\bf Plan~B.}$  Emily's investment earns $8\\\\%$ annual interest which compounds annually. Emily withdraws her full balance at the end of the $15$ years.\n\nWhat is the (positive) difference between Emily's total withdrawals under Plan A and her total withdrawals under Plan B? Round to the nearest dollar."
+  }
+]

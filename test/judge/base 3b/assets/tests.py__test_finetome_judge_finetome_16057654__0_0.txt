@@ -1,0 +1,19 @@
+To find the value of k, we can use the fact that if one root of the equation is 4, then (x-4) must be a factor of the equation.
+
+So, we can write the equation as:
+
+2x^2 + 3x - k = 2(x-4)(x+a) = 2x^2 + 2ax - 8x - 8a
+
+Now, we can equate the coefficients:
+
+2a = 3 => a = 3/2
+
+-8a = -k => -8(3/2) = -k => -12 = -k
+
+Now, we can solve for k:
+
+k = 12
+
+So, the final answer is:
+
+\boxed{12}

@@ -1,0 +1,32 @@
+def solve(a, b):
+    if a == b:
+        return 0
+    if a % 2 != 0 or b % 2 != 0:
+        return -1
+    if a % 4 != 0 or b % 4 != 0:
+        return -1
+    if a % 8 != 0 or b % 8 != 0:
+        return -1
+
+    def get_operations(a, b):
+        if a == b:
+            return 0
+        if a % 2 != 0 or b % 2 != 0:
+            return -1
+        if a % 4 != 0 or b % 4 != 0:
+            return -1
+        if a % 8 != 0 or b % 8 != 0:
+            return -1
+        return 1 + get_operations(a*2, b) if a % 8 == 0 else \
+              1 + get_operations(a*4, b) if a % 4 == 0 else \
+              1 + get_operations(a*8, b) if a % 2 == 0 else \
+              get_operations(a//2, b) if a % 8 == 0 else \
+              get_operations(a//4, b) if a % 4 == 0 else \
+              get_operations(a//8, b) if a % 2 == 0 else -1
+
+    return get_operations(a, b)
+
+t = int(input())
+for _ in range(t):
+    a, b = map(int, input().split())
+    print(solve(a, b))

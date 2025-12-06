@@ -1,0 +1,79 @@
+[Reasoning]
+To create a decorator that counts function calls, we'll need to modify the original function in-place. We can achieve this by using a closure to create a dictionary (`func_counts`) that stores the call frequency for each function. We'll then use this dictionary to update the count each time the function is called.
+
+[Implementation]
+```python
+def count_calls(func):
+    def wrapper(*args, **kwargs):
+        if func.__name__ not in func_counts:
+            func_counts[func.__name__] = 0
+        func_counts[func.__name__] += 1
+        return func(*args, **kwargs)
+    return wrapper
+
+func_counts = {}
+```
+
+[Explanation]
+This implementation uses a closure to create a dictionary (`func_counts`) that stores the call frequency for each function. Each time the decorated function is called, it increments the count in the dictionary. If the function is not in the dictionary, it initializes the count to 0.
+
+[Tests]
+You can write the following test cases to ensure it works correctly:
+
+```python
+import unittest
+
+class TestCountCalls(unittest.TestCase):
+
+    def setUp(self):
+        global func_counts
+        func_counts = {}
+
+    def test_count_calls(self):
+        def func():
+            pass
+
+        @count_calls
+        def decorated_func():
+            pass
+
+        func_counts["func"] = 0
+        decorated_func()
+        self.assertEqual(func_counts["func"], 1)
+
+        decorated_func()
+        self.assertEqual(func_counts["func"], 2)
+
+        decorated_func()
+        self.assertEqual(func_counts["func"], 3)
+
+    def test_multiple_functions(self):
+        def func1():
+            pass
+
+        def func2():
+            pass
+
+        @count_calls
+        def decorated_func1():
+            pass
+
+        @count_calls
+        def decorated_func2():
+            pass
+
+        func_counts = {}
+        decorated_func1()
+        self.assertEqual(func_counts["func1"], 1)
+        decorated_func2()
+        self.assertEqual(func_counts["func2"], 1)
+        decorated_func1()
+        self.assertEqual(func_counts["func1"], 2)
+        decorated_func2()
+        self.assertEqual(func_counts["func2"], 2)
+
+if __name__ == '__main__':
+    unittest.main()
+```
+
+These test cases cover both single and multiple functions, as well as different scenarios for testing the decorator's functionality.

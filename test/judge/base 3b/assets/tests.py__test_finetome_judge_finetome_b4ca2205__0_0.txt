@@ -1,0 +1,49 @@
+You can write a program to compare two strings in Python using the following approach:
+
+1.  Define a function that takes two string arguments.
+2.  Inside the function, use the `==` operator to compare the two strings.
+3.  Return `True` if the strings are equal, and `False` otherwise.
+
+Here's a simple example of a function that accomplishes this:
+
+```python
+def compare_strings(str1, str2):
+    """
+    Compare two strings and return True if they are the same.
+
+    Args:
+        str1 (str): The first string to compare.
+        str2 (str): The second string to compare.
+
+    Returns:
+        bool: True if the strings are equal, False otherwise.
+    """
+    return str1 == str2
+
+# Example usage:
+print(compare_strings("Hello", "Hello"))  # Output: True
+print(compare_strings("Hello", "World"))  # Output: False
+```
+
+Alternatively, you can use the `casefold()` method to make the comparison case-insensitive:
+
+```python
+def compare_strings_case_insensitive(str1, str2):
+    """
+    Compare two strings and return True if they are the same (case-insensitive).
+
+    Args:
+        str1 (str): The first string to compare.
+        str2 (str): The second string to compare.
+
+    Returns:
+        bool: True if the strings are equal (case-insensitive), False otherwise.
+    """
+    return str1.casefold() == str2.casefold()
+
+# Example usage:
+print(compare_strings_case_insensitive("Hello", "hello"))  # Output: True
+print(compare_strings_case_insensitive("Hello", "World"))  # Output: False
+```
+
+This approach is useful when you need to compare strings in a case-insensitive manner.

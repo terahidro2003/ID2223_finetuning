@@ -1,0 +1,1 @@
+{"function": "start_vacuum", "room": "kitchen"}

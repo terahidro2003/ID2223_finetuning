@@ -1,0 +1,1 @@
+{"function": "optimize_table", "table": "transactions", "operation": "vacuum"}

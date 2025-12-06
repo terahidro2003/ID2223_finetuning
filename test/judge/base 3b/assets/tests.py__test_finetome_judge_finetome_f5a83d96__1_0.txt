@@ -1,0 +1,26 @@
+Certainly! Here's an example of a generator function that yields the reverse of a given string, along with a detailed docstring explaining the code methods:
+
+```python
+def reverse_string(string):
+    """
+    Generator function to yield the reverse of a given string.
+
+    Args:
+        string (str): The input string to be reversed.
+
+    Yields:
+        str: Each character of the reversed string one at a time.
+
+    """
+    length = len(string)
+    for i in range(length - 1, -1, -1):
+        yield string[i]
+```
+
+In the above code, we define the generator function `reverse_string` that takes one argument, `string`, which is the input string to be reversed. 
+
+The function utilizes a for loop to iterate in reverse order over the characters of the string. We start from the last character (i.e., `length - 1`) and decrement the index by 1 (`-1`) in each iteration until we reach the first character.
+
+Inside the loop, we use the `yield` keyword to yield each character of the reversed string one at a time. The generator function allows us to generate the values on the fly without storing them all in memory, making it memory-efficient for large strings.
+
+The docstring provides a detailed explanation of the arguments, return type, and the behavior of the generator function. This helps facilitate better understanding and usage of the code.

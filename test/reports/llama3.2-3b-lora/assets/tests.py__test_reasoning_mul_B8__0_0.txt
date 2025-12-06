@@ -1,0 +1,13 @@
+To determine the correct answer, let's analyze each option:
+
+A) Bubble Sort: This algorithm has a time complexity of O(n^2) in the worst case, making it impractical for large datasets.
+
+B) Merge Sort: This is a divide-and-conquer algorithm that splits the array into two halves, recursively sorts them, and then merges them. Its average time complexity is indeed O(n log n), making it a suitable choice for large datasets.
+
+C) Selection Sort: This algorithm has a time complexity of O(n^2) in the worst case, similar to Bubble Sort.
+
+D) Insertion Sort: This algorithm has a time complexity of O(n^2) in the worst case, making it less efficient than Merge Sort for large datasets.
+
+Considering the average time complexity and practicality, Merge Sort is the correct answer.
+
+Final Answer: B

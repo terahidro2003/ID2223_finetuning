@@ -1,0 +1,8 @@
+```json
+{
+  "function": "create_healthcheck",
+  "endpoint": "https://api.example.com/health",
+  "interval_seconds": 60,
+  "timeout": 5
+}
+```

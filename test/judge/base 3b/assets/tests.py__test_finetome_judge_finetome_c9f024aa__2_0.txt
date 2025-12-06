@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "The distance from the x-axis to point P is half the distance from the y-axis to point P. If the coordinates of P are (x, -6), how many units is P from the y-axis?"
+  }
+]

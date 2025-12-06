@@ -1,0 +1,2 @@
+⚠ PARTIAL PASS (1 value errors):
+  charge_limit: expected=80, got=0.8

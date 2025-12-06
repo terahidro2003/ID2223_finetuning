@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "Jawaab ka bixi su'aashan qallafsan: Shirkadda Edelweiss Broking Limited waxay ka diiwaan gashan tahay suuqa saamiyada ee loo yaqaano inuu yahay suuqa saamiyada ugu horeeya ee Hindiya si ay u bixiyaan nidaam ganacsi oo elektaroonig ah oo casri ah oo si buuxda otomaatig ah?"
+  }
+]

@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "Your neighbor's house lights turn on and off at different times each evening while they're on vacation. What system are they using?"
+  }
+]

@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "Can you explain how the new universal credit system will simplify the existing benefits system, and what are the expected benefits of this simplification?"
+  }
+]

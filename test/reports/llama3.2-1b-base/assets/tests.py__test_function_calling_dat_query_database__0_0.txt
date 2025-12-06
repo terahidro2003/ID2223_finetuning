@@ -1,0 +1,7 @@
+```json
+{
+  "function": "query_database",
+  "query": "SELECT * FROM customers",
+  "database": "customers"
+}
+```

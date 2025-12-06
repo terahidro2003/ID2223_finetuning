@@ -1,0 +1,7 @@
+The primary function of mitochondria is to generate energy in the form of ATP (adenosine triphosphate) through a process called cellular respiration, particularly the aerobic respiration involving the breakdown of carbohydrates. In addition to ATP production, mitochondria are also the location of the TCA cycle, or tricarboxylic acid cycle, which is involved in the oxidation of organic molecules, generating more energy and producing byproducts such as glutarate and glyoxalic acid.
+
+Mitochondria are often referred to as the "powerhouses" of the cell due to their energy-producing role. Their double membrane structure allows for the separation of biochemical reactions necessary for energy production. The inner membrane contains structures called cristae, which increase the surface area for the efficient production of ATP.
+
+<img src="https://useruploads.socratic.org/DzOqwkKpRGCFNg5j1WhC_structure-of-mitochondria1.JPG" alt="Structure of Mitochondria" width="400"/>
+
+Reference: [TutorVista](http://images.tutorvista.com/cms/images/123/structure-of-mitochondria1.JPG)

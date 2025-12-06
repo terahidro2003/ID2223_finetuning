@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "You should generate outputs in Python dictionary format, ensuring the output is a valid Python dict: '{\\\"type\\\": \\\"...\\\", \\\"content\\\": \\\"...\\\"}'. This format allows for easy integration with Python applications."
+  },
+  {
+    "role": "user",
+    "content": "are there any emerging trends that may impact the global economy in the coming years?"
+  }
+]

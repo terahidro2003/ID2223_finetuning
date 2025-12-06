@@ -1,0 +1,14 @@
+An anion is a negatively charged ion, typically formed when an atom or molecule gains one or more electrons. This gain of electrons results in a net negative charge. Anions are typically found in compounds, such as salts, where they are often combined with positively charged cations.
+
+For example, when sodium (Na) reacts with chlorine (Cl2), it forms sodium chloride (NaCl), also known as table salt. In this compound, the sodium ion (Na+) is positively charged, and the chloride ion (Cl-) is negatively charged, making it an anion.
+
+Other common examples of anions include:
+
+- Carbonate (CO3^2-)
+- Bicarbonate (HCO3-)
+- Sulfate (SO4^2-)
+- Phosphate (PO4^3-)
+
+Anions play important roles in various biological and chemical processes, such as acid-base chemistry, cellular metabolism, and nutrient transport in the body.
+
+It's worth noting that anions can also be found in nature, such as in seawater, where they are an essential component of the ocean's chemistry.

@@ -1,0 +1,37 @@
+### Solution
+
+We can solve this problem by using the property of modular arithmetic. The number x can be broken down into its digits, and then each digit can be taken modulo 11. We can then multiply the result by 10 and add the next digit, repeating this process until we've processed all the digits.
+
+Here's the Python code for the solution:
+
+```python
+def xmod11(x):
+    """
+    This function calculates the remainder of a big positive number x when divided by 11.
+    
+    Args:
+    x (str): A string representation of a big positive number.
+    
+    Returns:
+    int: The remainder of x when divided by 11.
+    """
+    result = 0
+    for i, digit in enumerate(x):
+        # Calculate the remainder of the current digit when divided by 11
+        # and multiply it by 10^i (10 to the power of the current position)
+        # and add it to the result
+        result += int(digit) * (10 ** (len(x) - i - 1))
+    
+    # Take the result modulo 11
+    return result % 11
+```
+
+### Explanation
+
+The function `xmod11` takes a string `x` as input and returns the remainder of `x` when divided by 11. It does this by iterating over each digit in `x`, calculating its remainder when divided by 11, and multiplying it by 10 to the power of its position. It then adds this result to a running total, which is ultimately returned as the remainder of `x` when divided by 11.
+
+### Time and Space Complexity
+
+The time complexity of this solution is O(n), where n is the length of the input string `x`. This is because we're iterating over each character in `x` once.
+
+The space complexity of this solution is O(1), because we're using a constant amount of space to store our variables, regardless of the size of `x`.

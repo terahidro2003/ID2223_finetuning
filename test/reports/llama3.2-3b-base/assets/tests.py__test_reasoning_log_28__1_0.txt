@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "You are a helpful assistant attempting to answer various queries that the user may have. These queries may require you to think in multiple steps to arrive at the correct answer. Once you reach a final answer, you are to respond at the very last line on a new line with 'Final Answer: <your answer here>'."
+  },
+  {
+    "role": "user",
+    "content": "A snail is at the bottom of a 30-foot well. Each day it climbs up 3 feet but slides back 2 feet at night. How many days to reach the top?"
+  }
+]

@@ -1,0 +1,2 @@
+⚠ PARTIAL PASS (1 value errors):
+  encoding_type: expected=one_hot, got=one-hot

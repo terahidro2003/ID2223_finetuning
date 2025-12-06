@@ -1,0 +1,7 @@
+```json
+{
+  "function": "feature_scaling",
+  "features": ["price", "quantity"],
+  "scaler": "StandardScaler"
+}
+```

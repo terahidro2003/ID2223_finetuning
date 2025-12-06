@@ -1,0 +1,12 @@
+Here's the JSON format response specifying the function to call and its respective parameters and values:
+
+```json
+{
+  "function": "deploy_service",
+  "name": "api-gateway",
+  "version": "2.1.0",
+  "environment": "prod"
+}
+```
+
+This response indicates that the function to call is `deploy_service`, the service to deploy is `api-gateway`, the version to deploy is `2.1.0`, and the environment to deploy to is `prod`.

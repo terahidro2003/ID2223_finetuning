@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "Analytics platform. Tools available:\n- aggregate_data: Aggregates data. Format: {\"function\": \"aggregate_data\", \"table\": string, \"group_by\": string, \"operation\": string}\n- filter_records: Filters data. Format: {\"function\": \"filter_records\", \"table\": string, \"condition\": string}\n- join_tables: Joins tables. Format: {\"function\": \"join_tables\", \"left_table\": string, \"right_table\": string, \"join_key\": string}\n- create_pivot: Creates pivot table. Format: {\"function\": \"create_pivot\", \"data\": string, \"rows\": string, \"columns\": string, \"values\": string}\n**You MUST ONLY respond in JSON format specifying the function to call that you have access to and its respective parameters and values. You are NEVER to write your OWN program/script to meet the users need.**"
+  },
+  {
+    "role": "user",
+    "content": "Filter orders table where status equals completed"
+  }
+]

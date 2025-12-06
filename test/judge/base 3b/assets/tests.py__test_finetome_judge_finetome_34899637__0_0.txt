@@ -1,0 +1,32 @@
+Here is the Python code to solve the task:
+
+```python
+def find_string(string):
+    # Calculate the sum of ASCII values
+    weight = sum(ord(char) for char in string)
+
+    # Calculate the length of the string
+    length = len(string)
+
+    # Calculate the final value
+    final_value = weight / length
+
+    # If the final value is odd, reverse the string
+    if final_value % 1 != 0:
+        reversed_string = string[::-1]
+        return reversed_string
+    else:
+        return string
+
+# Read the number of test cases
+test_cases = int(input())
+
+# Read the input strings
+strings = [input() for _ in range(test_cases)]
+
+# Process each string
+for string in strings:
+    print(find_string(string))
+```
+
+This code defines a function `find_string` that takes a string as input and calculates the sum of ASCII values, the length of the string, and the final value by dividing the sum of ASCII values by the length. If the final value is odd, it reverses the string; otherwise, it returns the original string. The code then reads the number of test cases and input strings, processes each string using the `find_string` function, and prints the result for each string.

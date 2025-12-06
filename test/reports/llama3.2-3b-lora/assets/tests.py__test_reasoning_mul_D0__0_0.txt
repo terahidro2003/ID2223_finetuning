@@ -1,0 +1,11 @@
+To determine the largest ocean, we need to consider the surface area of each ocean. 
+
+The Pacific Ocean is the largest of the five oceans, covering approximately 155.6 million square kilometers (60.1 million square miles). 
+
+The Atlantic Ocean is the second-largest, covering about 85.1 million square kilometers (32.9 million square miles). 
+
+The Indian Ocean is the third-largest, covering around 73.5 million square kilometers (28.4 million square miles). 
+
+The Arctic Ocean is the smallest, covering about 14.0 million square kilometers (5.4 million square miles).
+
+Final Answer: D) Pacific

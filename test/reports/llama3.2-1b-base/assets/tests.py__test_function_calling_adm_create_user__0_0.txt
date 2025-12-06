@@ -1,0 +1,8 @@
+```json
+{
+  "function": "create_user",
+  "username": "jdoe",
+  "role": "admin",
+  "department": "IT"
+}
+```

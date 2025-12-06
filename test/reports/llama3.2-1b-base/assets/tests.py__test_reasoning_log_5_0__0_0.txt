@@ -1,0 +1,21 @@
+To find the cost of the ball, let's denote the cost of the ball as 'x'. Since the bat costs $1 more than the ball, the cost of the bat is 'x + $1'.
+
+The total cost of the bat and the ball together is $1.10. So, we can set up the equation:
+
+x + (x + $1) = $1.10
+
+Combine like terms:
+
+2x + $1 = $1.10
+
+Subtract $1 from both sides:
+
+2x = $0.10
+
+Divide both sides by 2:
+
+x = $0.05
+
+Since the ball costs $0.05, the final answer is:
+
+Final Answer: $0.05

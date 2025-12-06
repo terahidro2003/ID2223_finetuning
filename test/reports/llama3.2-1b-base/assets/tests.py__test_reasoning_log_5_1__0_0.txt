@@ -1,0 +1,15 @@
+To find the time it takes for 100 machines to make 100 widgets, we first need to determine the rate at which the machines work.
+
+Since 5 machines can make 5 widgets in 5 minutes, we can calculate the rate per machine:
+
+5 machines / 5 minutes = 1 widget per machine per minute
+
+Now, we can calculate the time it takes for 100 machines to make 100 widgets:
+
+100 machines / 1 widget per machine per minute = 100 widgets per minute
+
+Since 100 widgets require 100 minutes to make, the answer is:
+
+100 minutes
+
+Final Answer: 100

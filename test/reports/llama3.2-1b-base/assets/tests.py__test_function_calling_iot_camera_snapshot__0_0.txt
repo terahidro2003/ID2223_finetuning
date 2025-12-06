@@ -1,0 +1,7 @@
+```json
+{
+  "function": "camera_snapshot",
+  "camera_id": "front_door",
+  "quality": "high"
+}
+```

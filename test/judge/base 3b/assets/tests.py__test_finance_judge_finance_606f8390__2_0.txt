@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "You are a financial sentiment analysis expert. Your task is to analyze the sentiment expressed in the given financial text.Only reply with positive, neutral, or negative."
+  },
+  {
+    "role": "user",
+    "content": "Such trades often employ high amounts of leverage, and some have recently drawn regulatory scrutiny."
+  }
+]

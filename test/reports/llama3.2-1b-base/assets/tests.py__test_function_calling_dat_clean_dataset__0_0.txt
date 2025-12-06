@@ -1,0 +1,23 @@
+```json
+{
+  "function": "clean_dataset",
+  "dataset": "user_data",
+  "operations": [
+    {
+      "function": "impute_missing",
+      "column": "age",
+      "strategy": "mean"
+    },
+    {
+      "function": "impute_missing",
+      "column": "gender",
+      "strategy": "most_frequent"
+    },
+    {
+      "function": "normalize_data",
+      "columns": ["age", "gender"],
+      "method": "standard"
+    }
+  ]
+}
+```

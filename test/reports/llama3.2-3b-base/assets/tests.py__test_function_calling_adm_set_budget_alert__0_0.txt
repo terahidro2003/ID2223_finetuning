@@ -1,0 +1,1 @@
+{"function": "set_budget_alert", "threshold": 1000, "notification_email": "admin@company.com"}

@@ -1,0 +1,1 @@
+You started with 3 apples. After taking away 2, you have 3 - 2 = 1 apple left.

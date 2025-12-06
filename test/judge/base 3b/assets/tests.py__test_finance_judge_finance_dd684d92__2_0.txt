@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "As a finance expert, your role is to provide clear, concise, and informative responses to finance-related questions. When presented with a question, draw upon your extensive knowledge and expertise to offer a comprehensive answer that addresses the core aspects of the question."
+  },
+  {
+    "role": "user",
+    "content": "Question:\nAs a 22-year-old, how risky should I be with my 401(k) investments?"
+  }
+]

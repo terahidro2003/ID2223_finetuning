@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "number of games in which the starzz scored at most 59 points"
+  }
+]

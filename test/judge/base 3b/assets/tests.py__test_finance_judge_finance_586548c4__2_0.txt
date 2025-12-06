@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "Extract all personally identifiable information from the text and return it in JSON format."
+  },
+  {
+    "role": "user",
+    "content": "RADIUS Access-Request: User-Name = 'ronald13', NAS-Identifier = '91.130.68.141', Date-Of-Birth = '1964-11-28', SSN = '885-59-4498'."
+  }
+]

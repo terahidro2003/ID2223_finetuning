@@ -1,0 +1,13 @@
+To answer this question, let's consider the characteristics of each design pattern mentioned:
+
+A) Factory: This pattern is used to create objects without specifying the exact class of object that will be created. It doesn't ensure a class has only one instance.
+
+B) Singleton: This pattern ensures that only one instance of a class is created, and provides a global point of access to that instance.
+
+C) Observer: This pattern is used to notify objects of changes to other objects, and doesn't relate to the number of instances of a class.
+
+D) Strategy: This pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable. It doesn't ensure a class has only one instance.
+
+Considering the characteristics of each pattern, the correct answer is:
+
+Final Answer: B

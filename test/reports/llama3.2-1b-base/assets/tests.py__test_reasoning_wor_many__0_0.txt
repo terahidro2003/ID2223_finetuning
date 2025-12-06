@@ -1,0 +1,5 @@
+To solve this, let's think about the process of removing a letter. 
+
+If we remove one letter from a 4-letter word, we are left with 3 letters. 
+
+One possible 4-letter word that fits this description is 'code'. If we remove one letter from 'code', we are left with 'doe'.

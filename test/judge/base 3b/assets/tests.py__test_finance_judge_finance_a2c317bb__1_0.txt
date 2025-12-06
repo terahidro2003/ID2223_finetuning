@@ -1,0 +1,35 @@
+Social costs:
+
+• Job displacement and unemployment: Automation can replace human workers, especially for routine repetitive tasks. This can lead to mass unemployment, particularly for lower-skilled workers. During the early Industrial Revolution, up to 30% of workers lost their jobs due to new technologies. 
+
+• Decline in wages and wealth: Even workers who keep their jobs may see their wages stagnate or decline as automation reduces labor demand. This can compound existing economic inequality.
+
+• Social isolation: As machines replace human interaction in professions like customer service, education and elder care, it could contribute to social disengagement and mental health issues.
+
+• Social unrest: Large swaths of the population losing work could lead to political instability, crime and social upheaval if not addressed properly.
+
+Cognitive costs: 
+
+• Loss of complex skills: As machines take over routine tasks, humans risk losing important higher-order cognitive skills that depend on practice and repetition of basic skills. 
+
+• Deskilling of labor force: Overreliance on automation could leave future generations lacking important technical, creative and interpersonal skills needed for a dynamic economy.
+
+• Automation bias: Heavy reliance on algorithmic decision-making can lead humans to overtrust outputs, obscuring flaws and limitations of automated systems.
+
+Economic costs:
+
+• Reduced economic output: Unemployment and underemployment due to automation can reduce consumer demand and spending, constraining broader economic growth.
+
+• Increased inequality: The benefits of automation often accrue more to owners of capital rather than workers, exacerbating the gap between rich and poor.
+
+• Corporate consolidation: Large companies with resources to invest in automation gain competitive advantages, crowding out smaller businesses and entrepreneurs.  
+
+Ethical costs:
+
+• Algorithmic bias: Automated decision systems exhibit biases that disproportionately impact marginalized groups due to flaws in their training data and design.
+
+• Loss of moral agency and wisdom: Humans risk losing the ability to make complex ethical judgments as automated systems make more decisions for us.    
+
+• Concentration of power: Automation in the hands of a few large companies could give them unprecedented power over economies and societies with insufficient oversight.
+
+In summary, while automation promises many economic benefits, businesses and policymakers must also consider a range of social, cognitive and ethical risks to ensure technologies serve the common good and shared prosperity over the long run. The costs are often unequally distributed and certain groups may require support and retraining to participate and benefit in the emerging economy.

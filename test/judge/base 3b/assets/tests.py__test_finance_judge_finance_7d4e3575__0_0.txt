@@ -1,0 +1,21 @@
+Here is the JSON output for the requested data:
+
+```json
+{
+  "requester": {
+    "name": "Alexandra Spencer-Davis"
+  },
+  "requesterDetails": {
+    "email": "tmack@example.com",
+    "phone": "+61359964603"
+  },
+  "serviceDetails": {
+    "type": "Cloud Migration",
+    "description": "Migration of existing on-premises servers to the cloud",
+    "priority": "High",
+    "expectedCompletionDate": "2023-12-31"
+  }
+}
+```
+
+Note that I've excluded any other information that was not mentioned in the original text.

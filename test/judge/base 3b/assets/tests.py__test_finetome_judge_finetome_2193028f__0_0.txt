@@ -1,0 +1,24 @@
+To graph the equation #(x^2 / 4) - (y^2 / 9) = 1#, we need to identify its standard form and recognize its type.
+
+The equation can be rewritten as:
+
+(x^2 / 4) - (y^2 / 9) = 1
+
+This is the standard form of an ellipse, where the center is at the origin (0,0).
+
+To find the major and minor axes, we need to determine the values of a, b, c, and the center (h,k).
+
+Comparing with the standard form of an ellipse: (x-h)^2/a^2 + (y-k)^2/b^2 = 1
+
+Here, a^2 = 4 and b^2 = 9
+
+a = 2 (since a^2 = 4)
+b = 3 (since b^2 = 9)
+
+The center (h,k) is (0,0)
+
+Now we can identify the major and minor axes:
+- Major axis: horizontal (since a is larger than b), with length 2a = 4 units
+- Minor axis: vertical, with length 2b = 6 units
+
+The equation #(x^2 / 4) - (y^2 / 9) = 1# represents an ellipse centered at the origin (0,0), with a major axis of 4 units (horizontal) and a minor axis of 6 units (vertical).

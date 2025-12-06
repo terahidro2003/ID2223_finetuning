@@ -1,0 +1,11 @@
+The concept of a utility function is often attributed to the French philosopher and economist François Quesnay (1694-1774), who developed the concept of "marchés" or markets in his work "Le Dictionnaire Politique" in 1758.
+
+However, the modern concept of a utility function, as a mathematical representation of an individual's preferences, is often credited to the economist William Stanley Jevons (1835-1882), who introduced the idea in his book "The Theory of the Absolute Value of Money" in 1871.
+
+Jevons' idea was to use a mathematical function to represent an individual's preferences for different goods, with the goal of maximizing their overall satisfaction or "utility". He used the term "utility function" to describe this concept, and it has since become a fundamental idea in economics, particularly in the fields of consumer theory and welfare economics.
+
+Historical precedents for the idea of a utility function can be found in the works of ancient Greek philosophers such as Epicurus (341-271 BCE) and Aristotle (384-322 BCE), who discussed the concept of "eudaimonia" or happiness, which can be seen as a precursor to the idea of utility.
+
+In addition, the German philosopher and economist Georg Wilhelm Friedrich Hegel (1770-1831) wrote about the concept of "das absolute" or "the absolute" in his work "Lectures on the Philosophy of History" in 1822, which can be seen as a precursor to the modern concept of a utility function.
+
+Overall, while the concept of a utility function has evolved over time, its roots can be traced back to ancient philosophers and economists, who discussed the idea of happiness, satisfaction, and well-being.

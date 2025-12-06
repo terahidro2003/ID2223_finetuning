@@ -1,0 +1,6 @@
+[
+  {
+    "role": "user",
+    "content": "You are tasked with creating a Python program that generates a Fibonacci sequence. The Fibonacci sequence is a series of numbers in which each number is the sum of the two preceding ones, usually starting with 0 and 1. Your program should take an input `n` and generate the first `n` numbers in the Fibonacci sequence.\n\nWrite a Python function called `generate_fibonacci` that takes an integer `n` as input and returns a list of the first `n` numbers in the Fibonacci sequence.\n\nFor example, if the input is 5, the output should be [0, 1, 1, 2, 3]."
+  }
+]

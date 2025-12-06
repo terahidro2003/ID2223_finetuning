@@ -1,0 +1,11 @@
+The reason arteries appear red and veins appear blue when observed through the skin is due to the way light interacts with the blood in these vessels.
+
+When light passes through the skin, it encounters the blood in the arteries and veins. Arteries carry oxygenated blood from the heart to the rest of the body, and their walls are rich in oxygen-carrying hemoglobin. Veins, on the other hand, carry deoxygenated blood back to the heart, and their walls are rich in carbon dioxide-carrying hemoglobin.
+
+As light travels through the blood, it absorbs and scatters different wavelengths of light at different rates. Oxygenated blood absorbs more light in the blue and violet parts of the visible spectrum, and scatters more of these shorter wavelengths. This is known as Rayleigh scattering, named after the British physicist Lord Rayleigh, who first described the phenomenon in the late 19th century.
+
+Deoxygenated blood, on the other hand, absorbs more light in the red and yellow parts of the visible spectrum, and scatters less of these longer wavelengths. This is because the hemoglobin in deoxygenated blood has a higher affinity for the longer wavelengths of light.
+
+As a result of this selective absorption and scattering of light, arteries appear red because they contain more oxygenated blood, which scatters the shorter wavelengths of light. Veins, which contain more deoxygenated blood, appear blue because they scatter less of the shorter wavelengths of light.
+
+This effect is known as the "arteriovenous difference" and is used to non-invasively monitor blood oxygenation levels in medical settings, such as pulse oximetry.

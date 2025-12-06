@@ -1,0 +1,71 @@
+Here is an algorithm to add two given binary numbers:
+
+1. Initialize variables:
+   - Set a carry variable as 0 to store the carry during addition.
+   - Set an empty string result to store the binary sum.
+
+2. Reverse both binary numbers to start adding from the least significant bit (LSB).
+
+3. Loop through the binary numbers from LSB to MSB:
+   - Get the current bits from both numbers.
+   - Add the current bits along with the carry.
+   - If the sum is 0 or 2, append '0' to the result string and set the carry as 0.
+   - If the sum is 1, append '1' to the result string and set the carry as 0.
+   - If the sum is 3, append '1' to the result string and set the carry as 1.
+
+4. After the loop ends, if there is still a carry, append '1' to the result string.
+
+5. Reverse the result string to get the correct binary sum.
+
+6. Return the binary sum as a string.
+
+Here is the implementation in Python:
+
+```python
+def addBinaryNumbers(num1, num2):
+    carry = 0
+    result = ""
+
+    # Reverse the binary numbers
+    num1 = num1[::-1]
+    num2 = num2[::-1]
+
+    # Loop through the binary numbers
+    for i in range(max(len(num1), len(num2))):
+        # Get the current bits from both numbers
+        bit1 = int(num1[i]) if i < len(num1) else 0
+        bit2 = int(num2[i]) if i < len(num2) else 0
+
+        # Add the current bits along with the carry
+        current_sum = bit1 + bit2 + carry
+
+        # Append the appropriate bit to the result string
+        if current_sum == 0 or current_sum == 2:
+            result += '0'
+            carry = 0
+        elif current_sum == 1:
+            result += '1'
+            carry = 0
+        elif current_sum == 3:
+            result += '1'
+            carry = 1
+
+    # Add the remaining carry, if any
+    if carry == 1:
+        result += '1'
+
+    # Reverse the result string
+    result = result[::-1]
+
+    return result
+```
+
+Example usage:
+
+```python
+print(addBinaryNumbers("101", "110"))  # Output: 1011
+print(addBinaryNumbers("111", "1"))    # Output: 1000
+print(addBinaryNumbers("0", "0"))      # Output: 0
+```
+
+The time complexity of this algorithm is O(log n), where n is the length of the longer binary number, as we are iterating through the binary numbers from LSB to MSB. The space complexity is O(1) as we are not using any additional data structures.

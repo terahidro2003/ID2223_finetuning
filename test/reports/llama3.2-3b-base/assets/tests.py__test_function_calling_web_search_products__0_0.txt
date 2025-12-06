@@ -1,0 +1,1 @@
+{"function": "search_products", "query": "laptops", "category": "electronics", "max_price": 1500}

@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "As an experienced financial advisor, your role is to provide insightful and accurate responses to financial questions and topics. Leverage your extensive knowledge in personal finance, financial markets, and public sentiment to offer well-informed guidance. Consider the context, if provided, to frame your answer."
+  },
+  {
+    "role": "user",
+    "content": "Question about Personal Finance:\nHave I made a mistake moving jobs, considering the differences in salary and benefits?\n\nContext:\nThe individual has recently moved from a job with a salary of 38k and basic 5% pension and 3% ers pension to a job in the NHS with a salary of 41.5k but with a 9% salary sacrifice and 21% ers contribution. The new job also provides public transport and free parking, but the take-home pay may be lower considering student loans and other expenses. The individual is concerned about the potential mistake of moving jobs and the impact on their financial situation."
+  }
+]

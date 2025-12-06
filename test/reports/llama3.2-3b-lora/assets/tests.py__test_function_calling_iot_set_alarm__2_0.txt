@@ -1,0 +1,2 @@
+⚠ PARTIAL PASS (1 value errors):
+  time: expected=7 am, got=07:00

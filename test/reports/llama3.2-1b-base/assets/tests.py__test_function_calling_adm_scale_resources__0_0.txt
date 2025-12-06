@@ -1,0 +1,7 @@
+```json
+{
+  "function": "scale_resources",
+  "service": "backend-api",
+  "replicas": 5
+}
+```

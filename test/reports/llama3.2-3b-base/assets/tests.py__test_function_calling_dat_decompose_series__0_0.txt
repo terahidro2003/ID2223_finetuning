@@ -1,0 +1,7 @@
+```
+{
+  "function": "decompose_series",
+  "series": "monthly_sales",
+  "model": "additive"
+}
+```

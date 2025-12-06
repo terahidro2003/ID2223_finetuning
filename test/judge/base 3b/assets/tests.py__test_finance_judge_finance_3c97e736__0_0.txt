@@ -1,0 +1,31 @@
+To solve this problem, we need to calculate the interest earned each year and add it to the principal amount. Here's the step-by-step approach:
+
+Year 1:
+Interest = 2% of $500 = 0.02 x $500 = $10
+Total Amount = Principal + Interest = $500 + $10 = $510
+
+Year 2:
+Interest = 4% of $510 = 0.04 x $510 = $20.40
+Total Amount = $510 + $20.40 = $530.40
+
+Year 3:
+Interest = 6% of $530.40 = 0.06 x $530.40 = $31.824
+Total Amount = $530.40 + $31.824 = $562.224
+
+Year 4:
+Interest = 8% of $562.224 = 0.08 x $562.224 = $45.17712
+Total Amount = $562.224 + $45.17712 = $607.40112
+
+Year 5:
+Interest = 10% of $607.40112 = 0.10 x $607.40112 = $60.740112
+Total Amount = $607.40112 + $60.740112 = $668.141232
+
+Year 6:
+Interest = 12% of $668.141232 = 0.12 x $668.141232 = $80.16674464
+Total Amount = $668.141232 + $80.16674464 = $748.30797696
+
+Year 7:
+Interest = 14% of $748.30797696 = 0.14 x $748.30797696 = $104.634098736
+Total Amount = $748.30797696 + $104.634098736 = $852.942075696
+
+After 7 years, Emily will have approximately $852.94 in her investment portfolio.

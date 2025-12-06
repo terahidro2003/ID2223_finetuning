@@ -1,0 +1,27 @@
+To find out how many days it will take for Alex to break even and recover the initial investment, we need to calculate the daily revenue and subtract the daily operational cost.
+
+Daily revenue = 200 tickets/day * $15/ticket = $3000/day
+
+Daily operational cost = 2% of $250,000 = 0.02 * $250,000 = $5000/day
+
+Since the daily revenue is less than the daily operational cost, the park is operating at a loss. However, we can still calculate how many days it will take to recover the initial investment by adding the daily revenue to the initial investment:
+
+Total revenue needed to break even = Initial investment + Daily operational cost
+= $250,000 + $5000/day * number of days
+
+Let's set up an equation to find the number of days:
+
+$250,000 + $5000 * number of days = $250,000 + $5000 * number of days
+
+Since the initial investment is $250,000, the park will break even when the total revenue equals the initial investment.
+
+$3000 * number of days = $250,000
+
+To find the number of days, divide both sides by $3000:
+
+number of days = $250,000 / $3000
+= 83.33 days
+
+Since you can't have a fraction of a day, we'll round up to the nearest whole number.
+
+So, it will take Alex approximately 84 days to break even and recover the initial investment.
