@@ -24,6 +24,10 @@ class FineTomeProvider(BaseLLMProvider):
             "path": "hellstone1918/Llama-3.2-3B-finance-lora-model-v6",
             "client": None
         },
+        "Llama 3.2 3B rs lora": {
+            "path": "hellstone1918/Llama-3.2-3B-rslora-model",
+            "client": None
+        },
     }
     
     def __init__(self, api_url: Optional[str] = None, **kwargs):
