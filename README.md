@@ -5,7 +5,38 @@ This project fine-tunes Llama 3.2B 4-bit instruct models on two datasets (FineTo
 were not strongly supported by our evaluation, as we had assumed it would be much better at those tasks.
 
 ## User Interface
+
 UI of the chatbot for communication with the fine-tuned LLM's can be found [here](https://huggingface.co/spaces/fattha-kth/id2223-finetuning)
+
+### Demo Videos
+
+**Web Search Functionality:**
+*The chatbot supports optional web search integration for up-to-date information.*
+
+<table>
+<tr>
+<td align="center" width="50%">
+
+
+https://github.com/user-attachments/assets/1650d3c8-f2ab-429b-b7e2-6808c5228dcb
+
+
+  <br/>
+<b>Without Web Search</b><br/>
+Standard model responses
+</td>
+<td align="center" width="50%">
+
+
+https://github.com/user-attachments/assets/c14d47f4-b6f7-466a-a684-ee8a4722e360
+
+
+  <br/>
+<b>With Web Search</b><br/>
+Enhanced with real-time information retrieval
+</td>
+</tr>
+</table>
 
 ## Datasets
 
@@ -47,7 +78,45 @@ We designed a comprehensive evaluation across multiple test methodologies:
 - FineTome's claims about producing substantial quality improvements were not validated by our tests
 
 ### Detailed Results
-Complete performance breakdowns and comparative analysis are available in the `tests/reports/` directory.
+
+Complete performance breakdowns and comparative analysis are available as interactive HTML reports:
+
+- **[Llama 3.2 1B Base Model Report](test/reports/llama3.2-1b-base/report.html)** - Baseline performance metrics for the 1B parameter model
+- **[Llama 3.2 3B Base Model Report](test/reports/llama3.2-3b-base/report.html)** - Baseline performance metrics for the 3B parameter model
+- **[Llama 3.2 3B LoRA Fine-tuned Report](test/reports/llama3.2-3b-lora/report.html)** - Performance after fine-tuning with LoRA adapters
+- **[LLM Judge Evaluation Report](test/judge/base%203b/judge_report.html)** - Partial Prometheus v2.0 automated evaluation results
+
+Each report includes:
+- Pass/fail statistics across all test categories
+- Individual test case results with detailed outputs
+- Response comparisons and quality metrics
+- Performance breakdown by test category (reasoning, function calling, MCQ, etc.)
+
+#### Quick Preview
+
+Below are excerpts from the test reports. For full interactive details, click on the report links above.
+
+<table>
+<tr>
+<td align="center">
+<img src="docs/1b-base.png" width="300" alt="1B Base Model Results"/><br/>
+<b>Llama 3.2 1B Base</b><br/>
+123 Passes
+</td>
+<td align="center">
+<img src="docs/3b-base.png" width="300" alt="3B Base Model Results"/><br/>
+<b>Llama 3.2 3B Base</b><br/>
+140 Passes
+</td>
+<td align="center">
+<img src="docs/3b-lora.png" width="300" alt="3B LoRA Results"/><br/>
+<b>Llama 3.2 3B + LoRA</b><br/>
+143 Passes
+</td>
+</tr>
+</table>
+
+*Preview screenshots from the full HTML reports. See the complete reports above for detailed test results and analysis.*
 
 ## Project Structure
 
